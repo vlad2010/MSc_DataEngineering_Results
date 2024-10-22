@@ -1,0 +1,50 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment. 
+
+(```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+int main()
+{
+    int sockfd;
+    struct sockaddr_in addr;
+
+    // Create a socket
+    sockfd = socket(AF_INET, SOCK_DGRAM, 0);
+    if (sockfd < 0) {
+        perror("socket");
+        exit(EXIT_FAILURE);
+    }
+
+    // Bind the socket to a specific network interface
+    char *interface = "eth0";  // or "eth1" or any other interface
+    if (setsockopt(sockfd, SOL_SOCKET, SO_BINDTODEVICE, interface, strlen(interface)) < 0) {
+        perror("SO_BINDTODEVICE");
+        exit(EXIT_FAILURE);
+    }
+
+    // Bind the socket to a specific IP address
+    memset(&addr, 0, sizeof(struct sockaddr_in));
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(12345);  // Port number
+    inet_pton(AF_INET, "192.168.1.2", &addr.sin_addr);  // IP address
+
+    if (bind(sockfd, (struct sockaddr *) &addr, sizeof(addr)) < 0) {
+        perror("bind");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Socket successfully bound to %s on interface %s\n", "192.168.1.2", interface);
+
+    // Now you can use the socket...
+
+    return 0;
+}
+
+```)

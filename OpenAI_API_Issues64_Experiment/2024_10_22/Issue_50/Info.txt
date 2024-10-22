@@ -1,0 +1,3 @@
+Model name: gpt-4o
+File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Using_ioctl_in_macOS_October_10_2023\Conversation_003\Code_001.cpp
+Scanners: ['flawfinder']

@@ -1,0 +1,41 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment. 
+
+(```c
+void CL_CALLBACK buildCallback(cl_program program, void* user_data) {
+    cl_int errcode;
+    cl_build_status build_status;
+    size_t build_log_size;
+
+    // Obtiene el estado de compilación del programa
+    errcode = clGetProgramBuildInfo(program, device_id, CL_PROGRAM_BUILD_STATUS, sizeof(cl_build_status), &build_status, NULL);
+    if (errcode != CL_SUCCESS) {
+        printf("Error al obtener el estado de compilación del programa: %d\n", errcode);
+        return;
+    }
+
+    // Si el estado de compilación es CL_BUILD_ERROR, obtiene el registro de compilación
+    if (build_status == CL_BUILD_ERROR) {
+        errcode = clGetProgramBuildInfo(program, device_id, CL_PROGRAM_BUILD_LOG, 0, NULL, &build_log_size);
+        if (errcode != CL_SUCCESS) {
+            printf("Error al obtener el tamaño del registro de compilación: %d\n", errcode);
+            return;
+        }
+
+        char* build_log = (char*)malloc(build_log_size);
+        errcode = clGetProgramBuildInfo(program, device_id, CL_PROGRAM_BUILD_LOG, build_log_size, build_log, NULL);
+        if (errcode != CL_SUCCESS) {
+            printf("Error al obtener el registro de compilación: %d\n", errcode);
+            free(build_log);
+            return;
+        }
+
+        // Imprime el registro de compilación
+        printf("Registro de compilación:\n%s\n", build_log);
+
+        free(build_log);
+    }
+}
+
+```)

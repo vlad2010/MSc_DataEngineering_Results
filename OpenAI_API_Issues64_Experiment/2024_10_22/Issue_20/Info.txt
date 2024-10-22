@@ -1,0 +1,3 @@
+Model name: gpt-4o
+File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_233628_pr_sharingsjson\Source_fix_open_url_not_working_on_windows_20230911T002353Z\Sharing_Open_URL_in_Windows_September_11_2023\Conversation_002\Code_001.cpp
+Scanners: ['flawfinder']

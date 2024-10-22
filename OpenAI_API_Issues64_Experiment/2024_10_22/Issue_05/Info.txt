@@ -1,0 +1,3 @@
+Model name: gpt-4o
+File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Project_Assistance_Request_September_25_2023\Conversation_055\Code_001.cs
+Scanners: ['snyk']

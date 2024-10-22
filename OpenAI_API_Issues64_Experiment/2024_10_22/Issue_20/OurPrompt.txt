@@ -1,0 +1,28 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment. 
+
+(```cpp
+void open_url(const std::string &url) {
+    std::string executable;
+
+#if defined(_WIN32) || defined(_WIN64)
+    executable = "start \"\"";
+#elif defined(__linux__)
+    executable = "xdg-open";
+#elif defined(__APPLE__)
+    executable = "open";
+#elif defined(__ANDROID__)
+    executable = "am start -a android.intent.action.VIEW -d";
+#endif
+
+    const std::string command = executable + " \"" + url + "\"";
+
+    const int exitcode = std::system(command.c_str());
+    if (exitcode != 0) {
+        // debugmsg("Failed to open URL: %s\nAttemped command was: %s", url, command);
+        // Replace debugmsg with your debugging/logging function
+    }
+}
+
+```)

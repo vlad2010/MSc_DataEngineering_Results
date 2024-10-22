@@ -1,0 +1,3 @@
+Model name: gpt-4o
+File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_230826_commit_sharingsjson\Source_NoId_NoDate\Sharing_coding_exercises_June_28_2023\Conversation_001\Code_002.c
+Scanners: ['flawfinder']

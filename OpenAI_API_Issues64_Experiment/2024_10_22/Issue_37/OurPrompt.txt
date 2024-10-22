@@ -1,0 +1,22 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment. 
+
+(```cpp
+// Callback function to read data from the email body
+size_t read_data_callback(void *ptr, size_t size, size_t nmemb, std::string *data) {
+    if (data->empty()) {
+        return 0;
+    }
+
+    size_t len = std::min(size * nmemb, data->size());
+    memcpy(ptr, data->data(), len);
+    data->erase(0, len);
+
+    // Add custom debug information to print the body being sent
+    std::cout << "[Sent Body]: " << std::string(static_cast<char*>(ptr), len) << std::endl;
+
+    return len;
+}
+
+```)

@@ -1,0 +1,3 @@
+Model name: gpt-4o
+File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_233628_pr_sharingsjson\Source_small_tidy_up_warnings_20230913T055832Z\Sharing_Fix_scanf_format_warnings_September_15_2023\Conversation_001\Code_001.c
+Scanners: ['semgrep', 'flawfinder']

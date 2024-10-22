@@ -1,0 +1,475 @@
+d:\GitHub\MS_DataEngineering\Dissertation\CanYouSeeSecurityIssues>python CheckIssues.py --issues_file ..\Final_Original_Reports\final_64.txt --prompt_file prompt.txt --output_folder Results\Test64 --src_base_folder d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\
+JSON Path: ..\Final_Original_Reports\final_64.txt
+Prompt File: prompt.txt
+Model Name: gpt-4o
+Output folder: Results\Test64
+Number of iterations: 1
+Source base folder: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\
+Issues loaded from file: 70
+Number of unique issues: 64
+Prompt: I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment.
+
+OpenAI init model name: gpt-4o
+
+---
+Issue : 1
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Using_ioctl_in_macOS_October_10_2023\Conversation_001\Code_002.c
+Tokens: Prompt: 145 Answer: 637 Total: 782
+Scanners detected: ['flawfinder', 'snyk']
+Total tokens: prompt:145  answers:637   total:782
+
+---
+Issue : 2
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Backend_Development_Languages_June_24_2023\Conversation_003\Code_001.cs
+Tokens: Prompt: 263 Answer: 955 Total: 1218
+Scanners detected: ['snyk']
+Total tokens: prompt:408  answers:1592   total:2000
+
+---
+Issue : 3
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Scraping_Bank_Holidays_C_July_3_2023\Conversation_019\Code_001.cpp
+Tokens: Prompt: 1064 Answer: 1518 Total: 2582
+Scanners detected: ['snyk']
+Total tokens: prompt:1472  answers:3110   total:4582
+
+---
+Issue : 4
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_232232_hn_sharingsjson\Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z\Sharing_C_version_of_DirBuster_July_19_2023\Conversation_004\Code_001.c
+Tokens: Prompt: 868 Answer: 1489 Total: 2357
+Scanners detected: ['flawfinder', 'snyk']
+Total tokens: prompt:2340  answers:4599   total:6939
+
+---
+Issue : 5
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Project_Assistance_Request_September_25_2023\Conversation_055\Code_001.cs
+Tokens: Prompt: 974 Answer: 1297 Total: 2271
+Scanners detected: ['snyk']
+Total tokens: prompt:3314  answers:5896   total:9210
+
+---
+Issue : 6
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Code_Comparison_Time__Space_July_25_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 216 Answer: 770 Total: 986
+Scanners detected: ['snyk']
+Total tokens: prompt:3530  answers:6666   total:10196
+
+---
+Issue : 7
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Conversation_Grading_Feature_20230912T224429Z\Sharing_C_Tutoring_Session_September_1_2023\Conversation_012\Code_001.cpp
+Tokens: Prompt: 559 Answer: 912 Total: 1471
+Scanners detected: ['snyk']
+Total tokens: prompt:4089  answers:7578   total:11667
+
+---
+Issue : 8
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_232232_hn_sharingsjson\Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z\Sharing_C_version_of_DirBuster_July_19_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 738 Answer: 1242 Total: 1980
+Scanners detected: ['semgrep', 'flawfinder', 'snyk']
+Total tokens: prompt:4827  answers:8820   total:13647
+
+---
+Issue : 9
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_233628_pr_sharingsjson\Source_small_tidy_up_warnings_20230913T055832Z\Sharing_Fix_scanf_format_warnings_September_15_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 219 Answer: 562 Total: 781
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:5046  answers:9382   total:14428
+
+---
+Issue : 10
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_027\Code_001.cpp
+
+Tokens: Prompt: 542 Answer: 796 Total: 1338
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:5588  answers:10178   total:15766
+
+---
+Issue : 11
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Update_Function_Generate10_September_27_2023\Conversation_001\Code_001.cs
+Tokens: Prompt: 730 Answer: 1443 Total: 2173
+Scanners detected: ['semgrep']
+Total tokens: prompt:6318  answers:11621   total:17939
+
+---
+Issue : 12
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_719_20230719T013652Z\Sharing_UDP_Client_Number_Communication_July_19_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 414 Answer: 925 Total: 1339
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:6732  answers:12546   total:19278
+
+---
+Issue : 13
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_005\Code_001.c
+Tokens: Prompt: 575 Answer: 1056 Total: 1631
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:7307  answers:13602   total:20909
+
+---
+Issue : 14
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_006\Code_001.c
+Tokens: Prompt: 643 Answer: 1117 Total: 1760
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:7950  answers:14719   total:22669
+
+---
+Issue : 15
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_230826_commit_sharingsjson\Source_NoId_NoDate\Sharing_coding_exercises_June_28_2023\Conversation_001\Code_002.c
+Tokens: Prompt: 330 Answer: 699 Total: 1029
+Scanners detected: ['flawfinder']
+Total tokens: prompt:8280  answers:15418   total:23698
+
+---
+Issue : 16
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Testing_dnsmasq_September_12_2023\Conversation_002\Code_001.c
+Tokens: Prompt: 119 Answer: 610 Total: 729
+Scanners detected: ['flawfinder']
+Total tokens: prompt:8399  answers:16028   total:24427
+
+---
+Issue : 17
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Testing_dnsmasq_September_12_2023\Conversation_002\Code_002.c
+Tokens: Prompt: 120 Answer: 763 Total: 883
+Scanners detected: ['flawfinder']
+Total tokens: prompt:8519  answers:16791   total:25310
+
+---
+Issue : 18
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_230826_commit_sharingsjson\Source_NoId_NoDate\Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023\Conversation_002\Code_001.c
+Tokens: Prompt: 1082 Answer: 1157 Total: 2239
+Scanners detected: ['flawfinder']
+Total tokens: prompt:9601  answers:17948   total:27549
+
+---
+Issue : 19
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_230826_commit_sharingsjson\Source_NoId_NoDate\Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023\Conversation_004\Code_001.c
+Tokens: Prompt: 767 Answer: 1347 Total: 2114
+Scanners detected: ['flawfinder']
+Total tokens: prompt:10368  answers:19295   total:29663
+
+---
+Issue : 20
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_233628_pr_sharingsjson\Source_fix_open_url_not_working_on_windows_20230911T002353Z\Sharing_Open_URL_in_Windows_September_11_2023\Conversation_002\Code_001.cpp
+Tokens: Prompt: 273 Answer: 608 Total: 881
+Scanners detected: ['flawfinder']
+Total tokens: prompt:10641  answers:19903   total:30544
+
+---
+Issue : 21
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Aptitude_Test_Result_B_One_Column_July_20_2023\Conversation_005\Code_001.c
+Tokens: Prompt: 170 Answer: 521 Total: 691
+Scanners detected: ['flawfinder']
+Total tokens: prompt:10811  answers:20424   total:31235
+
+---
+Issue : 22
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Code_Comparison_Time__Space_July_25_2023\Conversation_002\Code_001.cpp
+Tokens: Prompt: 444 Answer: 831 Total: 1275
+Scanners detected: ['flawfinder']
+Total tokens: prompt:11255  answers:21255   total:32510
+
+---
+Issue : 23
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Code_Review_Longer_Lines_June_7_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 324 Answer: 553 Total: 877
+Scanners detected: ['flawfinder']
+Total tokens: prompt:11579  answers:21808   total:33387
+
+---
+Issue : 24
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_026\Code_001.cpp
+Tokens: Prompt: 396 Answer: 882 Total: 1278
+Scanners detected: ['flawfinder']
+Total tokens: prompt:11975  answers:22690   total:34665
+
+---
+Issue : 25
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_035\Code_001.cpp
+Tokens: Prompt: 283 Answer: 681 Total: 964
+Scanners detected: ['flawfinder']
+Total tokens: prompt:12258  answers:23371   total:35629
+
+---
+Issue : 26
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_001.cpp
+Tokens: Prompt: 187 Answer: 801 Total: 988
+Scanners detected: ['flawfinder']
+Total tokens: prompt:12445  answers:24172   total:36617
+
+---
+Issue : 27
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_002.cpp
+Tokens: Prompt: 188 Answer: 768 Total: 956
+Scanners detected: ['flawfinder']
+Total tokens: prompt:12633  answers:24940   total:37573
+
+---
+Issue : 28
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_003.cpp
+Tokens: Prompt: 203 Answer: 563 Total: 766
+Scanners detected: ['flawfinder']
+Total tokens: prompt:12836  answers:25503   total:38339
+
+---
+Issue : 29
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_004.cpp
+Tokens: Prompt: 192 Answer: 603 Total: 795
+Scanners detected: ['flawfinder']
+Total tokens: prompt:13028  answers:26106   total:39134
+
+---
+Issue : 30
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_005.cpp
+Tokens: Prompt: 215 Answer: 649 Total: 864
+Scanners detected: ['flawfinder']
+Total tokens: prompt:13243  answers:26755   total:39998
+
+---
+Issue : 31
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_047\Code_001.cpp
+Tokens: Prompt: 422 Answer: 903 Total: 1325
+Scanners detected: ['flawfinder']
+Total tokens: prompt:13665  answers:27658   total:41323
+
+---
+Issue : 32
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Create_Arduino_Debounce_Library_September_16_2023\Conversation_006\Code_001.cpp
+Tokens: Prompt: 247 Answer: 792 Total: 1039
+Scanners detected: ['flawfinder']
+Total tokens: prompt:13912  answers:28450   total:42362
+
+---
+Issue : 33
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Create_Arduino_Debounce_Library_September_16_2023\Conversation_007\Code_001.cpp
+Tokens: Prompt: 350 Answer: 867 Total: 1217
+Scanners detected: ['flawfinder']
+Total tokens: prompt:14262  answers:29317   total:43579
+
+---
+Issue : 34
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Create_Arduino_Debounce_Library_September_16_2023\Conversation_014\Code_001.cpp
+Tokens: Prompt: 149 Answer: 467 Total: 616
+Scanners detected: ['flawfinder']
+Total tokens: prompt:14411  answers:29784   total:44195
+
+---
+Issue : 35
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Create_Arduino_Debounce_Library_September_16_2023\Conversation_023\Code_001.cpp
+Tokens: Prompt: 804 Answer: 1267 Total: 2071
+Scanners detected: ['flawfinder']
+Total tokens: prompt:15215  answers:31051   total:46266
+
+---
+Issue : 36
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_013\Code_001.cpp
+
+Tokens: Prompt: 834 Answer: 1370 Total: 2204
+Scanners detected: ['flawfinder']
+Total tokens: prompt:16049  answers:32421   total:48470
+
+---
+Issue : 37
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_020\Code_001.cpp
+
+Tokens: Prompt: 241 Answer: 711 Total: 952
+Scanners detected: ['flawfinder']
+Total tokens: prompt:16290  answers:33132   total:49422
+
+---
+Issue : 38
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_022\Code_001.cpp
+
+Tokens: Prompt: 556 Answer: 896 Total: 1452
+Scanners detected: ['flawfinder']
+Total tokens: prompt:16846  answers:34028   total:50874
+
+---
+Issue : 39
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_036\Code_001.cpp
+
+Tokens: Prompt: 1212 Answer: 1529 Total: 2741
+Scanners detected: ['cppcheck', 'flawfinder']
+Total tokens: prompt:18058  answers:35557   total:53615
+
+---
+Issue : 40
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Interview_QA_August_1_2023\Conversation_001\Code_001.c
+Tokens: Prompt: 345 Answer: 704 Total: 1049
+Scanners detected: ['flawfinder']
+Total tokens: prompt:18403  answers:36261   total:54664
+
+---
+Issue : 41
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_IPv6_Query_Conditions_AI_ADDRCONFIG_September_17_2023\Conversation_010\Code_001.c
+Tokens: Prompt: 189 Answer: 674 Total: 863
+Scanners detected: ['flawfinder']
+Total tokens: prompt:18592  answers:36935   total:55527
+
+---
+Issue : 42
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Mostrar_errores_OpenCL_June_14_2023\Conversation_001\Code_001.c
+
+Tokens: Prompt: 432 Answer: 829 Total: 1261
+Scanners detected: ['flawfinder']
+Total tokens: prompt:19024  answers:37764   total:56788
+
+---
+Issue : 43
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Mostrar_errores_OpenCL_June_14_2023\Conversation_002\Code_002.c
+
+Tokens: Prompt: 176 Answer: 781 Total: 957
+Scanners detected: ['flawfinder']
+Total tokens: prompt:19200  answers:38545   total:57745
+
+---
+Issue : 44
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_New_chat_September_1_2023\Conversation_005\Code_001.cpp
+Tokens: Prompt: 824 Answer: 858 Total: 1682
+Scanners detected: ['flawfinder']
+Total tokens: prompt:20024  answers:39403   total:59427
+
+---
+Issue : 45
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_New_chat_September_1_2023\Conversation_006\Code_001.cpp
+Tokens: Prompt: 672 Answer: 1201 Total: 1873
+Scanners detected: ['flawfinder']
+Total tokens: prompt:20696  answers:40604   total:61300
+
+---
+Issue : 46
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_OpenMP_and_ARM_SIMD_June_12_2023\Conversation_002\Code_001.c
+Tokens: Prompt: 298 Answer: 604 Total: 902
+Scanners detected: ['flawfinder']
+Total tokens: prompt:20994  answers:41208   total:62202
+
+---
+Issue : 47
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Ranged_Random_Float_in_C_June_26_2023\Conversation_021\Code_001.c
+Tokens: Prompt: 197 Answer: 564 Total: 761
+Scanners detected: ['flawfinder']
+Total tokens: prompt:21191  answers:41772   total:62963
+
+---
+Issue : 48
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Serial_Port_Data_Handling_July_25_2023\Conversation_001\Code_002.cpp
+Tokens: Prompt: 421 Answer: 949 Total: 1370
+Scanners detected: ['flawfinder']
+Total tokens: prompt:21612  answers:42721   total:64333
+
+---
+Issue : 49
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Summary_User_request_and_model_responseTitle_Request_and_Response_June_7_2023\Conversation_009\Code_001.cpp
+Tokens: Prompt: 450 Answer: 859 Total: 1309
+Scanners detected: ['cppcheck', 'flawfinder']
+Total tokens: prompt:22062  answers:43580   total:65642
+
+---
+Issue : 50
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Using_ioctl_in_macOS_October_10_2023\Conversation_003\Code_001.cpp
+Tokens: Prompt: 286 Answer: 752 Total: 1038
+Scanners detected: ['flawfinder']
+Total tokens: prompt:22348  answers:44332   total:66680
+
+---
+Issue : 51
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_004\Code_001.c
+Tokens: Prompt: 183 Answer: 774 Total: 957
+Scanners detected: ['flawfinder']
+Total tokens: prompt:22531  answers:45106   total:67637
+
+---
+Issue : 52
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_009\Code_001.c
+Tokens: Prompt: 589 Answer: 945 Total: 1534
+Scanners detected: ['semgrep', 'flawfinder']
+Total tokens: prompt:23120  answers:46051   total:69171
+
+---
+Issue : 53
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Extend_capabilities_of_needle_parameter_20191223T234721Z\Sharing_C_Regex_Support_August_3_2023\Conversation_001\Code_001.cpp
+Tokens: Prompt: 458 Answer: 1017 Total: 1475
+Scanners detected: ['flawfinder']
+Total tokens: prompt:23578  answers:47068   total:70646
+
+---
+Issue : 54
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Improvments_regarding_regex_20230626T124833Z\Sharing_PCRE_Compile_and_Reuse_June_26_2023\Conversation_001\Code_003.cpp
+Tokens: Prompt: 262 Answer: 749 Total: 1011
+Scanners detected: ['flawfinder']
+Total tokens: prompt:23840  answers:47817   total:71657
+
+---
+Issue : 55
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z\Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023\Conversation_012\Code_001.c
+Tokens: Prompt: 422 Answer: 799 Total: 1221
+Scanners detected: ['flawfinder']
+Total tokens: prompt:24262  answers:48616   total:72878
+
+---
+Issue : 56
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z\Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023\Conversation_016\Code_001.c
+Tokens: Prompt: 414 Answer: 803 Total: 1217
+Scanners detected: ['flawfinder']
+Total tokens: prompt:24676  answers:49419   total:74095
+
+---
+Issue : 57
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_OSC52_panic_20230612T080949Z\Sharing_Исправление_утечек_памяти_September_17_2023\Conversation_002\Code_001.c
+Tokens: Prompt: 578 Answer: 966 Total: 1544
+Scanners detected: ['flawfinder']
+Total tokens: prompt:25254  answers:50385   total:75639
+
+---
+Issue : 58
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_새로운_출발_20230720T031024Z\Sharing_New_chat_July_20_2023\Conversation_001\Code_0
+Tokens: Prompt: 622 Answer: 1151 Total: 1773
+Scanners detected: ['flawfinder']
+Total tokens: prompt:25876  answers:51536   total:77412
+
+---
+Issue : 59
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Ajout_méthode_tri_fusion_August_24_2023\Conversation_001\Code_001.cpp
+Tokens: Prompt: 673 Answer: 1032 Total: 1705
+Scanners detected: ['cppcheck']
+Total tokens: prompt:26549  answers:52568   total:79117
+
+---
+Issue : 60
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Arduino_Library_for_AD5693_October_10_2023\Conversation_009\Code_001.cpp
+Tokens: Prompt: 218 Answer: 1034 Total: 1252
+Scanners detected: ['cppcheck']
+Total tokens: prompt:26767  answers:53602   total:80369
+
+---
+Issue : 61
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Java_Access_Modifiers_July_19_2023\Conversation_002\Code_002.cpp
+Tokens: Prompt: 238 Answer: 808 Total: 1046
+Scanners detected: ['cppcheck']
+Total tokens: prompt:27005  answers:54410   total:81415
+
+---
+Issue : 62
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Stack异常处理方法_September_11_2023\Conversation_005\Code_001.c
+Tokens: Prompt: 355 Answer: 820 Total: 1175
+Scanners detected: ['cppcheck']
+Total tokens: prompt:27360  answers:55230   total:82590
+
+---
+Issue : 63
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_gpu_support_coming_20230927T054640Z\Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023\Conversation_014\Code_001.cpp
+Tokens: Prompt: 373 Answer: 796 Total: 1169
+Scanners detected: ['cppcheck']
+Total tokens: prompt:27733  answers:56026   total:83759
+
+---
+Issue : 64
+Issue file: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_gpu_support_coming_20230927T054640Z\Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023\Conversation_019\Code_001.cpp
+Tokens: Prompt: 486 Answer: 1091 Total: 1577
+Scanners detected: ['cppcheck']
+Total tokens: prompt:28219  answers:57117   total:85336
+
+Issues processed : 64
+Tokens: prompt:28219  answers:57117   total:85336
+Elapsed time is: 917.63 sec
+Average seconds per issues: 14.34 sec
+Output path is: Results\Test64

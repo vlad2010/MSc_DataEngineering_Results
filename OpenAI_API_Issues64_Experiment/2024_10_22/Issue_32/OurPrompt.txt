@@ -1,0 +1,32 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question.
+You must find security issues in the code snippet below in this message. Give me your analysis and the way how to fix the code if possible. Try to identify CWE number or any other number for formal classifications.
+Please write code where detected secutiry issue is fixed, please write all code in one fragment. 
+
+(```cpp
+#ifndef ADAFRUIT_DEBOUNCE_H
+#define ADAFRUIT_DEBOUNCE_H
+
+#include "Arduino.h"
+
+class Adafruit_Debounce {
+  public:
+    Adafruit_Debounce(int16_t pin, bool polarity = LOW);
+    void begin();
+    bool read();
+    void update(bool bit);
+    bool isPressed();
+    bool isReleased();
+    bool justPressed();
+    bool justReleased();
+
+  private:
+    int16_t _pin;
+    bool _polarity;
+    uint32_t _lastDebounceTime;
+    bool _buttonState; 
+    bool _lastButtonState; 
+};
+
+#endif // ADAFRUIT_DEBOUNCE_H
+
+```)

@@ -1,0 +1,894 @@
+{
+    "pathToSourceFolder": "d:\\GitHub\\MS_DataEngineering\\Dissertation\\Utils\\cpp_csharp",
+    "dateAndTime": "2024-10-22 22:54:00",
+    "issues": [
+        [
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Using_ioctl_in_macOS_October_10_2023/Conversation_001/Code_002.c",
+                "severity": "note",
+                "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+                "type": "FF1040",
+                "sharing": "Sharing_Using_ioctl_in_macOS_October_10_2023",
+                "source_code": "int fd = open(\"/dev/ttyS0\", O_RDWR);",
+                "scanner": "flawfinder"
+            },
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Using_ioctl_in_macOS_October_10_2023/Conversation_001/Code_002.c",
+                "severity": "note",
+                "text": "File opened by open may not be closed. The file does not seem to be closed on all possible execution paths.",
+                "type": "cpp/CMissingClose",
+                "sharing": "Sharing_Using_ioctl_in_macOS_October_10_2023",
+                "source_code": "cpp/CMissingClose",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 14,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Backend_Development_Languages_June_24_2023/Conversation_003/Code_001.cs",
+                "severity": "note",
+                "text": "This ASP.NET MVC action should use an anti-forgery validation attribute. Not using this attribute disables Cross Site Request Forgery (CSRF) protection and allows CSRF attacks.",
+                "type": "csharp/AntiforgeryTokenDisabled",
+                "sharing": "Sharing_Backend_Development_Languages_June_24_2023",
+                "source_code": "csharp/AntiforgeryTokenDisabled",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 29,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Scraping_Bank_Holidays_C_July_3_2023/Conversation_019/Code_001.cpp",
+                "severity": "warning",
+                "text": "Unsanitized input from the standard input flows into curl_easy_setopt, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.",
+                "type": "cpp/Ssrf",
+                "sharing": "Sharing_Scraping_Bank_Holidays_C_July_3_2023",
+                "source_code": "cpp/Ssrf",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 21,
+                "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_004/Code_001.c",
+                "severity": "note",
+                "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+                "type": "FF1013",
+                "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+                "source_code": "    char request[BUFFER_SIZE];",
+                "scanner": "flawfinder"
+            },
+            {
+                "line": 101,
+                "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_004/Code_001.c",
+                "severity": "warning",
+                "text": "Unsanitized input from a command line argument flows into fopen, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitary files.",
+                "type": "cpp/PT",
+                "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+                "source_code": "cpp/PT",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 63,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Project_Assistance_Request_September_25_2023/Conversation_055/Code_001.cs",
+                "severity": "warning",
+                "text": "Unsanitized input from a command line argument flows into global::System.IO.File.Exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to obtain information about arbitrary files.",
+                "type": "csharp/PT",
+                "sharing": "Sharing_C_Project_Assistance_Request_September_25_2023",
+                "source_code": "csharp/PT",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 8,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Code_Comparison_Time__Space_July_25_2023/Conversation_001/Code_001.c",
+                "severity": "warning",
+                "text": "Unsanitized input from the standard input flows into a subtraction operator (-), where it is used in integer arithmetic. This may result in an integer overflow vulnerability.",
+                "type": "cpp/IntegerOverflow",
+                "sharing": "Sharing_Code_Comparison_Time__Space_July_25_2023",
+                "source_code": "cpp/IntegerOverflow",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 39,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_Conversation_Grading_Feature_20230912T224429Z/Sharing_C_Tutoring_Session_September_1_2023/Conversation_012/Code_001.cpp",
+                "severity": "warning",
+                "text": "Unsanitized input from a file flows into an addition operator (+), where it is used in integer arithmetic. This may result in an integer overflow vulnerability.",
+                "type": "cpp/IntegerOverflow",
+                "sharing": "Sharing_C_Tutoring_Session_September_1_2023",
+                "source_code": "cpp/IntegerOverflow",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 36,
+                "file": "20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+                "severity": "warning",
+                "text": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files.",
+                "type": "cpp.lang.security.filesystem.path-manipulation.path-manipulation",
+                "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+                "source_code": "    FILE *wordlist = fopen(wordlist_path, \"r\");",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 14,
+                "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+                "type": "FF1013",
+                "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+                "source_code": "    char request[BUFFER_SIZE];",
+                "scanner": "flawfinder"
+            },
+            {
+                "line": 36,
+                "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+                "severity": "warning",
+                "text": "Unsanitized input from a command line argument flows into fopen, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitary files.",
+                "type": "cpp/PT",
+                "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+                "source_code": "cpp/PT",
+                "scanner": "snyk"
+            }
+        ],
+        [
+            {
+                "line": 9,
+                "file": "20231012_233628_pr_sharingsjson/Source_small_tidy_up_warnings_20230913T055832Z/Sharing_Fix_scanf_format_warnings_September_15_2023/Conversation_001/Code_001.c",
+                "severity": "warning",
+                "text": "Avoid using 'scanf()'. This function, when used improperly, does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' instead for reading input.",
+                "type": "c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+                "sharing": "Sharing_Fix_scanf_format_warnings_September_15_2023",
+                "source_code": "    if (scanf(\"%\" SCNd64, p) == 1) {",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 9,
+                "file": "Code/20231012_233628_pr_sharingsjson/Source_small_tidy_up_warnings_20230913T055832Z/Sharing_Fix_scanf_format_warnings_September_15_2023/Conversation_001/Code_001.c",
+                "severity": "error",
+                "text": "buffer/scanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+                "type": "FF1020",
+                "sharing": "Sharing_Fix_scanf_format_warnings_September_15_2023",
+                "source_code": "    if (scanf(\"%\" SCNd64, p) == 1) {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 42,
+                "file": "20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_027/Code_001.cpp",
+                "severity": "warning",
+                "text": "The application may be making an insecure HTTP request which may allow attackers to intercept plaintext information. Instead, the URL should use HTTPS to ensure that the request is encrypted.",
+                "type": "cpp.lang.security.uri.http-url.http-url",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "    curl_easy_setopt(curl, CURLOPT_URL, \"http://httpbin.org/post\"); // Replace with your desired URL",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 18,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_027/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "    memcpy(ptr, email_data->data, len);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 40,
+                "file": "20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Update_Function_Generate10_September_27_2023/Conversation_001/Code_001.cs",
+                "severity": "warning",
+                "text": "String argument filePath is used to read or write data from a file via Path.Combine without direct sanitization via Path.GetFileName. If the path is user-supplied data this can lead to path traversal.",
+                "type": "csharp.lang.security.filesystem.unsafe-path-combine.unsafe-path-combine",
+                "sharing": "Sharing_Update_Function_Generate10_September_27_2023",
+                "source_code": "        File.WriteAllText(fullPath1, csvContent1.ToString());",
+                "scanner": "semgrep"
+            }
+        ],
+        [
+            {
+                "line": 36,
+                "file": "20231012_235128_issue_sharingsjson/Source_719_20230719T013652Z/Sharing_UDP_Client_Number_Communication_July_19_2023/Conversation_001/Code_001.c",
+                "severity": "warning",
+                "text": "Avoid using 'scanf()'. This function, when used improperly, does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' instead for reading input.",
+                "type": "c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+                "sharing": "Sharing_UDP_Client_Number_Communication_July_19_2023",
+                "source_code": "        scanf(\"%d\", &number);",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 35,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_719_20230719T013652Z/Sharing_UDP_Client_Number_Communication_July_19_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_UDP_Client_Number_Communication_July_19_2023",
+                "source_code": "        printf(\"Client (You): \");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 49,
+                "file": "20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_005/Code_001.c",
+                "severity": "warning",
+                "text": "Avoid using 'scanf()'. This function, when used improperly, does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' instead for reading input.",
+                "type": "c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "            if (!scanf(\"%x\", &number)) {",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 37,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_005/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "    printf(\"Server started. Waiting for messages...\\n\");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 63,
+                "file": "20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+                "severity": "warning",
+                "text": "Externally controlled data is used to index a fixed-size array, `buffer`. This could lead to an out-of-bounds read or write, triggering memory corruption.",
+                "type": "cpp.lang.security.memory.unvalidated-array-index.unvalidated-array-index",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "            buffer[strcspn(buffer, \"\\n\")] = '\\0'; // \uc904\ubc14\uafc8 \ubb38\uc790 \uc81c\uac70",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 14,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+                "severity": "note",
+                "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+                "type": "FF1013",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "    char buffer[BUFFER_SIZE]; // \ub370\uc774\ud130\ub97c \uc800\uc7a5\ud560 \ubc84\ud37c",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 17,
+                "file": "Code/20231012_230826_commit_sharingsjson/Source_NoId_NoDate/Sharing_coding_exercises_June_28_2023/Conversation_001/Code_002.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_coding_exercises_June_28_2023",
+                "source_code": "    printf(\"Intersection: \");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Testing_dnsmasq_September_12_2023/Conversation_002/Code_001.c",
+                "severity": "note",
+                "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1017",
+                "sharing": "Sharing_Testing_dnsmasq_September_12_2023",
+                "source_code": "fprintf(stderr, \"Your log message here\\n\");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Testing_dnsmasq_September_12_2023/Conversation_002/Code_002.c",
+                "severity": "note",
+                "text": "format/syslog:If syslog's format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1018",
+                "sharing": "Sharing_Testing_dnsmasq_September_12_2023",
+                "source_code": "syslog(LOG_DEBUG, \"Your log message here\");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 83,
+                "file": "Code/20231012_230826_commit_sharingsjson/Source_NoId_NoDate/Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023/Conversation_002/Code_001.c",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023",
+                "source_code": "\tmemcpy(&q->buf[q->tail * q->elem_size], data, q->elem_size);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 86,
+                "file": "Code/20231012_230826_commit_sharingsjson/Source_NoId_NoDate/Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023/Conversation_004/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023",
+                "source_code": "    printf(\"All tests passed!\\n\");       // Print this if all tests pass.",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 16,
+                "file": "Code/20231012_233628_pr_sharingsjson/Source_fix_open_url_not_working_on_windows_20230911T002353Z/Sharing_Open_URL_in_Windows_September_11_2023/Conversation_002/Code_001.cpp",
+                "severity": "error",
+                "text": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+                "type": "FF1044",
+                "sharing": "Sharing_Open_URL_in_Windows_September_11_2023",
+                "source_code": "    const int exitcode = std::system(command.c_str());",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 10,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Aptitude_Test_Result_B_One_Column_July_20_2023/Conversation_005/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_Aptitude_Test_Result_B_One_Column_July_20_2023",
+                "source_code": "    printf(\"Output value: %d\\n\", result);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 7,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Code_Comparison_Time__Space_July_25_2023/Conversation_002/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Code_Comparison_Time__Space_July_25_2023",
+                "source_code": "#define read(x) int x; cin >> x",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 9,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Code_Review_Longer_Lines_June_7_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "buffer/getchar:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Code_Review_Longer_Lines_June_7_2023",
+                "source_code": "  for (i = 0; i < max - 1 && (c = getchar()) != EOF && c != '\\n'; i++) {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 26,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_026/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  bool attachStatus = attachBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 9,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_035/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return (HUSB238_5VCurrentContract) contractABits.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return attachBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_002.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return ccBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_003.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return (HUSB238_ResponseCodes) pdBits.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_004.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return contractVBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_005.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return (HUSB238_5VCurrentContract) contractABits.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 35,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_047/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+                "source_code": "  return pdoBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 10,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_Arduino_Debounce_Library_September_16_2023/Conversation_006/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Create_Arduino_Debounce_Library_September_16_2023",
+                "source_code": "    bool read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 14,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_Arduino_Debounce_Library_September_16_2023/Conversation_007/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Create_Arduino_Debounce_Library_September_16_2023",
+                "source_code": "bool Adafruit_Debounce::read() {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_Arduino_Debounce_Library_September_16_2023/Conversation_014/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Create_Arduino_Debounce_Library_September_16_2023",
+                "source_code": "bool Adafruit_Debounce::read() {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 56,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_Arduino_Debounce_Library_September_16_2023/Conversation_023/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_Create_Arduino_Debounce_Library_September_16_2023",
+                "source_code": "bool Adafruit_Debounce::read() {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 13,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_013/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "    memcpy(ptr, data->data(), len);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 8,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_020/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "    memcpy(ptr, data->data(), len);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 20,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_022/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "    memcpy(ptr, email_data->data, len);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 25,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_036/Code_001.cpp",
+                "severity": "warning",
+                "text": "Condition 'data' is always true ",
+                "type": "knownConditionTrueFalse",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "if (data) { ^",
+                "scanner": "cppcheck"
+            },
+            {
+                "line": 27,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_036/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+                "type": "FF1004",
+                "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+                "source_code": "        memcpy(ptr, data, len);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 19,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Interview_QA_August_1_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_C_Interview_QA_August_1_2023",
+                "source_code": "    printf(\"Original array: \");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 1,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_IPv6_Query_Conditions_AI_ADDRCONFIG_September_17_2023/Conversation_010/Code_001.c",
+                "severity": "note",
+                "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+                "type": "FF1013",
+                "sharing": "Sharing_IPv6_Query_Conditions_AI_ADDRCONFIG_September_17_2023",
+                "source_code": "char buffer[1024];",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 9,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Mostrar_errores_OpenCL_June_14_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_Mostrar_errores_OpenCL_June_14_2023",
+                "source_code": "        printf(\"Error al obtener el estado de compilaci\u00f3n del programa: %d\\n\", errcode);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 4,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Mostrar_errores_OpenCL_June_14_2023/Conversation_002/Code_002.c",
+                "severity": "error",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_Mostrar_errores_OpenCL_June_14_2023",
+                "source_code": "    printf(\"Error: %s\\n",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 71,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_New_chat_September_1_2023/Conversation_005/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_New_chat_September_1_2023",
+                "source_code": "  return ccBit.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 12,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_New_chat_September_1_2023/Conversation_006/Code_001.cpp",
+                "severity": "note",
+                "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+                "type": "FF1029",
+                "sharing": "Sharing_New_chat_September_1_2023",
+                "source_code": "  return (HUSB238_ResponseCodes) pdBits.read();",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 26,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_OpenMP_and_ARM_SIMD_June_12_2023/Conversation_002/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_OpenMP_and_ARM_SIMD_June_12_2023",
+                "source_code": "    printf(\"Dot Product: %.2f\\n\", result);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 9,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ranged_Random_Float_in_C_June_26_2023/Conversation_021/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_Ranged_Random_Float_in_C_June_26_2023",
+                "source_code": "        printf(\"%d \", numbers[i]);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 23,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Serial_Port_Data_Handling_July_25_2023/Conversation_001/Code_002.cpp",
+                "severity": "note",
+                "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+                "type": "FF1040",
+                "sharing": "Sharing_Serial_Port_Data_Handling_July_25_2023",
+                "source_code": "    if (m_serialPort.open(QIODevice::ReadOnly)) {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 27,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Summary_User_request_and_model_responseTitle_Request_and_Response_June_7_2023/Conversation_009/Code_001.cpp",
+                "severity": "warning",
+                "text": "Obsolete function 'std::asctime' called. It is recommended to use 'strftime' instead. ",
+                "type": "asctimeCalled",
+                "sharing": "Sharing_Summary_User_request_and_model_responseTitle_Request_and_Response_June_7_2023",
+                "source_code": "output << \"[\" << std::asctime(std::localtime(&currentTime)) << \"] \" ^",
+                "scanner": "cppcheck"
+            },
+            {
+                "line": 9,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Summary_User_request_and_model_responseTitle_Request_and_Response_June_7_2023/Conversation_009/Code_001.cpp",
+                "severity": "note",
+                "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+                "type": "FF1040",
+                "sharing": "Sharing_Summary_User_request_and_model_responseTitle_Request_and_Response_June_7_2023",
+                "source_code": "            logFile.open(filename, std::ios::app);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 6,
+                "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Using_ioctl_in_macOS_October_10_2023/Conversation_003/Code_001.cpp",
+                "severity": "note",
+                "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1017",
+                "sharing": "Sharing_Using_ioctl_in_macOS_October_10_2023",
+                "source_code": "        fprintf(stderr, \"Error initializing Carbon Event Manager\\n\");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 7,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_004/Code_001.c",
+                "severity": "note",
+                "text": "input/recvfrom:Function accepts input from outside program (CWE-20).",
+                "type": "FF1070",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "recvfrom(server_socket, &receivedData, sizeof(uint32_t), 0, (struct sockaddr *)&client_addr, &client_addr_size);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 42,
+                "file": "20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_009/Code_001.c",
+                "severity": "warning",
+                "text": "Externally controlled data is used to index a fixed-size array, `buffer`. This could lead to an out-of-bounds read or write, triggering memory corruption.",
+                "type": "cpp.lang.security.memory.unvalidated-array-index.unvalidated-array-index",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "            buffer[strcspn(buffer, \"\\n\")] = '\\0'; // \uc904\ubc14\uafc8 \ubb38\uc790 \uc81c\uac70",
+                "scanner": "semgrep"
+            },
+            {
+                "line": 14,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_009/Code_001.c",
+                "severity": "note",
+                "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+                "type": "FF1013",
+                "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+                "source_code": "    char buffer[BUFFER_SIZE]; // \ub370\uc774\ud130\ub97c \uc800\uc7a5\ud560 \ubc84\ud37c",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 13,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_Extend_capabilities_of_needle_parameter_20191223T234721Z/Sharing_C_Regex_Support_August_3_2023/Conversation_001/Code_001.cpp",
+                "severity": "note",
+                "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+                "type": "FF1040",
+                "sharing": "Sharing_C_Regex_Support_August_3_2023",
+                "source_code": "    fileStream.open(filePath.c_str());",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 2,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_Improvments_regarding_regex_20230626T124833Z/Sharing_PCRE_Compile_and_Reuse_June_26_2023/Conversation_001/Code_003.cpp",
+                "severity": "note",
+                "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+                "type": "FF1022",
+                "sharing": "Sharing_PCRE_Compile_and_Reuse_June_26_2023",
+                "source_code": "    int subjectLength = strlen(subject);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 22,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z/Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023/Conversation_012/Code_001.c",
+                "severity": "note",
+                "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+                "type": "FF1022",
+                "sharing": "Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023",
+                "source_code": "    if (setsockopt(sockfd, SOL_SOCKET, SO_BINDTODEVICE, interface, strlen(interface)) < 0) {",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 38,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z/Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023/Conversation_016/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023",
+                "source_code": "    printf(\"Socket successfully bound to %s:%d with SO_REUSEADDR enabled\\n\", \"192.168.1.2\", 12345);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 22,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_OSC52_panic_20230612T080949Z/Sharing_\u0418\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435_\u0443\u0442\u0435\u0447\u0435\u043a_\u043f\u0430\u043c\u044f\u0442\u0438_September_17_2023/Conversation_002/Code_001.c",
+                "severity": "note",
+                "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+                "type": "FF1023",
+                "sharing": "Sharing_\u0418\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435_\u0443\u0442\u0435\u0447\u0435\u043a_\u043f\u0430\u043c\u044f\u0442\u0438_September_17_2023",
+                "source_code": "        int cnt = MultiByteToWideChar(CP_UTF8, 0, (LPCCH)d_out, d_count, NULL, 0);",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 36,
+                "file": "Code/20231012_235128_issue_sharingsjson/Source_\uc0c8\ub85c\uc6b4_\ucd9c\ubc1c_20230720T031024Z/Sharing_New_chat_July_20_2023/Conversation_001/Code_001.c",
+                "severity": "note",
+                "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+                "type": "FF1016",
+                "sharing": "Sharing_New_chat_July_20_2023",
+                "source_code": "            printf(\"Client (You): \");",
+                "scanner": "flawfinder"
+            }
+        ],
+        [
+            {
+                "line": 29,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u00e9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp",
+                "severity": "warning",
+                "text": "Local variable 'head' shadows outer variable ",
+                "type": "shadowVariable",
+                "sharing": "Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023",
+                "source_code": "shadowVariable",
+                "scanner": "cppcheck"
+            }
+        ],
+        [
+            {
+                "line": 13,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Arduino_Library_for_AD5693_October_10_2023/Conversation_009/Code_001.cpp",
+                "severity": "warning",
+                "text": "Found an exit path from function with non-void return type that has missing return statement ",
+                "type": "missingReturn",
+                "sharing": "Sharing_Arduino_Library_for_AD5693_October_10_2023",
+                "source_code": "Node<T>* head = headRef.get(); ^ cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp:21:28: note: Shadowed declaration std::unique_ptr<Node<T>> head; ^ cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp:29:14: note: Shadow variable Node<T>* head = headRef.get(); ^",
+                "scanner": "cppcheck"
+            }
+        ],
+        [
+            {
+                "line": 1,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Java_Access_Modifiers_July_19_2023/Conversation_002/Code_002.cpp",
+                "severity": "warning",
+                "text": "The class 'BankAccount' does not declare a constructor although it has private member variables which likely require initialization. ",
+                "type": "noConstructor",
+                "sharing": "Sharing_Java_Access_Modifiers_July_19_2023",
+                "source_code": "if (data) { ^",
+                "scanner": "cppcheck"
+            }
+        ],
+        [
+            {
+                "line": 19,
+                "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Stack\u5f02\u5e38\u5904\u7406\u65b9\u6cd5_September_11_2023/Conversation_005/Code_001.cpp",
+                "severity": "warning",
+                "text": "Class 'Stack' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). ",
+                "type": "noCopyConstructor",
+                "sharing": "Sharing_Stack\u5f02\u5e38\u5904\u7406\u65b9\u6cd5_September_11_2023",
+                "source_code": "this->arr = new T[stackSize]; ^",
+                "scanner": "cppcheck"
+            }
+        ],
+        [
+            {
+                "line": 28,
+                "file": "cpp_csharp/Code/20231012_235128_issue_sharingsjson/Source_gpu_support_coming_20230927T054640Z/Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023/Conversation_014/Code_001.cpp",
+                "severity": "warning",
+                "text": "Shifting 32-bit value by 256 bits is undefined behaviour ",
+                "type": "shiftTooManyBits",
+                "sharing": "Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023",
+                "source_code": "output << \"[\" << std::asctime(std::localtime(&currentTime)) << \"] \" ^",
+                "scanner": "cppcheck"
+            }
+        ],
+        [
+            {
+                "line": 20,
+                "file": "cpp_csharp/Code/20231012_235128_issue_sharingsjson/Source_gpu_support_coming_20230927T054640Z/Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023/Conversation_019/Code_001.cpp",
+                "severity": "warning",
+                "text": "Shifting 32-bit value by 1024 bits is undefined behaviour ",
+                "type": "shiftTooManyBits",
+                "sharing": "Sharing_Sleuth_Kit_UML_and_CUDA_September_26_2023",
+                "source_code": "parallelBinarySearch<<<blocksPerGrid, threadsPerBlock>>>(d_elements, target, segment_size, d_found); ^",
+                "scanner": "cppcheck"
+            }
+        ]
+    ]
+}
