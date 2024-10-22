@@ -1,3 +1,28 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_006\Code_001.c
 Scanners: ['semgrep', 'flawfinder']
+
+Detect info from scanners: 
+{
+    "line": 63,
+    "file": "20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+    "severity": "warning",
+    "text": "Externally controlled data is used to index a fixed-size array, `buffer`. This could lead to an out-of-bounds read or write, triggering memory corruption.",
+    "type": "cpp.lang.security.memory.unvalidated-array-index.unvalidated-array-index",
+    "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+    "source_code": "            buffer[strcspn(buffer, \"\\n\")] = '\\0'; // \uc904\ubc14\uafc8 \ubb38\uc790 \uc81c\uac70",
+    "scanner": "semgrep"
+}
+
+
+Detect info from scanners: 
+{
+    "line": 14,
+    "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+    "severity": "note",
+    "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+    "type": "FF1013",
+    "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+    "source_code": "    char buffer[BUFFER_SIZE]; // \ub370\uc774\ud130\ub97c \uc800\uc7a5\ud560 \ubc84\ud37c",
+    "scanner": "flawfinder"
+}

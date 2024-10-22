@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Testing_dnsmasq_September_12_2023\Conversation_002\Code_001.c
 Scanners: ['flawfinder']
+
+Detect info from scanners: 
+{
+    "line": 1,
+    "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Testing_dnsmasq_September_12_2023/Conversation_002/Code_001.c",
+    "severity": "note",
+    "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+    "type": "FF1017",
+    "sharing": "Sharing_Testing_dnsmasq_September_12_2023",
+    "source_code": "fprintf(stderr, \"Your log message here\\n\");",
+    "scanner": "flawfinder"
+}

@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Backend_Development_Languages_June_24_2023\Conversation_003\Code_001.cs
 Scanners: ['snyk']
+
+Detect info from scanners: 
+{
+    "line": 14,
+    "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Backend_Development_Languages_June_24_2023/Conversation_003/Code_001.cs",
+    "severity": "note",
+    "text": "This ASP.NET MVC action should use an anti-forgery validation attribute. Not using this attribute disables Cross Site Request Forgery (CSRF) protection and allows CSRF attacks.",
+    "type": "csharp/AntiforgeryTokenDisabled",
+    "sharing": "Sharing_Backend_Development_Languages_June_24_2023",
+    "source_code": "csharp/AntiforgeryTokenDisabled",
+    "scanner": "snyk"
+}

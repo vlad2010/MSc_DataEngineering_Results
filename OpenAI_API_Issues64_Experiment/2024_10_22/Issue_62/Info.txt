@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Stack异常处理方法_September_11_2023\Conversation_005\Code_001.cpp
 Scanners: ['cppcheck']
+
+Detect info from scanners: 
+{
+    "line": 19,
+    "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Stack\u5f02\u5e38\u5904\u7406\u65b9\u6cd5_September_11_2023/Conversation_005/Code_001.cpp",
+    "severity": "warning",
+    "text": "Class 'Stack' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). ",
+    "type": "noCopyConstructor",
+    "sharing": "Sharing_Stack\u5f02\u5e38\u5904\u7406\u65b9\u6cd5_September_11_2023",
+    "source_code": "this->arr = new T[stackSize]; ^",
+    "scanner": "cppcheck"
+}

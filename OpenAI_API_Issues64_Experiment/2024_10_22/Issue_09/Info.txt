@@ -1,3 +1,28 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_233628_pr_sharingsjson\Source_small_tidy_up_warnings_20230913T055832Z\Sharing_Fix_scanf_format_warnings_September_15_2023\Conversation_001\Code_001.c
 Scanners: ['semgrep', 'flawfinder']
+
+Detect info from scanners: 
+{
+    "line": 9,
+    "file": "20231012_233628_pr_sharingsjson/Source_small_tidy_up_warnings_20230913T055832Z/Sharing_Fix_scanf_format_warnings_September_15_2023/Conversation_001/Code_001.c",
+    "severity": "warning",
+    "text": "Avoid using 'scanf()'. This function, when used improperly, does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' instead for reading input.",
+    "type": "c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+    "sharing": "Sharing_Fix_scanf_format_warnings_September_15_2023",
+    "source_code": "    if (scanf(\"%\" SCNd64, p) == 1) {",
+    "scanner": "semgrep"
+}
+
+
+Detect info from scanners: 
+{
+    "line": 9,
+    "file": "Code/20231012_233628_pr_sharingsjson/Source_small_tidy_up_warnings_20230913T055832Z/Sharing_Fix_scanf_format_warnings_September_15_2023/Conversation_001/Code_001.c",
+    "severity": "error",
+    "text": "buffer/scanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+    "type": "FF1020",
+    "sharing": "Sharing_Fix_scanf_format_warnings_September_15_2023",
+    "source_code": "    if (scanf(\"%\" SCNd64, p) == 1) {",
+    "scanner": "flawfinder"
+}

@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Conversation_Grading_Feature_20230912T224429Z\Sharing_C_Tutoring_Session_September_1_2023\Conversation_012\Code_001.cpp
 Scanners: ['snyk']
+
+Detect info from scanners: 
+{
+    "line": 39,
+    "file": "Code/20231012_235128_issue_sharingsjson/Source_Conversation_Grading_Feature_20230912T224429Z/Sharing_C_Tutoring_Session_September_1_2023/Conversation_012/Code_001.cpp",
+    "severity": "warning",
+    "text": "Unsanitized input from a file flows into an addition operator (+), where it is used in integer arithmetic. This may result in an integer overflow vulnerability.",
+    "type": "cpp/IntegerOverflow",
+    "sharing": "Sharing_C_Tutoring_Session_September_1_2023",
+    "source_code": "cpp/IntegerOverflow",
+    "scanner": "snyk"
+}

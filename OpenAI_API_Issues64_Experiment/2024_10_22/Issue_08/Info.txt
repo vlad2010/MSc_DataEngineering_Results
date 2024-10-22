@@ -1,3 +1,41 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_232232_hn_sharingsjson\Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z\Sharing_C_version_of_DirBuster_July_19_2023\Conversation_001\Code_001.c
 Scanners: ['semgrep', 'flawfinder', 'snyk']
+
+Detect info from scanners: 
+{
+    "line": 36,
+    "file": "20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+    "severity": "warning",
+    "text": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files.",
+    "type": "cpp.lang.security.filesystem.path-manipulation.path-manipulation",
+    "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+    "source_code": "    FILE *wordlist = fopen(wordlist_path, \"r\");",
+    "scanner": "semgrep"
+}
+
+
+Detect info from scanners: 
+{
+    "line": 14,
+    "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+    "severity": "note",
+    "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+    "type": "FF1013",
+    "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+    "source_code": "    char request[BUFFER_SIZE];",
+    "scanner": "flawfinder"
+}
+
+
+Detect info from scanners: 
+{
+    "line": 36,
+    "file": "Code/20231012_232232_hn_sharingsjson/Source_GPT4_is_getting_worse_over_time_not_better_20230719T135618000Z/Sharing_C_version_of_DirBuster_July_19_2023/Conversation_001/Code_001.c",
+    "severity": "warning",
+    "text": "Unsanitized input from a command line argument flows into fopen, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitary files.",
+    "type": "cpp/PT",
+    "sharing": "Sharing_C_version_of_DirBuster_July_19_2023",
+    "source_code": "cpp/PT",
+    "scanner": "snyk"
+}

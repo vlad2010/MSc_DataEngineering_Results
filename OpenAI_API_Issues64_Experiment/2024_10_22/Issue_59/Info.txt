@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Ajout_méthode_tri_fusion_August_24_2023\Conversation_001\Code_001.cpp
 Scanners: ['cppcheck']
+
+Detect info from scanners: 
+{
+    "line": 29,
+    "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u00e9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp",
+    "severity": "warning",
+    "text": "Local variable 'head' shadows outer variable ",
+    "type": "shadowVariable",
+    "sharing": "Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023",
+    "source_code": "shadowVariable",
+    "scanner": "cppcheck"
+}

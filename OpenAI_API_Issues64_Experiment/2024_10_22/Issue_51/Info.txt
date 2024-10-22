@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_004\Code_001.c
 Scanners: ['flawfinder']
+
+Detect info from scanners: 
+{
+    "line": 7,
+    "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_004/Code_001.c",
+    "severity": "note",
+    "text": "input/recvfrom:Function accepts input from outside program (CWE-20).",
+    "type": "FF1070",
+    "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+    "source_code": "recvfrom(server_socket, &receivedData, sizeof(uint32_t), 0, (struct sockaddr *)&client_addr, &client_addr_size);",
+    "scanner": "flawfinder"
+}

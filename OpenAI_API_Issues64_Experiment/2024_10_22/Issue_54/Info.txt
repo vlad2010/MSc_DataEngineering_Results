@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_235128_issue_sharingsjson\Source_Improvments_regarding_regex_20230626T124833Z\Sharing_PCRE_Compile_and_Reuse_June_26_2023\Conversation_001\Code_003.cpp
 Scanners: ['flawfinder']
+
+Detect info from scanners: 
+{
+    "line": 2,
+    "file": "Code/20231012_235128_issue_sharingsjson/Source_Improvments_regarding_regex_20230626T124833Z/Sharing_PCRE_Compile_and_Reuse_June_26_2023/Conversation_001/Code_003.cpp",
+    "severity": "note",
+    "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+    "type": "FF1022",
+    "sharing": "Sharing_PCRE_Compile_and_Reuse_June_26_2023",
+    "source_code": "    int subjectLength = strlen(subject);",
+    "scanner": "flawfinder"
+}

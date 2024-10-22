@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Project_Assistance_Request_September_25_2023\Conversation_055\Code_001.cs
 Scanners: ['snyk']
+
+Detect info from scanners: 
+{
+    "line": 63,
+    "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Project_Assistance_Request_September_25_2023/Conversation_055/Code_001.cs",
+    "severity": "warning",
+    "text": "Unsanitized input from a command line argument flows into global::System.IO.File.Exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to obtain information about arbitrary files.",
+    "type": "csharp/PT",
+    "sharing": "Sharing_C_Project_Assistance_Request_September_25_2023",
+    "source_code": "csharp/PT",
+    "scanner": "snyk"
+}

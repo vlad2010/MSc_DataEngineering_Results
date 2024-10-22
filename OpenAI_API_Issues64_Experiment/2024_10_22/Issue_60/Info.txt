@@ -1,3 +1,15 @@
 Model name: gpt-4o
 File name: d:\GitHub\MS_DataEngineering\Dissertation\Utils\cpp_csharp\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Arduino_Library_for_AD5693_October_10_2023\Conversation_009\Code_001.cpp
 Scanners: ['cppcheck']
+
+Detect info from scanners: 
+{
+    "line": 13,
+    "file": "cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Arduino_Library_for_AD5693_October_10_2023/Conversation_009/Code_001.cpp",
+    "severity": "warning",
+    "text": "Found an exit path from function with non-void return type that has missing return statement ",
+    "type": "missingReturn",
+    "sharing": "Sharing_Arduino_Library_for_AD5693_October_10_2023",
+    "source_code": "Node<T>* head = headRef.get(); ^ cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp:21:28: note: Shadowed declaration std::unique_ptr<Node<T>> head; ^ cpp_csharp/Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Ajout_m\u0413\u00a9thode_tri_fusion_August_24_2023/Conversation_001/Code_001.cpp:29:14: note: Shadow variable Node<T>* head = headRef.get(); ^",
+    "scanner": "cppcheck"
+}
