@@ -1,0 +1,1 @@
+ChatGPTCertainly! You can create an enum for the given table with simplified names and Doxygen-style inline comments using the ///< format as follows:[CODE_BLOCK_0]I've simplified the names to make them more manageable, while the full text descriptions are preserved in the Doxygen comments. Is this what you were looking for?

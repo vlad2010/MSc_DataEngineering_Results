@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Create Arduino Debounce Library
+Date:September 16, 2023
+Url:https://chat.openai.com/share/adf80547-0118-4e29-837a-89a9ccbfd06c
+Model name:Advanced Data AnalysisNumber of prompts:27
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:26
+HTML content size:326932

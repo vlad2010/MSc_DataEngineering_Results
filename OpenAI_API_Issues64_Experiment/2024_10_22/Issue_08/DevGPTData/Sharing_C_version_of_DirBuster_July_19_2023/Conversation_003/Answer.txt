@@ -1,0 +1,1 @@
+ChatGPTTo make the program more aggressive, we can implement multi-threading to send multiple requests concurrently. This will significantly speed up the scanning process. Here's an updated version of the program using the POSIX threads library:[CODE_BLOCK_0]

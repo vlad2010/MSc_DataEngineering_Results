@@ -1,0 +1,557 @@
+Now round 10-22 ROUND 10
+30.09. 15:00
+
+FC Copenhagen
+
+Midtjylland
+-
+-
+01.10. 14:00
+
+Randers FC
+
+Silkeborg
+-
+-
+01.10. 14:00
+
+Vejle
+
+Nordsjaelland
+-
+-
+01.10. 16:00
+
+Hvidovre IF
+
+Brondby
+-
+-
+01.10. 18:00
+
+Viborg
+
+Aarhus
+-
+-
+02.10. 19:00
+
+Odense
+
+Lyngby
+-
+-
+ROUND 11
+06.10. 19:00
+
+Silkeborg
+
+Lyngby
+-
+-
+08.10. 14:00
+
+Nordsjaelland
+
+Odense
+-
+-
+08.10. 14:00
+
+Vejle
+
+Hvidovre IF
+-
+-
+08.10. 16:00
+
+Brondby
+
+Viborg
+-
+-
+08.10. 18:00
+
+Midtjylland
+
+Randers FC
+-
+-
+08.10. 20:00
+
+Aarhus
+
+FC Copenhagen
+-
+-
+ROUND 12
+20.10. 19:00
+
+Hvidovre IF
+
+Silkeborg
+-
+-
+21.10. 17:00
+
+FC Copenhagen
+
+Vejle
+-
+-
+22.10. 14:00
+
+Lyngby
+
+Aarhus
+-
+-
+22.10. 16:00
+
+Viborg
+
+Nordsjaelland
+-
+-
+22.10. 18:00
+
+Randers FC
+
+Brondby
+-
+-
+23.10. 19:00
+
+Odense
+
+Midtjylland
+-
+-
+ROUND 13
+27.10. 19:00
+
+Midtjylland
+
+Lyngby
+-
+-
+28.10. 17:00
+
+FC Copenhagen
+
+Hvidovre IF
+-
+-
+29.10. 14:00
+
+Vejle
+
+Viborg
+-
+-
+29.10. 16:00
+
+Silkeborg
+
+Odense
+-
+-
+29.10. 18:00
+
+Brondby
+
+Nordsjaelland
+-
+-
+30.10. 19:00
+
+Aarhus
+
+Randers FC
+-
+-
+ROUND 14
+03.11. 19:00
+
+Lyngby
+
+Odense
+-
+-
+05.11. 14:00
+
+Nordsjaelland
+
+Vejle
+-
+-
+05.11. 14:00
+
+Viborg
+
+Silkeborg
+-
+-
+05.11. 16:00
+
+Randers FC
+
+FC Copenhagen
+-
+-
+05.11. 18:00
+
+Hvidovre IF
+
+Midtjylland
+-
+-
+06.11. 19:00
+
+Brondby
+
+Aarhus
+-
+-
+ROUND 15
+10.11. 19:00
+
+Silkeborg
+
+Randers FC
+-
+-
+12.11. 12:00
+
+FC Copenhagen
+
+Brondby
+-
+-
+12.11. 14:00
+
+Vejle
+
+Lyngby
+-
+-
+12.11. 16:00
+
+Midtjylland
+
+Nordsjaelland
+-
+-
+12.11. 18:00
+
+Odense
+
+Hvidovre IF
+-
+-
+12.11. 20:00
+
+Aarhus
+
+Viborg
+-
+-
+ROUND 16
+24.11. 19:00
+
+Hvidovre IF
+
+Vejle
+-
+-
+25.11. 19:00
+
+Viborg
+
+FC Copenhagen
+-
+-
+26.11. 14:00
+
+Nordsjaelland
+
+Aarhus
+-
+-
+26.11. 16:00
+
+Randers FC
+
+Odense
+-
+-
+26.11. 18:00
+
+Lyngby
+
+Brondby
+-
+-
+27.11. 19:00
+
+Silkeborg
+
+Midtjylland
+-
+-
+ROUND 17
+01.12. 19:00
+
+Randers FC
+
+Vejle
+-
+-
+03.12. 14:00
+
+Lyngby
+
+Silkeborg
+-
+-
+03.12. 14:00
+
+Odense
+
+Nordsjaelland
+-
+-
+03.12. 16:00
+
+Brondby
+
+Hvidovre IF
+-
+-
+03.12. 18:00
+
+FC Copenhagen
+
+Aarhus
+-
+-
+04.12. 19:00
+
+Midtjylland
+
+Viborg
+-
+-
+ROUND 18
+18.02. 18:00
+
+Brondby
+
+Midtjylland
+-
+-
+18.02. 18:00
+
+Hvidovre IF
+
+Randers FC
+-
+-
+18.02. 18:00
+
+Nordsjaelland
+
+Lyngby
+-
+-
+18.02. 18:00
+
+Silkeborg
+
+FC Copenhagen
+-
+-
+18.02. 18:00
+
+Vejle
+
+Aarhus
+-
+-
+18.02. 18:00
+
+Viborg
+
+Odense
+-
+-
+ROUND 19
+25.02. 18:00
+
+Aarhus
+
+Midtjylland
+-
+-
+25.02. 18:00
+
+FC Copenhagen
+
+Nordsjaelland
+-
+-
+25.02. 18:00
+
+Hvidovre IF
+
+Viborg
+-
+-
+25.02. 18:00
+
+Odense
+
+Brondby
+-
+-
+25.02. 18:00
+
+Randers FC
+
+Lyngby
+-
+-
+25.02. 18:00
+
+Vejle
+
+Silkeborg
+-
+-
+ROUND 20
+03.03. 18:00
+
+Aarhus
+
+Odense
+-
+-
+03.03. 18:00
+
+Brondby
+
+Vejle
+-
+-
+03.03. 18:00
+
+Lyngby
+
+Hvidovre IF
+-
+-
+03.03. 18:00
+
+Midtjylland
+
+FC Copenhagen
+-
+-
+03.03. 18:00
+
+Nordsjaelland
+
+Silkeborg
+-
+-
+03.03. 18:00
+
+Viborg
+
+Randers FC
+-
+-
+ROUND 21
+10.03. 18:00
+
+FC Copenhagen
+
+Lyngby
+-
+-
+10.03. 18:00
+
+Hvidovre IF
+
+Nordsjaelland
+-
+-
+10.03. 18:00
+
+Randers FC
+
+Midtjylland
+-
+-
+10.03. 18:00
+
+Silkeborg
+
+Aarhus
+-
+-
+10.03. 18:00
+
+Vejle
+
+Odense
+-
+-
+10.03. 18:00
+
+Viborg
+
+Brondby
+-
+-
+ROUND 22
+17.03. 18:00
+
+Aarhus
+
+Hvidovre IF
+-
+-
+17.03. 18:00
+
+Brondby
+
+Silkeborg
+-
+-
+17.03. 18:00
+
+Lyngby
+
+Viborg
+-
+-
+17.03. 18:00
+
+Midtjylland
+
+Vejle
+-
+-
+17.03. 18:00
+
+Nordsjaelland
+
+Randers FC
+-
+-
+17.03. 18:00
+
+Odense
+
+FC Copenhagen

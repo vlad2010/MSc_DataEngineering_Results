@@ -1,0 +1,1 @@
+ChatGPTCertainly. Here's the updated begin() function with the #ifdef nested inside the else block:[CODE_BLOCK_0]This setup ensures that the code is cleaner and easier to read.

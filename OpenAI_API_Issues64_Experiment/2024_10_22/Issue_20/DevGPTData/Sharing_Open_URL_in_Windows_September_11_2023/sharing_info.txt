@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Open URL in Windows
+Date:September 11, 2023
+Url:https://chat.openai.com/share/af7046b4-832d-467f-a1d9-700546554c31
+Model name:GPT-4Number of prompts:4
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:68276

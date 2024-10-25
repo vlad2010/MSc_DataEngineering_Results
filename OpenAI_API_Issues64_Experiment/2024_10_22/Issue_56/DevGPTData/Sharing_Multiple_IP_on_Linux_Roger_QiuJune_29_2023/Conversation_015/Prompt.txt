@@ -1,0 +1,1 @@
+If there are 2 sockets bound to the same IP, does the incoming packet get duplicated to both sockets or only send to 1 randomly?

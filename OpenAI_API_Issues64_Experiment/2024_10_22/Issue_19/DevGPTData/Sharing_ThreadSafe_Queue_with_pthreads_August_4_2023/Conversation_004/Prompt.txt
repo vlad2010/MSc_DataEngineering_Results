@@ -1,0 +1,34 @@
+can we add some test cases for this file? This is my current test.c file (a part of it)
+
+// This nostr report note is failing to load. Let's see what's up.
+static void test_nostr_report() {
+	int read;
+	static const int alloc_size = 2 << 14;
+	char *json = malloc(alloc_size);
+	unsigned char *buf = malloc(alloc_size);
+	struct ndb_note *note;
+
+	assert(read_file("testdata/nostr-report.json", (unsigned char*)json,
+			 alloc_size, &read));
+
+	assert(ndb_note_from_json((const char*)json, read, &note, buf, alloc_size));
+	printf("len %d\n", ndb_note_content_length(note));
+	assert(ndb_note_content_length(note) == 5);
+
+	free(json);
+	free(buf);
+} 
+
+int main(int argc, const char *argv[]) {
+	test_basic_event();
+	test_empty_tags();
+	test_parse_json();
+	test_parse_contact_list();
+	test_strings_work_before_finalization();
+	test_tce();
+	test_tce_command_result();
+	test_tce_eose();
+	test_tce_command_result_empty_msg();
+	test_content_len();
+	test_nostr_report();
+}

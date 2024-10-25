@@ -1,0 +1,1 @@
+how do you bracket initialize an array in C?

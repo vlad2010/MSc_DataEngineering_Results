@@ -1,0 +1,1 @@
+ChatGPTSure thing. Here's the new overloaded begin(bool initialState) function:[CODE_BLOCK_0]This function first calls the original begin() to set up the pin mode and then overrides the button states with the provided initialState value.

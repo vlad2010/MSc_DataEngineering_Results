@@ -1,0 +1,1 @@
+ChatGPTSure, you can update the teams in the teams.csv file to include the desired teams. Here's the updated list of teams based on your request:[CODE_BLOCK_0]Please note that I've added the teams "Hvidovre IF" and "Lyngby Boldklub" to the list. You can remove any teams that you no longer want in the league.

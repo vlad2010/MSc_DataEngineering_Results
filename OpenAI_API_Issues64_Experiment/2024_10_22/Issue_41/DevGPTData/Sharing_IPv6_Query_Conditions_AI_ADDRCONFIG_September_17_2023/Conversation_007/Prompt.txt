@@ -1,0 +1,1 @@
+c socket 프로그래밍에서 available을 확인하는 내용이 어디야?

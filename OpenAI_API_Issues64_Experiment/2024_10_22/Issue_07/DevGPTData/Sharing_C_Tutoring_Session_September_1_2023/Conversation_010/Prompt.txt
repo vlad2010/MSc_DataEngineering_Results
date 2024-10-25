@@ -1,0 +1,1 @@
+This assignment has a focus on using malloc and pointers. Could you help include those details in meaningful ways?

@@ -1,0 +1,1 @@
+Looks good! Out of curiosity, can we modify it so that older heart rate samples aren't discarded?

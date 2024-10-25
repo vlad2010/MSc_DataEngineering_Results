@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Mostrar errores OpenCL.
+Date:June 14, 2023
+Url:https://chat.openai.com/share/caab4a5c-2e98-4b90-8d27-2e953bfdd4d5
+Model name:Default (GPT-3.5)Number of prompts:3
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:57490

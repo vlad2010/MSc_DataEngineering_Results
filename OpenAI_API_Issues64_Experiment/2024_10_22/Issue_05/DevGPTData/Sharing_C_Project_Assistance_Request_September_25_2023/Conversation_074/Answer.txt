@@ -1,0 +1,1 @@
+ChatGPTI apologize for the oversight. It seems there was an issue in the code. I've corrected it below:[CODE_BLOCK_0]This updated code should generate and save the match schedule with non-empty rounds as you wanted. Each team will play only 22 matches, and teams will not play against the same opponent more than once until they have played against every other team.

@@ -1,0 +1,1 @@
+begin() should verify _pin is >= 0, if polarity is low, it can set the mode to INPUT_PULLUP, otherwise, if there is INPUT_PULLDOWN support, it can set that mode. 

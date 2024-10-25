@@ -1,0 +1,27 @@
+read this code then i will give u 2nd code u have compare the timecomplexity and space complexity and other things and tell which is better 
+code - 1
+while (tt--) {
+    int n, m, k, H;
+    cin >> n >> m >> k >> H;
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+      int h;
+      cin >> h;
+      if (h != H && h % k == H % k && abs(h - H) <= k * (m - 1)) {
+        ans += 1;
+      }
+    }
+    cout << ans << '\n';
+  }while (tt--) {
+    int n, m, k, H;
+    cin >> n >> m >> k >> H;
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+      int h;
+      cin >> h;
+      if (h != H && h % k == H % k && abs(h - H) <= k * (m - 1)) {
+        ans += 1;
+      }
+    }
+    cout << ans << '\n';
+  }

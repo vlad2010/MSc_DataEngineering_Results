@@ -1,0 +1,3 @@
+ok now we are going to write the arduino test sketch to test every function of this library. 
+
+in the beginning of 'setup()', after `Serial.begin(115200)`, please have the line `while (!Serial) delay(10); // wait for serial port to start.` and then a Serial.println() that introduces the library test sketch. name the library object something other than 'sensor'

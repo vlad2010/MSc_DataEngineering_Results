@@ -1,0 +1,1 @@
+When I build the Qt project and run it, my changes to the source files are no longer reflected in the GUI. What's happening?

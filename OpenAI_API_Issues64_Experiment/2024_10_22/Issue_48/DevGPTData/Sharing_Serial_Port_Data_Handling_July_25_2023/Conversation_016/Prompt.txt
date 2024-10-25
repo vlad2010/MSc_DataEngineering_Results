@@ -1,0 +1,1 @@
+The markers that lay at the edge of the heart rate plot (first value, last value, highest value, and lowest value) are getting cut off. Can the axes be adjusted so that the markers are fully visible? I.e. if the highest bpm reading so far is `n`, the y-axis should display up to`n+1` (or however large it needs to be) so that the marker is fully visible.

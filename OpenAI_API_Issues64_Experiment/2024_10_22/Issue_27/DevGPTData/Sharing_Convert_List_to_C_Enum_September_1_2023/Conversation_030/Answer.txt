@@ -1,0 +1,1 @@
+ChatGPTYou're correct, those are the default arguments. Here's the simplified version of getCCStatus() without the default arguments:[CODE_BLOCK_0]This should make the code cleaner and more readable. Is this version okay?

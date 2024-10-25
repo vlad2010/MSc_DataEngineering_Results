@@ -1,0 +1,25 @@
+answer all this question with proper way and code 
+C INTERVIEW QUESTION
+
+1.Advantage of C language ?
+2.Structure ad Union Difference ?
+3.What is Function in C?
+4.Difference between Call by value and Call by Rederance ?
+5.What is Recursion ?
+6.Whta is Pointer ? Advantages and DisAdvamtages ?
+7.What is String ? All the methods name
+8.Array in C > Type ?
+9.Where we can used Multi dimension Array ?
+10.What is token in C language ? How many Token are there ?
+11.What is the Identifier ?
+12.Differance between Sourse code and Object Code ?
+13.What are header File and usages ?
+14.When to used void in a fucntion ?
+15.What is the usages of printf() ans scanf() ?
+16.Differanace between global variable and loal variable?
+17.Write a c programm bubble sort
+18.Storage class in c 
+19.What is typecasting ?
+20.What is the purpose of developing c  language ?
+21.How to create user defined Header file ?
+22.What is Self Referential Structure ?

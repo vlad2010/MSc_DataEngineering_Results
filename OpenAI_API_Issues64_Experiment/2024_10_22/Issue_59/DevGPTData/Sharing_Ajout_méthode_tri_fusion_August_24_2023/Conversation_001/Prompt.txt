@@ -1,0 +1,1 @@
+allist.hFilepeux tu jouter un méthode de tri par fusion a la class al_list écrit la méthode directement dans la classe, et écrit la nouvelle méthode dans le chat

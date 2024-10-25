@@ -1,0 +1,1 @@
+No I would like to use libcurl. Can you please double check that the code you provided is equivalent to this curl command?

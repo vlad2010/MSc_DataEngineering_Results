@@ -1,0 +1,1 @@
+next write an enum for the Operating Mode table, PD1 and PD0 can be concat into a two bit value

@@ -1,0 +1,11 @@
+public interface{
+    int k = 4;   // line 3
+}
+
+which three pieces of codes are equivalent to line 3
+
+1) final int k = 4; 
+2) public int k = 4;
+3) static int k = 4;
+4) abstract int k = 4;
+5) protected int k = 4;

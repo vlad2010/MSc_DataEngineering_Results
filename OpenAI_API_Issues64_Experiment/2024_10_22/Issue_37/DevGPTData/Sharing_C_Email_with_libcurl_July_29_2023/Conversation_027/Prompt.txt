@@ -1,0 +1,1 @@
+show me an example of how to use CURLOPT_READFUNCTION and CURLOPT_DATA

@@ -1,0 +1,1 @@
+please modify the code to avoid using a global variable for the email contents

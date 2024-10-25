@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/14388706/how-do-so-reuseaddr-and-so-reuseport-differ/14388707#14388707
+
+번역해줘 못읽겠어

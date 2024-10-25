@@ -1,0 +1,3 @@
+I have a bubble.h file with the following code
+
+void bubble(student *array[], int size);

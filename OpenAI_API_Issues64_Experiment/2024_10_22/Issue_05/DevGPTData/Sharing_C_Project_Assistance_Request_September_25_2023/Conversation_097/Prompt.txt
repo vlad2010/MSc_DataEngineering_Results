@@ -1,0 +1,80 @@
+Something is still wwroing 1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 4
+Simulate all matches? (y/n): y
+Matches in round-01.csv have been processed.
+Matches in round-02.csv have been processed.
+Matches in round-03.csv have been processed.
+Matches in round-04.csv have been processed.
+Matches in round-05.csv have been processed.
+Matches in round-06.csv have been processed.
+Matches in round-07.csv have been processed.
+Matches in round-08.csv have been processed.
+Matches in round-09.csv have been processed.
+Matches in round-10.csv have been processed.
+Matches in round-11.csv have been processed.
+Matches in round-12.csv have been processed.
+Matches in round-13.csv have been processed.
+Matches in round-14.csv have been processed.
+Matches in round-15.csv have been processed.
+Matches in round-16.csv have been processed.
+Matches in round-17.csv have been processed.
+Matches in round-18.csv have been processed.
+Matches in round-19.csv have been processed.
+Matches in round-20.csv have been processed.
+Matches in round-21.csv have been processed.
+Matches in round-22.csv have been processed.
+Matches in round-23.csv have been processed.
+Matches in round-24.csv have been processed.
+Matches in round-25.csv have been processed.
+Matches in round-26.csv have been processed.
+Matches in round-27.csv have been processed.
+Matches in round-28.csv have been processed.
+Matches in round-29.csv have been processed.
+Matches in round-30.csv have been processed.
+Matches in round-31.csv have been processed.
+Matches in round-32.csv have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) AGF Fodbold                  59    32    18    5     9     67    53    14    Wins: 7, Draws: 0, Losses: 0
+2     2 (EL) FC Nordsjælland              51    32    14    9     9     62    53    9     Wins: 1, Draws: 0, Losses: 0
+3     3 (EL) Brøndby IF                   49    32    15    4     13    65    60    5     Wins: 1, Draws: 0, Losses: 0
+4     4 (EC) Randers FC                   47    32    13    8     11    53    57    -4    Wins: 1, Draws: 0, Losses: 0
+5     5 (EC) Viborg FF                    43    32    12    7     13    60    54    6     Wins: 0, Draws: 0, Losses: 1
+6     6 (EC) Odense Boldklub              43    32    12    7     13    56    58    -2    Wins: 0, Draws: 0, Losses: 1
+7     7  Silkeborg IF                     41    32    10    11    11    59    59    0     Wins: 0, Draws: 0, Losses: 1
+8     8  F.C. København                   38    32    11    5     16    55    62    -7    Wins: 0, Draws: 0, Losses: 1
+9     9  Hvidovre IF                      38    32    10    8     14    52    59    -7    Wins: 0, Draws: 0, Losses: 1
+10    10  FC Midtjylland                  33    32    7     12    13    46    60    -14   Wins: 1, Draws: 0, Losses: 0
+11    11  Lyngby Boldklub                 0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+12    12  Vejle Boldklub                  0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: Now all matches have played 38 and the last two havent played anything.  This is my teams.csv Abbreviation,FullName,SpecialRanking,Position,GamesPlayed,GamesWon,GamesDrawn,GamesLost,GoalsFor,GoalsAgainst,Points,CurrentStreak
+FCK,F.C. København,Champion,1,0,0,0,0,0,0,0,W0
+BIF,Brøndby IF,Runner-up,2,0,0,0,0,0,0,0,W0
+FCM,FC Midtjylland,third-place,3,0,0,0,0,0,0,0,L0
+OB,Odense Boldklub,fith-place,4,0,0,0,0,0,0,0,W0
+SIF,Silkeborg IF,seventh-place,5,0,0,0,0,0,0,0,D0
+RFC,Randers FC,eith-place,6,0,0,0,0,0,0,0,L0
+VB,Viborg FF,ninth-place,7,0,0,0,0,0,0,0,W0
+AGF,AGF Fodbold,tenth-place,8,0,0,0,0,0,0,0,D0
+HIF,Hvidovre IF,eleventh-place,9,0,0,0,0,0,0,0,L0
+FCN,FC Nordsjælland,twelve-place,10,0,0,0,0,0,0,0,W0
+LBF,Lyngby Boldklub,thirteenth-place,11,0,0,0,0,0,0,0,W0
+VBK,Vejle Boldklub,fourteenth-place,12,0,0,0,0,0,0,0,W0
+ Only 22 games pr. team and the teams are only allowwed to play against eachother again after they have played against everyone else

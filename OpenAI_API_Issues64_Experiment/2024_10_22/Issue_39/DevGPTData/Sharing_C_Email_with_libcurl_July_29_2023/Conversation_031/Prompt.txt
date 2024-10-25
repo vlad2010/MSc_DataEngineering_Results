@@ -1,0 +1,1 @@
+So the only problem with the previous code was that the following line was missing?     curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);

@@ -1,0 +1,1 @@
+please add code to reset the DAC, then configure it for normal mode, enabled ref, and not gain2x. in the loop use writeUpdateDAC to write a sine wave as uint16_t values

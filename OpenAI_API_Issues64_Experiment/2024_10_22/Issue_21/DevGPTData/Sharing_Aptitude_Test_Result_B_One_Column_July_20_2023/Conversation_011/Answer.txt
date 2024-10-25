@@ -1,0 +1,11 @@
+ChatGPTLet's represent the work rates of A, B, and C as follows:Let the work rate of A be represented by "a" (amount of work done per hour).
+Let the work rate of B be represented by "b" (amount of work done per hour).
+Let the work rate of C be represented by "c" (amount of work done per hour).From the given information, we can set up the following equations:A can complete the work alone in 4 hours, so the work rate of A is: a = 1/4 (work done per hour).B and C working together complete the work in 3 hours, so their combined work rate is: (b + c) = 1/3 (work done per hour).A and C working together complete the work in 2 hours, so their combined work rate is: (a + c) = 1/2 (work done per hour).Now, we need to find the work rate of B when working alone, represented by "b."To find "b," we can rearrange equation 2:
+b = (1/3) - cNow, we have two equations:a = 1/4b = (1/3) - cWe need to find "c" to determine the work rate of B (b).From equation 3, we have: (a + c) = 1/2
+Substitute the value of "a" from equation 1:
+(1/4 + c) = 1/2Now, solve for "c":c = 1/2 - 1/4
+c = 1/4Now that we have the value of "c," we can find the work rate of B (b):b = (1/3) - (1/4)
+b = 4/12 - 3/12
+b = 1/12So, the work rate of B is 1/12 (work done per hour).To find the time it takes for B to complete the work alone, we can take the reciprocal of the work rate:Time taken by B to complete the work alone = 1 / b
+Time taken by B to complete the work alone = 1 / (1/12)
+Time taken by B to complete the work alone = 12 hoursTherefore, B can complete the work alone in 12 hours.

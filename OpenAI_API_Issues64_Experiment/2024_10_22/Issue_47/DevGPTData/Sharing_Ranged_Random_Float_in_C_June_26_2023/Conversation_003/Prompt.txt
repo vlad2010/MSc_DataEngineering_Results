@@ -1,0 +1,1 @@
+how do you declare a static method in a cpp header and then implement it in a source file? whats the syntax?

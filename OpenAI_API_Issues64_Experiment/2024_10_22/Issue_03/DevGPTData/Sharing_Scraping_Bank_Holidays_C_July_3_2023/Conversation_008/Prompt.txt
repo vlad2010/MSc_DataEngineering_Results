@@ -1,0 +1,1 @@
+Compilation fails with message identifier "xmlXPathRegisterNs" is undefined

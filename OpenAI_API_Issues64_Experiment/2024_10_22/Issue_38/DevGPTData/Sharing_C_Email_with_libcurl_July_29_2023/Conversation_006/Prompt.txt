@@ -1,0 +1,11 @@
+curl --ssl-reqd --url 'smtps://smtp.gmail.com:465' --user "watchtower.test2023@gmail.com:`cat /home/mhered/cpp_100daysofcode/code/Day099_03-07-23/Watchtower/secret`" --mail-from 'watchtower.test2023@gmail.com' --mail-rcpt 'spam.mhered@gmail.com' --upload-file - << EOF
+From: Watchtower Tester <watchtower.test2023@gmail.com>
+To: SPAM <spam.mhered@gmail.com>
+Subject: Sending an email with CURL
+
+This is a pretty amazing email test, huh?
+
+EOF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   169    0     0    0   169      0     85 --:--:--  0:00:01 --:--:--    85

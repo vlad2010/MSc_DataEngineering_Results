@@ -1,0 +1,1 @@
+I dont get the body of the message. How can I print the body of the message?

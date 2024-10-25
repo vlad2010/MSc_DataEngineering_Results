@@ -1,0 +1,1 @@
+I made the changes you suggested to `serialportreader.h` and `serialportreader.cpp` but I'm unsure where to add the remaining suggestions that follow. What should my `mainwindow.cpp` and `main.cpp` files look like?

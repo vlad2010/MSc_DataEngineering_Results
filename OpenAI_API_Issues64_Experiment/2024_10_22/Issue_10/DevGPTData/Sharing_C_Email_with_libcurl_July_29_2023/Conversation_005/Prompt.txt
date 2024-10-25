@@ -1,0 +1,1 @@
+Hello curl version and SSL libraries should be ok because it works in the command line

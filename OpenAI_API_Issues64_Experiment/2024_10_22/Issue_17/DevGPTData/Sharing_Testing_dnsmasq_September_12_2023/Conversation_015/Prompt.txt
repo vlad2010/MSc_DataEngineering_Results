@@ -1,0 +1,1 @@
+For the time being I won't worry about yesterday :)  So just `sudo ip link set enp113s0 up & ip a show enp113s0` results in it still being down, note the external RJ45 is not being used. Is that expected? I'm guessing if I add the address and the up it'll work?

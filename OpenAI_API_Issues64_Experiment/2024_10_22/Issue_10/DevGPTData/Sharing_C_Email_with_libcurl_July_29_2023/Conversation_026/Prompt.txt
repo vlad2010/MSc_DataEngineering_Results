@@ -1,0 +1,1 @@
+I get ‘int curl_debug_callback(CURL*, curl_infotype, char*, size_t, void*)’ redeclared as different kind of entity

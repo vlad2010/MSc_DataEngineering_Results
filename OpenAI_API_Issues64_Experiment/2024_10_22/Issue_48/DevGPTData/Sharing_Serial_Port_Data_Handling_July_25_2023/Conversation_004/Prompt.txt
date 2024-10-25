@@ -1,0 +1,1 @@
+Let's adjust the axes of the ECG plot. You can assume this datastream to be bounded between -600 and 600. Furthermore, once the end of the window has been reached, the data should start "scrolling", i.e. the oldest samples should be discarded to display the newest samples.

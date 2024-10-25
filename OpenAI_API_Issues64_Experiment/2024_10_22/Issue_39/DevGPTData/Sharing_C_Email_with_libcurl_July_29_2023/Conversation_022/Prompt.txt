@@ -1,0 +1,1 @@
+I suspect read_data_callback is not called properly because I added a custom debug printout and it does nto print and also I added a debug stop and it is not triggered. Can you please dobule check it is called properly?

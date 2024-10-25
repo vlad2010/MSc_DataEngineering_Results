@@ -1,0 +1,1 @@
+My machine has two ethernet ports one is connected to my LAN, enp119s0, the other, enp113s0 is not connected externally. Can I how would I use dhclient in this situation?

@@ -1,0 +1,1 @@
+turns out you have to write all 3 bytes even though the last 2 are just 0x00

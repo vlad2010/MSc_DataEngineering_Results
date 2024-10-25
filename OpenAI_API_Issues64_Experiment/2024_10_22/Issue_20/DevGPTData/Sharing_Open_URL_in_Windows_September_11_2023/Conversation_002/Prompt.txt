@@ -1,0 +1,22 @@
+void open_url( const std::string &url )
+{
+    static const std::string executable =
+#if defined(_WIN32)
+        "explorer";
+#elif defined(_WIN64)
+        "start";
+#elif defined(__linux__)
+        "xdg-open";
+#elif defined(__APPLE__)
+        "open";
+#elif defined(__ANDROID__)
+        "am start -a android.intent.action.VIEW -d";
+#endif
+    const std::string command = executable + " \"" + url + "\"";
+
+    const int exitcode = std::system( command.data() );
+    if( exitcode != 0 ) {
+        debugmsg( "Failed to open URL: %s\nAttemped command was: %s", url, command );
+    }
+}
+this failed, does std::system in windows use CMD or powershell?

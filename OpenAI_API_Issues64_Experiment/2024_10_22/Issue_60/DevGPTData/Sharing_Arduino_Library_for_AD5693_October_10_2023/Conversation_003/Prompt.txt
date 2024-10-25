@@ -1,0 +1,1 @@
+note all the setters/getters will use Adafruit_BusIO as the library interface for I2C. we will use this function to write data

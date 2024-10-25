@@ -1,0 +1,1 @@
+what does the == operator compare in SDL_Rect? every field?

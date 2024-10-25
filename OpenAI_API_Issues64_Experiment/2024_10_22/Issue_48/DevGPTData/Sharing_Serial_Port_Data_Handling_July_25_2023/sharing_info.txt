@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Serial Port Data Handling
+Date:July 25, 2023
+Url:https://chat.openai.com/share/ca196f5d-4867-4609-83e8-bf3a4e4dab14
+Model name:GPT-4Number of prompts:25
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:24
+HTML content size:399057

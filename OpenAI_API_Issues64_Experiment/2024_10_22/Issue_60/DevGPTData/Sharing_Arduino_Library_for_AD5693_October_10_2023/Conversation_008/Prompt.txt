@@ -1,0 +1,1 @@
+change it to a bool, return the result from write()

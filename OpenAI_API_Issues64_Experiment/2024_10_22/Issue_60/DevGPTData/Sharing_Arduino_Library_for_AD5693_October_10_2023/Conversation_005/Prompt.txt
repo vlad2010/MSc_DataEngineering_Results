@@ -1,0 +1,10 @@
+Table 12. Command Table1
+Command Byte Data High Byte Data Low Byte
+DB7 DB6 DB5 DB4 [DB3:DB0] [DB7:DB3] [DB2:DB0] [DB7:DB4] DB3 DB2 DB1 DB0 Operation
+0 0 0 0 XXXX XXXXX XXX XXXX X X X NOP: do nothing.
+0 0 0 1 XXXX DB15:DB11 DB10:DB8 DB7:DB4 DB32 DB22 DB12, 3 DB02, 3 Write input register.
+0 0 1 0 XXXX XXXXX XXX XXXX X X X X Update DAC register (LDAC
+software).
+0 0 1 1 XXXX DB15:DB11 DB10:DB8 DB7:DB4 DB32 DB22 DB12, 3 DB02, 3 Write DAC and input
+registers.
+0 1 0 0 XXXX DB15:DB11 000 0000 0 0 0 0 Write control register.

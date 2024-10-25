@@ -1,0 +1,51 @@
+Whenever I simulate all matches Simulate all matches? (y/n): y
+Matches in round-01.csv have been processed.
+Matches in round-02.csv have been processed.
+Matches in round-03.csv have been processed.
+Matches in round-04.csv have been processed.
+Matches in round-05.csv have been processed.
+Matches in round-06.csv have been processed.
+Matches in round-07.csv have been processed.
+Matches in round-08.csv have been processed.
+Matches in round-09.csv have been processed.
+Matches in round-10.csv have been processed.
+Matches in round-11.csv have been processed.
+Matches in round-12.csv have been processed.
+Matches in round-13.csv have been processed.
+Matches in round-14.csv have been processed.
+Matches in round-15.csv have been processed.
+Matches in round-16.csv have been processed.
+Matches in round-17.csv have been processed.
+Matches in round-18.csv have been processed.
+Matches in round-19.csv have been processed.
+Matches in round-20.csv have been processed.
+Matches in round-21.csv have been processed.
+Matches in round-22.csv have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) Lyngby Boldklub              35    21    10    5     6     49    38    11    Wins: 0, Draws: 0, Losses: 2
+2     2 (EL) Randers FC                   35    21    10    5     6     40    35    5     Wins: 2, Draws: 0, Losses: 0
+3     3 (EL) Hvidovre IF                  34    20    10    4     6     41    36    5     Wins: 0, Draws: 0, Losses: 1
+4     4 (EC) Odense Boldklub              32    21    9     5     7     40    39    1     Wins: 2, Draws: 0, Losses: 0
+5     5 (EC) Silkeborg IF                 31    21    10    1     10    40    38    2     Wins: 0, Draws: 0, Losses: 2
+6     6 (EC) FC Midtjylland               31    21    9     4     8     30    36    -6    Wins: 0, Draws: 0, Losses: 3
+7     7  AGF Fodbold                      26    20    7     5     8     36    35    1     Wins: 3, Draws: 0, Losses: 0
+8     8  F.C. København                   26    21    8     2     11    41    43    -2    Wins: 0, Draws: 0, Losses: 1
+9     9  Brøndby IF                       24    20    7     3     10    42    47    -5    Wins: 1, Draws: 0, Losses: 0
+10    10  Vejle Boldklub                  22    18    6     4     8     38    39    -1    Wins: 1, Draws: 0, Losses: 0
+11    11  FC Nordsjælland                 21    20    5     6     9     42    47    -5    Wins: 0, Draws: 0, Losses: 3
+12    12  Viborg FF                       14    12    4     2     6     25    31    -6    Wins: 0, Draws: 0, Losses: 1
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: It says viborg aka VB only played 12  which isnt right

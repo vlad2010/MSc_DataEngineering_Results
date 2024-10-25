@@ -1,0 +1,1 @@
+please convert this list of assignments into a C enum structure, where each line goes from `binarynumber = x.yA` into CURRENT_X_Y_A = binarynumber

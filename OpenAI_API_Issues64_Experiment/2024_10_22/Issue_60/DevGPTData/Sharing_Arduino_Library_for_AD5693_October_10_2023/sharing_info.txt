@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Arduino Library for AD5693
+Date:October 10, 2023
+Url:https://chat.openai.com/share/df7f803b-02d4-4e4f-bc1c-b717f77494dc
+Model name:PluginsNumber of prompts:30
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:29
+HTML content size:450306

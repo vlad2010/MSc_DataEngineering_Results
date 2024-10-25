@@ -1,0 +1,1 @@
+Can you show how to use OpenMP to parallelize this loop? It should work on any CPU.

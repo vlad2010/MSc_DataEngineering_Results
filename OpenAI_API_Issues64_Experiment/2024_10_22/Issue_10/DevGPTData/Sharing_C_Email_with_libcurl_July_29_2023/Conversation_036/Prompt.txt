@@ -1,0 +1,1 @@
+Send Email should build the full email content including header (Date: From: To: Subject:) and the body from the variables available 

@@ -1,0 +1,1 @@
+now we will write 'bool setMode(ad5693_operating_modes newmode, bool enable_ref, bool gain2x)' which will write bits D13 through D11 to the control register. the remaining bits can be set to zero. invert enable_ref before writing the bit

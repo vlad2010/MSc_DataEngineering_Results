@@ -1,0 +1,1 @@
+int myList[] = {4,3,7} is it correct ?

@@ -1,0 +1,1 @@
+binsrch_index.cppFileI attached the file again for your referecne in case you need it but do bot.  Detailed analysis and then discuss how parts can be CUDA'ed.  

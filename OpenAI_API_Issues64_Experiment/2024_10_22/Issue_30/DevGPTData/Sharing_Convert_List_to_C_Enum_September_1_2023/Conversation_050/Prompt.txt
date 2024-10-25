@@ -1,0 +1,1 @@
+yes. next function is called `void reset(void)` and it writes 0b10000 to the bottom 5 bits of GO_COMMAND

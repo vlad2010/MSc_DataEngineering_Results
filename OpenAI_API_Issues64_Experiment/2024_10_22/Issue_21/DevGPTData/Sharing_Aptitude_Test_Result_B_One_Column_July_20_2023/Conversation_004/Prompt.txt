@@ -1,0 +1,1 @@
+A relation is considered as 1)Column 2)one dimentional table 3)two dimentional table 4)third dimentional table

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Multiple IP on Linux
+Date:Roger Qiu•June 29, 2023
+Url:https://chat.openai.com/share/0b86282d-7073-41c5-ba97-40de9902ae01
+Model name:GPT-4Number of prompts:22
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:21
+HTML content size:322326

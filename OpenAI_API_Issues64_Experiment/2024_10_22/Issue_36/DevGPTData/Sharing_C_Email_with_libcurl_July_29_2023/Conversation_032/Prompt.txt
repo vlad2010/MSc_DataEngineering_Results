@@ -1,0 +1,1 @@
+I will paste how the code looks like now. I would like to encapsulate the code in main() in a function bool mail() that receives a list of str::string with recipients, the subject and the body of the email and sends the email 

@@ -1,0 +1,1 @@
+ChatGPTTo open a URL from the Windows Command Prompt (CMD) or PowerShell, you can use the following commands:In CMD:[CODE_BLOCK_0]In PowerShell:[CODE_BLOCK_1]Both commands will launch the default web browser and navigate to the specified URL.

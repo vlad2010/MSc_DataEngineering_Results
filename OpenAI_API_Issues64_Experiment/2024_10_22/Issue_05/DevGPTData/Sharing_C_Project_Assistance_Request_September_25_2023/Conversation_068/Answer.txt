@@ -1,0 +1,1 @@
+ChatGPTI've added the missing team to your teams.csv. Here's the updated file:[CODE_BLOCK_0]You can now run your program with this updated teams.csv, and it should work with an even number of teams.

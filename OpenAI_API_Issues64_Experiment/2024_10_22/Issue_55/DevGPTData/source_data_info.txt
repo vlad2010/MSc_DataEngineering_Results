@@ -1,0 +1,13 @@
+Source data info: 
+Title: Local Network Traversal - Multicast Discovery
+Date: 2021-05-26T08:41:36Z
+Url: https://github.com/MatrixAI/js-mdns/issues/1
+Type: issue
+ID: No id
+Author: joshuakarp
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

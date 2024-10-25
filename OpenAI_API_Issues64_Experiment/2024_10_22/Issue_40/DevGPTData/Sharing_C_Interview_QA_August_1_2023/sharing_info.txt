@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C Interview Q&A.
+Date:August 1, 2023
+Url:https://chat.openai.com/share/98a52adc-1f9a-4c88-86ef-98a252e6491d
+Model name:Default (GPT-3.5)Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:47201

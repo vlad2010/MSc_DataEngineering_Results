@@ -1,0 +1,1 @@
+ChatGPTCertainly! Using ///< allows for Doxygen comments to be inline with the code. Here's the updated header file:[CODE_BLOCK_0]This version includes Doxygen comments inline with the enum values and class methods, making it easier to generate detailed documentation.Would you like to proceed to the next part or make any modifications?

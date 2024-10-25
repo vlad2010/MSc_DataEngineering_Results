@@ -1,0 +1,1 @@
+how can I get more debug information to check that libcurl is indeed sending the body of the email?

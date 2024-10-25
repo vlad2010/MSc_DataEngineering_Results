@@ -1,0 +1,22 @@
+[{
+	"resource": "/home/mhered/cpp_100daysofcode/code/Day095_29-06-23/GithubCopilot2/main.cpp",
+	"owner": "makefile-tools",
+	"severity": 8,
+	"message": "‘xmlXPathRegisterNs’ was not declared in this scope",
+	"source": "gcc",
+	"startLineNumber": 55,
+	"startColumn": 21,
+	"endLineNumber": 55,
+	"endColumn": 21
+},{
+	"resource": "/home/mhered/cpp_100daysofcode/code/Day095_29-06-23/GithubCopilot2/main.cpp",
+	"owner": "C/C++: IntelliSense",
+	"code": "20",
+	"severity": 8,
+	"message": "identifier \"xmlXPathRegisterNs\" is undefined",
+	"source": "C/C++",
+	"startLineNumber": 55,
+	"startColumn": 21,
+	"endLineNumber": 55,
+	"endColumn": 39
+}]

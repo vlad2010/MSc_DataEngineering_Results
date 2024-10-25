@@ -1,0 +1,6 @@
+yes next write a function called "void writeDAC(uint16_t)" which will use 
+```
+bool Adafruit_I2CDevice::write(const uint8_t *buffer, size_t len, bool stop,
+                               const uint8_t *prefix_buffer,
+                               size_t prefix_len) 
+```

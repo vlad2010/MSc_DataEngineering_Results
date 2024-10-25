@@ -1,0 +1,1 @@
+lets write a function called `bool isVoltageDetected(HUSB238_PDOSelection pd)`

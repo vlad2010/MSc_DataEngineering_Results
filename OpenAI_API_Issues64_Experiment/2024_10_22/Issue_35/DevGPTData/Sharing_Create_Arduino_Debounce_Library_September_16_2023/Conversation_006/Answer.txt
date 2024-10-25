@@ -1,0 +1,1 @@
+ChatGPTCertainly. Here's the updated header with the polarity parameter added to the constructor:[CODE_BLOCK_0]Here, I've added polarity with a default value of LOW to the Adafruit_Debounce constructor.

@@ -1,0 +1,52 @@
+MatchResultProcessor.cs using System;
+using System.Collections.Generic;
+using System.IO;
+using Microsoft.VisualBasic.FileIO;
+
+public class MatchResultProcessor
+{
+    public static List<MatchResult> ReadMatchResults(string filePath)
+    {
+        List<MatchResult> matchResults = new List<MatchResult>();
+
+        using (TextFieldParser parser = new TextFieldParser(filePath))
+        {
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(",");
+
+            // Skip the header line
+            parser.ReadLine();
+
+            while (!parser.EndOfData)
+            {
+                string[] fields = parser.ReadFields();
+
+                if (fields.Length != 5)
+                {
+                    Console.WriteLine($"Skipping invalid match result: {string.Join(",", fields)}");
+                    continue;
+                }
+
+                string homeTeam = fields[0];
+                string awayTeam = fields[1];
+
+                // Split and parse the goal values
+                string[] goalValues = fields[2].Split('-');
+                if (goalValues.Length != 2 || !int.TryParse(goalValues[0], out int homeTeamGoals) || !int.TryParse(goalValues[1], out int awayTeamGoals))
+                {
+                    Console.WriteLine($"Skipping invalid goal values: {fields[2]}");
+                    continue;
+                }
+
+                string matchDate = fields[4];
+
+                // You can add stadium information if needed
+
+                MatchResult matchResult = new MatchResult(homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, matchDate, string.Empty);
+                matchResults.Add(matchResult);
+            }
+        }
+
+        return matchResults;
+    }
+}

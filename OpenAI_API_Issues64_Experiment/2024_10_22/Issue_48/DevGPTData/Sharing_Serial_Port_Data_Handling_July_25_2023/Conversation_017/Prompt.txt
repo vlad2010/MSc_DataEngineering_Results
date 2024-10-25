@@ -1,0 +1,1 @@
+Can you add a numeric label to the latest data point on the heart rate plot?

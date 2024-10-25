@@ -1,0 +1,8 @@
+Now as you know my round csv HomeTeam,AwayTeam,Score,MatchDate,Stadium
+FCK,BIF,2-1,2023-09-30,Stadium 1
+FCM,OB,1-0,2023-09-30,Stadium 2
+AaB,EfB,2-2,2023-09-30,Stadium 3
+SIF,RFC,1-1,2023-09-30,Stadium 4
+VB,AGF,0-2,2023-09-30,Stadium 5
+HOB,LBK,0-1,2023-09-30,Stadium 6
+ I have put goals inside so its fixed matches. Is there a way to just do random goals?

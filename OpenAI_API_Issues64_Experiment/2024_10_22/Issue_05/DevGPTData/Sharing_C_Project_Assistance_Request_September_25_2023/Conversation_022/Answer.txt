@@ -1,0 +1,1 @@
+ChatGPTCertainly, here's your updated FootballProcessor.cs with the changes implemented:[CODE_BLOCK_0]These changes ensure that the original Team objects are kept intact, and the statistics are reset only for the working copy of Team objects when processing a new round.

@@ -1,0 +1,7 @@
+Can you add score in here HomeTeam,AwayTeam,MatchDate,Stadium
+FCN,VB,3-0,Stadium 1
+SIF,BIF,3-4,Stadium 2
+OB,RFC,1-2,Stadium 3
+AGF,VBK,2-4,Stadium 4
+LBF,FCK,1-0,Stadium 5
+FCM,HIF,3-2,Stadium 6

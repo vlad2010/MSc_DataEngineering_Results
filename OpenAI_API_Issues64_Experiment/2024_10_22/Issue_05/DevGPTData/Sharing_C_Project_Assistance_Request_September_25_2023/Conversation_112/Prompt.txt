@@ -1,0 +1,6 @@
+Can you please make it to csv files like before... Like this HomeTeam,AwayTeam,MatchDate,Stadium
+FCM,OB,2025-09-24,Stadium 1
+RFC,AGF,2025-09-24,Stadium 2
+BIF,FCK,2025-09-24,Stadium 3
+SIF,VB,2025-09-24,Stadium 4
+LBF,VBK,2025-09-22,Stadium 5

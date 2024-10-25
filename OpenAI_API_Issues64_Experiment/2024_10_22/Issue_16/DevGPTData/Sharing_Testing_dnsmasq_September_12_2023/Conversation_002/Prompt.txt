@@ -1,0 +1,1 @@
+I want to test it without installing so I can add log statements and see how it works

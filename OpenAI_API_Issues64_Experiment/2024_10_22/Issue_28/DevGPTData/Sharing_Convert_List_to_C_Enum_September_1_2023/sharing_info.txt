@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Convert List to C Enum
+Date:September 1, 2023
+Url:https://chat.openai.com/share/d05c963d-b610-4eef-ad98-05656a33e118
+Model name:Default (GPT-3.5)Number of prompts:55
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:54
+HTML content size:673192

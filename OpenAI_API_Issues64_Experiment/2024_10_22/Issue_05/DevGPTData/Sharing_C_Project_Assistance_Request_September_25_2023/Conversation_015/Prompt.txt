@@ -1,0 +1,12 @@
+It didnt owrk Pos   Team                           Pts   GP    W     D     L     GF    GA    GD    Streak
+1 (CL) FC København            0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+2 (EL) Brøndby IF              0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+3 (EL) FC Midtjylland          0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+4 (EC) Aalborg BK              0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+5 (EC) Odense Boldklub         0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+6 (EC) Esbjerg fB              0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+7  Silkeborg IF                0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+8  Randers FC                  0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+9  Viborg FF                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+10  Aarhus GF                  0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+11  Hobro IK                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0 Its like there is something missing or stream is filling to much idk

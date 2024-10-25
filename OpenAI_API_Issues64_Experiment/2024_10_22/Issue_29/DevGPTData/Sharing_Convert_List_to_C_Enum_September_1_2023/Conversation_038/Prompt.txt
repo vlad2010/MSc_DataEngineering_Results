@@ -1,0 +1,1 @@
+yes however please re-add the comments on the RegisterBit and RegisterBits instantiation lines so i know what bits they are for

@@ -1,0 +1,7 @@
+hello, we are going to be writing an arduino C/C++ library in the same style as ladyada / limor fried / adafruit for the AD5693 chip. 
+this library will comprise a header file, called Adafruit_chipname.h and Adafruit_chipname.cpp 
+(where chipname is the part number of the chip) and a test example Arduino Sketch. 
+the class name will also be Adafruit_chipname. 
+
+here is the pdf datasheet that has explanations of the commands:
+https://www.analog.com/media/en/technical-documentation/data-sheets/AD5693R_5692R_5691R_5693.pdf

@@ -1,0 +1,1 @@
+btw what is the point of the third parameter in SDL_IntersectRect?

@@ -1,0 +1,5 @@
+Can you split the first line of the first version, `sudo ip link add veth1 type veth peer name veth2`, into two lines? Maybe it would be:
+```
+sudo ip link add veth1
+sudo ip link add veth2
+```

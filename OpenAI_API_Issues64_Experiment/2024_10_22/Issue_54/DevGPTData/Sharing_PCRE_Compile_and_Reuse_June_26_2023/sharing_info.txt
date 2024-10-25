@@ -1,0 +1,9 @@
+Sharing info: 
+Title:PCRE Compile and Reuse
+Date:June 26, 2023
+Url:https://chat.openai.com/share/63d127d9-3abd-418e-8580-e90825bff8bd
+Model name:Default (GPT-3.5)Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:35172

@@ -1,0 +1,1 @@
+we're going to write `bool getAttached()` this will use Adafruit_BusIO and Adafruit_I2CRegister

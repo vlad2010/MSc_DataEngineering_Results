@@ -1,0 +1,85 @@
+CsvReader.cs using System;
+using System.Collections.Generic;
+using System.IO;
+using Microsoft.VisualBasic.FileIO;
+
+public class FootballCsvReader
+{
+    public static List<Team> ReadCsv(string filePath)
+    {
+        List<Team> teams = new List<Team>();
+
+        using (TextFieldParser parser = new TextFieldParser(filePath))
+        {
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(",");
+
+            // Skip the header line
+            parser.ReadLine();
+
+            while (!parser.EndOfData)
+            {
+                string[] fields = parser.ReadFields();
+
+                if (fields.Length != 12)
+                {
+                    Console.WriteLine($"Skipping invalid line: {string.Join(",", fields)}");
+                    continue;
+                }
+
+                Team team = new Team();
+
+                try
+                {
+                    team.Abbreviation = fields[0];
+                    team.FullName = fields[1];
+                    team.SpecialRanking = string.IsNullOrEmpty(fields[2]) ? string.Empty : fields[2].Trim();
+                    team.Position = int.Parse(fields[3]);
+                    team.GamesPlayed = int.Parse(fields[4]);
+                    team.GamesWon = int.Parse(fields[5]);
+                    team.GamesDrawn = int.Parse(fields[6]);
+                    team.GamesLost = int.Parse(fields[7]);
+                    team.GoalsFor = int.Parse(fields[8]);
+                    team.GoalsAgainst = int.Parse(fields[9]);
+                    team.Points = int.Parse(fields[10]);
+
+                    // Parse the CurrentStreak property correctly
+                    string streak = fields[11];
+                    if (!string.IsNullOrEmpty(streak) && streak.Length >= 2)
+                    {
+                        char streakResult = streak[0];
+                        int streakValue = int.Parse(streak.Substring(1));
+
+                        if (streakResult == 'W')
+                        {
+                            team.CurrentStreak = new Team.Streak { Wins = streakValue };
+                        }
+                        else if (streakResult == 'D')
+                        {
+                            team.CurrentStreak = new Team.Streak { Draws = streakValue };
+                        }
+                        else if (streakResult == 'L')
+                        {
+                            team.CurrentStreak = new Team.Streak { Losses = streakValue };
+                        }
+                    }
+                    else
+                    {
+                        // Handle the case where the streak value is not in the expected format
+                        // You can set a default streak or handle it as needed.
+                        team.CurrentStreak = new Team.Streak(); // Default streak with 0 wins, draws, and losses
+                    }
+
+                    teams.Add(team);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error parsing line: {string.Join(",", fields)}");
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        return teams;
+    }
+}

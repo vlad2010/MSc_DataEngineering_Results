@@ -1,0 +1,883 @@
+This is what it gave back Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 4
+Simulate all matches? (y/n): y
+Match: FC København vs. Brøndby IF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=1, Draws=0, Losses=0
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=0, Draws=0, Losses=1
+Match: FC Midtjylland vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=1, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=1
+Match: Aalborg BK vs. Esbjerg fB
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=1, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=1, Losses=0
+Match: Silkeborg IF vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=1, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=1, Losses=0
+Match: Viborg FF vs. Aarhus GF
+Home Team Won: False
+Away Team Won: True
+Is Draw: False
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=1, Draws=0, Losses=0
+Matches in round-01.csv have been processed.
+Match: FC København vs. Aarhus GF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=2, Draws=0, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=0, Losses=1
+Match: Odense Boldklub vs. Esbjerg fB
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=1, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=2, Losses=0
+Match: Aalborg BK vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=2, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=2, Losses=0
+Matches in round-02.csv have been processed.
+Match: FC København vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=3, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=1
+Match: FC Midtjylland vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=2, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=2
+Match: Odense Boldklub vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=2, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=2, Losses=0
+Match: Esbjerg fB vs. Aarhus GF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=3, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=1, Losses=0
+Matches in round-03.csv have been processed.
+Match: Randers FC vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=3
+Match: Silkeborg IF vs. Hobro IK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=3, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Match: Aarhus GF vs. Aalborg BK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=2, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=3, Losses=0
+Matches in round-04.csv have been processed.
+Match: Randers FC vs. FC Midtjylland
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=2, Draws=0, Losses=0
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=4, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-05.csv have been processed.
+Match: Brøndby IF vs. Silkeborg IF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=1, Draws=0, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=3, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=1
+Match: Aarhus GF vs. FC Midtjylland
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=3, Losses=0
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=1, Losses=0
+Matches in round-06.csv have been processed.
+Match: Brøndby IF vs. FC København
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=2, Draws=0, Losses=0
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=4, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Aalborg BK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=5, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=4, Losses=0
+Match: Viborg FF vs. Hobro IK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=2, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Matches in round-07.csv have been processed.
+Match: Odense Boldklub vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=1, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=5, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Aarhus GF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=2, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=4, Losses=0
+Matches in round-08.csv have been processed.
+Match: Viborg FF vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=1, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=2
+Match: FC København vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=1, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=1, Losses=0
+Match: Aarhus GF vs. Esbjerg fB
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=5, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=6, Losses=0
+Matches in round-09.csv have been processed.
+Match: Aalborg BK vs. FC Midtjylland
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=1, Draws=0, Losses=0
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. FC København
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=1, Draws=0, Losses=0
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=0, Losses=1
+Match: Silkeborg IF vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-10.csv have been processed.
+Match: Aalborg BK vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=2, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Silkeborg IF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=2, Draws=0, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=3, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=2, Losses=0
+Match: FC Midtjylland vs. Aarhus GF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=1, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=6, Losses=0
+Matches in round-11.csv have been processed.
+Match: Odense Boldklub vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=1, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=1
+Match: FC København vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=1, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=2, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=1, Losses=0
+Matches in round-12.csv have been processed.
+Match: Hobro IK vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=1, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=1
+Match: FC København vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=2, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=3, Losses=0
+Match: Odense Boldklub vs. Aarhus GF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=1, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=7, Losses=0
+Matches in round-13.csv have been processed.
+Match: FC København vs. Aarhus GF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=3, Draws=0, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=0, Losses=1
+Match: Silkeborg IF vs. Odense Boldklub
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=2, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=2, Losses=0
+Matches in round-14.csv have been processed.
+Match: Aalborg BK vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: FC Midtjylland vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=1, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=2
+Match: Brøndby IF vs. Hobro IK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=0, Draws=1, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Match: Aarhus GF vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=1, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=3, Losses=0
+Matches in round-15.csv have been processed.
+Match: Randers FC vs. Brøndby IF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=0, Draws=0, Losses=1
+Match: Odense Boldklub vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=3, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Match: FC København vs. Hobro IK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=1, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=2, Losses=0
+Matches in round-16.csv have been processed.
+Match: Brøndby IF vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Brøndby IF
+Streak for Brøndby IF: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. FC København
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=2, Draws=0, Losses=0
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Hobro IK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=2, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=3, Losses=0
+Matches in round-17.csv have been processed.
+Match: FC København vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=1, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=3, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=1
+Match: Aalborg BK vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-18.csv have been processed.
+Match: FC København vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=2, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=4, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=2, Losses=0
+Matches in round-19.csv have been processed.
+Match: Esbjerg fB vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Aarhus GF vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=2, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=1, Losses=0
+Match: Esbjerg fB vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=1, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=4, Losses=0
+Matches in round-20.csv have been processed.
+Match: Odense Boldklub vs. Silkeborg IF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=1, Draws=0, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=0, Losses=1
+Match: Viborg FF vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=1, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=2, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=2, Losses=0
+Matches in round-21.csv have been processed.
+Match: FC København vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=3, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=1
+Match: Odense Boldklub vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=2, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=2
+Match: Silkeborg IF vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-22.csv have been processed.
+Match: FC København vs. Hobro IK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=4, Draws=0, Losses=0
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=0, Losses=3
+Match: Randers FC vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Esbjerg fB
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=1, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=3, Losses=0
+Matches in round-23.csv have been processed.
+Match: Viborg FF vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=1, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=2
+Match: FC København vs. Randers FC
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=1, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=2, Losses=0
+Match: Esbjerg fB vs. Aarhus GF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=4, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=3, Losses=0
+Matches in round-24.csv have been processed.
+Match: Aalborg BK vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=1, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=1
+Match: Esbjerg fB vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=1, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-25.csv have been processed.
+Match: FC København vs. Aarhus GF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=1, Draws=0, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=1
+Match: Silkeborg IF vs. FC Midtjylland
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=2, Losses=0
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=1, Losses=0
+Matches in round-26.csv have been processed.
+Match: FC København vs. Odense Boldklub
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=2, Draws=0, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=0, Losses=2
+Match: Hobro IK vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=1, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=1
+Match: Viborg FF vs. Esbjerg fB
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=2, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=1, Losses=0
+Match: Aarhus GF vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=1, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=3, Losses=0
+Matches in round-27.csv have been processed.
+Match: Odense Boldklub vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Silkeborg IF vs. Aalborg BK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=4, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=1, Losses=0
+Match: FC København vs. FC Midtjylland
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for FC København
+Streak for FC København: Wins=0, Draws=1, Losses=0
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=0, Draws=2, Losses=0
+Matches in round-28.csv have been processed.
+Match: FC Midtjylland vs. Randers FC
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC Midtjylland
+Streak for FC Midtjylland: Wins=1, Draws=0, Losses=0
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=0, Losses=2
+Match: Viborg FF vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=1, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Aalborg BK
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=1, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=2, Losses=0
+Matches in round-29.csv have been processed.
+Match: FC København vs. Aarhus GF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=1, Draws=0, Losses=0
+Updating streak for Aarhus GF
+Streak for Aarhus GF: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=2
+Match: Silkeborg IF vs. Viborg FF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=5, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=1, Losses=0
+Matches in round-30.csv have been processed.
+Match: FC København vs. Esbjerg fB
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=2, Draws=0, Losses=0
+Updating streak for Esbjerg fB
+Streak for Esbjerg fB: Wins=0, Draws=0, Losses=3
+Match: Randers FC vs. Odense Boldklub
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Randers FC
+Streak for Randers FC: Wins=0, Draws=1, Losses=0
+Updating streak for Odense Boldklub
+Streak for Odense Boldklub: Wins=0, Draws=1, Losses=0
+Match: Viborg FF vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=2, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=6, Losses=0
+Matches in round-31.csv have been processed.
+Match: FC København vs. Aalborg BK
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for FC København
+Streak for FC København: Wins=3, Draws=0, Losses=0
+Updating streak for Aalborg BK
+Streak for Aalborg BK: Wins=0, Draws=0, Losses=1
+Match: Randers FC vs. Viborg FF
+Home Team Won: True
+Away Team Won: False
+Is Draw: False
+Updating streak for Randers FC
+Streak for Randers FC: Wins=1, Draws=0, Losses=0
+Updating streak for Viborg FF
+Streak for Viborg FF: Wins=0, Draws=0, Losses=1
+Match: Hobro IK vs. Silkeborg IF
+Home Team Won: False
+Away Team Won: False
+Is Draw: True
+Updating streak for Hobro IK
+Streak for Hobro IK: Wins=0, Draws=2, Losses=0
+Updating streak for Silkeborg IF
+Streak for Silkeborg IF: Wins=0, Draws=7, Losses=0
+Matches in round-32.csv have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 49    22    15    4     3     34    22    12    Wins: 3, Draws: 0, Losses: 0
+2     2 (EL) Randers FC                   48    28    13    9     6     31    24    7     Wins: 1, Draws: 0, Losses: 0
+3     3 (EL) Esbjerg fB                   25    23    4     13    6     26    28    -2    Wins: 0, Draws: 0, Losses: 3
+4     4 (EC) Viborg FF                    25    27    4     13    10    30    37    -7    Wins: 0, Draws: 0, Losses: 1
+5     5 (EC) Odense Boldklub              21    17    5     6     6     22    23    -1    Wins: 0, Draws: 1, Losses: 0
+6     6 (EC) Aalborg BK                   19    17    4     7     6     25    27    -2    Wins: 0, Draws: 0, Losses: 1
+7     7  Hobro IK                         17    20    2     11    7     23    28    -5    Wins: 0, Draws: 2, Losses: 0
+8     8  FC Midtjylland                   16    10    4     4     2     10    8     2     Wins: 1, Draws: 0, Losses: 0
+9     9  Silkeborg IF                     15    18    0     15    3     23    26    -3    Wins: 0, Draws: 7, Losses: 0
+10    10  Aarhus GF                       14    16    1     11    4     17    19    -2    Wins: 0, Draws: 0, Losses: 1
+11    11  Brøndby IF                      10    6     3     1     2     9     8     1     Wins: 1, Draws: 0, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice:

@@ -1,0 +1,8 @@
+This is how my csv files are formatted HomeTeam,AwayTeam,Score,MatchDate,Stadium
+FCK,BIF,1-1,2025-08-01,Stadium 1
+FCM,AGF,2-3,2025-08-01,Stadium 2
+OB,VIB,0-0,2025-08-01,Stadium 3
+SIF,RFC,2-3,2025-08-01,Stadium 4
+VB,HIF,0-1,2025-08-01,Stadium 5
+FCN,LBF,2-2,2025-08-01,Stadium 6
+ Can you make the format like that? 

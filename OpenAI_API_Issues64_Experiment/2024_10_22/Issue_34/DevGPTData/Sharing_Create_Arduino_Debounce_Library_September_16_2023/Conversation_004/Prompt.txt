@@ -1,0 +1,1 @@
+add an 'update' function that can take in a bool bit, add new functions justPressed and justReleased as well as current

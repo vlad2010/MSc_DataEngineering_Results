@@ -1,0 +1,1 @@
+ChatGPTOf course! Here's a header comment that provides an overview of the file's purpose:[CODE_BLOCK_0]Make sure to replace [DATE] with the actual date of creation (or last significant update) and [EMAIL] with your (or your organization's) contact email. Adjust the other details as necessary to match your context and needs.

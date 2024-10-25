@@ -1,0 +1,1 @@
+If this is done, and you run a program to bind to `192.168.1.2` is it connected to network 1 or network 2?

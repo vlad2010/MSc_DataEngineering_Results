@@ -1,0 +1,1 @@
+c socket blocking 모드에 대해서 자세히 알려줘

@@ -1,0 +1,1 @@
+I added `log-facility=/home/wink/dnsmasq.log` to my dnsmasq.conf I'm using for testing and I got an warning "failed to change owner" how can I tell it not to change ownership of the file but instead to use the current login as owner, i.e. wink?

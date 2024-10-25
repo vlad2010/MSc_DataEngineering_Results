@@ -1,0 +1,1 @@
+update the header to include doxygen commenting on all enum values and the class def

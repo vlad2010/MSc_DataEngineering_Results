@@ -1,0 +1,1 @@
+good work! read() should return the digitalRead() value (adjusted for polarity) if pin >= 0, otherwise return the current state

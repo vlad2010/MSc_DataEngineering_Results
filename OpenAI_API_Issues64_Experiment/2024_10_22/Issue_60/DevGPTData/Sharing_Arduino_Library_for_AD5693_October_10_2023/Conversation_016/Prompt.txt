@@ -1,0 +1,1 @@
+please write bool reset(void) which writes 0x8000 to the control reg

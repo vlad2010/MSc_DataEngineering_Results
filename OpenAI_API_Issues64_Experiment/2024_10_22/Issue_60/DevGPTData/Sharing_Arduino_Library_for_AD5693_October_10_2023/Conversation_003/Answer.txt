@@ -1,0 +1,1 @@
+ChatGPTGreat, using Adafruit_BusIO for I2C communication will make the library more consistent with other Adafruit libraries and easier to use.Here's a rough outline of what the library files might look like:Adafruit_AD5693.h[CODE_BLOCK_0]Adafruit_AD5693.cpp[CODE_BLOCK_1]Example Arduino Sketch[CODE_BLOCK_2]

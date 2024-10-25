@@ -1,0 +1,1 @@
+I've got to change the port as resolved is using port 53, so I think I need to use something passing `--port 1234` when I execute it, but how do I tell dig to use port 1234?

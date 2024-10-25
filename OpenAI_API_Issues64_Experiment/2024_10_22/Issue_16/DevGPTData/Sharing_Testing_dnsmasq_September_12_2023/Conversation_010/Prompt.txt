@@ -1,0 +1,1 @@
+I'm now getting missing required capability NET_ADMIN (obviously I should be running as root with sudo, but I'd rather not if we can make this work), suggestion?

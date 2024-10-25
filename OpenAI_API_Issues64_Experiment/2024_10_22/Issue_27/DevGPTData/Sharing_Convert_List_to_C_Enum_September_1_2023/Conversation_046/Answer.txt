@@ -1,0 +1,1 @@
+ChatGPTGreat! I'm glad the function meets your requirements. If you have any more questions or would like to continue building out the library, feel free to let me know. We can tackle more registers, create setter functions, or work on anything else you have in mind! 😊

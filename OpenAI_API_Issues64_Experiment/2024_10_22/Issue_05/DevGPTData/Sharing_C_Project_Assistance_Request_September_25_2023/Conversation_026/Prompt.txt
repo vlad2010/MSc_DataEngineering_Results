@@ -1,0 +1,59 @@
+Enter your choice: 2
+Enter the round file name (e.g., round-1.csv): round-1.csv
+Matches have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) Aarhus GF                    3     1     1     0     0     2     0     2     Wins: 1, Draws: 0, Losses: 0
+2     2 (EL) FC København                 3     1     1     0     0     2     1     1     Wins: 0, Draws: 0, Losses: 0
+3     3 (EL) FC Midtjylland               3     1     1     0     0     1     0     1     Wins: 0, Draws: 0, Losses: 0
+4     4 (EC) Aalborg BK                   1     1     0     1     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+5     5 (EC) Esbjerg fB                   1     1     0     1     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+6     6 (EC) Silkeborg IF                 1     1     0     1     0     1     1     0     Wins: 0, Draws: 2, Losses: 0
+7     7  Randers FC                       1     1     0     1     0     1     1     0     Wins: 0, Draws: 2, Losses: 0
+8     8  Hobro IK                         0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+9     9  Brøndby IF                       0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+10    10  Odense Boldklub                 0     1     0     0     1     0     1     -1    Wins: 0, Draws: 0, Losses: 1
+11    11  Viborg FF                       0     1     0     0     1     0     2     -2    Wins: 0, Draws: 0, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 2
+Enter the round file name (e.g., round-1.csv): round-2.csv
+Matches have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 3     1     1     0     0     2     1     1     Wins: 0, Draws: 0, Losses: 0
+2     2 (EL) Odense Boldklub              1     1     0     1     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+3     3 (EL) Esbjerg fB                   1     1     0     1     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+4     4 (EC) Aalborg BK                   1     1     0     1     0     1     1     0     Wins: 0, Draws: 2, Losses: 0
+5     5 (EC) Randers FC                   1     1     0     1     0     1     1     0     Wins: 0, Draws: 2, Losses: 0
+6     6 (EC) Brøndby IF                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+7     7  FC Midtjylland                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+8     8  Silkeborg IF                     0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+9     9  Viborg FF                        0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+10    10  Hobro IK                        0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+11    11  Aarhus GF                       0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: It didnt wwork it still resets

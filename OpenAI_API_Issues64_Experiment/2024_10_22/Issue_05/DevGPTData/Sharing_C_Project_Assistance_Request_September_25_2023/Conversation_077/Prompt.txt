@@ -1,0 +1,21 @@
+Now with this Abbreviation,FullName,SpecialRanking,Position,GamesPlayed,GamesWon,GamesDrawn,GamesLost,GoalsFor,GoalsAgainst,Points,CurrentStreak
+FCK,F.C. København,Champion,1,0,0,0,0,0,0,0,W0
+BIF,Brøndby IF,Runner-up,2,0,0,0,0,0,0,0,W0
+FCM,FC Midtjylland,third-place,3,0,0,0,0,0,0,0,L0
+OB,Odense Boldklub,fith-place,4,0,0,0,0,0,0,0,W0
+SIF,Silkeborg IF,seventh-place,5,0,0,0,0,0,0,0,D0
+RFC,Randers FC,eith-place,6,0,0,0,0,0,0,0,L0
+VB,Viborg FF,ninth-place,7,0,0,0,0,0,0,0,W0
+AGF,AGF Fodbold,tenth-place,8,0,0,0,0,0,0,0,D0
+HIF,Hvidovre IF,eleventh-place,9,0,0,0,0,0,0,0,L0
+FCN,FC Nordsjælland,twelve-place,10,0,0,0,0,0,0,0,W0
+LBF,Lyngby Boldklub,thirteenth-place,11,0,0,0,0,0,0,0,W0
+VBK,Vejle Boldklub,fourteenth-place,12,0,0,0,0,0,0,0,W0
+And example is this HomeTeam,AwayTeam,Score,MatchDate,Stadium
+FCK,BIF,2-2,2023-09-30,Stadium 1
+FCM,OB,3-0,2023-09-30,Stadium 2
+AaB,EfB,3-1,2023-09-30,Stadium 3
+SIF,RFC,3-0,2023-09-30,Stadium 4
+VB,AGF,1-0,2023-09-30,Stadium 5
+HOB,LBK,2-2,2023-09-30,Stadium 6
+ Can you make me some csv files I need 32 csv rounds where a team is only allowed to play 22 matches and they are only allowed to play against the same team if they played against everyone else

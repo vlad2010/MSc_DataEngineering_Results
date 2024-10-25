@@ -1,0 +1,1 @@
+Primary key selected from 1) Candidate key 2)determinants 3)Composte key 4)foriegnlkey

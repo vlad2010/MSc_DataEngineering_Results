@@ -1,0 +1,1 @@
+how do you initialize objects in c++ without having to deal with pointers?

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Testing dnsmasq
+Date:September 12, 2023
+Url:https://chat.openai.com/share/8d579fc8-a3c0-4618-83e1-c5eb017ef0a3
+Model name:GPT-4Number of prompts:27
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:26
+HTML content size:389243

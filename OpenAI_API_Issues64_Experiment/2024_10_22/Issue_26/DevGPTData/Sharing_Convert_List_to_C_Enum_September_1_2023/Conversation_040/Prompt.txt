@@ -1,0 +1,1 @@
+ok now lets do the getters for PD_STATUS0

@@ -1,0 +1,20 @@
+Now it works eague Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) Viborg FF                    44    27    11    11    5     49    46    3     Wins: 0, Draws: 1, Losses: 0
+2     2 (EL) Esbjerg fB                   38    23    11    5     7     65    51    14    Wins: 1, Draws: 0, Losses: 0
+3     3 (EL) Randers FC                   36    28    10    6     12    59    57    2     Wins: 0, Draws: 1, Losses: 0
+4     4 (EC) Aalborg BK                   30    17    9     3     5     41    31    10    Wins: 2, Draws: 0, Losses: 0
+5     5 (EC) Silkeborg IF                 28    18    8     4     6     40    38    2     Wins: 0, Draws: 0, Losses: 3
+6     6 (EC) FC København                 27    22    8     3     11    39    48    -9    Wins: 0, Draws: 0, Losses: 2
+7     7  Odense Boldklub                  26    17    8     2     7     29    31    -2    Wins: 0, Draws: 0, Losses: 1
+8     8  Hobro IK                         25    20    6     7     7     36    36    0     Wins: 1, Draws: 0, Losses: 0
+9     9  Aarhus GF                        15    16    4     3     9     28    36    -8    Wins: 0, Draws: 0, Losses: 1
+10    10  FC Midtjylland                  9     10    2     3     5     15    23    -8    Wins: 1, Draws: 0, Losses: 0
+11    11  Brøndby IF                      4     6     1     1     4     8     12    -4    Wins: 0, Draws: 1, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: But the teams are only allowed to play 22 matches. I think I made something wrong with the csv files

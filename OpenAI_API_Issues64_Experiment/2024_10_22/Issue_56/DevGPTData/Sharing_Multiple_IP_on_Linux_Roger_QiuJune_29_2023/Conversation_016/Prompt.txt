@@ -1,0 +1,1 @@
+When using UDP, you can enable `reuseAddr` for 2 sockets to be bound to the same IP and port.

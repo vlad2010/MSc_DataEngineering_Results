@@ -1,0 +1,1 @@
+ChatGPTUnderstood. Here's the modification to the begin() function in Adafruit_Debounce.cpp:[CODE_BLOCK_0]With this change, if INPUT_PULLDOWN isn't defined, the mode will be set to INPUT.

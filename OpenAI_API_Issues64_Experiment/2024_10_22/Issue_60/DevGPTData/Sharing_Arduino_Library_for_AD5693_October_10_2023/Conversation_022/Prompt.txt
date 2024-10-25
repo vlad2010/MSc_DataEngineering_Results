@@ -1,0 +1,1 @@
+write the header file skeleton with the class definition and all function prototypes included

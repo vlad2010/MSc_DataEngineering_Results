@@ -1,0 +1,128 @@
+Sorry, the above recommendations didnt work. I modified the program as follows and it works now: #include <iostream>
+#include <fstream>
+#include <string>
+#include <cstring>
+#include <curl/curl.h>
+
+// Email content
+static const char *payload_text =
+    "From: Watchtower Tester <watchtower.test2023@gmail.com>\r\n"
+    "To: SPAM <spam.mhered@gmail.com>\r\n"
+    "Subject: Sending an email with LIBCURL\r\n"
+    "\r\n" /* empty line to divide headers from body, see RFC 5322 */
+    "Ain't this a cool email test?\r\n";
+
+struct upload_status
+{
+    size_t bytes_read;
+};
+
+/// Callback function to read data from the email body
+static size_t payload_source(char *ptr, size_t size, size_t nmemb, void *userp)
+{
+    struct upload_status *upload_ctx = (struct upload_status *)userp;
+    const char *data;
+    size_t room = size * nmemb;
+
+    if ((size == 0) || (nmemb == 0) || ((size * nmemb) < 1))
+    {
+        return 0;
+    }
+
+    data = &payload_text[upload_ctx->bytes_read];
+
+    if (data)
+    {
+        size_t len = strlen(data);
+        if (room < len)
+            len = room;
+        memcpy(ptr, data, len);
+        upload_ctx->bytes_read += len;
+
+        return len;
+    }
+
+    return 0;
+}
+
+int debug_callback(CURL *curl, curl_infotype type, char *data, size_t size, void *userptr)
+{
+    std::cout << "[CURL DEBUG]: ";
+    std::cout.write(data, size);
+    std::cout << std::endl;
+    return 0;
+}
+
+bool get_password(std::string &password)
+{
+    // Read the password from the file "secret"
+    std::ifstream secret_file("./secret");
+    if (secret_file.is_open())
+    {
+        getline(secret_file, password);
+        secret_file.close();
+        return true;
+    }
+    return false;
+}
+
+int main()
+{
+    struct upload_status upload_ctx = {0};
+
+    // Initialize libcurl
+    CURL *curl = curl_easy_init();
+    if (!curl)
+    {
+        std::cerr << "Error initializing libcurl." << std::endl;
+        return 1;
+    }
+    // curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+
+    // SMTP server details
+    const std::string url = "smtps://smtp.gmail.com:465";
+    const std::string username = "watchtower.test2023@gmail.com";
+    std::string password; // To store the password
+
+    if (!get_password(password))
+    {
+        std::cerr << "Error obtaining the password" << std::endl;
+        return 2;
+    }
+
+    const std::string mail_from = "watchtower.test2023@gmail.com";
+    const std::string mail_rcpt = "spam.mhered@gmail.com";
+
+    // Set up the email data for the CURLOPT_READFUNCTION callback
+    curl_easy_setopt(curl, CURLOPT_READFUNCTION, payload_source);
+    curl_easy_setopt(curl, CURLOPT_READDATA, &upload_ctx);
+    curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
+
+    // Set up libcurl options
+    curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+    curl_easy_setopt(curl, CURLOPT_USERNAME, username.c_str());
+    curl_easy_setopt(curl, CURLOPT_PASSWORD, password.c_str());
+    curl_easy_setopt(curl, CURLOPT_MAIL_FROM, mail_from.c_str());
+
+    struct curl_slist *recipients = NULL;
+    recipients = curl_slist_append(recipients, mail_rcpt.c_str());
+    curl_easy_setopt(curl, CURLOPT_MAIL_RCPT, recipients);
+
+    curl_easy_setopt(curl, CURLOPT_USE_SSL, CURLUSESSL_ALL);
+
+    // Send the email
+    CURLcode res = curl_easy_perform(curl);
+    if (res != CURLE_OK)
+    {
+        std::cerr << "Failed to send the email. Error: " << curl_easy_strerror(res) << std::endl;
+    }
+    else
+    {
+        std::cout << "Email sent successfully." << std::endl;
+    }
+
+    // Clean up
+    curl_slist_free_all(recipients);
+    curl_easy_cleanup(curl);
+    return 0;
+}

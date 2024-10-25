@@ -1,0 +1,9 @@
+Sharing info: 
+Title:OpenMP and ARM SIMD
+Date:June 12, 2023
+Url:https://chat.openai.com/share/fa2e8734-dde4-4d06-84c0-6fbbb45c2e1d
+Model name:GPT-4Number of prompts:6
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:5
+HTML content size:102668

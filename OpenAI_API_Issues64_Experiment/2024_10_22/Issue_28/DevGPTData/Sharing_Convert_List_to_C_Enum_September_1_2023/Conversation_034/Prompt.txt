@@ -1,0 +1,1 @@
+lovely. next lets write get5VcontractV, which returns a bool - the 2nd bit of PD0

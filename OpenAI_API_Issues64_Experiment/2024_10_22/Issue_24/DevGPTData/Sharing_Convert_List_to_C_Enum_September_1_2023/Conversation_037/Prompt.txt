@@ -1,0 +1,1 @@
+wait sorry, i am mistaken, all the functions we have written so far were for HUSB238_PD_STATUS1 not HUSB238_PD_STATUS0 - can you update the register in each function and give them back to me

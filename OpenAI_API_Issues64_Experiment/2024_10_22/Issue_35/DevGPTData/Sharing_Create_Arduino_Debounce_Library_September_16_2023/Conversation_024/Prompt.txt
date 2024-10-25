@@ -1,0 +1,1 @@
+for update(), make a new version that does not take an argument, and doesn't do anything if the pin is invalid. for update(bool) that should not digitalRead, just assign the value passed

@@ -1,0 +1,1 @@
+ChatGPTUnderstood. The initialization of the two button states should reflect the initial state of the pin after setting its mode. Here's the updated begin() function:[CODE_BLOCK_0]After setting the pin mode, the button states are initialized by reading the state of the pin and comparing it to the specified polarity.

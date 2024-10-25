@@ -1,0 +1,1 @@
+I think atomic operations might slow down the entire code.  But I like the kernel you wrote so go ahead and do the host side and whatever else you want to do.

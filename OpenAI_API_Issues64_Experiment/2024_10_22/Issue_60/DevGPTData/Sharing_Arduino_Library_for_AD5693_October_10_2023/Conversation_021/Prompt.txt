@@ -1,0 +1,1 @@
+now create the `bool begin(addr, Wire)` function 

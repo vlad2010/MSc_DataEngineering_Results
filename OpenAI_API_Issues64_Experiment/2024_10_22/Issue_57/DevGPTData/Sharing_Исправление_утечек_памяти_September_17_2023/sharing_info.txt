@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Исправление утечек памяти
+Date:September 17, 2023
+Url:https://chat.openai.com/share/ee1d116b-1354-466a-8220-822ceeff0928
+Model name:GPT-4Number of prompts:3
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:74213

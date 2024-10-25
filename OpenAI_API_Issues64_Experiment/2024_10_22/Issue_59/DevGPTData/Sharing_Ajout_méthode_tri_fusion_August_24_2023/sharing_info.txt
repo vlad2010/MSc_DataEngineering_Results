@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Ajout méthode tri fusion
+Date:August 24, 2023
+Url:https://chat.openai.com/share/ab72bbae-62e4-4a96-b9ee-fefb2fe752a4
+Model name:Advanced Data AnalysisNumber of prompts:5
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:4
+HTML content size:154534

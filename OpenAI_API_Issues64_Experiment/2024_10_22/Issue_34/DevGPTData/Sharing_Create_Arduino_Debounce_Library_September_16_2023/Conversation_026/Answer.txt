@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here's the Adafruit_Debounce.h file with Doxygen-friendly headers:[CODE_BLOCK_0]This header file provides the class and function declarations for the Adafruit_Debounce library, and it includes the Adafruit-style Doxygen-friendly headers at the top.

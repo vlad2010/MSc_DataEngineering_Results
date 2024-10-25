@@ -1,0 +1,9 @@
+Sharing info: 
+Title:UDP Client Number Communication
+Date:July 19, 2023
+Url:https://chat.openai.com/share/18990fa3-c8c6-4167-bb24-f37675760c6d
+Model name:Default (GPT-3.5)Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:54044

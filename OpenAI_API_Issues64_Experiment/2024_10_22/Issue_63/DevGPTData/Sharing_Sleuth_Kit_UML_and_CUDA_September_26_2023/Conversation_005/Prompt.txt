@@ -1,0 +1,1 @@
+check tsk/hashdb/binsrch_index.cpp and tell me if it's binary search, the name sure sounds like it and then see what you think about turning it into a cuda file.

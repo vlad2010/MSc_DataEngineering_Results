@@ -1,0 +1,1 @@
+I want to add a simple logging facility to a c++ program, Can you write a logging class?

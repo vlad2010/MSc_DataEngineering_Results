@@ -1,0 +1,1 @@
+ChatGPTAlright, let's start with the header skeleton for the Adafruit_Debounce library.[CODE_BLOCK_0]This is the basic structure of the Adafruit_Debounce class with initialization and function declarations.

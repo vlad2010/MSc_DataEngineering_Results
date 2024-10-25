@@ -1,0 +1,1 @@
+Can you rewrite this code in c++?

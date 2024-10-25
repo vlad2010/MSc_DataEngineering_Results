@@ -1,0 +1,1 @@
+My computer on which I'm doing the testing is getting ipv4 addresses from a DHCP server on the LAN at 192.168.1.109. AlsoI have another network using 192.168.2.x so I suspect I should use something other that those, like 192.168.3.x for the veth1 and veth2 or maybe these are totally isolated and it doesn't matter?

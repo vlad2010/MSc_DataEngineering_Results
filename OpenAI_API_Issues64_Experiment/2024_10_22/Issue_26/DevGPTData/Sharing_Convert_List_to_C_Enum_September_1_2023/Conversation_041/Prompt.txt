@@ -1,0 +1,1 @@
+bits [7:4] are called PD_SRC_VOLTAGE  and the function should return HUSB238_VoltageSetting

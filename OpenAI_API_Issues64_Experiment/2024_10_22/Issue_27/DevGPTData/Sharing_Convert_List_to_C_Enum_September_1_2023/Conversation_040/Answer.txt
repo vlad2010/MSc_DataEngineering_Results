@@ -1,0 +1,1 @@
+ChatGPTSure, let's proceed with creating the getter functions for the HUSB238_PD_STATUS0 register. Could you specify which bits or bit ranges you're interested in reading from this register, similar to how you did for HUSB238_PD_STATUS1? That way, I can create functions tailored to those specific bits.

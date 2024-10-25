@@ -1,0 +1,1 @@
+ChatGPTCertainly! The #define statements with the HUSB238_ prefix would look like this:[CODE_BLOCK_0]This should make it easier to distinguish these constants from others in your code. Is there anything else you'd like?

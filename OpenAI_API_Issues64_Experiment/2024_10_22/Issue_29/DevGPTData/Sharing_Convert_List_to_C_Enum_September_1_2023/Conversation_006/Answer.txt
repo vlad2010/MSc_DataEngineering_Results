@@ -1,0 +1,1 @@
+ChatGPTOf course! Could you please provide the table that you'd like to convert into #define statements?

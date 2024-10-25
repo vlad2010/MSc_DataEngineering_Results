@@ -1,0 +1,1 @@
+libxml2 is properly installed. still I get this mesage and also ‘xmlXPathRegisterNs’ was not declared in this scope

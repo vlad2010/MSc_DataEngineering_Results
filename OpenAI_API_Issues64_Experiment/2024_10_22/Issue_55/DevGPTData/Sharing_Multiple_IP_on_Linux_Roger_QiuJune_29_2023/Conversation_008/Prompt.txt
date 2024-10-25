@@ -1,0 +1,1 @@
+Can an interface have 2 IPv4 and 2 IPv6 addresses assigned?

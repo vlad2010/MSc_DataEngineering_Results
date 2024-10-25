@@ -1,0 +1,13 @@
+Source data info: 
+Title: No title
+Date: No creation date
+Url: https://github.com/theparticleman/theparticleman.github.io/blob/69c4c61a61729c0ec73108f3e59e98623612539d/posts/can-chatgpt-do-test-driven-development.md
+Type: code file
+ID: No id
+Author: theparticleman
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

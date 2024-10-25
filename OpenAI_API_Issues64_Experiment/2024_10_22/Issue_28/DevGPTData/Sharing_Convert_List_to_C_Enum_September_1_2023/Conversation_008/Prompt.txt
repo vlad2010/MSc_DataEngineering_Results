@@ -1,0 +1,1 @@
+thanks, predicate the #define names with HUSB238_

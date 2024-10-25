@@ -1,0 +1,1 @@
+So what if you don't use `SO_BINDTODEVICE` and you just bind to `192.168.1.2`, does Linux automatically make the socket bound to both interfaces?

@@ -1,0 +1,1 @@
+ChatGPTThank you for clarifying. Here's the corrected function with the proper bit assignments:[CODE_BLOCK_0]In this updated version, newmode (the operating mode) is set to bits D14 and D13, enable_ref is set to bit D12, and gain2x is set to bit D11. The rest of the bits are set to zero as specified.Would you like to add anything else or proceed to the next part?

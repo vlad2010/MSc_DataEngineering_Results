@@ -1,0 +1,5 @@
+I looked on the web getting a little more familiar with network spaces and found an example similar the the one above and their "step 2" was:
+```
+sudo ip link add veth1 netns ns1 type veth peer name veth2 netns ns2
+```
+Which version is correct?

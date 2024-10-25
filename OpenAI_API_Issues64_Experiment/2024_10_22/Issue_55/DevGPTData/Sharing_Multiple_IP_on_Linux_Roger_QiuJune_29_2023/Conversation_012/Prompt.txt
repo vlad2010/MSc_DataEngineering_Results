@@ -1,0 +1,1 @@
+On Linux, show me how in C, can you create a socket that is bound to 192.168.1.2 on both networks or on a specific interface?

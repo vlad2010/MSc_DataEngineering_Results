@@ -1,0 +1,1 @@
+Can you take this final version and encapsulate the relevant code in a function: std::vector<std::pair<std::string, std::string>> fetchBankHolidays(std::string country, int year). The function. The function should return a vector of pairs where in each pair the first element is the date in format "dd/mm" and the second the name of the holiday. 
