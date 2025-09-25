@@ -1,0 +1,1 @@
+There appears to be a few places this could improve. For example as you removed the need for a custom hashmap the include statement should also be removed. Could you go through your altered code to double check for other similar issue to make the code even simpler

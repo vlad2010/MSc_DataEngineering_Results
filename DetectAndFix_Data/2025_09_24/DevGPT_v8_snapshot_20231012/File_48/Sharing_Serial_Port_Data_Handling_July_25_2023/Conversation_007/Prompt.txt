@@ -1,0 +1,1 @@
+The ECG plot is serviceable, so let's focus our attention on the bpm plot. Right now it has no data being displayed at all. Can we work on fixing this?

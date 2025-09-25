@@ -1,0 +1,4 @@
+then i want based on the information above to write these functions
+
+1. int CHUNK_GetNext(CHUNK_Iterator *iterator,CHUNK* chunk){
+ that Retrieves the next CHUNK in the sequence as per the provided CHUNK_Iterator.

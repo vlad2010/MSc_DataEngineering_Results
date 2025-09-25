@@ -1,0 +1,9 @@
+Sharing info: 
+Title:New chat
+Date:September 1, 2023
+Url:https://chat.openai.com/share/a276ce74-f810-4dba-a324-e9fd1545085f
+Model name:PluginsNumber of prompts:7
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:231981

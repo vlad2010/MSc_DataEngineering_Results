@@ -1,0 +1,1 @@
+printf("Registro de compilación:\n%s\n", build_log);

@@ -1,0 +1,42 @@
+The choice between `constexpr` and `const` for defining constants depends on your specific use case and requirements. Here's a breakdown of the differences:
+
+1. **`constexpr int PulseInTimeoutMicros = 24000;`**:
+
+   - **Pros:**
+     - Evaluated at compile-time, allowing for potential optimizations.
+     - Can be used in contexts requiring constant expressions, such as array sizes or template arguments.
+
+   - **Cons:**
+     - Limited to integral types (integers, characters, enumerations).
+
+2. **`constexpr uint16_t PulseInTimeoutMicros = 24000;`**:
+
+   - **Pros:**
+     - Same benefits as `constexpr int`.
+     - Explicitly specifies the type as `uint16_t`.
+
+   - **Cons:**
+     - Requires C++11 or later.
+
+3. **`const uint16_t PulseInTimeoutMicros = 24000;`**:
+
+   - **Pros:**
+     - Simplicity and ease of use.
+     - Compatible with earlier C++ standards.
+
+   - **Cons:**
+     - Not guaranteed to be evaluated at compile-time (depends on the compiler and context).
+
+### Recommendations:
+
+- If your constant value is known at compile-time and you can use C++11 or later, prefer `constexpr` as it allows for better optimizations and is more versatile.
+
+- If you need to explicitly specify the type and still want compile-time evaluation, use `constexpr` with the desired type (`constexpr uint16_t`).
+
+- If your constant doesn't need to be evaluated at compile-time, or if you are constrained to earlier C++ standards, use `const`.
+
+Here's an example using `constexpr uint16_t`:
+
+[CODE_BLOCK_0]
+
+Choose the option that best fits your specific needs while considering readability, compatibility, and potential compiler optimizations.

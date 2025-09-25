@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Target Dummy Kill Simulation
+Date:October 16, 2023
+Url:https://chat.openai.com/share/61b56d0c-6599-4926-8e01-4a4d26a7eb27
+Model name:GPT-3.5Number of prompts:108
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:108
+HTML content size:1224869

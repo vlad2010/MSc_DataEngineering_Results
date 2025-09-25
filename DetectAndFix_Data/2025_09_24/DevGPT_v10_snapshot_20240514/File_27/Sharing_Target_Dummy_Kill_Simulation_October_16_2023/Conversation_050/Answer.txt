@@ -1,0 +1,5 @@
+My apologies for the oversight. You're correct. Here's the corrected code with the comparison `sharedCooldown <= epsilon`:
+
+[CODE_BLOCK_0]
+
+Now, the comparisons in `canDealDamage` and `updateActivity` use the epsilon as specified.

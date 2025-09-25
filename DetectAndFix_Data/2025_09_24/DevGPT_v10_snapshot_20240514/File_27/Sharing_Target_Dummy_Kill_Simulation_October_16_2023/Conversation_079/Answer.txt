@@ -1,0 +1,5 @@
+Certainly! You can define a variable for the shared cooldown near the top of the `main` function, making it easier to adjust. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+With this modification, you can easily adjust the shared cooldown value by changing the `sharedCooldownValue` variable near the top of the `main` function.

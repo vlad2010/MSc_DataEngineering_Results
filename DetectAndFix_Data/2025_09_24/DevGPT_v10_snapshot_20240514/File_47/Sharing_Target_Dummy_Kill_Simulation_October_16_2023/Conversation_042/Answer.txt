@@ -1,0 +1,5 @@
+I see your point. If you want to allow multiple abilities to be active at the same time without any further checks, you can simply remove the checks for the `isActive` state of abilities. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+In this version of the code, there's no check for the `isActive` state of abilities before casting them, and multiple abilities can be active at the same time.

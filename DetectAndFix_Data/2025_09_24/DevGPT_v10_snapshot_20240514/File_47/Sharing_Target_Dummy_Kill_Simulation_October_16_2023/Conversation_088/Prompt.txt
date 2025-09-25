@@ -1,0 +1,1 @@
+You seem to have removed the canCast function from the Ability class and the call to it when checking if an ability can be cast.

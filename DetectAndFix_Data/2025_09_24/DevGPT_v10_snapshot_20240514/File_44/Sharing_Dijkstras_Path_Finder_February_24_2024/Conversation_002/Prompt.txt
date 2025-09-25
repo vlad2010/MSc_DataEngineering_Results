@@ -1,0 +1,4 @@
+output is wrong ">> path create 701 202
+202 
+>> path create 699 695
+695 "

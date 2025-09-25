@@ -1,0 +1,1 @@
+Is processSuccessor in the earlier approach set under the same conditionsas didVisitLink in the provided code and for which cases would the two approaches behave differently ?

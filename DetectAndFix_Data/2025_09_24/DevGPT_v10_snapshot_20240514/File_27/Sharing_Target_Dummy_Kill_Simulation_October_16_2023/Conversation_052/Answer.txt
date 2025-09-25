@@ -1,0 +1,5 @@
+Certainly, here's the modified `updateActivity` function to use the specified comparison:
+
+[CODE_BLOCK_0]
+
+With this change, the `updateActivity` function checks if the elapsed time since the last cast is greater than or equal to the duration minus epsilon, as specified.

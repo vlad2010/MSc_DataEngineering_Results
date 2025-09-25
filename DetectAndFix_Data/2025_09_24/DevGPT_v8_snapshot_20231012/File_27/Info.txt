@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Convert_List_to_C_Enum_September_1_2023\Conversation_038\Code_002.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 4,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Convert_List_to_C_Enum_September_1_2023/Conversation_038/Code_002.cpp",
+        "severity": "note",
+        "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+        "type": "FF1029",
+        "sharing": "Sharing_Convert_List_to_C_Enum_September_1_2023",
+        "source_code": "  return ccBit.read();",
+        "scanner": "flawfinder"
+    }
+]

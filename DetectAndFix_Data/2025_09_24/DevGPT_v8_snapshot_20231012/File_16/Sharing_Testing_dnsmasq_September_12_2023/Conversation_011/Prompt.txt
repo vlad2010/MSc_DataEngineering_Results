@@ -1,0 +1,1 @@
+Now it wants NET_RAW I'm guessing `sudo setcap 'cap_net_raw' ./src/dnsmasq`?

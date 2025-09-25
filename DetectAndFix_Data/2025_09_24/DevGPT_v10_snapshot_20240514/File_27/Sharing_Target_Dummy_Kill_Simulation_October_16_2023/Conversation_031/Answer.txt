@@ -1,0 +1,5 @@
+You're absolutely right. To accurately check if the cooldown has passed, the comparison should be `std::abs(elapsedTime - lastDamageTime - cooldownSeconds) < epsilon`. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+With these epsilon-based comparisons, you can handle potential precision issues when working with floating-point numbers.

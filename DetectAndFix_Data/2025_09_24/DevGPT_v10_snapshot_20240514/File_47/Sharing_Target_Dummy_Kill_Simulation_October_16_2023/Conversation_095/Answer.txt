@@ -1,0 +1,5 @@
+Certainly! Here's the `Ability` class with member variable declarations and constructor parameters listed in the same order:
+
+[CODE_BLOCK_0]
+
+The order of variables in the class declaration matches the order of parameters in the constructor for clarity.

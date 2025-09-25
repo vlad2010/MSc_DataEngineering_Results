@@ -1,0 +1,1 @@
+I'm writing an article about you. I need you to show me the output of the command `gcc -Q --help=target`

@@ -1,0 +1,8 @@
+I need the csv files to be this format HomeTeam,AwayTeam,Score,MatchDate,Stadium
+FCK,BIF,0-4,2023-09-30,Stadium 1
+FCM,OB,0-3,2023-09-30,Stadium 2
+AaB,EfB,1-4,2023-09-30,Stadium 3
+SIF,RFC,0-0,2023-09-30,Stadium 4
+VB,AGF,1-0,2023-09-30,Stadium 5
+HOB,LBK,4-1,2023-09-30,Stadium 6
+ Without the score since the score is automatic  now

@@ -1,0 +1,5 @@
+Sure, let's translate the given C++ function into Python using the `imgui_bundle` you mentioned:
+
+[CODE_BLOCK_0]
+
+Remember to define `GetDoc` function, and make sure the constants like `ICON_FA_INFO`, `ICON_FA_EXCLAMATION_TRIANGLE`, and `ICON_FA_SAVE` are available in your Python environment, otherwise, you need to define them or replace them with their actual values.

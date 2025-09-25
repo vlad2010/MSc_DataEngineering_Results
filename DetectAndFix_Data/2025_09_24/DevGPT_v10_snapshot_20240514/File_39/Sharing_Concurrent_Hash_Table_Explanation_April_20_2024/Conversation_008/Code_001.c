@@ -1,0 +1,71 @@
+#include "hashdb.h"
+#include <pthread.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Define your hash table structure
+typedef struct {
+    pthread_t lock; // Reader-Writer lock for synchronization
+    hashRecord *head; // Head of the linked list
+} ConcurrentHashMap;
+
+// Global hash table instance
+ConcurrentHashMap hash_table;
+
+// Jenkins Function
+uint32_t jenkins_one_at_a_time_hash(const uint8_t* key, size_t length) {
+    size_t i = 0;
+    uint32_t hash = 0;
+    while (i != length) {
+        hash += key[i++];
+        hash += hash << 10;
+        hash ^= hash >> 6;
+    }
+    hash += hash << 3;
+    hash ^= hash >> 11;
+    hash += hash << 15;
+    return hash;
+}
+
+// Initialize the hash table
+void init_hash_table() {
+    hash_table.head = NULL;
+    pthread_create(&hash_table.lock, NULL, start_routine, arg);
+}
+
+// Creating insert function where we insert or update the data for the given name and salary value.
+void insert(const char *name, int salary) {
+    // Compute the hash value
+    uint32_t hash = jenkins_one_at_a_time_hash((const uint8_t *)name, strlen(name));
+    // Lock the hash table
+    pthread_mutex_lock(&hash_table.lock);
+    // Search for the record
+    hashRecord *current = hash_table.head;
+    hashRecord *prev = NULL;
+    while (current != NULL) {
+        if (current->hash == hash && strcmp(current->name, name) == 0) {
+            // Update the salary
+            current->salary = salary;
+            // Unlock the hash table
+            pthread_mutex_unlock(&hash_table.lock);
+            return;
+        }
+        prev = current;
+        current = current->next;
+    }
+    // Create a new record
+    hashRecord *new_record = (hashRecord *)malloc(sizeof(hashRecord));
+    new_record->hash = hash;
+    strncpy(new_record->name, name, 50);
+    new_record->name[49] = '\0'; // Ensure null-terminated string
+    new_record->salary = salary;
+    new_record->next = NULL;
+    // Insert the new record
+    if (prev == NULL) {
+        hash_table.head = new_record;
+    } else {
+        prev->next = new_record;
+    }
+    // Unlock the hash table
+    pthread_mutex_unlock(&hash_table.lock);
+}

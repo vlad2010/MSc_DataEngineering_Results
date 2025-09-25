@@ -1,0 +1,31 @@
+If you need to query the first N elements in sorted order in constant time, you would typically need a data structure that maintains the order as elements are inserted or removed. Achieving true constant time for arbitrary insertions, deletions, and queries is challenging, but you can get close with some trade-offs. Here are a couple of data structures that provide fast querying of the smallest N elements:
+
+### 1. **Heap (Priority Queue):**
+   - **Insertion (Amortized):** O(1)
+   - **Deletion (Amortized):** O(log N)
+   - **Query (Constant):** O(1)
+
+   By using a min-heap (or max-heap depending on the ordering), you can efficiently query the smallest N elements in constant time. Insertion and deletion times are typically logarithmic but amortized constant.
+
+### 2. **Self-Balancing Binary Search Tree (e.g., AVL Tree, Red-Black Tree):**
+   - **Insertion:** O(log N)
+   - **Deletion:** O(log N)
+   - **Query (Constant):** O(1)
+
+   A self-balancing binary search tree can maintain the order of elements, allowing constant-time queries for the smallest N elements. However, insertions and deletions are typically logarithmic.
+
+### 3. **Skip List:**
+   - **Insertion:** O(log N)
+   - **Deletion:** O(log N)
+   - **Query (Average Constant):** O(log N)
+
+   Skip lists provide logarithmic time for insertions, deletions, and average-case constant time for queries. The constant time for queries is achieved by skipping elements at different levels.
+
+### 4. **Bounded Priority Queue:**
+   - **Insertion:** O(log N)
+   - **Deletion:** O(log N)
+   - **Query (Constant):** O(1)
+
+   If the size of N is known in advance, you can use a priority queue with a fixed size. Insertions and deletions will take logarithmic time, but queries for the smallest N elements can be constant time.
+
+It's important to note that achieving true constant time for all operations is often not practical in a general setting. These data structures aim to minimize the time complexity and provide efficient performance for specific operations. The choice of the best data structure depends on the specific requirements and characteristics of your use case.

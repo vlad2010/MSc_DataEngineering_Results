@@ -1,0 +1,1 @@
+   shmdt(shared_memory);

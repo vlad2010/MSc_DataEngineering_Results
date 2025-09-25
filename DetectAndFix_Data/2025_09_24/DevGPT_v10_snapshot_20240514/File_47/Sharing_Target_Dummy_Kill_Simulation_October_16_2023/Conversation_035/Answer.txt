@@ -1,0 +1,5 @@
+My apologies for the oversight. You're absolutely correct. Here's the corrected code with `canDealDamage` using `lastDamageTime`:
+
+[CODE_BLOCK_0]
+
+Now, `canDealDamage` accurately uses `lastDamageTime` to check for cooldown.

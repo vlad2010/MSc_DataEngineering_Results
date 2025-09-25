@@ -1,0 +1,5 @@
+Sure, here's the updated code with the `canDealDamage` check moved after the `canCast` check:
+
+[CODE_BLOCK_0]
+
+Now, the `canDealDamage` check occurs after the `canCast` check as you requested.

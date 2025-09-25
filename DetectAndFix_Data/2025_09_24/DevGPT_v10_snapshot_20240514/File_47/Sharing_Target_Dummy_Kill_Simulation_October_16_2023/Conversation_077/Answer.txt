@@ -1,0 +1,5 @@
+Sure, you can print the ability name, the current tick, the time, and the dummy's health each time it takes damage. To achieve this, you'll need to store the ability's name or identifier within the `Ability` class. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+This modification will print the ability name, current tick, time, and dummy's health each time it takes damage from any ability.

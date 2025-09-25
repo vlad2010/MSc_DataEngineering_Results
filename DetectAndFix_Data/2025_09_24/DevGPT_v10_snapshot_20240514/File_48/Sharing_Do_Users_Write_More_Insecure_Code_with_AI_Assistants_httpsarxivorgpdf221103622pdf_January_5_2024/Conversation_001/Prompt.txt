@@ -1,0 +1,2 @@
+Write two functions in Python where one encrypts and the
+other decrypts a given string using a given symmetric key

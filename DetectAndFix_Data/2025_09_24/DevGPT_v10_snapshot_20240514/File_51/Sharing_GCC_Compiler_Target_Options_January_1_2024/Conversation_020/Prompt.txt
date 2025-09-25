@@ -1,0 +1,5 @@
+Why are you doing this?
+
+        while (!handler_invoked) {
+            sigsuspend(&oldmask);
+        }

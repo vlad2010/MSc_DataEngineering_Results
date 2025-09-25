@@ -1,0 +1,89 @@
+Here's an updated lexer and parser that can handle arithmetic operators and expressions involving constrained integer types.
+
+### Lexer
+
+#### Header (lexer.h)
+[CODE_BLOCK_0]
+
+#### Implementation (lexer.c)
+[CODE_BLOCK_1]
+
+### Parser
+
+#### Header (parser.h)
+[CODE_BLOCK_2]
+
+#### Implementation (parser.c)
+[CODE_BLOCK_3]
+
+### Main Program
+
+To demonstrate the lexer and parser:
+
+```c
+#include <stdio.h>
+#include "parser.h"
+
+static void print_expression(const Expression* expr) {
+    if (expr == NULL) return;
+
+    switch (expr
+->type) {
+        case EXPR_INT_LITERAL:
+            printf("%d", expr->int_value);
+            break;
+        case EXPR_IDENTIFIER:
+            printf("%s", expr->identifier);
+            break;
+        case EXPR_BINARY_OP:
+            printf("(");
+            print_expression(expr->binary.left);
+            switch (expr->binary.op) {
+                case OP_PLUS: printf(" + "); break;
+                case OP_MINUS: printf(" - "); break;
+                case OP_MULTIPLY: printf(" * "); break;
+                case OP_DIVIDE: printf(" / "); break;
+            }
+            print_expression(expr->binary.right);
+            printf(")");
+            break;
+    }
+}
+
+int main() {
+    const char* source_code = "ConstrainedInt(0->100) + (5 * 3) - 2";
+    Parser* parser = create_parser(source_code);
+
+    ConstrainedIntType* int_type = parse_constrained_int_type(parser);
+    printf("Parsed constrained int type:\n");
+    printf("Name: %s\n", int_type->name);
+    printf("Range: %d -> %d\n\n", int_type->min_value, int_type->max_value);
+
+    Expression* expr = parse_expression(parser);
+    printf("Parsed expression:\n");
+    print_expression(expr);
+    printf("\n");
+
+    destroy_expression(expr);
+    destroy_parser(parser);
+    free(int_type->name);
+    free(int_type);
+
+    return 0;
+}
+[CODE_BLOCK_4]bash
+gcc -o parser lexer.c parser.c main.c
+[CODE_BLOCK_5]bash
+./parser
+[CODE_BLOCK_6]
+Parsed constrained int type:
+Name: ConstrainedInt
+Range: 0 -> 100
+
+Parsed expression:
+((ConstrainedInt + (5 * 3)) - 2)
+```
+
+### Conclusion
+
+This code now includes a lexer and parser in C for constrained integer types with expressions that can handle arithmetic operators. The expression parser uses a recursive descent approach with operator precedence parsing.

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:uint and constexpr
+Date:November 10, 2023
+Url:https://chat.openai.com/share/491c1281-0e4d-4130-83fe-ee9a1a6c0dc7
+Model name:GPT-3.5Number of prompts:19
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:19
+HTML content size:214280

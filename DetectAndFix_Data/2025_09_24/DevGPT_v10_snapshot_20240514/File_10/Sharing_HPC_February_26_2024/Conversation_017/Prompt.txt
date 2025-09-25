@@ -1,0 +1,1 @@
+I need to fix the values to N, i like to start in 500 and increase to 100000, take into acount i need 10 scales, can you help me to make a stopover

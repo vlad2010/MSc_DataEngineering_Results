@@ -1,0 +1,5 @@
+I apologize for the confusion. I misunderstood your requirement. If you want multiple abilities to be active at the same time and without a cooldown between ability activations, you can remove the cooldown and activationCooldown from the abilities. Here's the simplified code:
+
+[CODE_BLOCK_0]
+
+This code version removes the cooldown and shared activation cooldown, allowing multiple abilities to be active simultaneously without any delay.

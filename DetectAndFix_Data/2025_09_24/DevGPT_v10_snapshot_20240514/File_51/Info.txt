@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240515_002357_hn_sharingsjson/Source_Showing_GPT4_develop_and_execute_C_code_for_you_if_you_tell_it_youre_a_journ_20240401T055506Z/Sharing_GCC_Compiler_Target_Options_January_1_2024/Conversation_018/Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 52,
+        "file": "./Code/20240515_002357_hn_sharingsjson/Source_Showing_GPT4_develop_and_execute_C_code_for_you_if_you_tell_it_youre_a_journ_20240401T055506Z/Sharing_GCC_Compiler_Target_Options_January_1_2024/Conversation_018/Code_001.c",
+        "severity": "note",
+        "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+        "type": "FF1029",
+        "sharing": "Sharing_GCC_Compiler_Target_Options_January_1_2024",
+        "source_code": "        read(pipefd[0], &buf, 1);",
+        "scanner": "flawfinder"
+    }
+]

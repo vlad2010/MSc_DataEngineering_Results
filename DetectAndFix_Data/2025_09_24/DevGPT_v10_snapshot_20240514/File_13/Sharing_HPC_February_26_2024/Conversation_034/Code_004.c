@@ -1,0 +1,1 @@
+   shmctl(shm_id, IPC_RMID, NULL);

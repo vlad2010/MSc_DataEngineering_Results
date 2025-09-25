@@ -1,0 +1,5 @@
+You are correct, and I apologize for the oversight. To ensure that the loop continues until the dummy is defeated and to avoid the issue you've mentioned, you can adjust the code as follows:
+
+[CODE_BLOCK_0]
+
+In this version of the code, the loop continues until the dummy is defeated, regardless of changes to the dummy's health or ability tick rates. The abilities are used every 0.1 seconds, as specified in `ability1.cooldownSeconds` and `ability2.cooldownSeconds`.

@@ -1,0 +1,5 @@
+Sure, if you have changed the `CHUNK_RecordIterator` structure, you'll need to adjust the functions accordingly. Here are the modified functions:
+
+[CODE_BLOCK_0]
+
+These changes should align the code with the modified `CHUNK_RecordIterator` structure.

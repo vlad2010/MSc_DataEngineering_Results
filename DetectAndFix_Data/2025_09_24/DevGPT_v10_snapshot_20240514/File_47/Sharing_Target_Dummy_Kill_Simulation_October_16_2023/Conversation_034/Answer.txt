@@ -1,0 +1,5 @@
+Certainly, here's the modified code with the requested comparisons:
+
+[CODE_BLOCK_0]
+
+This code now uses the correct epsilon-based comparisons for checking the cooldown and duration.

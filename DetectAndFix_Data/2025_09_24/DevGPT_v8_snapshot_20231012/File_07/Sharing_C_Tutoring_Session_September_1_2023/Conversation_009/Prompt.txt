@@ -1,0 +1,21 @@
+Im helping a student understand his homework, but I'm not familiar with C++ at all.
+
+I have a file called hwk1.cpp with the following code. Please help me make sense out of this and connect it in a way where i can start testing results or logic easily.
+
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include "student.h"
+#include "bubble.h"
+
+int main()
+{
+    // std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+
+
+done

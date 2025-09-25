@@ -1,0 +1,5 @@
+Sure, you can rename the `cooldownSeconds` variable to `damageInterval` to better represent its purpose. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+Now the `damageInterval` variable correctly represents how often an ability that's active deals damage.

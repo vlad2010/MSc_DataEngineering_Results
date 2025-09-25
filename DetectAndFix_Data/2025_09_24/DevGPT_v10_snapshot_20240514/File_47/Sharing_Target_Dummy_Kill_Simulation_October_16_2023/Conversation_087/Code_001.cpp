@@ -1,0 +1,1 @@
+std::sort(abilities.begin(), abilities.end(), compareAbilities);

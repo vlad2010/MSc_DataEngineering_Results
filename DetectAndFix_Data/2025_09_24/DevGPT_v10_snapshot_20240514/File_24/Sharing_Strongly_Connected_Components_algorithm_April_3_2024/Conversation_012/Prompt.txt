@@ -1,0 +1,1 @@
+I think this will do. Please compare your last result with the code at lines 291 ... 401 in https://github.com/ObjectVision/GeoDMS/blob/v14/geo/dll/src/ConnectedParts.cpp and comment on possible logical differences.

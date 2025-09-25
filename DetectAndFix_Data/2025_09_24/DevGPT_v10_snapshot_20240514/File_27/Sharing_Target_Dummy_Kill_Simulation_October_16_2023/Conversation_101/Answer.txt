@@ -1,0 +1,5 @@
+Here's the code with the `updateActivity` function called at the start of the for loop:
+
+[CODE_BLOCK_0]
+
+Now the `updateActivity` function is called at the start of the for loop.

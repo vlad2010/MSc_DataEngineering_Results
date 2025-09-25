@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Wire_readRegister_Function_April_14_2024/Conversation_006/Code_001.c
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 7,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Wire_readRegister_Function_April_14_2024/Conversation_006/Code_001.c",
+        "severity": "warning",
+        "text": "Operator '|' with one operand equal to zero is redundant. ",
+        "type": "badBitmaskCheck",
+        "sharing": "Sharing_Wire_readRegister_Function_April_14_2024",
+        "source_code": "if (I2CSend(AHTX0_I2CADDR_DEFAULT << 1 | 0) != 0 || // Write address ^",
+        "scanner": "cppcheck"
+    }
+]

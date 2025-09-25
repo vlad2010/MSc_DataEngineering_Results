@@ -1,0 +1,1 @@
+yes. next we will write get5VcontractA, which returns HUSB238_5VCurrentContract and is the bottom two bits of PD0 - you will cast the read() to return it

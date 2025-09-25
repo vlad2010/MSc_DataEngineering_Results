@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Code Review: Longer Lines
+Date:June 7, 2023
+Url:https://chat.openai.com/share/f8f58a86-72e6-427b-9973-a0ed9f2493fe
+Model name:GPT-4Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:36545

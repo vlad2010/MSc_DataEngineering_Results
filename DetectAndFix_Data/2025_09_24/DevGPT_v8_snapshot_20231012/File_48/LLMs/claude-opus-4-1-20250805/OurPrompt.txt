@@ -1,0 +1,45 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```cpp
+#include "serialportreader.h"
+#include <QSerialPortInfo>
+#include <QCoreApplication>
+
+SerialPortReader::SerialPortReader(QObject *parent) :
+    QObject(parent)
+{
+    m_serialPort.setPortName("COM8");
+    m_serialPort.setBaudRate(QSerialPort::Baud115200);
+
+    connect(&m_serialPort, &QSerialPort::readyRead, this, &SerialPortReader::handleReadyRead);
+    connect(&m_serialPort, &QSerialPort::errorOccurred, this, &SerialPortReader::handleError);
+}
+
+SerialPortReader::~SerialPortReader()
+{
+    if (m_serialPort.isOpen())
+        m_serialPort.close();
+}
+
+void SerialPortReader::start()
+{
+    if (m_serialPort.open(QIODevice::ReadOnly)) {
+        qDebug() << "Started reading from" << m_serialPort.portName();
+    } else {
+        qDebug() << "Could not open port" << m_serialPort.portName() << ":" << m_serialPort.errorString();
+    }
+}
+
+void SerialPortReader::handleReadyRead()
+{
+    QByteArray data = m_serialPort.readAll();
+    emit newData(data);
+}
+
+void SerialPortReader::handleError(QSerialPort::SerialPortError error)
+{
+    if (error == QSerialPort::ReadError) {
+        qDebug() << "An I/O error occurred while reading the data from port" << m_serialPort.portName() << ", error:" << m_serialPort.errorString();
+    }
+}
+
+```)

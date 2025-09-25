@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Log_Library_Analysis_August_3_2023/Conversation_009/Code_003.cpp
+Scanners: ['cppcheck', 'flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 7,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Log_Library_Analysis_August_3_2023/Conversation_009/Code_003.cpp",
+        "severity": "warning",
+        "text": "%llu in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. ",
+        "type": "invalidPrintfArgType_uint",
+        "sharing": "Sharing_C_Log_Library_Analysis_August_3_2023",
+        "source_code": "for (i = 0; i < chunk->recordsInChunk - 1; i++) { ^ Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Function_Lexicographical_Comparison_January_8_2024/Conversation_002/Code_001.c:67:16: note: Calling function 'sort_Chunk', 1st argument '&chunk' value is <Uninit> sort_Chunk(&chunk); ^ Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Function_Lexicographical_Comparison_January_8_2024/Conversation_002/Code_001.c:45:28: note: Uninitialized variable: chunk->recordsInChunk for (i = 0; i < chunk->recordsInChunk - 1; i++) { ^",
+        "scanner": "cppcheck"
+    },
+    {
+        "line": 4,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Log_Library_Analysis_August_3_2023/Conversation_009/Code_003.cpp",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_C_Log_Library_Analysis_August_3_2023",
+        "source_code": "\t\tchar buffer[32];",
+        "scanner": "flawfinder"
+    }
+]

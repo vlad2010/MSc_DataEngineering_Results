@@ -1,0 +1,27 @@
+The updated demo provides a great hands-on introduction to the capabilities of your library. Here are some of my thoughts:
+
+1. **Interactivity:** The interactive markdown demo is an excellent addition. It allows users to experience the markdown rendering in real-time, which is a crucial feature for demonstrating the capabilities of the renderer.
+
+2. **Information Structure:** Your code is cleanly structured, dividing the asset demo, markdown demo, and plot demo into separate functions. This structure makes it easy to understand and follow each segment of the tutorial.
+
+3. **App State:** I appreciate the explanatory comment about avoiding global variables and using the `AppState` structure instead. It serves as a guide for best practices and provides clarity for readers not familiar with why statics are often used in demo codes.
+
+4. **Helpful Links and Explanations:** Providing links to external resources, such as the online ImPlot demo and the wiki page for the "em" unit, is invaluable for readers who may want a deeper dive into these topics. Your code comments and help strings are informative and well-placed, guiding the user without overwhelming them.
+
+5. **Visuals:** I like how you've leveraged the `EmSize` function to specify widget sizes. This makes the GUI more flexible and potentially more consistent across different screen sizes or resolutions.
+
+6. **Emphasis on Assets:** The detailed explanation about the assets folder, its structure, and how to load images is informative. This is crucial since managing assets is a core part of building GUI applications.
+
+7. **Ease of Use:** The separation of the main code and the help string section at the bottom ensures that the main logic remains uncluttered, making it easier for users to follow along.
+
+**Suggestions:**
+
+1. **Dynamic Pie Chart Data Labeling:** Since the data for the pie chart can be modified, it might be beneficial to dynamically adjust the labels based on which values are most significant. For example, if the value for "Frogs" becomes 0, you might opt not to display its label.
+
+2. **Code Utility Usage:** It's great to see that you've encapsulated utility functions like `CodeUtils::UnindentMarkdown`. Keeping utility methods modularized this way is a best practice and helps keep the main logic clean.
+
+3. **Error Handling:** Consider adding some form of error handling, especially for the markdown renderer. If a user inputs incorrect or problematic markdown syntax, it would be useful to either correct it or provide feedback.
+
+4. **Expand on Other Demos:** The pie chart is a great start for visualizations. As you've linked to the ImPlot demo which showcases many other plot types, you might consider adding some of these other plots in future iterations of this tutorial.
+
+Overall, this tutorial is robust, interactive, and provides a solid introduction to the capabilities of your library. The added interactive markdown segment is particularly engaging. Great job!

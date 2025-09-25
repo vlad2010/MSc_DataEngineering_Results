@@ -1,0 +1,1 @@
+i need to have at leat 10 statistic results, so the N will increase too much, can you help me to fix it, i have a pc with 16 RAM and core i5, can you give me a fixed values to analize, i can leave the pc running 

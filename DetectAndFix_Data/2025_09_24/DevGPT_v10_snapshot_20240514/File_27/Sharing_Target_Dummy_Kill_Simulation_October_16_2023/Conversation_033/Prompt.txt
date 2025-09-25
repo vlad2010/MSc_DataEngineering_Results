@@ -1,0 +1,3 @@
+The comparison you made first:
+if (std::abs(elapsedTime - lastCastTime) >= durationSeconds - epsilon)
+was the right one.

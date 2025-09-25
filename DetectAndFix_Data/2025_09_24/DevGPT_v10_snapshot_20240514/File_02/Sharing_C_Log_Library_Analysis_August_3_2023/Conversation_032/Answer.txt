@@ -1,0 +1,11 @@
+在 `Item` 结构体被初始化后，它会被添加到 `RingBuffer` 中。这个过程在 `RingBuffer` 的构造函数中进行：
+
+[CODE_BLOCK_0]
+
+在这个循环中，`Item` 的构造函数会被调用，用于在 `m_ring` 中的每个位置创建一个新的 `Item` 对象。这个对象是空的，没有存储任何日志。
+
+随后，当一个新的日志行需要被添加到 `RingBuffer` 中时，`push` 函数就会被调用。在 `push` 函数中，新的日志行会被移动到 `Item` 对象的 `logline` 成员变量，并且 `written` 成员变量会被设置为 `1`，表示这个 `Item` 对象现在存储了一条日志。同时，`flag` 会被设置为 set 状态，表示这个 `Item` 对象正在被修改。
+
+在 `NanoLogger` 的后台线程中，`pop` 函数会被调用，用于从 `RingBuffer` 中读取和写入日志。在 `pop` 函数中，`Item` 对象的 `logline` 会被移动到一个新的 `NanoLogLine` 对象，并且 `written` 会被设置为 `0`，表示这个 `Item` 对象现在是空的。同时，`flag` 会被设置为 clear 状态，表示这个 `Item` 对象已经不再被修改。
+
+这就是 `Item` 对象从创建到被写入日志，再到被读取日志的整个过程。

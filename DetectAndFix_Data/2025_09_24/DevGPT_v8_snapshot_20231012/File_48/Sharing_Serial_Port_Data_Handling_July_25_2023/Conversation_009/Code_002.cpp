@@ -1,0 +1,1 @@
+heartRatePlot->yAxis->rescale();

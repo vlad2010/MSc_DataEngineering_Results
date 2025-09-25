@@ -1,0 +1,5 @@
+Certainly! Here's the updated code with cool ability names for all abilities:
+
+[CODE_BLOCK_0]
+
+All abilities now have cool names.

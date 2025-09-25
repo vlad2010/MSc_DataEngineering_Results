@@ -1,0 +1,3 @@
+The `_t` at the end of the integer types (e.g., `uint8_t`, `int32_t`) stands for "type." It is a naming convention used in the C and C++ standard libraries to indicate that the name refers to a type, specifically a fixed-size integer type.
+
+Using `_t` helps make the code more self-explanatory and improves readability. When you encounter a type ending with `_t`, you can quickly recognize that it's a type definition rather than a variable or function name. This convention is part of the effort to create clear and consistent naming practices within the C and C++ standard libraries.

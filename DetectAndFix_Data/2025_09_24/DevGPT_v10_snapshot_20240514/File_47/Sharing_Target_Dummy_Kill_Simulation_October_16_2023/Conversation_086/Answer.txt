@@ -1,0 +1,5 @@
+I apologize for the oversight. Here's the corrected code with the proper parameters for abilities, including damage, interval, duration, cooldown, priority, and name:
+
+[CODE_BLOCK_0]
+
+Now the parameters for abilities include damage, interval, duration, cooldown, priority, and name correctly.

@@ -1,0 +1,1 @@
+Wait, what about if another socket is bound to `0.0.0.0` then isn't rebinding to all IPs. If there was another socket bound to 192.168.1.1, then wouldn't we have 2 sockets that are bound to the same IP? What happens to packets received on 192.168.1.1, would it be sent to both sockets?

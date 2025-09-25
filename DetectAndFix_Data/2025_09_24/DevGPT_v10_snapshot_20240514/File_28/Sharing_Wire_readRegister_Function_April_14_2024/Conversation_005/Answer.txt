@@ -1,0 +1,15 @@
+To create a simplified driver function for the AHT20 temperature and humidity sensor using the provided Arduino code as a reference, we'll implement this in C for your existing system using the `SoftI2C.h` library. The driver function will handle communication with the sensor, read the temperature and humidity data, and return these values through parameters.
+
+Here’s a function called `readAHT20` that will do this:
+
+[CODE_BLOCK_0]
+
+### Key Points:
+1. **`AHT20_getStatus` Function:** This checks the device status, specifically if it's busy, by reading a single byte status.
+2. **`readAHT20` Function:**
+    - Sends a command to trigger the measurement.
+    - Waits while checking the busy status.
+    - Reads 6 bytes of data (3 for humidity and 3 for temperature).
+    - Parses these bytes to calculate humidity and temperature as floating-point values.
+
+This driver function handles the low-level I2C communication directly and assumes that the `SoftI2C.h` library is compatible with your system. Error handling is also included, returning `false` if any I2C transaction fails.

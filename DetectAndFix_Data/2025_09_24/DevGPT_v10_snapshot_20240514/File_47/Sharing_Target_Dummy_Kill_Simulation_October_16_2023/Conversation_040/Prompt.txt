@@ -1,0 +1,1 @@
+The activation cooldown should be shared between all abilities, like it was before.

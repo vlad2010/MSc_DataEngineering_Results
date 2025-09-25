@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Task_23_Understanding_Complex_Code_20240227T063524Z/Sharing_Pythagorean_Triplets_Product_February_27_2024/Conversation_003/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 27,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Task_23_Understanding_Complex_Code_20240227T063524Z/Sharing_Pythagorean_Triplets_Product_February_27_2024/Conversation_003/Code_001.cpp",
+        "severity": "warning",
+        "text": "int result is assigned to long long variable. If the variable is long long to avoid loss of information, then you have loss of information. ",
+        "type": "truncLongCastAssignment",
+        "sharing": "Sharing_Pythagorean_Triplets_Product_February_27_2024",
+        "source_code": "long long product = a * b * c; ^",
+        "scanner": "cppcheck"
+    }
+]

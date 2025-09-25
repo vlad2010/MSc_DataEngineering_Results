@@ -1,0 +1,17 @@
+To streamline the iterative implementation of Tarjan's algorithm and reduce its complexity, we can replace the `successors` set with a boolean flag that indicates whether a successor `w` was visited during the current exploration of `v`. Additionally, we'll update `currentLink` in the next iteration and ensure `indices[v].second` is correctly updated based on the conditions you specified. This approach aims to maintain the algorithm's correctness while optimizing its performance.
+
+Let's adjust the previous sketch to incorporate these changes:
+
+### Optimized Iterative Approach
+
+The key modifications are:
+- Removing the `successors` set and instead using a boolean flag to indicate if we need to process the successor in the next iteration.
+- Delaying the update of `currentLink` to ensure we've correctly updated `indices[v].second` based on whether `w` was visited during this DFS iteration.
+
+[CODE_BLOCK_0]
+
+In this version:
+- Each frame now includes a `processSuccessor` boolean flag instead of a set of successors. This flag indicates whether we need to "return" to a successor after exploring it (mimicking the recursive call's behavior).
+- We delay updating `currentLink` until after processing the successor, allowing for the correct application of Tarjan's algorithm rules regarding `indices[v].second`.
+
+This approach should maintain the algorithm's correctness and potentially improve its performance by avoiding the overhead associated with managing a set of successors. The explicit stack management and iterative deepening process should also mitigate the risk of stack overflow errors in environments with limited call stack size.

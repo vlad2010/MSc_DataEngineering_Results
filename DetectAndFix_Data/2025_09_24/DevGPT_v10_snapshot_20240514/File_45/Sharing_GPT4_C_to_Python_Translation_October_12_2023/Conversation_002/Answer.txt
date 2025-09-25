@@ -1,0 +1,9 @@
+Sure! Here's the ported code to Python:
+
+[CODE_BLOCK_0]
+
+Notes:
+1. The `static` keyword in C++ is used to retain the value of the variable across function calls. In Python, we don't need to use any specific keyword for this purpose at the function level, so we just declare the variables.
+2. We've made sure to utilize the same function names in snake_case format.
+3. For the DragFloat4 function, the variable's values are unpacked and then repacked after being modified. This is done because the Python binding usually returns the updated values rather than modifying them in-place.
+4. The `ImPlotFlags_Equal` and `ImPlotFlags_NoMouseText` constants in C++ are translated to their Pythonic version.

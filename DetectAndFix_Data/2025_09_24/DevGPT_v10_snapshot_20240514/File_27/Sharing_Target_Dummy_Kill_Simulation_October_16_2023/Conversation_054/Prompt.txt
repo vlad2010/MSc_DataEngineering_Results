@@ -1,0 +1,1 @@
+Now I'd like for each ability to have a priority, and when iterating over the vector of abilities, to go from highest priority to lowest priority.

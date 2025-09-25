@@ -1,0 +1,1 @@
+Ok this one does not freeze. I get the following output: 

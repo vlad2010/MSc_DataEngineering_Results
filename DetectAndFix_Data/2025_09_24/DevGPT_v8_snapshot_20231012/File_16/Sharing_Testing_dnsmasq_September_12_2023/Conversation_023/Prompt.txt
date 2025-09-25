@@ -1,0 +1,1 @@
+I've executed the steps for setting up ns1 and ns2 with veth1 & veth2, but I wanted to look at the those before running dnsmasq and dhcliient (Steps 5 & 6). I assume there is an `ip a show xxx` that would allow me to see the setup, can you show me the appropriate command?

@@ -1,0 +1,1 @@
+What about if a computer has 2 ethernet cables connected. Let's suppose both ethernet cables went to the same switch. This means a computer has 2 interfaces, both to the same network.

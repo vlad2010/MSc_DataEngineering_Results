@@ -1,0 +1,31 @@
+Please port this code to python:
+
+```cpp
+void Demo_PieCharts()
+{
+    static const char* labels1[]    = {"Frogs","Hogs","Dogs","Logs"};
+    static float data1[]            = {0.15f,  0.30f,  0.2f, 0.05f};
+
+    static ImPlotPieChartFlags flags = 0;
+    ImGui::SetNextItemWidth(250);
+
+    ImGui::DragFloat4("Values", data1, 0.01f, 0, 1);
+
+    if (ImPlot::BeginPlot("##Pie1", ImVec2(250,250), ImPlotFlags_Equal | ImPlotFlags_NoMouseText))
+    {
+        ImPlot::SetupAxes(NULL, NULL, ImPlotAxisFlags_NoDecorations, ImPlotAxisFlags_NoDecorations);
+        ImPlot::SetupAxesLimits(0, 1, 0, 1);
+        ImPlot::PlotPieChart(
+            labels1,  // labels
+            data1, 4, // data and count
+            0.5, 0.5, // x, y
+            0.4,   // radius
+            "%.2f", // fmt
+            90, // angle
+            flags);
+
+            ImPlot::EndPlot();
+    }
+}
+```
+

@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_GB130_Make_runtime_injection_program_CLI_20240102T224632Z/Sharing_Process_Listener_with_Windows_API_June_29_2023/Conversation_001/Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 11,
+        "file": "./Code/20240513_202333_issue_sharingsjson/Source_GB130_Make_runtime_injection_program_CLI_20240102T224632Z/Sharing_Process_Listener_with_Windows_API_June_29_2023/Conversation_001/Code_001.cpp",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_Process_Listener_with_Windows_API_June_29_2023",
+        "source_code": "        char processName[MAX_PATH];",
+        "scanner": "flawfinder"
+    }
+]

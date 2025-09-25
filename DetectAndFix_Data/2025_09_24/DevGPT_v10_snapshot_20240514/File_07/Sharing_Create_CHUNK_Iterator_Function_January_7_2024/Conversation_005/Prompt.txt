@@ -1,0 +1,6 @@
+alter the functions given that 
+typedef struct CHUNK_RecordIterator {
+    CHUNK chunk;
+    int currentBlockId;
+    int cursor;
+} CHUNK_RecordIterator;

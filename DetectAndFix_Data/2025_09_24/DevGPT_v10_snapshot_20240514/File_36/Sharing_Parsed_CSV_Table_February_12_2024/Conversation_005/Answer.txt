@@ -1,0 +1,15 @@
+Using the polynomial regression model, the predicted wattage for a cadence of 55 and a resistance of 13 is approximately 272.92 watts.
+The model's formula involves the intercept and coefficients for the terms, including the cadence and resistance, their squares, and their interaction. Here's the breakdown of the coefficients extracted from the model:
+
+- Intercept: \(12.1686\)
+- Coefficient for Cadence: \(0.1226\)
+- Coefficient for Resistance: \(-0.3924\)
+- Coefficient for Cadence^2: \(0.0046\)
+- Coefficient for Cadence * Resistance: \(0.3452\)
+- Coefficient for Resistance^2: \(-0.0103\)
+
+Given these coefficients, the formula for calculating wattage in C code can be structured as follows:
+
+[CODE_BLOCK_0]
+
+This C code snippet defines a function `calculateWattage` that takes cadence and resistance as inputs and calculates the predicted wattage based on the polynomial regression model we developed. The `main` function demonstrates how to use this function with a cadence of 55 and a resistance of 13, the same values we used for prediction earlier.

@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here's the enum with Doxygen-style inline comments added using the ///< format to indicate the voltage values:[CODE_BLOCK_0]Each enum value has an inline Doxygen comment indicating its voltage value. Is this suitable for your needs?

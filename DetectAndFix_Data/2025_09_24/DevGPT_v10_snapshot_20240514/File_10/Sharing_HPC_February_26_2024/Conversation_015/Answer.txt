@@ -1,0 +1,62 @@
+For fixed values of \( N \) like the ones you've listed (100, 500, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000), it's important to note that the larger values, especially from 100000 onwards, will require significant amounts of memory and processing power. The largest values might not be feasible on a system with 16GB of RAM due to the \( O(N^2) \) space complexity for storing the matrices and the \( O(N^3) \) time complexity for the multiplication.
+
+I'll adjust the script and README for these fixed values, but I recommend monitoring system resources closely and possibly omitting the largest sizes if you encounter any issues.
+
+### Updated Shell Script (`run_tests.sh`)
+
+[CODE_BLOCK_0]
+
+### Updated README Documentation
+
+---
+
+# Sequential Matrix Multiplication Program with Fixed N Values
+
+This program performs sequential matrix multiplication for fixed sizes of NxN matrices. The sizes are predetermined to provide a comprehensive analysis of the performance across a wide range of matrix dimensions.
+
+## Dependencies
+
+- GCC Compiler or any standard C compiler
+- Bash Shell for running the automation script
+- Linux/Unix environment for the shell script
+
+## Compilation
+
+Compile the sequential matrix multiplication program with:
+
+[CODE_BLOCK_1]
+
+This creates an executable named `matrix_multiplication_sequential`.
+
+## Usage
+
+Run the program with:
+
+[CODE_BLOCK_2]
+
+- `N`: Size of the NxN matrix. For this analysis, fixed sizes are used.
+- `[print_flag]`: Optional. Use `1` to print matrices A, B, and C. Defaults to `0` (no print) if omitted.
+
+## Automating Runs with the Shell Script
+
+The `run_tests.sh` script is designed to automate the execution of the matrix multiplication program for fixed values of N: 100, 500, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, and 5000000.
+
+### Script Execution
+
+1. Make the script and program executable:
+
+   [CODE_BLOCK_3]
+
+2. Execute the script:
+
+   [CODE_BLOCK_4]
+
+The script runs the program for each fixed value of N and records the CPU time in `sequential_results_fixed.csv`.
+
+### Note
+
+Given the large values of N, especially from 100000 onwards, ensure your system has sufficient resources. It is recommended to monitor system performance and possibly adjust the fixed values based on your system's capabilities.
+
+---
+
+Please be cautious with the larger values of N, as they might exceed your system's capabilities. It might be prudent to start with the smaller values and gradually include the larger ones, monitoring the system's response to ensure it's not overwhelmed.

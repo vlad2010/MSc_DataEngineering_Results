@@ -1,0 +1,1 @@
+is it possible to separate the code common for all emails ( initialization of libcurl and the parameters to connect to the SMTP server) from the code needed to send  a specfic email?

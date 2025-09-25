@@ -1,0 +1,7 @@
+To configure Visual Studio to work with WSL (Windows Subsystem for Linux) and ensure it doesn't throw errors for standard Linux C libraries, you can follow these steps. This setup allows you to develop in Visual Studio on Windows while building and debugging in the Linux environment provided by WSL.
+
+### Prerequisites
+
+1. **Install WSL:** Ensure WSL is installed on your Windows machine. If not, you can follow the [official guide from Microsoft](https://docs.microsoft.com/en-us/windows/wsl/install) to install it.
+
+2. **Install a

@@ -1,0 +1,1 @@
+lets start more simply, make an enum for the 4 commands described in 'Table 12. Command Table1" we use only DB7 DB6 DB5 DB4 

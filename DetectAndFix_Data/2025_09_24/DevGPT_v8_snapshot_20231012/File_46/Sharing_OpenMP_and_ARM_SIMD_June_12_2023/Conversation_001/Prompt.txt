@@ -1,0 +1,1 @@
+Does OpenMP know how to work energy-efficient procesors such as ARM with SIMD instructions?

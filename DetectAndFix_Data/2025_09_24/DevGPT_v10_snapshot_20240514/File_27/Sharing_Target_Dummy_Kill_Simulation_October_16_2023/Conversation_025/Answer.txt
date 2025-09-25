@@ -1,0 +1,5 @@
+Understood. You can modify the code so that the `castAbility` function only updates the internal state of the ability, and the main loop is responsible for calling `takeDamage` on the dummy. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+In this code, the `castAbility` function updates the internal state of the ability, and the main loop is responsible for calling `takeDamage` on the dummy if the abilities are active.

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C++ API for Graphviz
+Date:July 17, 2023
+Url:https://chat.openai.com/share/5852db89-1683-4fb3-888c-4619a9c88100
+Model name:GPT-3.5Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:106111

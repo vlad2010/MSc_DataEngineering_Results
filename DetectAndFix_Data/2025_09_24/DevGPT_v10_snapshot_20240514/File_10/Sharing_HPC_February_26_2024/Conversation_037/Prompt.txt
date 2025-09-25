@@ -1,0 +1,1 @@
+how can i build a function that allocate matrices and then other to fill matrices 

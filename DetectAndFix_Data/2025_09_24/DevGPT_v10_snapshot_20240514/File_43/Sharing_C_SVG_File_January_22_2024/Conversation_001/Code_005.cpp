@@ -1,0 +1,1 @@
+   svgFile.close();

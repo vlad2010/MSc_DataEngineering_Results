@@ -1,0 +1,8 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```c
+cl_int error_code = clEnqueueNDRangeKernel(command_queue, kernel, 2, NULL, global_work_size, local_work_size, 0, NULL, NULL);
+if (error_code != CL_SUCCESS) {
+    const char* error_message = get_error_message(error_code);
+    printf("Error: %s\n
+
+```)

@@ -1,0 +1,1 @@
+remember to output in same csv format that the secuential code

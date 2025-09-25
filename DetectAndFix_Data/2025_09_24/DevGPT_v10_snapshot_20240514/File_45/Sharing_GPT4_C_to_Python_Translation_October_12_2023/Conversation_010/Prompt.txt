@@ -1,0 +1,12 @@
+First, let's translate the includes:
+
+```cpp
+#include "hello_imgui/hello_imgui.h"
+#include "immapp/immapp.h"
+#include "imgui_md_wrapper/imgui_md_wrapper.h"
+#include "implot/implot.h"
+#include "immapp/code_utils.h"
+#include "demo_utils/api_demos.h"
+#include <vector>
+#include <map>
+```

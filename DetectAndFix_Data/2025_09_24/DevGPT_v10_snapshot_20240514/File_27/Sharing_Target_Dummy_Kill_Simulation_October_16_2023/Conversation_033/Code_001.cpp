@@ -1,0 +1,1 @@
+if (std::abs(elapsedTime - lastCastTime) >= durationSeconds - epsilon)

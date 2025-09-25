@@ -1,0 +1,1 @@
+Next I'd like to introduce another ability. This ability should do (x) damage every (y) seconds, for a total duration of (z) seconds.

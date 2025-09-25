@@ -1,0 +1,1 @@
+Instead of printing the dummy's health in the dummy class please print it as part of the big print statement when an ability deals damage. Whole code please.

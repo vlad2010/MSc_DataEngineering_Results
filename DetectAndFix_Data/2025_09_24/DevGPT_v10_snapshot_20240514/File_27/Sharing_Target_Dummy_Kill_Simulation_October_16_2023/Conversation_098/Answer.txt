@@ -1,0 +1,5 @@
+You're absolutely right; adding an epsilon for comparisons involving floating-point values is a good practice to avoid precision issues. Here's the modified `Ability` class with epsilon values in the comparison functions:
+
+[CODE_BLOCK_0]
+
+In this version, an epsilon constant is introduced to handle floating-point comparisons. You can adjust the value of the `epsilon` constant based on your specific requirements for precision.

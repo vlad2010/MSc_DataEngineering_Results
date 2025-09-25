@@ -1,0 +1,1 @@
+I'm confused, I was thinking I'd set `interface=lo` in dnsmasq.conf and then use `sudo dhclient enp11s0` but add parameters to the dhclient command to have it request an address from my dnsmasq under test from 127.0.0.1 at port 1234.

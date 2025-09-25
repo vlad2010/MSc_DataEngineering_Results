@@ -1,0 +1,14 @@
+struct alignas(64) Item {
+			Item() : flag{ATOMIC_FLAG_INIT}, written(0), logline(LogLevel::INFO, nullptr, nullptr, 0)
+			{
+			}
+
+			std::atomic_flag flag;
+			char written;//标志位，表示该item是否存有一条日志
+			//填充字节数组，用于对其item结构体到256大小字节，避免内存浪费和伪共享
+			//因为通常以缓存行（cache line）作为最小的内存读写单位，缓存行的大小通常是64字节。
+			//当不同的Item对象位于同一个Cache Line时，多个线程同时访问不同的Item对象会导致伪共享问题。
+			char padding[256 - sizeof(std::atomic_flag) - sizeof(char) - sizeof(NanoLogLine)];
+			NanoLogLine logline;
+		};
+一开始给他设置为什么状态

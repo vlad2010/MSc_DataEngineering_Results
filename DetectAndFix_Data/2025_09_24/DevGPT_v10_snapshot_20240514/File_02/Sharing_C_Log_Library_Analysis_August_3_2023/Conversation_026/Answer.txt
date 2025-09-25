@@ -1,0 +1,7 @@
+在构造函数结束后，`NanoLogger` 的状态会被设置为 `READY`。这在构造函数的最后一行代码中可以看到：
+
+[CODE_BLOCK_0]
+
+这行代码将 `m_state` 的值设置为 `State::READY`。这个状态告诉 `pop` 函数，`NanoLogger` 已经完成初始化，现在可以从缓冲区中读取并写入日志了。
+
+所以，构造函数结束后，`NanoLogger` 的状态是 `READY`。

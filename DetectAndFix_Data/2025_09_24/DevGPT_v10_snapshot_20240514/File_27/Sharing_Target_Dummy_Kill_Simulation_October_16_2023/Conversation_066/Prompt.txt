@@ -1,0 +1,1 @@
+This doesn't seem right to me. You've replaced the cooldownSeconds variable which was necessary. There should be two variables, one of which is the old cooldownSeconds, and a new parameter variable that represents the individual cooldown.

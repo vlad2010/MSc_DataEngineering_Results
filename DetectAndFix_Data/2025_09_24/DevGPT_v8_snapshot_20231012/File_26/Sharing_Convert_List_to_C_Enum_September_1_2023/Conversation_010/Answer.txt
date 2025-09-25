@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here are the #define statements with the Doxygen comments at the end, using the ///< format:[CODE_BLOCK_0]This should make it more inline-friendly while still providing the necessary documentation. Is there anything else you'd like?

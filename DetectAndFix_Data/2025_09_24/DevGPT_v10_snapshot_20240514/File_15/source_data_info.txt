@@ -1,0 +1,13 @@
+Source data info: 
+Title: Phind-70B: Closing the code quality gap with GPT-4 Turbo while running 4x faster
+Date: 2024-02-22T18:54:23.000Z
+Url: https://news.ycombinator.com/item?id=39471388
+Type: hacker news
+ID: 39471388
+Author: rushingcreek
+Number of points: 625
+Number of comments: 53
+Number of sharings: 3
+
+Story text:
+None

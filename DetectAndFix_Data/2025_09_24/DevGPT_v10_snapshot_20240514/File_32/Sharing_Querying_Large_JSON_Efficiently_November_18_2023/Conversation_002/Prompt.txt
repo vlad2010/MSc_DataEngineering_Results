@@ -1,0 +1,1 @@
+what data structure could be used for constant query times of N elements and at least considerable fast time in inserting and deleting

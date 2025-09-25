@@ -1,0 +1,1 @@
+Hola chatgpt estoy viendo una materia en al universidad llamada high performance computing (HPC), necesito para la proxima clase llevar un algoritmo de multiplicacion de matrices NxN en lenguaje C, este algoritmo debe ser secuencial y parametrizable, donde yo pueda asignarle el valor N. 

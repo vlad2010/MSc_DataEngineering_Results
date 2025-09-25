@@ -1,0 +1,20 @@
+Yes, it's possible to create a single function that allocates memory for all three matrices at once. This function would take the size of the matrices as a parameter and use pointer-to-pointer-to-int arguments to update the pointers for the three matrices in the calling function.
+
+Here's how you could implement such a function:
+
+### Function to Allocate Three Matrices
+
+[CODE_BLOCK_0]
+
+### Usage in `main`
+
+In your `main` function, you would call `allocateMatrices` by passing the address of the matrix pointers. This allows the function to modify the pointers in the caller's context:
+
+[CODE_BLOCK_1]
+
+### Explanation
+
+- The `allocateMatrices` function uses triple pointers (`int ***`) for matrices A, B, and C as parameters. This level of indirection allows the function to modify where the pointers `A`, `B`, and `C` in the `main` function are pointing to.
+- Inside `allocateMatrices`, memory is allocated for each matrix using a loop. Each matrix is an array of `int *`, and each element of this array (each row of the matrix) is itself dynamically allocated.
+- In `main`, you pass the addresses of the matrix pointers to `allocateMatrices` with `&A`, `&B`, and `&C`. This allows `allocateMatrices` to modify the original pointers.
+- After using the matrices, you should free the allocated memory to avoid memory leaks. This involves freeing each row of each matrix and then freeing the array of row pointers for each matrix.

@@ -1,0 +1,47 @@
+To create a progression from 500 to 100000 with 10 scales, we need to define the increments between each scale. A straightforward way is to use a geometric progression that starts at 500 and increases by a constant factor until it reaches or surpasses 100000. To find this factor, we can use the formula for the \(n\)th term of a geometric sequence, which is:
+
+\[ a_n = a_1 \times r^{(n-1)} \]
+
+where:
+- \( a_n \) is the \(n\)th term (100000 in this case),
+- \( a_1 \) is the first term (500),
+- \( r \) is the common ratio (the factor we want to find),
+- \( n \) is the number of terms (10).
+
+Rearranging the formula to solve for \( r \):
+
+\[ r = \left( \frac{a_n}{a_1} \right)^{\frac{1}{n-1}} \]
+
+Let's calculate \( r \):
+
+\[ r = \left( \frac{100000}{500} \right)^{\frac{1}{10-1}} = \left( 200 \right)^{\frac{1}{9}} \]
+The common ratio \( r \) for the geometric progression from 500 to 100000 with 10 scales is approximately 1.802. Using this ratio, each subsequent scale will be 1.802 times larger than the previous one, starting from 500.
+
+Now, let's define the exact values for each of the 10 scales:
+
+1. Start with 500.
+2. Multiply 500 by \( r \) to get the next scale, and so on, for a total of 10 scales.
+
+I'll calculate the values for each scale based on this common ratio.
+The calculated values for each of the 10 scales, starting from 500 and increasing by a factor of approximately 1.802, are as follows:
+
+1. 500
+2. 901
+3. 1623
+4. 2924
+5. 5268
+6. 9491
+7. 17100
+8. 30808
+9. 55505
+10. 100000
+
+These scales provide a geometric progression of matrix sizes for your analysis. You can round these values as needed for practical use in your program and script.
+
+### Adjusted Shell Script (`run_tests.sh`)
+
+Here's how you can adjust the shell script to use these specific scales:
+
+[CODE_BLOCK_0]
+
+This script will run the matrix multiplication program for each of the defined scales and record the CPU time in the specified output file. Make sure to monitor your system's performance, especially for the larger matrix sizes.

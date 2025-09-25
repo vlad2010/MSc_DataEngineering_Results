@@ -1,0 +1,5 @@
+I apologize for the mistake. You're correct; the `lastDamageTime` should be initialized to `-interval` in the constructor, not `-cd`. Here's the corrected constructor for the `Ability` class:
+
+[CODE_BLOCK_0]
+
+Thank you for catching that error, and I appreciate your patience.

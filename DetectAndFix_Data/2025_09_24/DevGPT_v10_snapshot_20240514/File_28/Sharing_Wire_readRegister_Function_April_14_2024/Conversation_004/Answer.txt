@@ -1,0 +1,5 @@
+Here's a concise function `Wire_scan` that checks if a specific I2C address is acknowledged. This function will be useful for detecting whether a device at the given address is present on the I2C bus:
+
+[CODE_BLOCK_0]
+
+This function sends a write command to the specified `i2caddr`. If the device at that address acknowledges, the function returns `true`, indicating the presence of the device on the I2C bus. If there's no acknowledgment, it returns `false`. This is useful for scanning the bus to detect connected devices.

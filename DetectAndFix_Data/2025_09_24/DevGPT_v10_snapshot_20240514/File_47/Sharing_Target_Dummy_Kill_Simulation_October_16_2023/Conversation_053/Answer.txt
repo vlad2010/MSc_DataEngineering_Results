@@ -1,0 +1,5 @@
+Certainly, to use a vector of abilities, you can modify the code to be more flexible and accommodate any number of abilities. Here's an updated version of the code that utilizes a vector of abilities:
+
+[CODE_BLOCK_0]
+
+This version of the code uses a vector of abilities, allowing you to easily change the number of abilities as needed. Each ability is tracked and updated individually in the main loop.

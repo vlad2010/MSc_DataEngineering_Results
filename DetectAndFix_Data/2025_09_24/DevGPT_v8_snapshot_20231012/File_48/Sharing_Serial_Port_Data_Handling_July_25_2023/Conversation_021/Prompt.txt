@@ -1,0 +1,1 @@
+Right now the text label appears directly on top of the latest marker. Can it display to the right of the marker instead?

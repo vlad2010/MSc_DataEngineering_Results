@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Binary Data via Socket
+Date:February 4, 2024
+Url:https://chat.openai.com/share/a7b424ee-74f5-47f7-8e6c-76ff793f2fc7
+Model name:GPT-3.5Number of prompts:6
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:143045

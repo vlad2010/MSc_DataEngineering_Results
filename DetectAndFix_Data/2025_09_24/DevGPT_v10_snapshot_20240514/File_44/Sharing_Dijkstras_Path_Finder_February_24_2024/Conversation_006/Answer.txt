@@ -1,0 +1,13 @@
+The red squiggly lines under `d2r` in the expression `double dlat = d2r(lat2-lat1);` typically indicate that the IDE or compiler doesn't recognize the `d2r` function. This usually happens because the function `d2r` (degrees to radians) is not defined or declared before its usage in your code.
+
+The `d2r` function is a common utility in geographic and geometric calculations, used to convert angles from degrees to radians, since many mathematical functions expect angles in radians. The conversion formula is simple: radians = degrees * (π / 180).
+
+To resolve the issue, you need to define or declare the `d2r` function before you use it. Here's how you can define it:
+
+[CODE_BLOCK_0]
+
+Make sure to include this function definition before you attempt to use `d2r` in your code. Additionally, ensure you've included the `<math.h>` header file to use `M_PI`, which is the mathematical constant π. If your development environment or standard library does not define `M_PI` (it's not part of the standard C library, so some compilers might not have it), you can define it yourself as follows:
+
+[CODE_BLOCK_1]
+
+After defining the `d2r` function and ensuring `M_PI` is available, the red squiggly lines should disappear, and your code should compile and run correctly, provided there are no other issues.

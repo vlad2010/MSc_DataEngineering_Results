@@ -1,0 +1,1 @@
+ChatGPTUnderstood. I'll adjust the constructor to set both _buttonState and _lastButtonState to !_polarity. Here's the revised constructor:[CODE_BLOCK_0]With this change, the states are initialized to the opposite of the given polarity without requiring a digitalRead() in the constructor.

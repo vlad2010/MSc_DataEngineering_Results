@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here's the enum with Doxygen-style comments added inline using the ///< format:[CODE_BLOCK_0]Each enum value has an inline Doxygen comment indicating its current value in amperes. Is this what you were looking for?

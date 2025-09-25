@@ -1,0 +1,58 @@
+ok now that we have a register reading and scanning function, please write a simple 'driver' function for the AHT20  that reads a floating point temperature and humidity. here's the arduino code you'll port
+
+bool Adafruit_AHTX0::getEvent(sensors_event_t *humidity,
+                              sensors_event_t *temp) {
+  uint32_t t = millis();
+
+  // read the data and store it!
+  uint8_t cmd[3] = {AHTX0_CMD_TRIGGER, 0x33, 0};
+  if (!i2c_dev->write(cmd, 3)) {
+    return false;
+  }
+
+  while (getStatus() & AHTX0_STATUS_BUSY) {
+    delay(10);
+  }
+
+  uint8_t data[6];
+  if (!i2c_dev->read(data, 6)) {
+    return false;
+  }
+  uint32_t h = data[1];
+  h <<= 8;
+  h |= data[2];
+  h <<= 4;
+  h |= data[3] >> 4;
+  _humidity = ((float)h * 100) / 0x100000;
+
+  uint32_t tdata = data[3] & 0x0F;
+  tdata <<= 8;
+  tdata |= data[4];
+  tdata <<= 8;
+  tdata |= data[5];
+  _temperature = ((float)tdata * 200 / 0x100000) - 50;
+
+  // use helpers to fill in the events
+  if (temp)
+    fillTempEvent(temp, t);
+  if (humidity)
+    fillHumidityEvent(humidity, t);
+  return true;
+}
+
+uint8_t Adafruit_AHTX0::getStatus(void) {
+  uint8_t ret;
+  if (!i2c_dev->read(&ret, 1)) {
+    return 0xFF;
+  }
+  return ret;
+}
+
+#define AHTX0_I2CADDR_DEFAULT 0x38   ///< AHT default i2c address
+#define AHTX0_I2CADDR_ALTERNATE 0x39 ///< AHT alternate i2c address
+#define AHTX0_CMD_CALIBRATE 0xE1     ///< Calibration command
+#define AHTX0_CMD_TRIGGER 0xAC       ///< Trigger reading command
+#define AHTX0_CMD_SOFTRESET 0xBA     ///< Soft reset command
+#define AHTX0_STATUS_BUSY 0x80       ///< Status bit for busy
+#define AHTX0_STATUS_CALIBRATED 0x08 ///< Status bit for calibrated
+

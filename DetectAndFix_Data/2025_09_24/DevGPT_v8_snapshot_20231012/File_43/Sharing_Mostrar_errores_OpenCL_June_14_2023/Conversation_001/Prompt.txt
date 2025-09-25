@@ -1,0 +1,1 @@
+Cómo puedo hacer que OpenCL muestre la explicación de los mensajes de error?

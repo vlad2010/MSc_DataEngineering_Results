@@ -1,0 +1,2 @@
+What if I don't set any headers?
+Is it possible to send just binary data without IP and transmission headers?

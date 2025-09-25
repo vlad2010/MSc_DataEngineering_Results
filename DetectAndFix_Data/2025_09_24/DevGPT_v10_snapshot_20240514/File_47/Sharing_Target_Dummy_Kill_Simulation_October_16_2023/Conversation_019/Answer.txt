@@ -1,0 +1,5 @@
+I apologize for the oversight. To ensure that the abilities deal damage at the correct intervals (ticks), you can adjust the code as follows:
+
+[CODE_BLOCK_0]
+
+In this code, I've introduced the `tickInterval` property in the `DamageOverTimeAbility` class, which specifies the damage intervals in ticks. Both abilities will deal damage at the correct intervals (ticks).

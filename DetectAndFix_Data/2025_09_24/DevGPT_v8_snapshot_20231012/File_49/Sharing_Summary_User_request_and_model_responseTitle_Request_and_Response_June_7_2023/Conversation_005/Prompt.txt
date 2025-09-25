@@ -1,0 +1,1 @@
+can you modify to add also debug levels NONE, ERROR, WARNING, INFO, DEBUG?

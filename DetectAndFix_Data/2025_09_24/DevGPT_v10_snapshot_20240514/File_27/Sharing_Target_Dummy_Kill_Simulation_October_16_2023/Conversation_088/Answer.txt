@@ -1,0 +1,5 @@
+Certainly! Here's the complete code with the requested changes:
+
+[CODE_BLOCK_0]
+
+This code includes cool ability names, shared cooldown and tick rate variables, and prints out ability usage along with the dummy's health.

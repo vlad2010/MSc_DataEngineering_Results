@@ -1,0 +1,55 @@
+class NanoLogger {
+	public:
+		NanoLogger(NonGuaranteedLogger ngl, std::string const& log_directory, std::string const& log_file_name, uint32_t log_file_roll_size_mb)
+			: m_state(State::INIT), m_buffer_base(new RingBuffer(std::max(1u, ngl.ring_buffer_size_mb) * 1024 * 4)),
+			m_file_writer(log_directory, log_file_name, std::max(1u, log_file_roll_size_mb)), m_thread(&NanoLogger::pop, this)
+		{
+			m_state.store(State::READY, std::memory_order_release);
+		}
+
+		NanoLogger(GuaranteedLogger gl, std::string const& log_directory, std::string const& log_file_name, uint32_t log_file_roll_size_mb)
+			: m_state(State::INIT), m_buffer_base(new QueueBuffer())
+			, m_file_writer(log_directory, log_file_name, log_file_roll_size_mb), m_thread(&NanoLogger::pop, this)
+		{
+			m_state.store(State::READY, std::memory_order_release);
+		}
+
+		~NanoLogger() {
+			m_state.store(State::SHUTDOWN);
+			m_thread.join();
+		}
+
+		void add(NanoLogLine&& logline) {
+			m_buffer_base->push(std::move(logline));
+		}
+
+		void pop() {
+			while (m_state.load(std::memory_order_acquire) == State::INIT) {
+				std::this_thread::sleep_for(std::chrono::microseconds(50));
+			}
+
+			NanoLogLine logline(LogLevel::INFO, nullptr, nullptr, 0);
+
+			while (m_state.load() == State::READY) {
+				if (m_buffer_base->try_pop(logline)) {
+					m_file_writer.write(logline);
+				}
+				else {
+					std::this_thread::sleep_for(std::chrono::microseconds(50));
+				}
+			}
+
+			while (m_buffer_base->try_pop(logline)) {
+				m_file_writer.write(logline);//???
+			}
+		}
+
+	private:
+		enum class State{INIT, READY, SHUTDOWN};
+
+		std::atomic<State> m_state;
+		std::unique_ptr<BufferBase> m_buffer_base;
+		FileWriter m_file_writer;
+		std::thread m_thread;
+	};
+这个类是注册了一个额外的线程，工作模式是什么样

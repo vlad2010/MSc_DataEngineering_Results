@@ -1,0 +1,9 @@
+You're correct; my previous suggestion might not be suitable if you need to preserve the functionality of abilities that genuinely deal damage over time. 
+
+Creating an ability like `DamageOverTimeAbility(3.0, 0, 0, priority)` with zero `cooldownSeconds` and zero `durationSeconds` is a good approach. This ability will act as a one-time damage ability that doesn't have any cooldown or duration, making it suitable for instant damage abilities. It won't interfere with other abilities that genuinely do damage over time.
+
+Here's how you can use it within the game loop:
+
+[CODE_BLOCK_0]
+
+This way, you can have both abilities that do damage over time and abilities that deal instant damage, coexisting within the same framework.

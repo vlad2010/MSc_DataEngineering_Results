@@ -1,0 +1,1 @@
+Good, but in addition to printing the health, I also want it to print which ability it took damage from, and the current tick and time.

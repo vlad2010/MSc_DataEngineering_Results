@@ -1,0 +1,5 @@
+I understand your requirements. You want the abilities to be considered active for their specified duration, and if active, check for cooldowns to deal damage accordingly. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+This code ensures that abilities are considered active for their specified duration and checks for cooldowns to deal damage accordingly. If an ability is inactive, it is cast immediately.

@@ -1,0 +1,1 @@
+ChatGPTCertainly! The C enum structure for the given list would look like this:[CODE_BLOCK_0]Here, each name is based on the original values, with spaces replaced by underscores. The binary numbers are represented in C syntax with 0b as a prefix.

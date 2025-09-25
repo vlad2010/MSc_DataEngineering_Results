@@ -1,0 +1,13 @@
+Source data info: 
+Title: Complex algorithm improved for readability and increased clarity
+Date: 2024-02-21T20:26:05Z
+Url: https://github.com/Aligary/CS472_Group1/pull/55
+Type: pull request
+ID: No id
+Author: RedPenguin88
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

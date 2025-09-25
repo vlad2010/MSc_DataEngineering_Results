@@ -1,0 +1,13 @@
+To integrate the AHT20 sensor reading function with the newly defined `Wire_writeBytes` and `Wire_readBytes`, I'll refactor the AHT20 driver code accordingly. Here are the refactored functions, tailored to suit the modular design:
+
+### getStatus Function
+This function reads the status byte from the AHT20 sensor:
+
+[CODE_BLOCK_0]
+
+### readAHT20 Function
+This function triggers the AHT20 sensor to take readings and then reads back the temperature and humidity data:
+
+[CODE_BLOCK_1]
+
+These functions now use `Wire_writeBytes` and `Wire_readBytes` for I2C communication, ensuring that all the I2C handling is managed through these centralized functions. This approach not only makes the code cleaner but also easier to maintain and extend. The `readAHT20` function will correctly handle the protocol for triggering a read and fetching the data, as well as parsing it into usable temperature and humidity values.

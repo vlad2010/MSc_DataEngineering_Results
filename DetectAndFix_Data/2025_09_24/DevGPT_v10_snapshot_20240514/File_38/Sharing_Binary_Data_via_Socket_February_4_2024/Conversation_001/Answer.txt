@@ -1,0 +1,7 @@
+To send raw binary data via a socket in C, you typically use the `send()` or `write()` functions. Here's a basic example of how you might do this:
+
+[CODE_BLOCK_0]
+
+In this example, `send()` is used to send the raw binary data stored in the `data_to_send` buffer over the socket. You can adjust `data_to_send` and `data_len` to contain any binary data you want to send.
+
+Remember, the receiving end must be able to interpret the data correctly based on the agreed-upon protocol. If you're sending structured data, you may need to serialize it before sending and deserialize it upon receipt.

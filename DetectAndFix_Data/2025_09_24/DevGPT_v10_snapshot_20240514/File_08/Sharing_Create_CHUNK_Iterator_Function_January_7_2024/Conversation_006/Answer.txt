@@ -1,0 +1,5 @@
+I apologize for any confusion. I see that you've corrected the `CHUNK_RecordIterator` structure. Here's the updated code to reflect the correct structure:
+
+[CODE_BLOCK_0]
+
+Now the code uses the correct `CHUNK_RecordIterator` structure with `currentBlockId` and `cursor`. Adjustments have been made accordingly.

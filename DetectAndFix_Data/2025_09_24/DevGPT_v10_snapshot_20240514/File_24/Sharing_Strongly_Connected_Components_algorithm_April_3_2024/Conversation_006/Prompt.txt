@@ -1,0 +1,1 @@
+now you can remove isFirstVisit by placing the dependent code before both locations where stack.push_back is called and furthermore note that inside if (processSuccessor) the indices[v].second should be reduced with indices[w].second (and not first) an not only when (onStackFlag[w]) is true.

@@ -1,0 +1,1 @@
+After calling pause() you should (1) check that the signal handler callback function wa invoked, and (2) call sigaction() to check that SIGINT was reverted automatically by the kernel to the SIG_DFL disposition.

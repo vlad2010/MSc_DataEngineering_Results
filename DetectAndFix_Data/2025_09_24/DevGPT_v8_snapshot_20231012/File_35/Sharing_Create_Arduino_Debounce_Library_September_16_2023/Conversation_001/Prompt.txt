@@ -1,0 +1,2 @@
+hello, we are going to be writing an arduino C/C++ library in the same style as ladyada / limor fried / adafruit to create a button debouncer.
+during this chat, i do not need you to explain your code or thinking. i will guide you through the process. start by creating the Adafruit_Debounce.h header skeleton

@@ -1,0 +1,1 @@
+bool attachStatus = attachBit.read();

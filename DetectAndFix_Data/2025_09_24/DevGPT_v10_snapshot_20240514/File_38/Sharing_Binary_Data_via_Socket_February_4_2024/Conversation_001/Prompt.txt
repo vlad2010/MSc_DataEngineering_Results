@@ -1,0 +1,1 @@
+How should I sent raw binary data via a socket in C? 

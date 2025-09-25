@@ -1,0 +1,47 @@
+namespace {
+	//获取当前时间的微秒级时间戳
+	uint64_t timestamp_now() {
+		return std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::high_resolution_clock::now().time_since_epoch()).count();
+	}
+
+	/* I want [2016-10-13 00:01:23.528514] */
+	void format_timestamp(std::ostream& os, uint64_t timestamp) {
+		std::time_t time_t = timestamp / 1000000;
+		auto gmtime = std::gmtime(&time_t);//将time_t的变量转换为一个struct tm结构体
+		char buffer[32];
+		strftime(buffer, 32, "&Y-%m-%d %T.", gmtime);//年月日+小时分钟秒
+		char microseconds[7];
+		sprintf(microseconds, "%06llu", timestamp % 1000000);
+		os << '[' << buffer << microseconds << ']';
+		// std::time_t time_t = timestamp / 1000000;
+		// struct tm gmtime;
+		// gmtime_s(&gmtime, &time_t);
+		// char buffer[32];
+		// strftime(buffer, 32, "&Y-%m-%d %T.", &gmtime);//年月日+小时分钟秒
+		// char microseconds[7];
+		// sprintf_s(microseconds, "%06llu", timestamp % 1000000);
+		// os << '[' << buffer << microseconds << ']';
+	}
+
+	std::thread::id this_thread_id() {
+		//thread_local 关键字的作用（只能用于全局变量或者静态变量，不能用于普通局部变量）：每个线程都会有特有的副本，每个线程独立访问和修改这些数据，线程间互不干扰。
+		//其初始化只会在第一次访问时该变量时初始化，且只会进行一次。C++11标准引入的关键字。
+		static thread_local const std::thread::id id = std::this_thread::get_id();
+		return id;
+	}
+
+	//一个模板类，同来查找类型T在tuple类型中的位置
+	template <typename T, typename Tuple>
+	struct TupleIndex;
+
+	template <typename T, typename ... Types>
+	struct TupleIndex <T, std::tuple<T, Types...>> {
+		static constexpr const std::size_t value = 0;
+	};
+
+	template <typename T,typename U ,typename ... Types>
+	struct TupleIndex <T, std::tuple<U, Types...>> {
+		static constexpr const std::size_t value = 1 + TupleIndex < T, std::tuple < Types... > >::value;
+	};
+}
+逐行分析这一部分代码的意思

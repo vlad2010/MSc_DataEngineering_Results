@@ -1,0 +1,1 @@
+now write update() - a new function - that will set the last and curr button state based on digitalread if the pin is valid

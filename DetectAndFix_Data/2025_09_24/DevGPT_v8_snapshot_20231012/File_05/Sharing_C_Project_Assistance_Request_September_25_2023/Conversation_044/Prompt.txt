@@ -1,0 +1,12 @@
+I got this error C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(113,35): error CS0136: A local or parameter named 'processor' cannot be declared in this scope because that name is used in an enclosing local scope to defin 
+e a local or parameter [C:\Users\kutuk\hey\Football-standings\FootballStandings\FootballStandings.csproj]
+C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(70,44): warning CS8600: Converting null literal or possible null value to non-nullable type. [C:\Users\kutuk\hey\Football-standings\FootballStandings\Footbal 
+lStandings.csproj]
+C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(71,65): warning CS8604: Possible null reference argument for parameter 'path2' in 'string Path.Combine(string path1, string path2)'. [C:\Users\kutuk\hey\Foot 
+ball-standings\FootballStandings\FootballStandings.csproj]
+C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(93,33): warning CS8600: Converting null literal or possible null value to non-nullable type. [C:\Users\kutuk\hey\Football-standings\FootballStandings\Footbal 
+lStandings.csproj]
+C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(95,9): warning CS8602: Dereference of a possibly null reference. [C:\Users\kutuk\hey\Football-standings\FootballStandings\FootballStandings.csproj]
+
+The build failed. Fix the build errors and run again.
+PS C:\Users\kutuk\hey\Football-standings\FootballStandings>

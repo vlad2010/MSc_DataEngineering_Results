@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_036\Code_001.cpp
+Scanners: ['cppcheck', 'flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 25,
+        "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_036/Code_001.cpp",
+        "severity": "warning",
+        "text": "Condition 'data' is always true ",
+        "type": "knownConditionTrueFalse",
+        "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+        "source_code": "if (data) { ^",
+        "scanner": "cppcheck"
+    },
+    {
+        "line": 27,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_036/Code_001.cpp",
+        "severity": "note",
+        "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+        "type": "FF1004",
+        "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+        "source_code": "        memcpy(ptr, data, len);",
+        "scanner": "flawfinder"
+    }
+]

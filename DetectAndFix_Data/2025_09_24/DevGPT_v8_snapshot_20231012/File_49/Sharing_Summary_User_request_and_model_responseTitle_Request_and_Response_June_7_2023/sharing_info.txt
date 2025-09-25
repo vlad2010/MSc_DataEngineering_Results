@@ -1,0 +1,11 @@
+Sharing info: 
+Title:Summary: User request and model response.
+
+Title: Request and Response.
+Date:June 7, 2023
+Url:https://chat.openai.com/share/0df65979-3ea5-4469-8ac9-ca7fcf4f8916
+Model name:Default (GPT-3.5)Number of prompts:10
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:9
+HTML content size:157172

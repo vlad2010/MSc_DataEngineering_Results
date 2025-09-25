@@ -1,0 +1,1 @@
+The variable name cooldownSeconds isn't really a correct descriptor for what it represents, as it's really how often an ability that's active deals damage. Please change the name of that variable to damageInterval.

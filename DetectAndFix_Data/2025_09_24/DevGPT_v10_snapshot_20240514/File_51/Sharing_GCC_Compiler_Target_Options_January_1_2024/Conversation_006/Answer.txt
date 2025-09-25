@@ -1,0 +1,5 @@
+Certainly! Here's the code from the modified `sa_resethand_test.c` file, which includes the use of `fork()` to automate the testing of the `SA_RESETHAND` signal handler:
+
+[CODE_BLOCK_0]
+
+This code sets up a signal handler for `SIGINT` with the `SA_RESETHAND` flag and uses `fork()` to create a child process. The child process waits for a second and then sends a `SIGINT` signal to the parent process. The parent process waits for the signal, and the signal handler is configured to exit with a failure code if it's called more than once, thus testing the `SA_RESETHAND` functionality.

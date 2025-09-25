@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Using ioctl in macOS
+Date:October 10, 2023
+Url:https://chat.openai.com/share/40df0dc9-dd46-4203-bb44-c5eaf312e82a
+Model name:Default (GPT-3.5)Number of prompts:9
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:8
+HTML content size:178195

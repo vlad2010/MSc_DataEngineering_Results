@@ -1,0 +1,17 @@
+To add the functionality to control the verbosity of the output (e.g., printing the results of the matrix multiplication) via command-line parameters like `-v` or `--verbose`, you can parse the command-line arguments in your C program to check for these flags. Here's how you can implement this:
+
+1. **Parse Command-Line Arguments**: Loop through the `argv` array and look for `-v` or `--verbose`. If found, set a flag variable to enable verbose output.
+
+2. **Conditional Printing**: Use the flag variable to conditionally print the matrices and any additional information.
+
+Here's an example modification to your program that incorporates the verbose flag:
+
+[CODE_BLOCK_0]
+
+In this modified version:
+
+- Command-line arguments are parsed in a loop. The `-v` or `--verbose` flag sets the `verbose` variable to 1, which later controls whether to print the matrices.
+- The matrix size `N` and the number of processes are expected as the first and second positional arguments, respectively.
+- Based on the `verbose` flag, the matrices are printed out after the computation is complete. This is conditional on the flag being set, allowing you to control the output verbosity via the command line.
+
+This approach provides flexibility in running your program, enabling or disabling verbose output as needed without altering the code.

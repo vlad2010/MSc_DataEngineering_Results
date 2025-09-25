@@ -1,0 +1,5 @@
+Certainly, if you want the class to work for various types of abilities, you can rename it to simply "Ability." Here's the modified code with the updated class name:
+
+[CODE_BLOCK_0]
+
+Now the class is named "Ability" and can be used for various types of abilities.

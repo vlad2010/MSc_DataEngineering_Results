@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here are the implemented changes in your FootballProcessor.cs and Team.cs files:FootballProcessor.cs:[CODE_BLOCK_0]Team.cs:[CODE_BLOCK_1]Please integrate these changes into your project, and it should work as expected with the updated streak tracking and other improvements.

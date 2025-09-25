@@ -1,0 +1,3 @@
+ChatGPTTo find the fourth proportional of a set of three numbers, you multiply the third number by the ratio of the second number to the first number. The fourth proportional (P) can be calculated as:P = (Third Number) * (Ratio of Second Number to First Number)Given the numbers 5, 8, and 15:The first number (A) is 5.
+The second number (B) is 8.
+The third number (C) is 15.Now, let's calculate the fourth proportional (P):P = 15 * (8 / 5) = 15 * 1.6 = 24So, the fourth proportional of 5, 8, and 15 is 24.

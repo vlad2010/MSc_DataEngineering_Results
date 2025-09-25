@@ -1,0 +1,47 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Added_documentation_Task_22_20240226T025641Z/Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024/Conversation_001/Code_001.cpp
+Scanners: ['cppcheck', 'flawfinder', 'semgrep', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 118,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Added_documentation_Task_22_20240226T025641Z/Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024/Conversation_001/Code_001.cpp",
+        "severity": "warning",
+        "text": "Local variable 'word' shadows outer variable ",
+        "type": "shadowVariable",
+        "sharing": "Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024",
+        "source_code": "for(auto& neighbor : mapOfChargingStations[startingLocation]){ ^",
+        "scanner": "cppcheck"
+    },
+    {
+        "line": 78,
+        "file": "./Code/20240513_160734_pr_sharingsjson/Source_Added_documentation_Task_22_20240226T025641Z/Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024/Conversation_001/Code_001.cpp",
+        "severity": "note",
+        "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+        "type": "FF1040",
+        "sharing": "Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024",
+        "source_code": "        inFile.open(argv[1]);",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 78,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Added_documentation_Task_22_20240226T025641Z/Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024/Conversation_001/Code_001.cpp",
+        "severity": "warning",
+        "text": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files.",
+        "type": "cpp.lang.security.filesystem.path-manipulation.path-manipulation",
+        "sharing": "Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024",
+        "source_code": "        inFile.open(argv[1]);",
+        "scanner": "semgrep"
+    },
+    {
+        "line": 78,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Added_documentation_Task_22_20240226T025641Z/Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024/Conversation_001/Code_001.cpp",
+        "severity": "warning",
+        "text": "Unsanitized input from a command line argument flows into open, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.",
+        "type": "cpp/PT",
+        "sharing": "Sharing_Documentation_Code_Clear_Comprehensive_Useful_February_26_2024",
+        "source_code": "inFile.open(argv[1]);",
+        "scanner": "snyk"
+    }
+]

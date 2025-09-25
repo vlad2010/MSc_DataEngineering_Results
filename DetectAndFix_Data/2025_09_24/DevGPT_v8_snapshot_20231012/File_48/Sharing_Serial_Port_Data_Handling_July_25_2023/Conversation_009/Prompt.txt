@@ -1,0 +1,1 @@
+Heartrate data is now appearing on the plot—thanks! I want both axes of this plot to auto-adjust as new data is received. Once, say, 10 data appoints have been read, the plot should scroll in a similar manner as the ECG plot. Also, the ECG plot actually ranges between -500 and 500.

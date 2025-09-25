@@ -1,0 +1,1 @@
+ChatGPTNo worries! If it's the 6th bit that indicates the "attached" status, you can simply change the Adafruit_I2CRegisterBit initialization to target the 6th bit. Here's the updated getAttached() function:[CODE_BLOCK_0]I've changed the bit index to 6 in the line Adafruit_I2CRegisterBit attachBit = Adafruit_I2CRegisterBit(&attachRegister, 6);.Is this what you're looking for?

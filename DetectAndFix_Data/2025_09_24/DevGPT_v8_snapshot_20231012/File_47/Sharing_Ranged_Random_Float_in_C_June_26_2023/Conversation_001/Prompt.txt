@@ -1,0 +1,1 @@
+implement a ranged random float function in cpp

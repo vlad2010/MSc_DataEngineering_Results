@@ -1,0 +1,13 @@
+Source data info: 
+Title: add elliot's code snippet for ChatGPT lab
+Date: 2024-02-14T07:22:57Z
+Url: https://github.com/thienguen/barbell-labs/pull/38
+Type: pull request
+ID: No id
+Author: elliotwesoff
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

@@ -1,0 +1,1 @@
+the process of accesing data stored in am serial access memoetybb in manipulates data !) heap2)queue 3)stack 4)none

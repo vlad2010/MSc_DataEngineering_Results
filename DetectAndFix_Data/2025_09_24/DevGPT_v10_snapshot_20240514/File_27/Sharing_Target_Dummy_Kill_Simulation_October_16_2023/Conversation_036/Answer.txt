@@ -1,0 +1,5 @@
+Certainly, you're correct. `canDealDamage` should use `cooldownSeconds` for checking the cooldown period. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+Now, `canDealDamage` uses `cooldownSeconds` to correctly check the cooldown period.

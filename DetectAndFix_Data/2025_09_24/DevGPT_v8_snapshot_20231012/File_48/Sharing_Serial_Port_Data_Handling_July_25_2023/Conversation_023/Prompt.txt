@@ -1,0 +1,1 @@
+Can you place the label on top of the marker instead, and adjust `setPixelPosition` accordingly as well?

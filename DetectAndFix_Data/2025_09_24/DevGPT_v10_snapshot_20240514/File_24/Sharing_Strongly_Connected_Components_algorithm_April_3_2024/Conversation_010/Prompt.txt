@@ -1,0 +1,1 @@
+We can skip the reinitialization of the references and the if(processSuccessor) after the second currentLink = nextLink1[currentLink]; by then jumping back to the if (IsDefined(currentLink)). Would that speed up this algorithm, and if so rewrite accordingly.

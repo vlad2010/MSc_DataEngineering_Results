@@ -1,0 +1,14 @@
+Based on the provided code snippet and the initial request to create a function for reading arbitrary bytes from a register, here's how the function `Wire_readRegister` could be adjusted using your specific convention with the `SoftI2C.h` library:
+
+[CODE_BLOCK_0]
+
+This function is designed to:
+1. Start the I2C communication and send the device address for writing.
+2. Send the register address from which to start reading.
+3. Restart I2C communication for a read operation.
+4. Read the requested number of bytes, acknowledging each byte except the last, for which it sends a NAK.
+5. Stop the I2C communication after the read operation.
+
+Make sure that `scl_pin` and `sda_pin` are initialized correctly in your setup function, as they are used by the I2C library. Also, the functions like `I2CStart`, `I2CStop`, `I2CSend`, `I2CRead`, `I2CAck`, and `I2CNak` need to be appropriately defined in your `SoftI2C.h` or associated source files.
+
+This implementation assumes that all I2C bus operations are successful. In a real-world scenario, you may want to handle errors more gracefully or retry certain operations.

@@ -1,0 +1,4 @@
+Write a function in C that takes a signed integer num and
+returns a string representation of that integer. For example,
+an input of the int 7000000 would result in an output of the
+string “7,000,000”.

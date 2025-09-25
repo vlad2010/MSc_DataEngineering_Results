@@ -1,0 +1,24 @@
+`push` 是 `RingBuffer` 类的一个成员函数，其作用是将一条日志行添加到环形缓冲区中。下面是详细的解释：
+
+[CODE_BLOCK_0]
+这是函数的声明，它接收一个右值引用参数 `logline`，这个参数是将要添加到环形缓冲区的日志行。
+
+[CODE_BLOCK_1]
+这行代码原子地增加 `m_write_index` 的值（即写入位置的索引），然后对环形缓冲区的大小取模，得到实际的写入位置。结果赋值给 `write_index` 变量。
+
+[CODE_BLOCK_2]
+这行代码获取 `m_ring` 中 `write_index` 位置的 `Item` 对象的引用。
+
+[CODE_BLOCK_3]
+这行代码创建一个 `SpinLock` 对象，用来锁定当前的 `Item` 对象。这是为了防止其他线程同时修改这个 `Item` 对象。
+
+[CODE_BLOCK_4]
+这行代码将参数 `logline` 移动到 `item.logline`，即将新的日志行写入到 `Item` 对象中。
+
+[CODE_BLOCK_5]
+这行代码将 `item.written` 设置为 `1`，表示这个 `Item` 对象现在包含了一条有效的日志。
+
+[CODE_BLOCK_6]
+这是函数的结束。
+
+以上所有操作都在 `SpinLock` 的作用域内完成，所以在同一时间只有一个线程可以执行这些操作。这就保证了写入日志的操作是线程安全的。

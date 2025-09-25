@@ -1,0 +1,5 @@
+To convert the provided method to SHA-256 encryption, you can use the `SHA256` class instead of `MD5`. Here's the modified method using SHA-256 encryption:
+
+[CODE_BLOCK_0]
+
+This method now uses SHA-256 to hash the input string `userName` and returns the hashed value as a hexadecimal string.

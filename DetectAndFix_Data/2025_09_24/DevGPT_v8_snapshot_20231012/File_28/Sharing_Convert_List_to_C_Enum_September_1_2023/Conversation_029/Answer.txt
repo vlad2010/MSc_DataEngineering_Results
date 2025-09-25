@@ -1,0 +1,1 @@
+ChatGPTAbsolutely, that would make the function more concise. Here's the updated getCCStatus() function:[CODE_BLOCK_0]In this version, the function directly returns the result of ccBit.read() without storing it in a temporary variable. Is this more to your liking?

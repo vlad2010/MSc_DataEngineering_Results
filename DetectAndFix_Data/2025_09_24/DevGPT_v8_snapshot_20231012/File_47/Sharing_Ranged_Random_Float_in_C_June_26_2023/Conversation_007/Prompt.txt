@@ -1,0 +1,1 @@
+what version of SDL supports the SDL_IntersectRectF function?

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C++ Tutoring Session
+Date:September 1, 2023
+Url:https://chat.openai.com/share/08d26134-5bf0-4a50-a465-87edb9677829
+Model name:Advanced Data AnalysisNumber of prompts:13
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:12
+HTML content size:212225

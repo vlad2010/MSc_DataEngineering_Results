@@ -1,0 +1,14 @@
+I got this The number of teams must be even to create a balanced schedule.
+Match schedule generated and saved to CSV files. Abbreviation,FullName,SpecialRanking,Position,GamesPlayed,GamesWon,GamesDrawn,GamesLost,GoalsFor,GoalsAgainst,Points,CurrentStreak
+FCK,FC København,Champion,1,0,0,0,0,0,0,0,W0
+BIF,Brøndby IF,Runner-up,2,0,0,0,0,0,0,0,W0
+FCM,FC Midtjylland,third-place,3,0,0,0,0,0,0,0,L0
+AaB,Aalborg BK,forth-place,4,0,0,0,0,0,0,0,D0
+OB,Odense Boldklub,fith-place,5,0,0,0,0,0,0,0,W0
+EfB,Esbjerg fB,sixth-place,6,0,0,0,0,0,0,0,D0
+SIF,Silkeborg IF,seventh-place,7,0,0,0,0,0,0,0,D0
+RFC,Randers FC,eith-place,8,0,0,0,0,0,0,0,L0
+VB,Viborg FF,ninth-place,9,0,0,0,0,0,0,0,W0
+AGF,Aarhus GF,tenth-place,10,0,0,0,0,0,0,0,D0
+HOB,Hobro IK,elleventh-place,11,0,0,0,0,0,0,0,L0
+I am missing one team in the danish league

@@ -1,0 +1,15 @@
+`std::atomic_flag` 是 C++ 中的一种原子类型，它提供了一种简单、无锁的方式来实现多线程同步。`std::atomic_flag` 只有两种状态：set 和 clear。它提供了两种主要的操作：`test_and_set` 和 `clear`。
+
+`test_and_set` 是一种原子操作，它检查 `std::atomic_flag` 的当前状态，然后将其设置为 set 状态。如果之前的状态是 set，那么 `test_and_set` 返回 true，否则返回 false。这个操作是原子的，即在多线程环境中，不会有两个线程同时执行 `test_and_set` 操作并看到相同的结果。
+
+`clear` 操作将 `std::atomic_flag` 的状态设置为 clear。这也是一个原子操作。
+
+`SpinLock` 结构体利用了 `std::atomic_flag` 的这些特性来实现自旋锁：
+
+[CODE_BLOCK_0]
+
+在 `SpinLock` 的构造函数中，它尝试使用 `test_and_set` 操作获取锁。如果 `test_and_set` 返回 true，说明锁已经被其他线程获取，那么它就会进入一个 while 循环，即忙等待状态，直到 `test_and_set` 返回 false，表示它已经成功获取了锁。
+
+在 `SpinLock` 的析构函数中，它使用 `clear` 操作释放锁，这允许其他线程获取锁。
+
+这种方式实现的自旋锁是非递归的，即一个线程不能多次获取同一个锁，否则会导致死锁。

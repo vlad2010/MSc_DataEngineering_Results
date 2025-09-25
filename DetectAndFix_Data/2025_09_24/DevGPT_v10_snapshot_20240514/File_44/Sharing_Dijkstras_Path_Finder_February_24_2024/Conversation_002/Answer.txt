@@ -1,0 +1,24 @@
+If the output is showing only the end node, it suggests that the algorithm isn't correctly updating the predecessors, possibly due to issues in updating or traversing the heap, or because the condition to update the distances and predecessors is not met correctly. Let's refine the approach, focusing on ensuring the algorithm correctly updates and backtracks:
+
+1. **Verify Heap Operations**: Ensure that `min_heap_insert`, `min_heap_extract_min`, and `min_heap_decrease_key` properly maintain the heap property. Specifically, `min_heap_decrease_key` should adjust the position of a node in the heap if its distance (priority) decreases, which is crucial for Dijkstra's algorithm.
+
+2. **Correctly Use `visited` Array**: The `visited` array is used to avoid re-evaluating nodes. Once a node is extracted from the heap and processed, it should be marked as visited.
+
+3. **Check Way Connectivity**: Ensure that the graph is correctly navigated. The original code assumes every `way` is directly connected to every `node` it lists, which might not hold if ways represent edges between specific pairs of nodes rather than all nodes they pass through.
+
+4. **Edge Relaxation**: The critical part of Dijkstra's algorithm is the relaxation step, where distances to neighbors are updated if a shorter path is found. Ensure this step is correctly implemented.
+
+5. **Backtracking Issue**: The backtracking might fail if the `predecessors` array isn't correctly populated due to incorrect relaxation.
+
+Let's adjust the implementation with a focus on these points. Since the problem might lie in the way nodes and ways are interconnected and processed, it's crucial to ensure that each `way` connects only its directly adjacent nodes, which wasn't explicitly handled in the initial code.
+
+[CODE_BLOCK_0]
+
+This revised version includes a few key changes and checks:
+
+- Initialization of the heap with all nodes, setting their distances to infinity except for the start node.
+- A safeguard to stop the algorithm if we reach the `end_id`, optimizing the process.
+- Proper allocation and deallocation of dynamic memory to avoid leaks.
+- Ensure that each node is connected correctly through ways and that we only process unvisited neighbors.
+
+Make sure your heap functions (`create_min_heap`, `min_heap_insert`, `min_heap_extract_min`, `min_heap_decrease_key`, and `is_min_heap_empty`) are implemented correctly and efficiently. Incorrect heap operations can lead to faulty behavior or performance issues.

@@ -1,0 +1,1 @@
+A C++ header providing an interface to the SNES PPU, including all PPU registers.

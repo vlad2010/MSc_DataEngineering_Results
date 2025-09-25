@@ -1,0 +1,11 @@
+Yes, it's possible to send raw binary data without explicitly setting IP and transport layer headers when using raw sockets in C. When you create a raw socket with `IPPROTO_RAW`, the operating system usually expects you to provide the complete packet, including the IP header.
+
+However, if you want to send raw binary data without headers, you can use a different type of socket, such as a SOCK_DGRAM socket with IPPROTO_UDP or IPPROTO_TCP. These sockets allow you to send data without needing to construct the IP and transport layer headers yourself. The operating system will handle the encapsulation of your data within the appropriate headers.
+
+Here's a simplified example of how you might send raw binary data using a SOCK_DGRAM socket with IPPROTO_UDP:
+
+[CODE_BLOCK_0]
+
+In this example, we're using a SOCK_DGRAM socket with IPPROTO_UDP. When you use this socket type, the operating system handles the construction of the UDP header, including encapsulating your data within it. You only need to provide the raw binary data to be sent.
+
+Similarly, you can use IPPROTO_TCP with a SOCK_STREAM socket if you want to send raw binary data over TCP without explicitly constructing the TCP header.

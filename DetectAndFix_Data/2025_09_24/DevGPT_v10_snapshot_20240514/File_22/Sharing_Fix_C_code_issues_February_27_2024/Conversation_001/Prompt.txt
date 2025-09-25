@@ -1,0 +1,1 @@
+I have some duplication and nesting issues in my C++ code. My code is below. Is it possible to fix these issues?

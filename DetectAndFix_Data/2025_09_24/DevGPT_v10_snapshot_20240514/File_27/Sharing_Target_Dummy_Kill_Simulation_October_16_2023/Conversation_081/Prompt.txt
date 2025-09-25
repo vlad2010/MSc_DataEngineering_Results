@@ -1,0 +1,1 @@
+Could you add an ability with 5 damage, no damage interval, duration, or cooldown, with lowest priority to the list of abilities? And increase the dummy's health to 250 please.

@@ -1,0 +1,312 @@
+Now that seems to work League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+2     2 (EL) Brøndby IF                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+3     3 (EL) FC Midtjylland               0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+4     4 (EC) Aalborg BK                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+5     5 (EC) Odense Boldklub              0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+6     6 (EC) Esbjerg fB                   0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+7     7  Silkeborg IF                     0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+8     8  Randers FC                       0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+9     9  Viborg FF                        0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+10    10  Aarhus GF                       0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+11    11  Hobro IK                        0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 2
+Enter the round file name (e.g., round-1.csv): round-1.csv
+Matches have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) Aarhus GF                    3     1     1     0     0     2     0     2     Wins: 1, Draws: 0, Losses: 0
+2     2 (EL) FC København                 3     1     1     0     0     2     1     1     Wins: 1, Draws: 0, Losses: 0
+3     3 (EL) FC Midtjylland               3     1     1     0     0     1     0     1     Wins: 1, Draws: 0, Losses: 0
+4     4 (EC) Aalborg BK                   1     1     0     1     0     2     2     0     Wins: 0, Draws: 1, Losses: 0
+5     5 (EC) Esbjerg fB                   1     1     0     1     0     2     2     0     Wins: 0, Draws: 1, Losses: 0
+6     6 (EC) Silkeborg IF                 1     1     0     1     0     1     1     0     Wins: 0, Draws: 1, Losses: 0
+7     7  Randers FC                       1     1     0     1     0     1     1     0     Wins: 0, Draws: 1, Losses: 0
+8     8  Hobro IK                         0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+9     9  Brøndby IF                       0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+10    10  Odense Boldklub                 0     1     0     0     1     0     1     -1    Wins: 0, Draws: 0, Losses: 1
+11    11  Viborg FF                       0     1     0     0     1     0     2     -2    Wins: 0, Draws: 0, Losses: 1
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 2
+Enter the round file name (e.g., round-1.csv): round-2.csv
+Matches have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 6     2     2     0     0     4     2     2     Wins: 2, Draws: 0, Losses: 0
+2     2 (EL) Aarhus GF                    3     2     1     0     1     3     2     1     Wins: 0, Draws: 0, Losses: 1
+3     3 (EL) FC Midtjylland               3     1     1     0     0     1     0     1     Wins: 1, Draws: 0, Losses: 0
+4     4 (EC) Esbjerg fB                   2     2     0     2     0     4     4     0     Wins: 0, Draws: 2, Losses: 0
+5     5 (EC) Aalborg BK                   2     2     0     2     0     3     3     0     Wins: 0, Draws: 2, Losses: 0
+6     6 (EC) Randers FC                   2     2     0     2     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+7     7  Silkeborg IF                     1     1     0     1     0     1     1     0     Wins: 0, Draws: 1, Losses: 0
+8     8  Odense Boldklub                  1     2     0     1     1     2     3     -1    Wins: 0, Draws: 1, Losses: 0
+9     9  Hobro IK                         0     0     0     0     0     0     0     0     Wins: 0, Draws: 0, Losses: 0
+10    10  Brøndby IF                      0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+11    11  Viborg FF                       0     1     0     0     1     0     2     -2    Wins: 0, Draws: 0, Losses: 1
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 2
+Enter the round file name (e.g., round-1.csv): round-3.csv
+Matches have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 9     3     3     0     0     6     3     3     Wins: 3, Draws: 0, Losses: 0
+2     2 (EL) FC Midtjylland               6     2     2     0     0     2     0     2     Wins: 2, Draws: 0, Losses: 0
+3     3 (EL) Aarhus GF                    4     3     1     1     1     4     3     1     Wins: 0, Draws: 1, Losses: 0
+4     4 (EC) Esbjerg fB                   3     3     0     3     0     5     5     0     Wins: 0, Draws: 3, Losses: 0
+5     5 (EC) Aalborg BK                   2     2     0     2     0     3     3     0     Wins: 0, Draws: 2, Losses: 0
+6     6 (EC) Silkeborg IF                 2     2     0     2     0     3     3     0     Wins: 0, Draws: 2, Losses: 0
+7     7  Randers FC                       2     2     0     2     0     2     2     0     Wins: 0, Draws: 2, Losses: 0
+8     8  Odense Boldklub                  2     3     0     2     1     4     5     -1    Wins: 0, Draws: 2, Losses: 0
+9     9  Brøndby IF                       0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+10    10  Hobro IK                        0     1     0     0     1     1     2     -1    Wins: 0, Draws: 0, Losses: 1
+11    11  Viborg FF                       0     2     0     0     2     0     3     -3    Wins: 0, Draws: 0, Losses: 2
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 5
+PS C:\Users\kutuk\hey\Football-standings\FootballStandings> dotnet run
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 4
+Simulate all matches? (y/n): y
+Matches in round-1.csv have been processed.
+Matches in round-10.csv have been processed.
+Matches in round-11.csv have been processed.
+Matches in round-12.csv have been processed.
+Matches in round-13.csv have been processed.
+Matches in round-14.csv have been processed.
+Matches in round-15.csv have been processed.
+Matches in round-16.csv have been processed.
+Matches in round-17.csv have been processed.
+Matches in round-18.csv have been processed.
+Matches in round-19.csv have been processed.
+Matches in round-2.csv have been processed.
+Matches in round-20.csv have been processed.
+Matches in round-21.csv have been processed.
+Matches in round-22.csv have been processed.
+Matches in round-23.csv have been processed.
+Matches in round-24.csv have been processed.
+Matches in round-25.csv have been processed.
+Matches in round-26.csv have been processed.
+Matches in round-27.csv have been processed.
+Matches in round-28.csv have been processed.
+Matches in round-29.csv have been processed.
+Matches in round-3.csv have been processed.
+Matches in round-30.csv have been processed.
+Matches in round-31.csv have been processed.
+Matches in round-32.csv have been processed.
+Matches in round-4.csv have been processed.
+Matches in round-5.csv have been processed.
+Matches in round-6.csv have been processed.
+Matches in round-7.csv have been processed.
+Matches in round-8.csv have been processed.
+Matches in round-9.csv have been processed.
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: 3
+League Standings:
+Pos   Team                                Pts   GP    W     D     L     GF    GA    GD    Streak
+1     1 (CL) FC København                 49    22    15    4     3     34    22    12    Wins: 0, Draws: 1, Losses: 0
+2     2 (EL) Randers FC                   48    28    13    9     6     31    24    7     Wins: 0, Draws: 1, Losses: 0
+3     3 (EL) Esbjerg fB                   25    23    4     13    6     26    28    -2    Wins: 0, Draws: 3, Losses: 0
+4     4 (EC) Viborg FF                    25    27    4     13    10    30    37    -7    Wins: 1, Draws: 0, Losses: 0
+5     5 (EC) Odense Boldklub              21    17    5     6     6     22    23    -1    Wins: 1, Draws: 0, Losses: 0
+6     6 (EC) Aalborg BK                   19    17    4     7     6     25    27    -2    Wins: 0, Draws: 0, Losses: 2
+7     7  Hobro IK                         17    20    2     11    7     23    28    -5    Wins: 0, Draws: 2, Losses: 0
+8     8  FC Midtjylland                   16    10    4     4     2     10    8     2     Wins: 0, Draws: 1, Losses: 0
+9     9  Silkeborg IF                     15    18    0     15    3     23    26    -3    Wins: 0, Draws: 0, Losses: 1
+10    10  Aarhus GF                       14    16    1     11    4     17    19    -2    Wins: 0, Draws: 4, Losses: 0
+11    11  Brøndby IF                      10    6     3     1     2     9     8     1     Wins: 3, Draws: 0, Losses: 0
+Football Processor Menu:
+1. Print Teams
+2. Run Matches
+3. Display Current League Standings
+4. Simulate all matches
+5. Exit
+Enter your choice: But when I simulate all matches it loads the files not in order and the streak doesnt work proberly  here is my program.cs using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+{
+    // Load setup data from setup.csv
+    string setupFilePath = @"C:\Users\kutuk\hey\Football-standings\FootballStandings\Data\setup.csv";
+    LeagueSetup leagueSetup = LeagueSetup.ParseSetupCsv(setupFilePath);
+
+    if (leagueSetup == null)
+    {
+        Console.WriteLine("Unable to load league setup. Exiting...");
+        return;
+    }
+
+    // Load team data from teams.csv
+    string teamFilePath = @"C:\Users\kutuk\hey\Football-standings\FootballStandings\Data\teams.csv";
+    List<Team> teams = FootballCsvReader.ReadCsv(teamFilePath);
+
+    if (teams == null)
+    {
+        Console.WriteLine("Unable to load team data. Exiting...");
+        return;
+    }
+
+    // Create an instance of FootballProcessor
+    FootballProcessor processor = new FootballProcessor(teams, leagueSetup);
+
+    bool exit = false;
+    while (!exit)
+    {
+        Console.WriteLine("Football Processor Menu:");
+        Console.WriteLine("1. Print Teams");
+        Console.WriteLine("2. Run Matches");
+        Console.WriteLine("3. Display Current League Standings");
+        Console.WriteLine("4. Simulate all matches");
+        Console.WriteLine("5. Exit");
+        Console.Write("Enter your choice: ");
+
+        if (int.TryParse(Console.ReadLine(), out int choice))
+        {
+            switch (choice)
+            {
+                case 1:
+                    // Print teams and their details
+                    foreach (var team in teams)
+                    {
+                        Console.WriteLine($"Abbreviation: {team.Abbreviation}");
+                        Console.WriteLine($"Full Name: {team.FullName}");
+                        Console.WriteLine($"Special Ranking: {team.SpecialRanking}");
+                        Console.WriteLine($"Position: {team.Position}");
+                        Console.WriteLine($"Games Played: {team.GamesPlayed}");
+                        Console.WriteLine($"Games Won: {team.GamesWon}");
+                        Console.WriteLine($"Games Drawn: {team.GamesDrawn}");
+                        Console.WriteLine($"Games Lost: {team.GamesLost}");
+                        Console.WriteLine($"Goals For: {team.GoalsFor}");
+                        Console.WriteLine($"Goals Against: {team.GoalsAgainst}");
+                        Console.WriteLine($"Goal Difference: {team.GoalDifference}");
+                        Console.WriteLine($"Points: {team.Points}");
+                        Console.WriteLine($"Current Streak: {team.CurrentStreak}");
+                        Console.WriteLine();
+                    }
+                    break;
+
+                case 2:
+                    // Implement logic to run matches based on round files
+                    Console.Write("Enter the round file name (e.g., round-1.csv): ");
+                    string roundFileName = Console.ReadLine();
+                    string roundFilePath = Path.Combine("Data", roundFileName);
+
+                    if (File.Exists(roundFilePath))
+                    {
+                        processor.ProcessRoundResults(roundFilePath);
+                        Console.WriteLine("Matches have been processed.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Round file not found. Please check the file name.");
+                    }
+                    break;
+
+                case 3:
+                    // Display current league standings
+                    processor.DisplayCurrentStandings();
+                    break;
+
+                case 4:
+                    // Simulation af alle kampe
+                    // Test om det virker
+                    Console.Write("Simulate all matches? (y/n): ");
+                    string simulateAllMatches = Console.ReadLine();
+
+                    if (simulateAllMatches.ToLower() == "y")
+                    {
+                        //"Data" for alle .csv filer
+                        string dataDirectory = "Data";
+                        string[] roundFiles = Directory.GetFiles(dataDirectory, "round-*.csv");
+
+                        if (roundFiles.Length == 0)
+                        {
+
+                            Console.WriteLine("No round files found in the 'Data' directory.");
+                        }
+                        else
+                        {
+
+                            foreach (string currentRoundFilePath in roundFiles)
+                            {
+                                processor.ProcessRoundResults(currentRoundFilePath);
+                                Console.WriteLine($"Matches in {Path.GetFileName(currentRoundFilePath)} have been processed.");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Simulation canceled.");
+                    }
+                    break;
+
+                case 5:
+                    // Exit the application
+                    exit = true;
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice. Please select a valid option.");
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid menu choice.");
+        }
+    }
+}
+}

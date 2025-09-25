@@ -1,0 +1,5 @@
+You're correct; I misunderstood your request. If you want to create a new thread using `pthread_create`, we can modify the initialization of the hash table lock to use this function. Here's how we can do it:
+
+[CODE_BLOCK_0]
+
+In this version, the `init_hash_table` function creates a new thread using `pthread_create`, which then initializes the reader-writer lock for the hash table. This approach ensures that the lock initialization is done in a separate thread.

@@ -1,0 +1,15 @@
+Adjusting the code based on your correction, we will ensure that the `else` branch correctly updates `indices[v].second` using `indices[w].first` only if `w` is on the stack (`onStackFlag[w]` is true). This closely mirrors the logic you've provided from the original recursive snippet, maintaining the distinction between nodes that have been visited and are currently on the stack versus those that are not.
+
+Here's how the updated main loop should look with the correct logic applied:
+
+### Corrected Iterative Approach
+
+[CODE_BLOCK_0]
+
+In this corrected version:
+
+- We only update `indices[v].second` with `indices[w].first` if `w` is on the stack, aligning with the logic you described. This update occurs directly in the loop without setting `processSuccessor` again, which ensures that we correctly handle nodes that have already been visited and are part of the current SCC.
+- The `processSuccessor` flag is used to manage whether we need to process the logic for a successor node in the next iteration, specifically for unvisited nodes. It ensures that we prepare to update `indices[v].second` with `indices[w].second` after "recursively" visiting `w`.
+- The `currentLink` is updated at the end of the loop iteration to ensure that we continue exploring the next successors of `v` correctly.
+
+This iterative approach should avoid stack overflow errors on large networks by eliminating recursion, closely following the logic of the recursive version you provided while maintaining correctness according to Tarjan's algorithm.

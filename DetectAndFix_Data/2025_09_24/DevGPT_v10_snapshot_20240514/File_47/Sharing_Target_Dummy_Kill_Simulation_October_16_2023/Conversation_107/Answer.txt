@@ -1,0 +1,5 @@
+Understood, you'd like to use `sharedCooldownValue` as a global variable. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+I've introduced `sharedCooldownValue` as the value that `sharedCooldown` is set to, and `sharedCooldown` is decremented at the end of the loop.

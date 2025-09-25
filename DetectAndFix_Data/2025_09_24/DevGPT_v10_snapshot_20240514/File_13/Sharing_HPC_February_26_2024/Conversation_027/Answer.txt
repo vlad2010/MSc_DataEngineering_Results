@@ -1,0 +1,11 @@
+Given the requirement to support matrix sizes from 200 to 120000, partitioning the workload more efficiently across processes becomes critical to managing memory and processing resources effectively. Instead of creating a process for each row, which would lead to a large number of processes for big matrices, you can divide the matrix into larger chunks and assign each chunk to a process. This approach reduces the overhead of process management and can be more scalable for large matrices.
+
+Here's an updated version of the code that partitions the matrix multiplication task into larger chunks, with each process handling more than one row of the result matrix. The number of rows per chunk is determined based on the total size of the matrix and a predefined maximum number of processes:
+
+[CODE_BLOCK_0]
+
+In this version:
+
+- `MAX_PROCESSES` is defined to limit the maximum number of processes. You can adjust this value based on your system's capabilities.
+- The matrix is divided into chunks, with each process handling a chunk consisting of multiple rows. The number of rows per chunk is determined by dividing the total number of rows by the number of processes, ensuring an even distribution of work.
+- The last process may handle a few

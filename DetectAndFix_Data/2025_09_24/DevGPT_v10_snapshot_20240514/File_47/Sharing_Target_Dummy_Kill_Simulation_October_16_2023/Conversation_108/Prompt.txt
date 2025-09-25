@@ -1,0 +1,1 @@
+sharedCooldown is still declared globally, I just want it inside main.

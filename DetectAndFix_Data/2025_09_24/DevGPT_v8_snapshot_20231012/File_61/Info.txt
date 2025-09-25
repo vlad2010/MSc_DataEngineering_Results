@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Java_Access_Modifiers_July_19_2023\Conversation_002\Code_002.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 1,
+        "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Java_Access_Modifiers_July_19_2023/Conversation_002/Code_002.cpp",
+        "severity": "warning",
+        "text": "The class 'BankAccount' does not declare a constructor although it has private member variables which likely require initialization. ",
+        "type": "noConstructor",
+        "sharing": "Sharing_Java_Access_Modifiers_July_19_2023",
+        "source_code": "if (data) { ^",
+        "scanner": "cppcheck"
+    }
+]

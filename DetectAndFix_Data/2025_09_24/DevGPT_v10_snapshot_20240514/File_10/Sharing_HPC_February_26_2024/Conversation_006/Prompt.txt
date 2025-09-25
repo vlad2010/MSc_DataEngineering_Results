@@ -1,0 +1,1 @@
+como agregar una bandera (booleano para controlar cuando imprimir y cuando no por parametro tambien

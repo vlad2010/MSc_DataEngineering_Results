@@ -1,0 +1,1 @@
+ok tell me the wattage value using this model with cadence 55 and resistance 13

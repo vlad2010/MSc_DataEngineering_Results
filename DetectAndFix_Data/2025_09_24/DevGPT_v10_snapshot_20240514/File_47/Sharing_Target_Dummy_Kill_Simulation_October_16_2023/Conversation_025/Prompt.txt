@@ -1,0 +1,1 @@
+Instead of passing the dummy to the castAbility function, I just want the main loop to call castAbility on the ability and then call takeDamage on the dummy.

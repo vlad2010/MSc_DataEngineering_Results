@@ -1,0 +1,5 @@
+Certainly, here's the updated code with `sharedCooldown` as a variable inside `main` and `ticksPerSecond` as a global variable:
+
+[CODE_BLOCK_0]
+
+Now, `sharedCooldown` is a variable inside `main`, and `ticksPerSecond` is a global variable.

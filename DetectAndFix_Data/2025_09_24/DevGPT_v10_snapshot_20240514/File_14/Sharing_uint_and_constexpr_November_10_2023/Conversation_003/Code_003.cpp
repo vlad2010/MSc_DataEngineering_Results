@@ -1,0 +1,1 @@
+   intptr_t intptrValue = reinterpret_cast<intptr_t>(somePointer);

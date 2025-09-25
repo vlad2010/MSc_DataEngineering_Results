@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Code_Review_Longer_Lines_June_7_2023\Conversation_001\Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 9,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Code_Review_Longer_Lines_June_7_2023/Conversation_001/Code_001.c",
+        "severity": "note",
+        "text": "buffer/getchar:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+        "type": "FF1029",
+        "sharing": "Sharing_Code_Review_Longer_Lines_June_7_2023",
+        "source_code": "  for (i = 0; i < max - 1 && (c = getchar()) != EOF && c != '\\n'; i++) {",
+        "scanner": "flawfinder"
+    }
+]

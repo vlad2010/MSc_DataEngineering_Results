@@ -1,0 +1,1 @@
+turn this table into #define where the second column is the #define name and the first column is the value. ignore the third col

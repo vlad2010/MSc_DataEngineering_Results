@@ -1,0 +1,1 @@
+The functions in Ability that do comparisons need an epsilon to avoid floating point errors.

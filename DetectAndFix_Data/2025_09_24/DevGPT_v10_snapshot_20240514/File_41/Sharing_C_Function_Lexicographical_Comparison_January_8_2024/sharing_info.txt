@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C Function Lexicographical Comparison
+Date:January 8, 2024
+Url:https://chat.openai.com/share/9f9b5a9c-e434-41d2-8a21-63e62199a062
+Model name:GPT-3.5Number of prompts:3
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:118248

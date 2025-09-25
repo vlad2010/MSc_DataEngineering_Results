@@ -1,0 +1,5 @@
+I apologize for the confusion. You're right; I made an error in the previous code. Here's the corrected code where `lastDamageTime` is separate and used correctly:
+
+[CODE_BLOCK_0]
+
+This code now correctly separates `lastCastTime` and `lastDamageTime`, and the `canDealDamage` function checks `lastDamageTime`. The main loop updates `lastDamageTime` after dealing damage to the dummy.

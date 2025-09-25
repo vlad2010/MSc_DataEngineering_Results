@@ -1,0 +1,1 @@
+LOG_INFO << "This is an info message: " << some_variable;

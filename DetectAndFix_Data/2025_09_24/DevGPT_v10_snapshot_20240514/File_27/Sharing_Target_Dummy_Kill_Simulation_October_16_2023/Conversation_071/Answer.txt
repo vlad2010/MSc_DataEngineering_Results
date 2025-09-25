@@ -1,0 +1,5 @@
+I see what you're looking for. You can add a new variable to the `Ability` class to represent its individual cooldown, and then modify the loop to check if the ability is inactive, the shared cooldown is over, and if it has been at least `individualCooldown` seconds since it was last cast. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+This code adds an `individualCooldown` variable to the `Ability` class and checks for both shared and individual cooldowns before casting an ability.

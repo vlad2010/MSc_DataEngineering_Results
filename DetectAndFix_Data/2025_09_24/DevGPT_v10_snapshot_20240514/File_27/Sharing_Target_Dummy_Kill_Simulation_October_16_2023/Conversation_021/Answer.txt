@@ -1,0 +1,5 @@
+Understood. To check if the ability is active and deal damage if the cooldown has passed, you can adjust the code as follows:
+
+[CODE_BLOCK_0]
+
+In this code, the abilities deal damage when they are active and their cooldown has passed, as per your requirements.

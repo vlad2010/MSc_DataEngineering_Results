@@ -1,0 +1,5 @@
+I see, you want to maintain a shared activation cooldown between all abilities. Here's the updated code with a shared activation cooldown:
+
+[CODE_BLOCK_0]
+
+In this version, the shared activation cooldown is used, and only one ability is activated at a time with a one-second cooldown between activations.

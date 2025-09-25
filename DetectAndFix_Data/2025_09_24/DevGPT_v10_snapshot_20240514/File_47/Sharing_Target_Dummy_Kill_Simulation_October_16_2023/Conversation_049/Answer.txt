@@ -1,0 +1,5 @@
+I apologize for the misunderstanding. Here's the corrected code with the comparisons in `canDealDamage` and `updateActivity` set as specified:
+
+[CODE_BLOCK_0]
+
+This version has the correct epsilon comparisons in `canDealDamage` and `updateActivity`.

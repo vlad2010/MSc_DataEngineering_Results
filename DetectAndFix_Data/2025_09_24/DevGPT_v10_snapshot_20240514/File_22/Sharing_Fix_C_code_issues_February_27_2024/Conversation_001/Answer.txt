@@ -1,0 +1,1 @@
+Of course! Please provide your C++ code, and I'll help you identify and fix any duplication and nesting issues you're encountering.

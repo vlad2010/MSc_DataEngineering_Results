@@ -1,0 +1,5 @@
+My apologies for missing that detail. Here's the updated code with `sharedCooldownValue` set to a constant variable:
+
+[CODE_BLOCK_0]
+
+Now the `sharedCooldownValue` is set to 1.0 as a constant variable.

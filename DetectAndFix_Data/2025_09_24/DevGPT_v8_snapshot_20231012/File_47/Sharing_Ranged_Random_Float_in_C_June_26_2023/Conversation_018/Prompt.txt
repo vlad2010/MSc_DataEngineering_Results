@@ -1,0 +1,1 @@
+do I need a diferent collisionNormal for each direction of collision?

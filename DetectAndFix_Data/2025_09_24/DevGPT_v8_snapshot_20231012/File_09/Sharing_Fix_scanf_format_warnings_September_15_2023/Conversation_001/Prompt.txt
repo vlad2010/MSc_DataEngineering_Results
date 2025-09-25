@@ -1,0 +1,1 @@
+When I use `scanf("%lld", p);`, it shows warning on Linux. When I use `scanf("%ld", p);`, it shows warnings on macos. What should I do? I think it is related to gcc vs clang. `p` is declared as `int64_t *`.

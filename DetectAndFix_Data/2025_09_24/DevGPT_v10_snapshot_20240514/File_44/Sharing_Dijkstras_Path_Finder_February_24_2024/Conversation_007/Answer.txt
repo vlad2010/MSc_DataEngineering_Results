@@ -1,0 +1,21 @@
+This command line invokes the C compiler to compile and link one or more object files into an executable program, with specific options for compilation and linking. Here's a breakdown of what each part of the command does:
+
+- `cc`: This is the call to the C compiler. Depending on the system, `cc` might be an alias for GCC (GNU Compiler Collection), Clang, or another C compiler.
+
+- `-o ssmap`: The `-o` option specifies the output file name. In this case, the executable produced by the compilation process will be named `ssmap`.
+
+- `-Wall`: This option enables all the compiler's warning messages. It's helpful for identifying potential issues in the source code that might not stop the compiler from producing an executable but could lead to runtime errors.
+
+- `-std=gnu99`: This option tells the compiler to use the GNU99 standard for compiling the code, which is the GNU extension to the ISO C99 standard. It enables various features and behaviors specific to GNU compilers that are not necessarily available in standard C99.
+
+- `-g`: This option includes debugging information in the generated executable, making it possible to use a debugger (like GDB) to inspect the program while it runs, set breakpoints, and perform other debugging tasks.
+
+- `-O0`: This option sets the optimization level to 0, which means no optimization. Optimization levels range from `-O0` to `-O3`, with higher levels performing more aggressive optimizations that can make debugging more difficult because the relationship between source code and generated machine code is less direct.
+
+- `-ggdb`: This option produces debugging information for use by the GDB debugger. It might include more detailed information than the standard `-g` option, depending on the compiler and the debug tools available.
+
+- `main.o streets.o`: These are the object files to be linked together. Object files are produced from compiling source files (.c files) and contain machine code that the linker combines to create the final executable. `main.o` and `streets.o` are likely compiled from `main.c` and `streets.c`, respectively.
+
+- `-lm`: This option tells the linker to link against the math library (`libm`). The math library provides functions for mathematical operations that are not included in the standard C library, such as trigonometric functions, exponential functions, etc. The `-l` option is used to specify a library to link against, and `m` is the name of the math library.
+
+In summary, this command compiles and links the object files `main.o` and `streets.o` into an executable named `ssmap`, with all warnings enabled, using the GNU99 standard, including debugging information for use with GDB, disabling optimization for easier debugging, and linking against the math library.

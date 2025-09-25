@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240515_002357_hn_sharingsjson/Source_Im_puzzled_how_anyone_trusts_ChatGPT_for_code_20240508T210451000Z/Sharing_SNES_PPU_Interface_Header_May_10_2024/Conversation_001/Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 89,
+        "file": "./Code/20240515_002357_hn_sharingsjson/Source_Im_puzzled_how_anyone_trusts_ChatGPT_for_code_20240508T210451000Z/Sharing_SNES_PPU_Interface_Header_May_10_2024/Conversation_001/Code_001.cpp",
+        "severity": "note",
+        "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+        "type": "FF1029",
+        "sharing": "Sharing_SNES_PPU_Interface_Header_May_10_2024",
+        "source_code": "        static uint8_t read(uint16_t address) {",
+        "scanner": "flawfinder"
+    }
+]

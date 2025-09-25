@@ -1,0 +1,1 @@
+There's a small bug caused by lastCastTime being initialized to -duration. It instead can be initialized to -cooldown.

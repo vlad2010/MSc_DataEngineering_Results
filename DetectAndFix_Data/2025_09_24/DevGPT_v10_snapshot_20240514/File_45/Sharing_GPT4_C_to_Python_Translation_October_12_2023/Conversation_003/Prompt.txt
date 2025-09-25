@@ -1,0 +1,79 @@
+Ok, here are some more advices:
+
+1/ Handling value changes with ImGui
+```cpp
+    static float data1[]            = {0.15f,  0.30f,  0.2f, 0.05f};
+    ImGui::DragFloat4("Values", data1, 0.01f, 0, 1);
+```
+
+becomes
+```python
+    _, data1 = imgui.drag_float4("Values", data1, 0.01, 0, 1)
+```
+
+2/ Enums
+```cpp
+if (ImPlot::BeginPlot("##Pie1", ImVec2(250,250), ImPlotFlags_Equal | ImPlotFlags_NoMouseText))
+```
+
+becomes
+
+```python
+if implot.begin_plot("##Pie1", size=(250, 250), flags=implot.Flags_.equal | implot.Flags_.no_mouse_text):
+```
+
+(i.e. the C++ enum ImPlotFlags_ become implot.Flags_ in python)
+
+
+3/ Transform C numeric buffers into numpy array:
+As you saw, we do not include the count for data, but we need to transform it into a np.array when calling plot_pie_chart.
+So it becomes:
+
+```
+        implot.plot_pie_chart(
+            labels1,  # labels
+            np.array(data1),    # data
+            0.5, 0.5, # x, y
+            0.4,      # radius
+            "%.2f",   # fmt
+            90,       # angle
+            flags)
+```
+
+4/ Static variables:
+static variables are ugly yes, but they are often used in ImGui demonstration code.
+
+Below I show you that I used a static decorator, that adds function variables (and thus static)
+
+```python
+from imgui_bundle.immapp import static
+
+
+@static(labels1 = ["Frogs", "Hogs", "Dogs", "Logs"], data1 = [0.15, 0.30, 0.2, 0.05])
+def demo_pie_charts():
+    statics = demo_pie_charts               # give a readable synonym to function variables
+
+    flags = 0
+    imgui.set_next_item_width(250)
+
+    # access statics variables by prepending statics.
+    _, statics.data1 = imgui.drag_float4("Values", statics.data1, 0.01, 0, 1)
+
+    if implot.begin_plot("##Pie1", size=(250, 250), flags=implot.Flags_.equal | implot.Flags_.no_mouse_text):
+        implot.setup_axes(None, None, implot.AxisFlags_.no_decorations, implot.AxisFlags_.no_decorations)
+        implot.setup_axes_limits(0, 1, 0, 1)
+
+        implot.plot_pie_chart(
+            statics.labels1,  # labels
+            np.array(statics.data1),    # data
+            0.5, 0.5, # x, y
+            0.4,      # radius
+            "%.2f",   # fmt
+            90,       # angle
+            flags)
+
+        implot.end_plot()
+
+```
+
+Now, this translation works perfectly. Please summarize what you understood

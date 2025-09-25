@@ -1,0 +1,5 @@
+I apologize for the oversight. Here's the corrected code with the updated comparisons in the `canDealDamage` and `updateActivity` functions for all abilities:
+
+[CODE_BLOCK_0]
+
+Now the `canDealDamage` and `updateActivity` functions use the correct comparisons, and the abilities have their priority property.

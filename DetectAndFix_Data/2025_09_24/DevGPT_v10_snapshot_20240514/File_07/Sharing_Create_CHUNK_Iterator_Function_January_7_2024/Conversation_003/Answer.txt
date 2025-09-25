@@ -1,0 +1,5 @@
+Certainly! Here are the implementations for the functions you've described:
+
+[CODE_BLOCK_0]
+
+Please note that the actual logic for populating and updating records will depend on the structure of your `Record` type. Update the code accordingly based on your specific requirements.

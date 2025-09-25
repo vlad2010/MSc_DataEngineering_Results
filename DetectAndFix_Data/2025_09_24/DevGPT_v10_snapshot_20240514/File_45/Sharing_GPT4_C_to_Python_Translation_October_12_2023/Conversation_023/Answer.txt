@@ -1,0 +1,13 @@
+Given the C++ code you provided and taking into account the behavior of your ImGuiBundle, I'll provide a translation into Python:
+
+[CODE_BLOCK_0]
+
+Key transformations:
+
+1. The lambda function was translated into an inner function `gui()`.
+2. CamelCase notations in C++ have been translated into snake_case in Python, which is idiomatic to Python.
+3. Structs and class initializations in C++ have been translated into Python class initializations.
+4. Removed `return 0` as it's not required in Python.
+5. Added the classic `if __name__ == "__main__":` to ensure the script runs as standalone but not when imported.
+
+Remember, this is a translation assuming that your `ImGuiBundle` library provides the mentioned methods and classes for Python in a way that mirrors the C++ API.

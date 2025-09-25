@@ -1,0 +1,21 @@
+This C++ program takes input from the user, specifying how many times it should repeat its process. For each iteration, it takes an input integer representing the sum of the sides of a Pythagorean triplet and calculates the product of the triplet. If the input sum is less than 12, it outputs -1 because it's not possible to form a Pythagorean triplet with a sum less than that. 
+
+The program then uses Euclid's formula to generate Pythagorean triplets. Euclid's formula states that for any two positive integers m and n where m > n, the three integers a, b, and c can be generated as follows:
+
+a = m^2 - n^2
+b = 2 * m * n
+c = m^2 + n^2
+
+The program iterates over possible values of m and n within certain ranges, calculating a, b, and c for each combination of m and n. It then checks if a^2 + b^2 equals c^2, ensuring that the triplet is indeed Pythagorean.
+
+If a Pythagorean triplet is found whose sum equals the input value, it calculates the product of the triplet's elements. The largest product found among all Pythagorean triplets with the given sum is stored and updated throughout the iterations. Finally, if a valid Pythagorean triplet is found, it prints out the product. If no valid triplet is found, it prints -1.
+
+Here's a breakdown of the significant parts of the code:
+
+- The outer loop runs q times, where q is the number of times the program should repeat its process.
+- Within each iteration, the program reads the input sumOfSides.
+- It then iterates over values of m and n to find Pythagorean triplets using Euclid's formula.
+- If a valid triplet is found whose sum equals sumOfSides, it calculates the product of the triplet and updates the maximum product found so far.
+- After iterating over all possible combinations, if a valid triplet is found, it prints the product. Otherwise, it prints -1.
+
+Overall, this program efficiently finds the product of Pythagorean triplets for a given sum by utilizing Euclid's formula and appropriate iteration techniques.

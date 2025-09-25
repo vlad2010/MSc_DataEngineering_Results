@@ -1,0 +1,65 @@
+class RingBuffer : public BufferBase {
+	public:
+		//将每条日志行封装为一个完整的项，以便在环形缓冲区中进行存储和读取。
+		struct alignas(64) Item {
+			Item() : flag{ATOMIC_FLAG_INIT}, written(0), logline(LogLevel::INFO, nullptr, nullptr, 0)
+			{
+			}
+
+			std::atomic_flag flag;
+			char written;//标志位，表示该item是否存有一条日志
+			//填充字节数组，用于对其item结构体到256大小字节，避免内存浪费和伪共享
+			//因为通常以缓存行（cache line）作为最小的内存读写单位，缓存行的大小通常是64字节。
+			//当不同的Item对象位于同一个Cache Line时，多个线程同时访问不同的Item对象会导致伪共享问题。
+			char padding[256 - sizeof(std::atomic_flag) - sizeof(char) - sizeof(NanoLogLine)];
+			NanoLogLine logline;
+		};
+
+		RingBuffer(size_t const size)
+			: m_size(size), m_ring(static_cast<Item*>(std::malloc(size * sizeof(Item)))), m_write_index(0), m_read_index(0)
+		{
+			for (size_t i = 0; i < m_size; i++) {
+				new(&m_ring[i]) Item();
+			}
+			static_assert(sizeof(Item) == 256, "Unexpected size != 256");
+		}
+
+		~RingBuffer() {
+			for (size_t i = 0; i < m_size; i++) {
+				m_ring[i].~Item();
+			}
+			std::free(m_ring);
+		}
+
+		//将一条日志写入环形缓存冲区
+		void push(NanoLogLine&& logline)  override {
+			//没有判断该位置是否有日志，如果有日志，说明满了，也不阻塞，直接将旧日志替换掉
+			unsigned int write_index = m_write_index.fetch_add(1, std::memory_order_relaxed) % m_size;//写入一条日志
+			Item& item = m_ring[write_index];
+			SpinLock spinlock(item.flag);
+			item.logline = std::move(logline);
+			item.written = 1;
+		}
+
+		bool try_pop(NanoLogLine& logline)  override {
+			Item& item = m_ring[m_read_index % m_size];
+			SpinLock spinlock(item.flag);
+			if (item.written == 1) {
+				logline = std::move(item.logline);
+				item.written = 0;
+				++m_read_index;
+				return true;
+			}
+			return false;
+		}
+
+		RingBuffer(RingBuffer const&) = delete;
+		RingBuffer& operator=(RingBuffer const&) = delete;
+
+	private:
+		size_t const m_size;//保存日志的条数
+		Item* m_ring;
+		//使用原子变量可以保证多个线程对该变量的读写操作是原子性的，即不会被其他线程中断，从而避免了数据竞争的问题。
+		std::atomic<unsigned int> m_write_index;//多生产者，每次push一条日志
+		unsigned int m_read_index;//单消费者
+	};逐行分析

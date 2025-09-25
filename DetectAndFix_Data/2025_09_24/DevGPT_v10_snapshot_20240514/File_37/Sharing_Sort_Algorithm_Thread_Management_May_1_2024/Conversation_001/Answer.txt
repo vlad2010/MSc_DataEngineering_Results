@@ -1,0 +1,13 @@
+To fix the bug where selecting a new sorting algorithm doesn't stop a currently running sorting process, you'll need to ensure that any existing sorting thread is terminated or properly stopped before starting a new sort. This can be done by checking if a sort thread is already running and then terminating it before starting a new one.
+
+Here is an updated version of your `algoMenuHandler` with the necessary changes. I've added checks to see if a sorting thread (`sortThread`) is already active and terminate it if it is, before starting a new sort.
+
+### Updated C++ Code
+[CODE_BLOCK_0]
+
+### Notes:
+1. **Thread Management**: Ensure that `sortThread` is declared globally and accessible where needed. The `threadIsRunning`, `threadJoin`, and `threadFree` functions are hypothetical and should be replaced with appropriate functions from your threading library.
+2. **Resource Management**: This code assumes that stopping a thread is as simple as joining and freeing it. In some cases, especially with more complex threaded operations, you might need additional synchronization or cleanup.
+3. **Error Handling**: You should consider adding error handling around thread operations to ensure stability.
+
+Would you like to further enhance the usability of the menu system or need help with other aspects of your project?

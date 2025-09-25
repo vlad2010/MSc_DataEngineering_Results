@@ -1,0 +1,1 @@
+ChatGPTExcellent, you've got a student.h header file that defines the student struct, which matches the data structure used in your bubble.cpp for sorting student information based on their mean scores.Do you have more information to provide, or are we ready to proceed? Just say "done" when you're ready for me to assist you.

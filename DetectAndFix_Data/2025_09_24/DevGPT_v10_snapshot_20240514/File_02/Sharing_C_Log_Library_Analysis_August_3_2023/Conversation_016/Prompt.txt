@@ -1,0 +1,5 @@
+bool NanoLog::operator==(NanoLogLine& logline) {
+		atomic_nanologger.load(std::memory_order_acquire)->add(std::move(logline));
+		return true;
+	}
+这个和定义的宏有关洗吗

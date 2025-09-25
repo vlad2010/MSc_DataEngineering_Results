@@ -1,0 +1,3 @@
+Got it! Thanks for the clarification. When you omit the buffer size, the library probably uses dynamic memory allocation or an internal default buffer size to handle text inputs, which is definitely more Pythonic and user-friendly. This makes things even simpler and more intuitive when writing the GUI code in Python. 
+
+Is there anything else you'd like to proceed with, or any other sections of code you'd like to translate?

@@ -1,0 +1,1 @@
+Nice try junior. You know how to fix this. Try the sigprocmask() and sigsuspend() technique.

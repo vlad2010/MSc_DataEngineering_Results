@@ -1,0 +1,1 @@
+ok please add adafruit doxygen-friendly headers, author is ladyada and ChatGPT4 license is MIT

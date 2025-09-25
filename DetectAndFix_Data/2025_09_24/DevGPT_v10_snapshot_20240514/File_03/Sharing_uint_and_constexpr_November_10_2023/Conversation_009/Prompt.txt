@@ -1,0 +1,1 @@
+so the smallest data type is uint8_t or is there smaller ones?

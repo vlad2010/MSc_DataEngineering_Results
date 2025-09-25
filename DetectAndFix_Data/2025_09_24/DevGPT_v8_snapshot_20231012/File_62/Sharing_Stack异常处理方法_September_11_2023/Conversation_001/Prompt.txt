@@ -1,0 +1,43 @@
+template <typename T>
+class Stack
+{
+private:
+    T *arr;
+    unsigned int cnt, maxLen;
+
+public:
+    Stack(unsigned int stackSize);
+    ~Stack();
+    void push(T val);
+    T pop();
+};
+
+template <typename T>
+Stack<T>::Stack(unsigned int stackSize)
+{
+    this->arr = new T[stackSize];
+    this->cnt = 0;
+    this->maxLen = stackSize;
+}
+
+template <typename T>
+Stack<T>::~Stack()
+{
+    delete[] this->arr;
+}
+
+template <typename T>
+void Stack<T>::push(T val)
+{
+    if (this->cnt < this->maxLen)
+        this->arr[this->cnt++] = val;
+}
+
+template <typename T>
+T Stack<T>::pop()
+{
+    if (this->cnt)
+        return this->arr[--this->cnt];
+    return /*i don't know what to return*/;
+}
+在这段代码中，当pop遇到栈中元素不足的情况，应该返回什么东西？

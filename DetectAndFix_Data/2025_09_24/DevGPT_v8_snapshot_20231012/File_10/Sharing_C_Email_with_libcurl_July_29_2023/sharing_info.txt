@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C++ Email with libcurl
+Date:July 29, 2023
+Url:https://chat.openai.com/share/a11264b1-6d55-4fed-9703-1d181db571dd
+Model name:Default (GPT-3.5)Number of prompts:37
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:36
+HTML content size:693445

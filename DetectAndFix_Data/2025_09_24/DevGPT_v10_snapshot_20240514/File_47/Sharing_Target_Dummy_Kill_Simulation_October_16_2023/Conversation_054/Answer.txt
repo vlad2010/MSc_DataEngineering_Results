@@ -1,0 +1,5 @@
+I apologize for the confusion. Here's the updated code with the correct comparisons in `canDealDamage` and `updateActivity` for all abilities:
+
+[CODE_BLOCK_0]
+
+This version correctly uses the specified comparisons in `canDealDamage` and `updateActivity` for all abilities.

@@ -1,0 +1,1 @@
+For info: In my library, you do not need to specify the buffer size in python for text input function. So I removed the 4000.

@@ -1,0 +1,8 @@
+please make an enum of this table as well, with doxygen comments
+0000 = Not selected
+0001 = SRC_PDO_5V
+0010 = SRC_PDO_9V
+0011 = SRC_PDO_12V
+1000 = SRC_PDO_15V
+1001 = SRC_PDO_18V
+1010 = SRC_PDO_20V

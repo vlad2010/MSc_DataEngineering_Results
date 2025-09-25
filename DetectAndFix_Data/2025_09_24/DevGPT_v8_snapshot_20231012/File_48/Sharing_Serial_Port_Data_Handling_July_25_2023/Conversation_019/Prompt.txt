@@ -1,0 +1,1 @@
+Now the line `heartRateLabel->position->setCoords(key, data);` is throwing the errors `'key' was not declared in this scope` and `'QWidgetData* QWidget::data' is private within this context`.

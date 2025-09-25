@@ -1,0 +1,18 @@
+The priority of an instant damage ability depends on how you want it to interact with your other abilities and the game mechanics. Generally, the priority of an instant damage ability can vary, and whether it should be higher or lower than damage over time (DoT) abilities depends on your specific design and balancing goals.
+
+Here are a few considerations:
+
+1. **Higher Priority (e.g., Priority 3 or higher)**:
+   - If you want the instant damage ability to be more impactful or have a higher priority in terms of gameplay.
+   - This makes it more likely for the instant damage ability to be chosen and used over DoT abilities.
+
+2. **Lower Priority (e.g., Priority 1 or 2)**:
+   - If you want to prioritize the consistent, sustained damage from DoT abilities and make the instant damage ability less frequently chosen.
+   - This encourages players to use DoT abilities more often and reserve the instant damage ability for special situations.
+
+3. **Equal Priority**:
+   - You can assign the same priority to instant damage and DoT abilities if you want them to be on an even playing field, allowing players to choose based on their strategy or the current situation.
+
+In practice, the choice of priority can also depend on how you want to balance the abilities within your game. If you find that the instant damage ability is often overshadowing DoT abilities, you might consider reducing its priority. Conversely, if you want to encourage its use, you could increase its priority.
+
+Balancing abilities in your game may require some playtesting and iteration to find the most enjoyable and fair arrangement.

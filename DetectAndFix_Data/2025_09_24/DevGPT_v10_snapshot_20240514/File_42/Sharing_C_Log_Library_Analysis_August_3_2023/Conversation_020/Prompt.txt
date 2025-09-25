@@ -1,0 +1,9 @@
+void push(NanoLogLine&& logline)  override {
+			//没有判断该位置是否有日志，如果有日志，说明满了，也不阻塞，直接将旧日志替换掉
+			unsigned int write_index = m_write_index.fetch_add(1, std::memory_order_relaxed) % m_size;//写入一条日志
+			Item& item = m_ring[write_index];
+			SpinLock spinlock(item.flag);
+			item.logline = std::move(logline);
+			item.written = 1;
+		}
+然后这部分代码可以理解为在每个格子里写入日志对吗，而且是原子操作的

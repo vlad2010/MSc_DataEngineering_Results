@@ -1,0 +1,7 @@
+Ok, this was not easy: here are the correct imports:
+
+```python
+from imgui_bundle import imgui, implot, immapp, hello_imgui, imgui_md
+from imgui_bundle.demos_python import demo_utils
+import numpy as np
+```

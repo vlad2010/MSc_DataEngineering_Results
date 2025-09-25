@@ -1,0 +1,1 @@
+the svgFile tag is not making a full file

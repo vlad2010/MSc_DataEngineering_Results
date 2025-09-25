@@ -1,0 +1,23 @@
+Finally, let's discuss the `Makefile` necessary to compile the Wireshark plugin we've been developing. This `Makefile` is crucial for automating the compilation process, ensuring that our plugin is correctly built and linked against the Wireshark and cryptographic libraries. The details may vary depending on the system setup and where Wireshark is installed, but this provides a general starting point.
+
+### `Makefile`
+
+[CODE_BLOCK_0]
+
+### Explanation
+
+- **Variables**: The `Makefile` starts by defining variables for the plugin name, paths to Wireshark and Libgcrypt config tools. These variables are used to dynamically obtain compilation and linking flags.
+
+- **Compilation Flags**: `CFLAGS` and `LDFLAGS` are set using outputs from `wireshark-config` and `libgcrypt-config`. These flags include necessary include directories and library paths for compiling and linking the plugin.
+
+- **Source and Object Files**: It lists the source files of the plugin and defines a rule to compile each `.c` file into an `.o` object file.
+
+- **Plugin Compilation**: The target `$(PLUGIN_NAME).so` compiles the plugin into a shared library by linking together the object files. The `-shared` flag is crucial for creating a shared object that can be loaded by Wireshark.
+
+- **Clean**: The `clean` rule is used to remove object files and the plugin binary, ensuring a clean state for a rebuild.
+
+- **Install**: The `install` rule copies the compiled plugin to Wireshark's plugin directory, which is determined dynamically using `wireshark-config`. This makes the plugin available to Wireshark the next time it starts.
+
+This `Makefile` provides a basic but effective framework for compiling and installing the Wireshark plugin. Depending on your development environment or if you are targeting specific Wireshark versions, additional adjustments may be necessary.
+
+This concludes the walkthrough of creating a Wireshark plugin to decrypt SSH connections. Each file plays a crucial role in the overall functionality, from handling cryptographic operations to integrating with Wireshark's plugin system. If you have any questions or need further assistance, please feel free to ask.

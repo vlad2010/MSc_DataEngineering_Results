@@ -1,0 +1,29 @@
+I made some changes.
+
+```python
+def demo_plot(app_state: AppState):
+    """A demo showcasing the usage of ImPlot"""
+    imgui_md.render_unindented(get_doc("PlotIntro"))
+
+    data_labels = ["Frogs", "Hogs", "Dogs", "Logs"]
+
+    imgui.text("Edit Pie Chart values")
+    imgui.set_next_item_width(250)
+    app_state.plot_data = imgui.drag_float4("Pie Data", app_state.plot_data, 0.01, 0, 1)
+
+    # Prefer to specify sizes using the "em" unit: see https://en.wikipedia.org/wiki/Em_(typography)
+    # Below, plot_size is equivalent to the size of 20 lines of text
+    plot_size = hello_imgui.em_to_vec2(15.0, 15.0)
+
+    if implot.begin_plot("Pie Chart", None, None, plot_size):
+        implot.setup_axes("", "", implot.AxisFlags_.no_decorations, implot.AxisFlags_.no_decorations)
+        implot.plot_pie_chart(data_labels, np.array(app_state.plot_data), 0.5, 0.5, 0.35, "%.2f", 90)
+        implot.end_plot()
+
+    # Display help
+    _, app_state.show_implot_info = imgui.checkbox("More info##Implot", app_state.show_implot_info)
+    if app_state.show_implot_info:
+        imgui_md.render_unindented(get_doc("PlotDoc"))
+```
+
+please summarize them

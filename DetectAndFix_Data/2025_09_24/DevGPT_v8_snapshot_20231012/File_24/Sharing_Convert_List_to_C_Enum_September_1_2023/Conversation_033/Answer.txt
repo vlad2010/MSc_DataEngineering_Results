@@ -1,0 +1,1 @@
+ChatGPTCertainly! If the function should return a value from the HUSB238_ResponseCodes enum, you can cast the uint8_t value returned by read() to that type. Here's the updated function:[CODE_BLOCK_0]Now the function returns a HUSB238_ResponseCodes enum value, which should make it clearer and more type-safe to use in your application. Is this to your liking?

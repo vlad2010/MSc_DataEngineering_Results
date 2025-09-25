@@ -1,0 +1,12 @@
+Let's translate the `DemoPlot` function from C++ to Python, keeping the original comments and structure:
+
+[CODE_BLOCK_0]
+
+**Points to Note**:
+
+1. Changed function signature to Python's def format.
+2. Replaced C++ array with Python's list for `data_labels`.
+3. Used `np.array` to work with arrays in a manner similar to C++ (notably for `imgui.drag_float4`).
+4. Replaced all C++ specific function calls with their corresponding Pythonic versions.
+5. Made sure that comments are preserved.
+6. For the checkbox handling, I've followed the same structure as before, where the checkbox state and the actual data are unpacked from the function's return value.

@@ -1,0 +1,5 @@
+I have created the file `sa_resethand_test.c` with a C program designed to test the POSIX conformance of the host operating system's implementation of signal handling, particularly the `SA_RESETHAND` flag. This program sets up a signal handler for `SIGINT` with the `SA_RESETHAND` flag, which should reset the signal handler to the default action after the first signal delivery. The program exits with a non-zero code if there's any failure in setting up the signal handler or if the handler is triggered more than once, indicating non-conformance.
+
+You can download the file using the following link:
+
+[Download sa_resethand_test.c](sandbox:/mnt/data/sa_resethand_test.c)

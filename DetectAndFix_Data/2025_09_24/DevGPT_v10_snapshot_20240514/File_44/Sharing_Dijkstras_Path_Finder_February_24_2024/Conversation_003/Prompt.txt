@@ -1,0 +1,1 @@
+This does not work. store the best path while running the loops in an array and use the ssmap_path_travel_time to keep comparing and updating the best path. Then when you reach the end_nodes on all paths, print the best path. Do not use calloc

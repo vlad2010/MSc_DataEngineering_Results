@@ -1,0 +1,1 @@
+which is better? `constexpr int PulseInTimeoutMicros = 24000;` or `constexpr uint16_t PulseInTimeoutMicros = 24000;` or `const uint16_t PulseInTimeoutMicros = 24000;`

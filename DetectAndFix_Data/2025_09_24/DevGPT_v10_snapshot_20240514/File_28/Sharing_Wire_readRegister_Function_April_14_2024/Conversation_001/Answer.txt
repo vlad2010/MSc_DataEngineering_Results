@@ -1,0 +1,13 @@
+Certainly! Below is the CH552 code encapsulated in a function called `Wire_readRegister`. This function handles reading an arbitrary number of bytes from a given register address on an I2C EEPROM. The I2C address is shifted and adjusted to include the read bit as necessary.
+
+[CODE_BLOCK_0]
+
+This function does the following:
+- It starts communication and sends the device address shifted left with the write bit.
+- It then sends the register address from which to start reading.
+- It uses a repeated start condition to switch to reading mode and sends the device address with the read bit.
+- It reads the specified number of bytes from the EEPROM.
+- If it's the last byte to be read, it sends a NACK; otherwise, it sends an ACK.
+- Finally, it sends a stop condition to end the communication.
+
+This function assumes the existence of certain functions (`I2C_Start`, `I2C_SendByte`, `I2C_RecvByte`, `I2C_Stop`) to handle low-level I2C operations, which need to be defined according to the specifics of your implementation on the CH552.

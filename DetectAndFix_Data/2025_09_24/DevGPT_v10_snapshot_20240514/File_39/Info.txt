@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Concurrent_Hash_Table_Explanation_April_20_2024/Conversation_011/Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 61,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Concurrent_Hash_Table_Explanation_April_20_2024/Conversation_011/Code_001.c",
+        "severity": "note",
+        "text": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+        "type": "FF1008",
+        "sharing": "Sharing_Concurrent_Hash_Table_Explanation_April_20_2024",
+        "source_code": "    strncpy(new_record->name, name, 50);",
+        "scanner": "flawfinder"
+    }
+]

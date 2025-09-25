@@ -1,0 +1,13 @@
+Source data info: 
+Title: fix: `open_url` not working on windows
+Date: 2023-09-11T00:23:53Z
+Url: https://github.com/cataclysmbnteam/Cataclysm-BN/pull/3130
+Type: pull request
+ID: No id
+Author: scarf005
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 2
+
+Story text:
+

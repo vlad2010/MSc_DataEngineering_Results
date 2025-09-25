@@ -1,0 +1,1 @@
+item.written = 1;

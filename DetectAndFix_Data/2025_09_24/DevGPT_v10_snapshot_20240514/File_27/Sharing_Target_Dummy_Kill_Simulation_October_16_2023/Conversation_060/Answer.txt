@@ -1,0 +1,5 @@
+You're absolutely right. The `lastDamageTime` should be initialized to -cooldown, not -duration. Here's the corrected constructor for `DamageOverTimeAbility`:
+
+[CODE_BLOCK_0]
+
+Thank you for pointing that out, and I apologize for the oversight.

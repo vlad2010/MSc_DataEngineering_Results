@@ -1,0 +1,1 @@
+add doxygen comments for each row, these are all register values for the HUSB238

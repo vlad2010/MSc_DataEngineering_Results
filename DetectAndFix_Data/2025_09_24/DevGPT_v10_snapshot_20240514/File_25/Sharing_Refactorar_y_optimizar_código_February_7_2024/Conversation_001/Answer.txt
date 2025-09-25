@@ -1,0 +1,7 @@
+To rewrite the provided code as a seasoned C++17 programmer, I'll refactor the code to improve readability, efficiency, and adherence to modern C++ practices. I'll also ensure that the output is correct and matches the expected format.
+
+Here's the revised implementation:
+
+[CODE_BLOCK_0]
+
+This implementation maintains the functionality of the original code while improving its structure and readability. The output is now generated correctly and formatted according to the provided specifications.

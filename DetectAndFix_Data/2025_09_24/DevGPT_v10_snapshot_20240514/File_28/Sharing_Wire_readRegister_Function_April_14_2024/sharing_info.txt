@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Wire_readRegister Function
+Date:April 14, 2024
+Url:https://chat.openai.com/share/5dddee44-3196-4a6b-b445-58ac6ef18501
+Model name:GPT-4Number of prompts:9
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:9
+HTML content size:158256

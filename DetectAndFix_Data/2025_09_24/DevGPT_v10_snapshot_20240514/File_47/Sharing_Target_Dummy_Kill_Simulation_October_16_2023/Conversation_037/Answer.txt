@@ -1,0 +1,5 @@
+To ensure that only one ability can be cast at a time and there's a cooldown before casting the next ability, you can add a cooldown timer to your program. Here's an updated version of your code that includes this feature:
+
+[CODE_BLOCK_0]
+
+Now, abilities will enter a cooldown state after being cast, and only one ability can be active at a time.

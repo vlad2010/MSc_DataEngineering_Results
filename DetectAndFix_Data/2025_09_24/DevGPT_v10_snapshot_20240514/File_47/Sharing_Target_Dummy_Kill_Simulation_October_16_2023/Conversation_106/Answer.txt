@@ -1,0 +1,5 @@
+You're right, the decrement of `sharedCooldown` should occur at the end of the while loop, and the fourth parameter of the fourth ability should be `0.0` for no shared cooldown. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+I've made the adjustments you mentioned, including moving the decrement of `sharedCooldown` to the end of the while loop and setting the shared cooldown to `1.0`.

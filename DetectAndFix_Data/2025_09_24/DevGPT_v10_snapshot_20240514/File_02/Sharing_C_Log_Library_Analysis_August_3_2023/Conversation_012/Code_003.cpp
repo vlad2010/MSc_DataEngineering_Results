@@ -1,0 +1,1 @@
+	NanoLogLine logline(LogLevel::INFO, nullptr, nullptr, 0);

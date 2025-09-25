@@ -1,0 +1,1 @@
+This loop never ends now because the dummy never dies. Once an ability's duration runs out, it should be recast.

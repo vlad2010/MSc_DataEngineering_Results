@@ -1,0 +1,1 @@
+i think _buttonState and lastbuttonstate should always be the true 'low' or 'high' value of the input. we will only adjust for polarity on isPressed/isReleased, so rewrite the functions  as needed

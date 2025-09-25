@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_Cross_compiling_using_armlinuxgnueabihf_toolchain_does_not_work_with_LTO_on_macOS_20240201T125526Z/Sharing_Get_Executable_Path_macOS_February_2_2024/Conversation_001/Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 6,
+        "file": "./Code/20240513_202333_issue_sharingsjson/Source_Cross_compiling_using_armlinuxgnueabihf_toolchain_does_not_work_with_LTO_on_macOS_20240201T125526Z/Sharing_Get_Executable_Path_macOS_February_2_2024/Conversation_001/Code_001.c",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_Get_Executable_Path_macOS_February_2_2024",
+        "source_code": "    char path[1024];",
+        "scanner": "flawfinder"
+    }
+]

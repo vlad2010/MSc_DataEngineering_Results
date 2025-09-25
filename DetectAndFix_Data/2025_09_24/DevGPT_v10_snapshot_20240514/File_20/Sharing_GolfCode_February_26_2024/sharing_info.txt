@@ -1,0 +1,9 @@
+Sharing info: 
+Title:GolfCode
+Date:February 26, 2024
+Url:https://chat.openai.com/share/91b0170e-d5d1-491b-a973-11f55014ad41
+Model name:GPT-3.5Number of prompts:3
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:118897

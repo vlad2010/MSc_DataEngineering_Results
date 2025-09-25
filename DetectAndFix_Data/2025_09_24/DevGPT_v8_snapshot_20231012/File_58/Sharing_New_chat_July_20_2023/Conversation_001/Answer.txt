@@ -1,0 +1,1 @@
+ChatGPTTo change the buffer variable from char to int, you would need to make a few modifications to the code. In the original code, the buffer variable is used to store character data, but if you want to store integers instead, you can change the data type of the buffer to an array of integers.Here's the modified code with buffer as an array of integers:[CODE_BLOCK_0]

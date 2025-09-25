@@ -1,0 +1,5 @@
+You're absolutely right; there is an error in that line. It should have two right parentheses. Here's the corrected line:
+
+[CODE_BLOCK_0]
+
+I apologize for the oversight, and thank you for catching that mistake.

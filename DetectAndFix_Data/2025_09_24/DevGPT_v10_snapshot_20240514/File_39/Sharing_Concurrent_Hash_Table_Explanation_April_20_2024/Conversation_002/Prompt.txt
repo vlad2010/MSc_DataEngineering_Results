@@ -1,0 +1,7 @@
+This is the final segment of the document.
+Please carefully review all parts of the document that have been provided in this conversation before summarizing or answering any questions about it. Once you have reviewed all sections of the document, please respond with "I have finished reviewing the document and I'm ready to assist you with your inquiries."
+
+Filename: PA#2 - Concurrent Hash Table.pdf 
+Part 2 of 2:
+
+6/6  Requirement   Description   Points  assignment.  Correctly Inserts into the  Hash Table  - Hash correctly computed (3 pts)  - Data correctly inserted into Hash Table (2 pts)   5  Correctly Deletes Records  from the Hash Table   5  Correctly Searches for  Names in the Hash Table   5  Correctly Prints Single  Records   5  Correctly Prints the Entire  Hash Table  - Prints the table: 2 points  - Prints the table in sorted order: 3 points   5  Lock Messages are Printed   5  Lock and Unlock Occur as  Expected  - While writing, no other thread may read or write. (10 pts)  - While reading, no other thread may write, other reads are allowed  (10 pts).  - No writes are allowed until all readers are complete (10 pts)  30  Final Output Matches the  Test Final Output  - Correct Number of locks acquired and released (15 pts)  - Correct entries in the table (15 pts):  - In the correct order (5 pts)  - Individual records match Test output (10 pts)  30

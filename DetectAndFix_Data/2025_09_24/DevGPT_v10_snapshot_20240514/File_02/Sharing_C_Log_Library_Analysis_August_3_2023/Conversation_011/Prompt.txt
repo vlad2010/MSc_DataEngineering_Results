@@ -1,0 +1,20 @@
+void pop() {
+			while (m_state.load(std::memory_order_acquire) == State::INIT) {
+				std::this_thread::sleep_for(std::chrono::microseconds(50));
+			}
+
+			NanoLogLine logline(LogLevel::INFO, nullptr, nullptr, 0);
+
+			while (m_state.load() == State::READY) {
+				if (m_buffer_base->try_pop(logline)) {
+					m_file_writer.write(logline);
+				}
+				else {
+					std::this_thread::sleep_for(std::chrono::microseconds(50));
+				}
+			}
+
+			while (m_buffer_base->try_pop(logline)) {
+				m_file_writer.write(logline);//???
+			}
+		}什么意思

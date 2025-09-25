@@ -1,0 +1,1 @@
+buttonstates should be bool, the _pin should be int16_t

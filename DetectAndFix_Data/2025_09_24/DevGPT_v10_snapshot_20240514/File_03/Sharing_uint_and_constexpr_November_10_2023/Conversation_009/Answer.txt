@@ -1,0 +1,5 @@
+Certainly! You can modify the code to display the sizes in both bytes and bits using the `sizeof` operator. Here's an updated version of the code:
+
+[CODE_BLOCK_0]
+
+This modification includes the size in both bytes and bits for each type. The expression `(sizeof(type) * 8)` calculates the size in bits, as there are 8 bits in a byte.

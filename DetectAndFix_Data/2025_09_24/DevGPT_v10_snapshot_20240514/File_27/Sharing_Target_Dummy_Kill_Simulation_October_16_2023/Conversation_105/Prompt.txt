@@ -1,0 +1,3 @@
+I think two more things need to be changed:
+sharedCooldown -= 1.0 / ticksPerSecond;
+This increment needs to happen at the end of the while loop, and the fourth ability's fourth parameter should be 0, not sharedCooldownValue.

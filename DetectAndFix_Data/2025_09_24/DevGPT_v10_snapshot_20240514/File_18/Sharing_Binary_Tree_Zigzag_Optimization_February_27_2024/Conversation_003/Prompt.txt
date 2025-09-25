@@ -1,0 +1,7 @@
+Could you make the changes for these suggestions?
+
+Cleaner Zigzag Function Signature:
+Instead of passing a boolean childType to the zigzag function, consider creating separate functions for left and right traversal. This could make the code cleaner and more intuitive.
+
+Parameter Passing by Reference in Zigzag:
+Similar to the suggestion for the previous zigzag function, consider passing the path vector by reference to avoid unnecessary copying.

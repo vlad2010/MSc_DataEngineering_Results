@@ -1,0 +1,1 @@
+ok rewrite scan() to use writebytes - you can just send 0 data bytes

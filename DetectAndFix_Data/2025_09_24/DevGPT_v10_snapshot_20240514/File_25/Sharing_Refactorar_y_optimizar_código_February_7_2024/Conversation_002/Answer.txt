@@ -1,0 +1,5 @@
+Certainly! Let's refactor the code further to improve its structure, readability, and maintainability. We'll introduce classes and functions to encapsulate related functionality, utilize standard algorithms and containers more effectively, and simplify complex operations.
+
+[CODE_BLOCK_0]
+
+In this refactored version, we've encapsulated recipe-related functionality into a `Recipe` class. This makes the code more modular and easier to understand. We've also simplified the `main` function by utilizing the new `Recipe` class and separate utility functions for string manipulation. The overall structure of the code is now cleaner and more maintainable.

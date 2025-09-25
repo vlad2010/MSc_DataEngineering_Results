@@ -1,0 +1,17 @@
+Para parametrizar el tamaño \( N \) de las matrices a través de la línea de comandos, necesitas modificar el código para utilizar argumentos de entrada (`argc` y `argv`) en la función `main()`. Esto te permitirá pasar el valor de \( N \) cuando ejecutes el programa desde la línea de comandos. Dado que las matrices en C deben tener un tamaño definido en tiempo de compilación o ser gestionadas dinámicamente en el heap, en este caso optaremos por la segunda opción utilizando punteros y asignación dinámica de memoria.
+
+Aquí tienes un ejemplo de cómo se podría modificar el código para aceptar \( N \) como un argumento de la línea de comandos:
+
+[CODE_BLOCK_0]
+
+Este código convierte el primer argumento de la línea de comandos a un entero, que se utiliza como el tamaño \( N \) para las matrices. Utiliza `malloc` para asignar memoria para las matrices y `calloc` para la matriz de resultados, asegurándose de que esté inicializada a cero. Después de usar las matrices, el código libera la memoria asignada.
+
+Para compilar este programa, puedes usar un comando similar al siguiente:
+
+[CODE_BLOCK_1]
+
+Y luego ejecutarlo pasando \( N \) como argumento, por ejemplo:
+
+[CODE_BLOCK_2]
+
+Este comando ejecutará el programa para matrices de tamaño 5x5.

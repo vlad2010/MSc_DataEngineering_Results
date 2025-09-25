@@ -1,0 +1,9 @@
+ChatGPTTo evaluate the expression, follow the order of operations (PEMDAS/BODMAS):P: Parentheses/Brackets
+E: Exponents/Orders (none in this expression)
+MD: Multiplication and Division (from left to right)
+AS: Addition and Subtraction (from left to right)The given expression is:5 + 3 * 2 % 10 - 8 * 6Step 1: Perform multiplication and division (from left to right):5 + 3 * 2 % 10 - 8 * 6
+5 + 6 % 10 - 8 * 6Step 2: Perform the modulus operation (%):5 + 6 % 10 - 8 * 6
+5 + 6 - 8 * 6Step 3: Continue with multiplication:5 + 6 - 8 * 6
+5 + 6 - 48Step 4: Finally, perform addition and subtraction (from left to right):5 + 6 - 48
+11 - 48
+-37So, the result of the expression is -37.

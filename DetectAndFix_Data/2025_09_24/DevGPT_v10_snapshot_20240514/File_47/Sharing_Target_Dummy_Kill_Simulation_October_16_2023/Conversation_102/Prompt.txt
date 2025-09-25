@@ -1,0 +1,1 @@
+The fourth skill should have a priority of 0 and the sharedCooldown should be updated to a variable instead of 1.0 when an ability is cast. Whole code please.

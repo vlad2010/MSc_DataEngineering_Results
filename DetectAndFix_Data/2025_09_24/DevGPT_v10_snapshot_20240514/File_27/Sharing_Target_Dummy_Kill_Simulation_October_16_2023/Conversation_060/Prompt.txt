@@ -1,0 +1,1 @@
+Another small change: At the very end when printing how long it took for the dummy to die, please make it subtract 1 from the tick count before calculating the total elapsed time.

@@ -1,0 +1,1 @@
+canDealDamage should use lastDamageTime instead of lastCastTime

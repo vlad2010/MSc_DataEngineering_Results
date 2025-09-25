@@ -1,0 +1,15 @@
+Para analizar el rendimiento de la multiplicación de matrices, es útil variar el tamaño de \( N \) en una escala que te permita observar cómo el tiempo de ejecución aumenta con el tamaño de la matriz. Una buena estrategia podría ser empezar con un tamaño base y aumentar \( N \) en una serie de pasos que te permitan observar tanto el comportamiento en tamaños de matrices pequeñas como en matrices más grandes. Una escala comúnmente utilizada es la escala geométrica, donde cada paso incrementa \( N \) por un factor constante.
+
+Dado que quieres empezar con \( N = 500 \), podrías considerar duplicar el tamaño en cada paso. Sin embargo, ten en cuenta que la multiplicación de matrices tiene una complejidad temporal de aproximadamente \( O(N^3) \) para el algoritmo estándar, lo que significa que los tiempos de ejecución pueden aumentar muy rápidamente. Podrías ajustar el factor de incremento según la capacidad de tu sistema y el tiempo que estés dispuesto a esperar para cada ejecución.
+
+Aquí tienes un ejemplo de un shell script que podrías usar para ejecutar tu programa de multiplicación de matrices para \( N \) comenzando en 500 y duplicándolo en cada paso. Este script también redirige los resultados a un archivo CSV:
+
+[CODE_BLOCK_0]
+
+Para utilizar este script:
+
+1. Guarda el código en un archivo, por ejemplo, `run_tests.sh`.
+2. Asegúrate de que tu script de shell y tu programa `matrix_multiplication` sean ejecutables. Puedes hacerlo con el comando `chmod +x run_tests.sh` y `chmod +x matrix_multiplication`.
+3. Ejecuta el script desde la terminal con `./run_tests.sh`.
+
+Este script incrementa \( N \) multiplicándolo por un factor de 2 en cada iteración, desde 500 hasta un máximo de 8000 (o el valor máximo que desees definir). Puedes ajustar el `MAX_N` y el `FACTOR` según las capacidades de tu sistema y los requisitos de tu análisis. Ten en cuenta que para valores grandes de \( N \), la multiplicación de matrices puede tardar mucho tiempo, así que asegúrate de ajustar estos valores de acuerdo con tus necesidades y paciencia.

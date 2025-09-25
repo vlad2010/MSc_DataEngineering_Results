@@ -1,0 +1,1 @@
+but what happened to the OpenMP loop parallelization? Can it work with the ARM64 SIMD support?

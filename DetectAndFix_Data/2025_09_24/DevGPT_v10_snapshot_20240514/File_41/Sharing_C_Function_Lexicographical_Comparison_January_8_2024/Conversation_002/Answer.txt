@@ -1,0 +1,5 @@
+Certainly! Below is a C function that uses the `shouldSwap` function from the previous question to perform a bubble sort on the records within a chunk:
+
+[CODE_BLOCK_0]
+
+Make sure to replace the placeholder comments in the code with the actual data and adjust the array sizes according to your requirements.

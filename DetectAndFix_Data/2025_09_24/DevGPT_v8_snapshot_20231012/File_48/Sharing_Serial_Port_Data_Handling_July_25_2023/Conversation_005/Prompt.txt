@@ -1,0 +1,1 @@
+The scrolling view of the ECG plot is a bit dizzying. Can you modify it so that once the end of the window is reached, the plot is cleared and reset to begin printing from the left-hand side of the monitor?

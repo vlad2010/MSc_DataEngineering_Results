@@ -1,0 +1,1 @@
+I found a problem: I am comparing FRects. thats why it does not work... each field of an FRect is a float and its not a good idea to compare them with ==. Is that correct?

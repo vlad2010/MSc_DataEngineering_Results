@@ -1,0 +1,32 @@
+i fix the sh script to this, please translate into english and then give me the readme.md for it, fix it with c filename matrix_multiplication_sequential.c,  output bin filename with matrix_multiplication_sequential,  and output csv filename with secuential_results.csv, 
+
+#!/bin/bash
+
+# Nombre del ejecutable
+EXECUTABLE="./matrix_multiplication"
+
+# Archivo de salida para los resultados CSV
+OUTPUT_FILE="resultados.csv"
+
+# Inicializa el archivo de resultados y escribe la cabecera
+echo "N, Tiempo_CPU" > $OUTPUT_FILE
+
+# Valor inicial de N
+N=200
+
+# Límite máximo para N (ajusta este valor según tus necesidades)
+LOOPS=0
+
+# Factor de escala para N en cada iteración
+FACTOR=2
+
+# Ejecuta el programa para diferentes valores de N y recopila los resultados
+while [ $LOOPS < 10 ]
+do
+    echo "Ejecutando para N = $N"
+    $EXECUTABLE $N >> $OUTPUT_FILE
+    N=$((N * FACTOR))
+    LOOP=$((LOOP + 1))
+done
+
+echo "Ejecución completada. Resultados guardados en $OUTPUT_FILE"

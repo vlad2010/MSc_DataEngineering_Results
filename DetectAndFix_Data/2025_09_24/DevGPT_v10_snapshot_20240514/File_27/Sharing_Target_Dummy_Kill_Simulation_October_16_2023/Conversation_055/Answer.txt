@@ -1,0 +1,5 @@
+To implement priorities for abilities and iterate over the vector of abilities from highest to lowest priority, you can use a custom comparison function and `std::sort` from the `<algorithm>` library. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+This code introduces the concept of priorities for abilities and sorts them from highest to lowest priority using `std::sort`. The abilities are then iterated over based on their priorities.

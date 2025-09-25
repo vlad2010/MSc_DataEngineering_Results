@@ -1,0 +1,1 @@
+std::cout << "[Sent Body]: " << std::string(static_cast<char*>(ptr), len) << std::endl;

@@ -1,0 +1,1 @@
+can you edit the initialized hash table function so that it's for pthread_t and not pthread_mutex_init?

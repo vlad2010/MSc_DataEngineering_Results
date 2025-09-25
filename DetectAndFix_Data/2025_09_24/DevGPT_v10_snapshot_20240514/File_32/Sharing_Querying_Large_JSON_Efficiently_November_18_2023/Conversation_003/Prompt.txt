@@ -1,0 +1,1 @@
+but do these data structures save the data in a sorting format? so lets say i wannt to query the first N sorted elements in a sorted way, which one is the best to use

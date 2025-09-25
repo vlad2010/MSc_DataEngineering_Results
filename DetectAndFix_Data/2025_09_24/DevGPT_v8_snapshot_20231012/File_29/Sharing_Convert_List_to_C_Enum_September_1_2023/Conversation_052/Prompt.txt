@@ -1,0 +1,1 @@
+finally, a function called getSourceCapabilities(void) which writes 0b00100 to GO_COMMAND

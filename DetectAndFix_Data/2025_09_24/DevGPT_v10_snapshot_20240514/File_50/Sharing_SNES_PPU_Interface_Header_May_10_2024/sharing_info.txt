@@ -1,0 +1,9 @@
+Sharing info: 
+Title:SNES PPU Interface Header
+Date:May 10, 2024
+Url:https://chat.openai.com/share/8703a48a-af72-4a9f-976e-688a26724de6
+Model name:GPT-4Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:122478

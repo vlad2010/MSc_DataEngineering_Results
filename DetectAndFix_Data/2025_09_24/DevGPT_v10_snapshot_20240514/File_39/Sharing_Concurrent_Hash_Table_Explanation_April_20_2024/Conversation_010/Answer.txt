@@ -1,0 +1,5 @@
+You're correct; I mistakenly used `pthread_mutex_unlock` instead of `pthread_rwlock_unlock`. Since we are using a reader-writer lock (`pthread_rwlock_t`), the correct function to unlock it is `pthread_rwlock_unlock`. Here's the corrected version of the `insert` function:
+
+[CODE_BLOCK_0]
+
+Thank you for pointing out the error!

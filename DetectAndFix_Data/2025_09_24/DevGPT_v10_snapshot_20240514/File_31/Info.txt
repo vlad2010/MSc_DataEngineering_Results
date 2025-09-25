@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Pull_Request_for_all_my_ChatGPT_lab_tasks_20240226T234308Z/Sharing_Quicksort_Program_Documentation_February_27_2024/Conversation_001/Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 53,
+        "file": "./Code/20240513_160734_pr_sharingsjson/Source_Pull_Request_for_all_my_ChatGPT_lab_tasks_20240226T234308Z/Sharing_Quicksort_Program_Documentation_February_27_2024/Conversation_001/Code_001.cpp",
+        "severity": "warning",
+        "text": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+        "type": "FF1048",
+        "sharing": "Sharing_Quicksort_Program_Documentation_February_27_2024",
+        "source_code": "    srand(time(0)); // Seed for random number generation",
+        "scanner": "flawfinder"
+    }
+]

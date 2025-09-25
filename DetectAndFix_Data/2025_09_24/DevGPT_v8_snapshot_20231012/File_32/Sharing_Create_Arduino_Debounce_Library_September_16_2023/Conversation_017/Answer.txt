@@ -1,0 +1,1 @@
+ChatGPTCertainly, I'll adjust the update() function to place the common assignment _lastButtonState = _buttonState; above the if() statement:[CODE_BLOCK_0]This reduces redundancy and makes the function more concise.

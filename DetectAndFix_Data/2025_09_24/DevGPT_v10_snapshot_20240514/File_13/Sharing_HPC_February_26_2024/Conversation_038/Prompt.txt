@@ -1,0 +1,1 @@
+but i want to build one only function to allocate the 3 matrices i have, is it posible? 

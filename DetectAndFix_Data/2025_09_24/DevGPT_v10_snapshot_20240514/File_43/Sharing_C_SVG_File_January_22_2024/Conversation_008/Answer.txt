@@ -1,0 +1,15 @@
+Certainly! Let's add a function to create the marker definition and another function to draw a line with the specified attributes.
+
+### svg_writer.h
+
+[CODE_BLOCK_0]
+
+### svg_writer.cpp
+
+[CODE_BLOCK_1]
+
+### main.cpp
+
+[CODE_BLOCK_2]
+
+Now, you have functions to create a marker definition (`writeMarker`) and to draw a line with the specified attributes (`writeLine`). These functions can be easily reused in your code.

@@ -1,0 +1,15 @@
+To call a function object recursively from within a lambda function assigned to that object, you can't directly refer to the lambda by name inside its own body due to the nature of lambda functions in Python. However, you can achieve recursion using a workaround that involves a higher-order function or by passing the function object to itself as an argument. Here are two approaches to do it:
+
+### Approach 1: Using a Higher-Order Function
+
+You can use a higher-order function that takes a function as an argument and returns a lambda function. This lambda function can then call the original function recursively. This approach allows the lambda function to refer to itself indirectly through the higher-order function.
+
+[CODE_BLOCK_0]
+
+### Approach 2: Using a Self-Referencing Dictionary or Object
+
+Another way to achieve recursion in a lambda function is by using a self-referencing dictionary or an object that holds the lambda. This way, the lambda can refer to itself through the dictionary or object.
+
+[CODE_BLOCK_1]
+
+Both methods allow you to use recursion within a lambda function by providing a way for the lambda to refer to itself, either indirectly through another function or directly via a self-referencing mechanism. Choose the approach that best fits your needs and coding style.

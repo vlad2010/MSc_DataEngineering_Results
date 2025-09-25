@@ -1,0 +1,1 @@
+ChatGPTGreat, you have a bubble.h header file that declares the function prototype for the bubble function, which is defined in your bubble.cpp file. This makes the function reusable across different files by including bubble.h.Anything else you'd like to add? Feel free to say "done" if you're ready for assistance.

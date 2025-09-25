@@ -1,0 +1,5 @@
+My apologies for the oversight. Here's the complete code with the dummy's health being printed only when it takes damage:
+
+[CODE_BLOCK_0]
+
+Now the dummy's health is printed when it takes damage, along with the ability name, priority, tick, and time.

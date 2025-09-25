@@ -1,0 +1,11 @@
+Thank you for the correction. I apologize for the oversight.
+
+Let's correct that:
+
+Instead of:
+[CODE_BLOCK_0]
+
+Use:
+[CODE_BLOCK_1]
+
+With this correction, the text input's height will be set to approximately 10 lines of text using `HelloImGui::EmSize(10)`.

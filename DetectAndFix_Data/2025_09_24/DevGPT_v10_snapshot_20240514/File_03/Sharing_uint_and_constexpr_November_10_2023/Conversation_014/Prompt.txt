@@ -1,0 +1,1 @@
+isn't better to also constrain the "const char* id" to a fixed array size?

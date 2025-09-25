@@ -1,0 +1,1 @@
+What I meant was that I don't want multiple abilities to be cast in the same second. I still want both abilities to be active at the same time, but only one ability should be activated at the start, and then the next ability should be activated one second later.

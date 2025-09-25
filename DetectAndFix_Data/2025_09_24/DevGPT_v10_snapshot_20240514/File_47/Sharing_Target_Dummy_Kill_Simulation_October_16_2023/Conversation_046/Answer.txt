@@ -1,0 +1,5 @@
+I see what you're looking for. You want the shared cooldown to start at 0 seconds, and when an ability is cast, set the shared cooldown to 1 second after the ability is cast. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+In this version, the shared cooldown starts at 0 seconds, and after an ability is cast, the shared cooldown is set to 1 second, ensuring the abilities are cast with a 1-second interval between them.

@@ -1,0 +1,38 @@
+Let's continue translating:
+
+```cpp
+// A demo about the usage of the markdown renderer
+void DemoMarkdown(AppState& appState)
+{
+    std::string markdownDemo = R"(
+        # Demo markdown usage
+
+        *Let's ask GPT4 to give us some fun programming fortunes:*
+
+        1. **Bug Hunt**: In the world of software, the best debugger was, is, and will always be a _good night's sleep_.
+
+        2. **Pythonic Wisdom**:
+            > They say if you can't explain something simply, you don't understand it well enough. Well, here's my Python code for simplicity:
+            ```python
+            def explain(thing):
+                return "It's just a " + thing + ". Nothing fancy!"
+            ```
+        )";
+    ImGuiMd::RenderUnindented(markdownDemo);
+
+    // Interactive demo
+    ImGui::Separator();
+    ImGuiMd::Render("*Try it yourself*");
+    ImGui::SameLine(HelloImGui::EmSize(30.f));
+    if (ImGui::SmallButton("Edit the fortune markdown"))
+        strcpy(appState.MarkdownInput, CodeUtils::UnindentMarkdown(markdownDemo).c_str());
+    ImGui::InputTextMultiline("##Markdown Input", appState.MarkdownInput, sizeof(appState.MarkdownInput), HelloImGui::EmToVec2(40.f, 5.f));
+    ImGuiMd::RenderUnindented(appState.MarkdownInput);
+    ImGui::Separator();
+
+    // Display help
+    ImGui::Checkbox("More info##Markdown", &appState.ShowMarkdownInfo);
+    if (appState.ShowMarkdownInfo)
+        ImGuiMd::RenderUnindented(GetDoc("MarkdownDoc"));
+}
+```

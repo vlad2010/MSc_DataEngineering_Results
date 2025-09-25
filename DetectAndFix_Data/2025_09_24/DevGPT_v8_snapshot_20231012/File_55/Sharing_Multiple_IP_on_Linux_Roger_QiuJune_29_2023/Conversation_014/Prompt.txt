@@ -1,0 +1,1 @@
+What if you end up sending packets out on the socket bound to 192.168.1.2. Does it end up sending to both interfaces duplicating the packet, or does it select one at random?

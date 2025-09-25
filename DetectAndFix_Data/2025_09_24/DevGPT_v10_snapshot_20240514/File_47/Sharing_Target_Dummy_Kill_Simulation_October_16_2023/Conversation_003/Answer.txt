@@ -1,0 +1,7 @@
+To measure the time it takes in terms of in-game ticks, you can use a timer that simulates the passage of time in the game world. Here's an updated version of the C++ program that measures the time in terms of in-game ticks:
+
+[CODE_BLOCK_0]
+
+In this updated version, we're using `std::this_thread::sleep_for` to simulate the in-game ticks, where 1 tick is equivalent to 0.1 seconds. The program counts the ticks and displays the time taken to kill the dummy in terms of ticks.
+
+This should provide you with a way to measure the time it takes in the context of in-game ticks.

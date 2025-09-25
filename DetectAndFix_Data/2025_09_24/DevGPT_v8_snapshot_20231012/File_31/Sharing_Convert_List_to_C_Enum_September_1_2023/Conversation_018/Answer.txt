@@ -1,0 +1,1 @@
+ChatGPTOf course! Here's the updated enum with "5V" added to the end of each "CURRENT" label:[CODE_BLOCK_0]Each enum value now explicitly mentions that it's for a 5V contract. Is this what you were looking for?

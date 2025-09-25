@@ -1,0 +1,13 @@
+Source data info: 
+Title: I'm puzzled how anyone trusts ChatGPT for code
+Date: 2024-05-08T21:04:51.000Z
+Url: https://news.ycombinator.com/item?id=40302698
+Type: hacker news
+ID: 40302698
+Author: chrisjj
+Number of points: 133
+Number of comments: 64
+Number of sharings: 2
+
+Story text:
+None

@@ -1,0 +1,5 @@
+I see your point. You can introduce a separate variable to track when the ability last dealt damage and modify the `canDealDamage` function accordingly. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+This code tracks the last damage time separately and modifies the `canDealDamage` function accordingly, ensuring that abilities can deal damage based on their cooldowns. If an ability is inactive, it is cast immediately.

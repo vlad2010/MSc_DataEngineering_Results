@@ -1,0 +1,1 @@
+The canCast function also needed to check if the shared cooldown was over.

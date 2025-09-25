@@ -1,0 +1,1 @@
+Right now the dummy dies in 301 ticks (30.1 seconds) when it should be dying in about 3 seconds.

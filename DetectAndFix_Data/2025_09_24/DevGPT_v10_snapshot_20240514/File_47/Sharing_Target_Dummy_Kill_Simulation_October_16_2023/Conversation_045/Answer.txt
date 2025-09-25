@@ -1,0 +1,5 @@
+To introduce a shared cooldown of 1 second between ability casts, you can add a `sharedCooldown` variable and use it to control when abilities can be cast. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+In this version, the shared cooldown between ability casts is implemented, allowing ability1 to be cast at the start and ability2 to be cast one second later. The shared cooldown `sharedCooldown` decreases over time, and abilities can be cast when it reaches or falls below 0.0.

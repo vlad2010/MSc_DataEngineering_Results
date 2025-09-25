@@ -1,0 +1,5 @@
+Certainly! Below is a C function that meets your requirements:
+
+[CODE_BLOCK_0]
+
+This code defines a `shouldSwap` function that compares two `Record` structures lexicographically based on the name and surname. The `main` function demonstrates an example usage of the `shouldSwap` function and prints the "Hello world." message at the end.

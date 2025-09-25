@@ -1,0 +1,13 @@
+El mensaje de error `[Build Error] [HPC.exe] Error 1` que estás viendo en el contexto de un `Makefile` generalmente indica que hubo un problema durante el proceso de compilación o enlace, pero el mensaje por sí solo no proporciona detalles específicos sobre la causa del error. Para diagnosticar y solucionar el problema, te sugiero seguir estos pasos:
+
+1. **Revisar la salida completa del compilador**: Antes del mensaje de error, debería haber mensajes más detallados que indiquen qué fue lo que falló exactamente. Esto podría incluir errores de sintaxis en el código, problemas con las rutas de archivos incluidos, errores de enlace, entre otros.
+
+2. **Verificar el `Makefile`**: Asegúrate de que todas las rutas de archivos y directorios en tu `Makefile` sean correctas y estén completas. Un error común es tener rutas incorrectas o referencias a archivos que no existen o no se pueden encontrar.
+
+3. **Comprobar las dependencias**: Si tu proyecto depende de bibliotecas externas, asegúrate de que estén correctamente instaladas y que las rutas a estas bibliotecas estén correctamente especificadas en el `Makefile`.
+
+4. **Opciones de compilación**: Si has modificado las opciones de compilación o estás utilizando flags específicos, asegúrate de que sean compatibles con tu código y entorno de desarrollo.
+
+5. **Limpiar y reconstruir**: A veces, los archivos objeto antiguos o corruptos pueden causar problemas. Puedes intentar limpiar tu proyecto (usualmente con un comando como `make clean`) y luego volver a compilarlo para ver si eso resuelve el problema.
+
+Si después de seguir estos pasos todavía no logras identificar el problema, te recomiendo compartir más detalles sobre los mensajes de error específicos que aparecen antes del `[Build Error] [HPC.exe] Error 1` o cualquier otra información relevante del `Makefile` o del código que estás tratando de compilar. Esto puede ayudar a identificar la causa exacta del problema.

@@ -1,0 +1,7 @@
+next make an enum for this table
+000 = No response
+001 = Success
+011 = Invalid command or argument
+100 = Command not supported
+101 = Transaction fail. No GoodCRC is received after sending
+you'll need to have the enum name simplified, but the text description can be a doxygen ///< comment

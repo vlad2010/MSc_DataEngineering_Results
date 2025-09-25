@@ -1,0 +1,21 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```c
+#include <stdio.h>
+#include "parser.h"
+
+int main() {
+    const char* source_code = "ConstrainedInt(0->100)";
+    Parser* parser = create_parser(source_code);
+
+    ConstrainedIntType* int_type = parse_constrained_int_type(parser);
+    printf("Parsed constrained int type:\n");
+    printf("Name: %s\n", int_type->name);
+    printf("Range: %d -> %d\n", int_type->min_value, int_type->max_value);
+
+    destroy_parser(parser);
+    free(int_type->name);
+    free(int_type);
+
+    return 0;
+}
+```)

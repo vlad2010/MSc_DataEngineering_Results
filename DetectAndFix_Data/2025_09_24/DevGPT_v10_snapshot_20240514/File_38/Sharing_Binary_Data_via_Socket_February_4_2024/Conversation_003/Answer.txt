@@ -1,0 +1,17 @@
+Yes, when you use raw sockets with the `IPPROTO_RAW` protocol in C, you are responsible for constructing the entire packet, including the IP header and any higher-level protocol headers (such as TCP or UDP) if applicable. Raw sockets provide you with full control over the packet structure, allowing you to craft custom packets as needed.
+
+When you send a packet using a raw socket with `IPPROTO_RAW`, you must manually construct the IP header and any higher-level protocol headers (such as TCP or UDP) if you want to include them. This includes setting fields like source and destination IP addresses, protocol numbers, packet lengths, and checksums.
+
+Here's a brief overview of what you need to do when sending packets with raw sockets:
+
+1. Construct the IP header: Set all the fields in the IP header, including source and destination IP addresses, protocol number (e.g., TCP or UDP), packet length, and checksum.
+
+2. Construct any higher-level protocol headers (e.g., TCP or UDP): Set all the fields in the headers, such as source and destination ports for TCP or UDP, sequence numbers, acknowledgment numbers, flags, window size, checksum, etc.
+
+3. Calculate checksums: Calculate and set the checksum fields in both the IP header and any higher-level protocol headers.
+
+4. Assemble the entire packet: Concatenate the IP header with any higher-level protocol headers and payload data to form the complete packet.
+
+5. Send the packet using `sendto()` or a similar function, specifying the raw socket and the destination address.
+
+It's essential to have a good understanding of the protocol specifications and packet structure when working with raw sockets to ensure that the packets you construct are valid and properly formatted. Additionally, using raw sockets typically requires elevated privileges, and sending raw packets may have security implications, so use them responsibly and be mindful of any restrictions or policies in your environment.

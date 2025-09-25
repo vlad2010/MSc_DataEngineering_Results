@@ -1,0 +1,1 @@
+   int shm_id = shmget(key, size, IPC_CREAT | 0666);

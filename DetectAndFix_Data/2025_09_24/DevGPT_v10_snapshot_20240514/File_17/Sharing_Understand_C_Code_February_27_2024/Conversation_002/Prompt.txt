@@ -1,0 +1,40 @@
+I require further clarification on one of the above code snippets in the C++ code. The snippet in question is the following:
+
+stack<string> _88MPH(unordered_map<string, list<edge>> mapOfChargingStations, unordered_map<string, double> chargingStation, string startingLocation, double initialBattery){
+    stack<string> stationPath;
+    string stationName = "";
+
+    double currentBattery = initialBattery;
+    double decreaseBattery = 0.0;
+    double currentDistance = 0.0;
+    double charge = chargingStation[startingLocation];
+
+    if(currentBattery <= 0.0)
+        return {};
+
+    currentBattery = currentBattery + charge;
+
+    if(currentBattery > 75.5)
+        return {};
+    
+    if(currentBattery >= 62.5 && currentBattery <= 75.5){
+        stationPath.push(startingLocation);
+        return stationPath;
+    }
+
+    for(auto& neighbor : mapOfChargingStations[startingLocation]){
+        stationName = neighbor.station;
+        currentDistance = neighbor.distance;
+        decreaseBattery = currentDistance * 0.346;
+        stationPath = _88MPH(mapOfChargingStations, chargingStation, stationName, currentBattery-decreaseBattery);
+        
+        if(!stationPath.empty()){
+            stationPath.push(startingLocation);
+            break;
+        }
+    }
+
+    return stationPath;
+}
+
+The issue that I am running to is that I forgot how this code snippet works. I would like more clarification on how this code works in relation to the rest of the code that you acknowledged and what exactly does this code snippet accomplish. My desired outcome is to regain understanding of the code snippet above, therefore, I would like for you to provide a detailed explanation on what EVERY line of code does by providing a comment above every line in the code snippet itself.

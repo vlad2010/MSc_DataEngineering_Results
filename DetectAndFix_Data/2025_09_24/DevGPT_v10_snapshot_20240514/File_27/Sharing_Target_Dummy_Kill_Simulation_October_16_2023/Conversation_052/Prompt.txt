@@ -1,0 +1,1 @@
+Alright, now I'd like to use a vector of abilities instead of hard-coding a specific number of abilities, so that I can easily change the number of abilities.

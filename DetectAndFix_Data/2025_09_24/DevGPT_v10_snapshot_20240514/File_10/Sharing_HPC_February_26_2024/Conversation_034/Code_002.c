@@ -1,0 +1,1 @@
+   void* shared_memory = shmat(shm_id, NULL, 0);

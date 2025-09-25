@@ -1,0 +1,9 @@
+Certainly! Here's an example of how you can create a listener in C++ using the Windows API to monitor process creation and extract the name of the process. This code utilizes the `SetWindowsHookEx` function to set a hook that captures process creation events.
+
+[CODE_BLOCK_0]
+
+In this code, we set a Windows Shell hook (`WH_SHELL`) by calling `SetWindowsHookEx`. The hook procedure, `HookCallback`, is called whenever a process is created. Inside the callback, we use `GetWindowTextA` to extract the name of the process from the window handle.
+
+The main loop of the program runs until the message queue is empty. This allows the program to continuously monitor process creation events. Finally, we unhook the hook by calling `UnhookWindowsHookEx` to clean up.
+
+Please note that to compile and run this code successfully, you will need to link against the user32.lib library.

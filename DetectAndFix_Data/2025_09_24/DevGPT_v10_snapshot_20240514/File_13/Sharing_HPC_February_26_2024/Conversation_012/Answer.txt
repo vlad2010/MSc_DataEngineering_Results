@@ -1,0 +1,62 @@
+Certainly! Below is a sample README documentation for your matrix multiplication program and the accompanying shell script. This documentation provides an overview of the program, its dependencies, how to compile and run it, and how to use the shell script to automate running the program for different matrix sizes.
+
+---
+
+# Matrix Multiplication Program
+
+This program performs matrix multiplication for NxN matrices, where N is a parameter that can be specified by the user. The matrices are filled with random numbers between 0 and 99. The program measures the CPU time taken to perform the multiplication, excluding the time taken for memory allocation, matrix initialization, and memory deallocation.
+
+## Dependencies
+
+- GCC Compiler (or any standard C compiler)
+- Bash Shell (for running the shell script)
+- Linux/Unix environment (for the shell script)
+
+## Compilation
+
+To compile the matrix multiplication program, use the following command in your terminal:
+
+[CODE_BLOCK_0]
+
+This command compiles the `matrix_multiplication.c` source file and creates an executable named `matrix_multiplication`.
+
+## Usage
+
+To run the matrix multiplication program, use the following command:
+
+[CODE_BLOCK_1]
+
+- `N` is the size of the NxN matrices.
+- `[print_flag]` is an optional argument. Set it to `1` to print the matrices A, B, and the resulting matrix C. If omitted or set to `0`, the program will only output the size of the matrix and the CPU time taken for the multiplication in CSV format.
+
+Example:
+
+[CODE_BLOCK_2]
+
+This command will perform matrix multiplication for 500x500 matrices and print the matrices and the result.
+
+## Automating Multiple Runs with Shell Script
+
+The accompanying shell script `run_tests.sh` is used to automate running the matrix multiplication program for various matrix sizes, starting from a base size and scaling up.
+
+### Script Usage
+
+1. Ensure the script and the matrix multiplication program are executable:
+
+   [CODE_BLOCK_3]
+
+2. Run the script:
+
+   [CODE_BLOCK_4]
+
+The script will run the matrix multiplication program for matrix sizes starting from 500 and doubling the size in each step, up to a maximum size. The CPU time for each run is saved in the `results.csv` file.
+
+### Customization
+
+You can modify the script to change the starting matrix size, the maximum size, and the scaling factor by editing the following lines in the script:
+
+[CODE_BLOCK_5]
+
+---
+
+This README provides a basic guide to compiling, running, and automating your matrix multiplication program. Feel free to expand or modify it according to your project's needs.

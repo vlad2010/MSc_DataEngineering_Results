@@ -1,0 +1,30 @@
+write code in C to implement "void ssmap_path_create(const struct ssmap * m, int start_id, int end_id)" that takes in a : struct ssmap {
+    int nr_nodes;
+    int nr_ways;
+    struct node *nodes;
+    struct way *ways;
+}; where nodes are : struct node {
+    double lat;
+    double lon;
+    int id;
+    int osmid;
+    int num_ways;
+    int *way_ids;
+}; and ways are : struct way {
+    int id;
+    int osmid;
+    char *name;
+    float speed_limit;
+    bool one_way;
+    int num_nodes;
+    int *node_ids;
+}; So this function takes in these values and *calculates and prints a path according to the shortest time it takes to get to the node with end_id from the node with start_id*. You can use an already-defined minHeap (with functions like create_min_heap, min_heapify, etc) for simplicity. They are defined as : typedef struct HeapNode {
+    int node_id;     // The node identifier
+    double priority; // The node's priority
+} HeapNode;
+
+typedef struct MinHeap {
+    int size;       // Current size of the heap
+    int capacity;   // Maximum capacity of the heap
+    HeapNode *elements; // Array of heap nodes
+} MinHeap; There is already a function that can calculate segmented travel time between two nodes called : double calculate_travel_time(struct node node1, struct node node2, double speed_limit); and a function that calculates travel time of a path of node ids (stored in array) called : double ssmap_path_travel_time(const struct ssmap * m, int size, int node_ids[size]); feel free to use dijikstra's algorithm for calculations

@@ -1,0 +1,1 @@
+This is a good start, but instead of checking if no ability is active, it should check if ability1 is inactive, and cast it if it is, and likewise for ability2. It should also set the activation cooldown back to 1 second after casting any ability.

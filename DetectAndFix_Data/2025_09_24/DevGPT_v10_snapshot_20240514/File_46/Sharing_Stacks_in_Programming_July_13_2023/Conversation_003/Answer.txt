@@ -1,0 +1,7 @@
+Certainly! Here's an equivalent example implemented in C:
+
+[CODE_BLOCK_0]
+
+In this C example, a stack is implemented using an array and a top index. The `initialize`, `is_empty`, `is_full`, `push`, and `pop` functions handle the stack operations. The `is_balanced` function takes an expression as input and checks whether the parentheses in the expression are balanced, similar to the previous Python example.
+
+You can compile and run this C code to see the output for different expressions. Balanced expressions will output `1` (true), while unbalanced expressions will output `0` (false).

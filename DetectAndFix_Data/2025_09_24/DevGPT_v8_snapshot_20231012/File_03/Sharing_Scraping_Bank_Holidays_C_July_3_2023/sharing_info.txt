@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Scraping Bank Holidays (C++)
+Date:July 3, 2023
+Url:https://chat.openai.com/share/b4077a5c-736d-41d2-be18-2360e0175d3c
+Model name:Default (GPT-3.5)Number of prompts:20
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:19
+HTML content size:318694

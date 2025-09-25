@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Thread Synchronization with Mutex
+Date:April 17, 2024
+Url:https://chat.openai.com/share/6276eff2-19a2-4f4c-be44-7f00527a9630
+Model name:GPT-3.5Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:121225

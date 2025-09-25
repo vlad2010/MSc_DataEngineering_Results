@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240515_002357_hn_sharingsjson/Source_Do_Users_Write_More_Insecure_Code_with_AI_Assistants_20240104T192541000Z/Sharing_Do_Users_Write_More_Insecure_Code_with_AI_Assistants_httpsarxivorgpdf221103622pdf_January_5_2024/Conversation_005/Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 7,
+        "file": "./Code/20240515_002357_hn_sharingsjson/Source_Do_Users_Write_More_Insecure_Code_with_AI_Assistants_20240104T192541000Z/Sharing_Do_Users_Write_More_Insecure_Code_with_AI_Assistants_httpsarxivorgpdf221103622pdf_January_5_2024/Conversation_005/Code_001.c",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_Do_Users_Write_More_Insecure_Code_with_AI_Assistants_httpsarxivorgpdf221103622pdf_January_5_2024",
+        "source_code": "    char buffer[50];",
+        "scanner": "flawfinder"
+    }
+]

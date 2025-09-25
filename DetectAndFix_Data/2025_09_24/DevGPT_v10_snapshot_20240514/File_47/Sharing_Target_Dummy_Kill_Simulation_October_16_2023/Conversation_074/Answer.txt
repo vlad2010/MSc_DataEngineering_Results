@@ -1,0 +1,5 @@
+I apologize for the oversight. Here's the updated code with the `updateActivity` call placed before the `canCast` and `canDealDamage` checks:
+
+[CODE_BLOCK_0]
+
+This places the `updateActivity` call before the `canCast` and `canDealDamage` checks as you requested.

@@ -1,0 +1,1 @@
+sharedCooldown should be updated to a constant variable like sharedCooldownValue that is set to 1.

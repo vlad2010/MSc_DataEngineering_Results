@@ -1,0 +1,7 @@
+I don't need this comment:
+// Simulate game logic for the rest of the tick
+// ...
+And this:
+double tickDuration = 1.0 / ticksPerSecond;
+elapsedTimeSeconds += tickDuration;
+could easily be one line

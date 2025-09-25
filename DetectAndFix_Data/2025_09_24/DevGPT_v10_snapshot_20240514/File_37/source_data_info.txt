@@ -1,0 +1,13 @@
+Source data info: 
+Title: Selecting a Sorting Algorithm while another Algorithm is running causes them to both run at the same time
+Date: 2024-04-30T23:35:41Z
+Url: https://github.com/memeToasty/3ds_sorting/issues/11
+Type: issue
+ID: No id
+Author: alexbatesdev
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

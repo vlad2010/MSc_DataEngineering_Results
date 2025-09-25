@@ -1,0 +1,9 @@
+Sharing info: 
+Title:New chat
+Date:July 20, 2023
+Url:https://chat.openai.com/share/305bfc74-6ac9-4cfc-960a-0c9dd0a6dbfe
+Model name:Default (GPT-3.5)Number of prompts:4
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:85421

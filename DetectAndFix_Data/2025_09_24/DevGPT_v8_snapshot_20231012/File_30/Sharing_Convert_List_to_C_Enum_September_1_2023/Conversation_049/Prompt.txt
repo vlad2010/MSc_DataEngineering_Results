@@ -1,0 +1,1 @@
+next setter function is called `void selectPDO(HUSB238_PDOSelection pd)` and it will set bits [7:4]  of PDO_SELECT register. also write a matching getter called `HUSB238_PDOSelection getSelectedPDO(void)` 

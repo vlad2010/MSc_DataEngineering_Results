@@ -1,0 +1,1 @@
+ChatGPTAlright, no problem! What would you like to focus on next? Would you like to start with the header file, the implementation file, or the example Arduino sketch?

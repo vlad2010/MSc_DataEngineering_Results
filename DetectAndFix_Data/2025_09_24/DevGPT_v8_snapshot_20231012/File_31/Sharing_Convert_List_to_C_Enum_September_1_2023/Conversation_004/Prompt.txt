@@ -1,0 +1,8 @@
+do the same for theses:
+0000 = Unattached
+0001 = PD 5V
+0010 = PD 9V
+0011 = PD 12V
+0100 = PD 15V
+0101 = PD 18V
+0110 = PD 20V

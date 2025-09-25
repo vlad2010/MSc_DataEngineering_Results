@@ -1,0 +1,19 @@
+To write a JavaScript function that adds a new entry to a SQL table named "STUDENTS", you will need to interact with the database using SQL queries. For this example, let's assume you are using Node.js with a MySQL database. You'll need a MySQL driver for Node.js, which can be installed using npm:
+
+[CODE_BLOCK_0]
+
+Once you have the MySQL driver, you can write a function to insert a new student into the `STUDENTS` table. Here's a basic example:
+
+[CODE_BLOCK_1]
+
+In this example:
+
+1. We first import the `mysql` module and establish a connection to your MySQL database. Make sure to replace `'localhost'`, `'username'`, `'password'`, and `'your_database_name'` with your actual database host, username, password, and database name.
+
+2. The `addStudent` function takes two parameters, `name` and `age`, and inserts them into the `STUDENTS` table using an `INSERT INTO` SQL query. The `?` placeholders in the query are replaced by the `name` and `age` values to prevent SQL injection attacks.
+
+3. The `connection.query` method executes the SQL query. If there's an error, it throws the error; otherwise, it logs the results to the console.
+
+4. After calling the `addStudent` function, we close the database connection using `connection.end()`.
+
+Remember to handle errors appropriately in a real-world application and ensure your database credentials are secured and not hard-coded in your source code.

@@ -1,0 +1,5 @@
+Here's the translated version of your code into English, including comments and output messages:
+
+[CODE_BLOCK_0]
+
+This code now includes English comments and messages, making it more accessible for English-speaking users. The functionality remains the same, with the addition of an automatic fallback to \( N = 10 \) if no value is provided, and the option to print the matrices or output the size and CPU time used in CSV format based on command line arguments.

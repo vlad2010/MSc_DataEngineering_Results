@@ -1,0 +1,23 @@
+Of course! Let's summarize the advice and conventions you've provided for translating the ImGui-based C++ code to Python:
+
+1. **Handling Value Changes with ImGui**:
+    - In C++, values are modified in place, often by passing pointers or references. Example:
+    [CODE_BLOCK_0]
+    - In Python, functions return the modified value. To handle this, we unpack the result into variables:
+    [CODE_BLOCK_1]
+
+2. **Enums**:
+    - C++ uses enum names like `ImPlotFlags_Equal`. 
+    - In Python, the equivalent is referenced as `implot.Flags_.equal`.
+
+3. **Transforming C Numeric Buffers**:
+    - Instead of passing raw C++ arrays or buffers, in Python, we convert data into `numpy` arrays when passing them to plotting functions.
+
+4. **Static Variables**:
+    - In C++, static variables retain their values across function calls. 
+    - For the Python port, a `static` decorator is introduced which essentially allows function variables to be static. 
+    - These static variables can be accessed via the function's name (acting like an object). In your example, you provided a synonym `statics` for more readable access.
+
+Your approach with the `static` decorator is a clever way to emulate static-like behavior in Python, especially given that Python functions don't naturally support static local variables in the same way C++ does.
+
+This summary encapsulates the conventions and transformations required to translate the provided C++ ImGui code to its Python counterpart using the `imgui_bundle`. Armed with these guidelines, I can assist with further translations or related tasks.

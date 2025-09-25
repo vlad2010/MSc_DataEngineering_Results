@@ -1,0 +1,1 @@
+var  = strcmp["Hello","World"]; output value

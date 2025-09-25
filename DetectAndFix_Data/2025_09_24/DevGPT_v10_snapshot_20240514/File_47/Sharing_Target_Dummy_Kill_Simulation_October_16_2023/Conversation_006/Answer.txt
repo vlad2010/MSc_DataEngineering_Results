@@ -1,0 +1,5 @@
+I understand your request to measure the time in terms of in-game ticks rather than wall clock time. You can accomplish this by using a counter for in-game ticks to measure the time it takes to kill the dummy. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+In this code, the ability cooldown is specified in terms of ticks (e.g., `abilityCooldown = 10.0` means the ability can be used once every 10 ticks), and the program calculates the time it takes to kill the dummy in terms of in-game ticks.

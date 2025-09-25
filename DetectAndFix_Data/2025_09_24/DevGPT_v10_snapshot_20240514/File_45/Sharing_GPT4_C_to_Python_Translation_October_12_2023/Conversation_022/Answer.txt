@@ -1,0 +1,15 @@
+Certainly! Here's a summary of the changes you made to the translated `demo_plot` function:
+
+1. **Naming Convention**: Adopted the snake_case naming convention for variable names, in line with PEP8 style guidelines for Python. For example:
+    - `appState` → `app_state`
+    - `plotSize` → `plot_size`
+
+2. **Enum Access**: Changed how the ImPlot axis flags are accessed:
+    - `implot.ImPlotAxisFlags_NoDecorations` → `implot.AxisFlags_.no_decorations`
+
+3. **Array Handling**: Directly passed the `app_state.plot_data` as a numpy array to the `implot.plot_pie_chart` function:
+    - Instead of just `appState.plot_data`, it is now `np.array(app_state.plot_data)`.
+
+4. **Formatting**: The overall formatting and structure of the function have been streamlined to ensure readability and consistency.
+
+The changes ensure that the code is more idiomatic to Python, adhering to common naming conventions and practices in the Python community.

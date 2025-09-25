@@ -1,0 +1,1 @@
+write a wireshark plugin to decrypt ssh connections as long as a key is supplied, show full code without examples or skips

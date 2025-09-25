@@ -1,0 +1,3 @@
+I have this code, but i need to understand what is 
+
+shmget, shmat, shmdt and shmctl, because i think i need something more simple, using the pointers to the matrix that the fork childs will use

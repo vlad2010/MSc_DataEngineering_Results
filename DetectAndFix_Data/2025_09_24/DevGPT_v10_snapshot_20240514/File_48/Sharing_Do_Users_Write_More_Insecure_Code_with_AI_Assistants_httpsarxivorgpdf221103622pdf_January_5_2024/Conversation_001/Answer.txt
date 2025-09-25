@@ -1,0 +1,17 @@
+Sure, I can provide you with a simple example of encryption and decryption functions in Python using a symmetric key. We'll use the `cryptography` library for this purpose, which offers a robust and secure way to handle encryption and decryption.
+
+First, you need to install the `cryptography` library. You can do this using pip:
+
+[CODE_BLOCK_0]
+
+Once you have the library installed, you can use the following Python code:
+
+1. **Encryption Function**: This function will take a string and a key, and return the encrypted version of the string.
+
+2. **Decryption Function**: This function will take the encrypted string and the same key, and return the original string.
+
+Here's how you can implement these functions:
+
+[CODE_BLOCK_1]
+
+This script uses `Fernet` symmetric encryption from the `cryptography` library. Remember that the key used for encryption must be the same as the one used for decryption. Also, it's crucial to keep the key secure, as anyone with the key can decrypt the encrypted data.

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:GPT4 C++ to Python Translation
+Date:October 12, 2023
+Url:https://chat.openai.com/share/1e61dfec-c2de-4c2a-8149-24926276bbd5
+Model name:GPT-4Number of prompts:29
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:29
+HTML content size:387010

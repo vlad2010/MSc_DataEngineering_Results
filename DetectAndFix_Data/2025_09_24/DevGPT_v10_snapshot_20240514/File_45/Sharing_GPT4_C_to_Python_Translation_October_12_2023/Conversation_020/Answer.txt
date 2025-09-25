@@ -1,0 +1,7 @@
+Certainly! Here are the changes you made to the previous version:
+
+1. **Comment Addition**: You've added a docstring at the beginning of the `demo_markdown` function, which succinctly describes the purpose of the function: `"A demo about the usage of the markdown renderer"`.
+
+2. **Text Input Assignment**: You've modified the line where the result of `imgui.input_text_multiline` is being assigned. Previously, we were directly updating the `appState.markdown_input` with the result of the function. Now, you've made it explicit that the function is returning a tuple (with the checkbox state and the input text). You're unpacking this tuple, discarding the checkbox state, and updating the `appState.markdown_input` with the provided text.
+
+These changes clarify the purpose of the function and make the code's intent more explicit, especially regarding how the results from ImGui functions are processed and stored in the application state.

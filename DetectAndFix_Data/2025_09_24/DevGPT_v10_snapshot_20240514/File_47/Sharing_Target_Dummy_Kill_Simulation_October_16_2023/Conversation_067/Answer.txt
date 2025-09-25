@@ -1,0 +1,7 @@
+I apologize for the oversight. You are correct; the `cooldownSeconds` variable, which is used for the shared cooldown between abilities, should be preserved. We should add a new parameter variable for the individual cooldown of each ability.
+
+Here's an updated version of the program with both the shared cooldown and individual cooldowns:
+
+[CODE_BLOCK_0]
+
+This updated program includes both individual cooldowns and shared cooldowns for each ability as you requested.

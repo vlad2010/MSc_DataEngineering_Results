@@ -1,0 +1,21 @@
+Certainly! Below is an updated shell script and corresponding README documentation to illustrate the progression with a factor of 2, starting from 200.
+
+### Shell Script (`run_tests.sh`)
+
+[CODE_BLOCK_0]
+
+This script uses a `for` loop to run the matrix multiplication program 10 times, starting with \( N = 200 \) and doubling \( N \) after each iteration. The CPU time for each run is saved in `sequential_results_factor2.csv`.
+
+### README.md Documentation
+
+[CODE_BLOCK_1]bash
+gcc -o matrix_multiplication_sequential matrix_multiplication.c
+[CODE_BLOCK_2]bash
+./matrix_multiplication_sequential N [print_flag]
+[CODE_BLOCK_3]bash
+    chmod +x run_tests.sh matrix_multiplication_sequential
+    [CODE_BLOCK_4]bash
+    ./run_tests.sh
+    [CODE_BLOCK_5]
+
+This README.md provides comprehensive instructions for compiling, running, and understanding the output of the sequential matrix multiplication program, especially focusing on the doubling factor's impact on performance.

@@ -1,0 +1,9 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```cpp
+HUSB238_5VCurrentContract Adafruit_HUSB238::get5VContractA() {
+  Adafruit_I2CRegister pdRegister = Adafruit_I2CRegister(i2c_dev, HUSB238_PD_STATUS1);
+  Adafruit_I2CRegisterBits contractABits = Adafruit_I2CRegisterBits(&pdRegister, 2, 0);  // Bottom two bits (0-1)
+  return (HUSB238_5VCurrentContract) contractABits.read();
+}
+
+```)

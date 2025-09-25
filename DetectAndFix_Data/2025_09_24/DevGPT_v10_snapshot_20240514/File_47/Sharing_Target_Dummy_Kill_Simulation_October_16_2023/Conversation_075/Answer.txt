@@ -1,0 +1,5 @@
+You're absolutely correct. Initializing `lastCastTime` to -cooldown is more appropriate. Here's the corrected initialization:
+
+[CODE_BLOCK_0]
+
+Thank you for pointing that out, and I appreciate your attention to detail!

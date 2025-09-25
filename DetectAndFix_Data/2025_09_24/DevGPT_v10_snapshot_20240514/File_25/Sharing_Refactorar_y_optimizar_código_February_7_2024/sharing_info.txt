@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Refactorar y optimizar código.
+Date:February 7, 2024
+Url:https://chat.openai.com/share/c3a3d3d8-c38b-40fa-9f47-fa9ff9627b32
+Model name:GPT-3.5Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:159406

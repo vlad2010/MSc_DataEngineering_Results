@@ -1,0 +1,5 @@
+You are absolutely correct. My apologies for the oversight. The `castAbility` function should not update the `lastDamageTime` since it doesn't deal damage. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+This corrected code ensures that the `lastDamageTime` is updated immediately after dealing damage to the dummy in the main loop.

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Code Simplification in C++
+Date:February 26, 2024
+Url:https://chat.openai.com/share/43d154de-aee9-49cf-91d7-d8c7eb9c7d98
+Model name:GPT-3.5Number of prompts:4
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:4
+HTML content size:131407

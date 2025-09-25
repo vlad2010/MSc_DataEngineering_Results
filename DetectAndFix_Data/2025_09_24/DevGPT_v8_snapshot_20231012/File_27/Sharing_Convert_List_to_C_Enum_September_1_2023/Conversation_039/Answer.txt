@@ -1,0 +1,1 @@
+ChatGPTMy apologies for the oversight. Let's correct that. The "CC_DIR" status will be read from the 7th bit (bit index 7) of the HUSB238_PD_STATUS1 register. Here's the updated function for getting the "CC_DIR" status:Function to get the "CC_DIR" status[CODE_BLOCK_0]I've updated the bit index to 7 for "CC_DIR". Let me know if this looks good to you!

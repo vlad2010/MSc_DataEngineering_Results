@@ -1,0 +1,30 @@
+So it's now starting up with the command line `./src/dnsmasq -C ~/dnsmasq.test.conf` and dnsmasq.test.conf has:
+```
+# Configure to the dhcp server to listen on 3900x unused RJ45 port
+# and a small dhcp-range for 2min
+# Need to set capabilities on dnsmasq you're debugging:
+#    sudo setcap 'cap_net_admin,cap_net_raw+ep' ./src/dnsmasq
+interface=enp113s0
+dhcp-range=192.168.3.50,192.168.3.60,2m
+
+# Debugging
+user=wink
+group=users
+dhcp-leasefile=/home/wink/dnsmasq.leases
+no-daemon
+port=1234
+dhcp-alternate-port=1235
+
+# Log to a file
+log-facility=/home/wink/dnsmasq.log
+
+# Debug
+log-debug
+
+# Log DNS queries
+log-queries
+
+# Log DHCP transacyions
+log-dhcp
+
+```

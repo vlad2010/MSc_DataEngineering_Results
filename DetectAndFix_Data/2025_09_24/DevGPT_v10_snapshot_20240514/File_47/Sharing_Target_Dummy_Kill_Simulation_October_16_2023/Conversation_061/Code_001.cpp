@@ -1,0 +1,1 @@
+double totalElapsedTimeSeconds = static_cast<double>(ticks - 1) / ticksPerSecond;

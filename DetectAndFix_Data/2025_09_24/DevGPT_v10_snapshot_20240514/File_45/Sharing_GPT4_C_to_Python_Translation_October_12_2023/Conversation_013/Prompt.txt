@@ -1,0 +1,5 @@
+No. First let's continue on AppState with the following in mind:
+* annotate the types
+* use dataclass
+* keep all the comments as they will be useful in python also 
+

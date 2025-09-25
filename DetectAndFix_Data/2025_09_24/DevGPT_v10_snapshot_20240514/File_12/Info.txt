@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_API_for_Graphviz_July_17_2023/Conversation_002/Code_001.cpp
+Scanners: ['flawfinder', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 23,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_API_for_Graphviz_July_17_2023/Conversation_002/Code_001.cpp",
+        "severity": "note",
+        "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+        "type": "FF1040",
+        "sharing": "Sharing_C_API_for_Graphviz_July_17_2023",
+        "source_code": "  FILE* file = fopen(\"fsm.dot\", \"w\");",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 25,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_API_for_Graphviz_July_17_2023/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "A pointer is possibly assigned the return value of a standard library function that may return NULL and is not checked before use. NULL pointer use can lead to program crashes.",
+        "type": "cpp/DerefNull",
+        "sharing": "Sharing_C_API_for_Graphviz_July_17_2023",
+        "source_code": "fclose(file);",
+        "scanner": "snyk"
+    }
+]

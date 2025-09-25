@@ -1,0 +1,7 @@
+The improved `sa_resethand_test` program has been successfully compiled and executed, exiting with an exit code of `0`. This indicates that all checks, including the proper handling and resetting of the signal handler for `SIGINT`, passed as expected.
+
+Here is the improved code for you to try:
+
+[CODE_BLOCK_0]
+
+This program uses `sigprocmask()` and `sigsuspend()` to handle the synchronization between the parent and child processes effectively, ensuring the signal is handled correctly and the handler is reset as per the `SA_RESETHAND` flag. You can compile and run this in your environment to validate the behavior of the `SA_RESETHAND` flag.

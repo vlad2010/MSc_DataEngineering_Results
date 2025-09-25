@@ -1,0 +1,15 @@
+Para modificar la salida del programa y generar resultados en formato CSV (valores separados por comas), puedes ajustar el código para que imprima el tamaño de la matriz \( N \), el tiempo de CPU utilizado para la multiplicación de matrices, y cualquier otro dato relevante que desees incluir, todo separado por comas. Esta salida se puede redirigir fácilmente a un archivo CSV desde la línea de comandos.
+
+A continuación, te muestro cómo puedes ajustar el código para generar una salida en formato CSV. En este ejemplo, la salida incluirá el tamaño de la matriz \( N \) y el tiempo de CPU utilizado, separados por una coma:
+
+[CODE_BLOCK_0]
+
+Para redirigir esta salida a un archivo CSV, puedes ejecutar el programa desde la línea de comandos y utilizar el operador de redirección (`>`). Por ejemplo:
+
+[CODE_BLOCK_1]
+
+Si deseas agregar los resultados de múltiples ejecuciones al mismo archivo sin sobrescribir los datos existentes, puedes utilizar el operador de concatenación (`>>`) en lugar de la redirección:
+
+[CODE_BLOCK_2]
+
+Y así sucesivamente para diferentes valores de \( N \). Esto agregará cada nuevo conjunto de resultados al final del archivo `resultados.csv`, lo que te permitirá construir una tabla de rendimientos con varias ejecuciones.

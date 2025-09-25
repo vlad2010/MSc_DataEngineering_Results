@@ -1,0 +1,1 @@
+Can you fix the sh script and readme indicating this script is for secuential multiplication

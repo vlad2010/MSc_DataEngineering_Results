@@ -1,0 +1,1 @@
+ChatGPTOf course. I'll add the Adafruit-style Doxygen-friendly headers to the Adafruit_Debounce.cpp file. Here's the commented header:[CODE_BLOCK_0]This header provides a brief introduction to the library, mentions the authors, and specifies the MIT license.

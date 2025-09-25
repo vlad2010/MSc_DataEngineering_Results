@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Parsed CSV Table
+Date:February 12, 2024
+Url:https://chat.openai.com/share/23f5fe6f-fc58-41c4-a5c1-4da0302f244c
+Model name:GPT-4Number of prompts:5
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:5
+HTML content size:220117

@@ -1,0 +1,1 @@
+looks good, create another begin(bool initialState) function, this one will call this begin() and then set the states to the initialState value

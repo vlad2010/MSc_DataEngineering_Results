@@ -1,0 +1,1 @@
+no you misunderstood. I only did the same match to show you when I run the matches seperatly the streak works. When I run sumulate all matches it seems like the streak breaks somewwhere

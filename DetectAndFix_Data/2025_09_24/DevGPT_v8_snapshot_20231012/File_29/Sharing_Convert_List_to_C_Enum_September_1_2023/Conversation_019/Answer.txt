@@ -1,0 +1,1 @@
+ChatGPTAh, I see! Thank you for clarifying. Here's the updated enum with the "5V" added as a suffix to "CURRENT":[CODE_BLOCK_0]Is this format suitable for your needs?

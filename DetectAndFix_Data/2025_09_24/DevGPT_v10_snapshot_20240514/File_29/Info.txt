@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240515_002357_hn_sharingsjson/Source_Showing_GPT4_develop_and_execute_C_code_for_you_if_you_tell_it_youre_a_journ_20240401T055506Z/Sharing_GCC_Compiler_Target_Options_January_1_2024/Conversation_010/Code_001.c
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 53,
+        "file": "Code/20240515_002357_hn_sharingsjson/Source_Showing_GPT4_develop_and_execute_C_code_for_you_if_you_tell_it_youre_a_journ_20240401T055506Z/Sharing_GCC_Compiler_Target_Options_January_1_2024/Conversation_010/Code_001.c",
+        "severity": "warning",
+        "text": "Statements following noreturn function 'raise()' will never be executed. ",
+        "type": "unreachableCode",
+        "sharing": "Sharing_GCC_Compiler_Target_Options_January_1_2024",
+        "source_code": "UltrasonicSensor(const char id[3]) { ^",
+        "scanner": "cppcheck"
+    }
+]

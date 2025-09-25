@@ -1,0 +1,1 @@
+Quiero hacer un shell script para linux, que me sirva para ejecutar la multiplicacion de matrices y que me recopile los datos de los resultados para varias N, iniciando desde 500 y en escalas interezantes para hacer un buen analisis de rendimiento, me propones alguna escala?

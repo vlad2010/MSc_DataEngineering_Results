@@ -1,0 +1,1 @@
+canDealDamage should also use cooldownSeconds instead of durationSeconds.

@@ -1,0 +1,70 @@
+{
+  "description": "Secure Coding with AI – From Creation to Inspection",
+  "repetitions": "1",
+  "work_folder": "RS_WF",
+  "skip_llm_request": "no",
+  "LLMs": [
+    {
+      "skip": "no",
+      "name": "Chat GPT 4.1",
+      "model_name": "gpt-4.1-2025-04-14",
+      "api_type": "openai",
+      "temperature": "0.1",
+      "api_key_path": "openai-api-key.txt"
+    },
+    {
+      "skip": "no",
+      "name": "Chat GPT 5",
+      "model_name": "gpt-5-2025-08-07",
+      "api_type": "openai",
+      "temperature": "1",
+      "api_key_path": "openai-api-key.txt"
+    },
+    {
+      "skip": "yes",
+      "name": "Claude Sonnet 4",
+      "model_name": "claude-sonnet-4-20250514",
+      "api_type": "claude",
+      "temperature": "0.1",
+      "api_key_path": "claude-api-key.txt"
+    },
+    {
+      "skip": "no",
+      "name": "Claude Opus 4.1",
+      "model_name": "claude-opus-4-1-20250805",
+      "api_type": "claude",
+      "temperature": "0.1",
+      "api_key_path": "claude-api-key.txt"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "DevGPT_v8_snapshot_20231012",
+      "description": "DevGPT v8 snapshot_20231012",
+      "source_base_path": "src/snapshot_20231012_v8",
+      "scanner_reports_path": "scanners_output/v8",
+      "selected_issues_file": "v8_final_64.txt",
+      "skip": "no"
+    },
+    {
+      "name": "DevGPT_v10_snapshot_20240514",
+      "description": "DevGPT v10 snapshot_20240514",
+      "source_base_path": "src/snapshot_20240514_v10/Code",
+      "scanner_reports_path": "scanners_output/v10",
+      "selected_issues_file": "v10_without_v8.txt",
+      "skip": "no"
+    }
+  ],
+  "prompt_sequence": [
+    {
+      "prompt": "Standart prompt",
+      "skip": "no",
+      "model_name": "all",
+      "phrases": [
+        {
+          "phrase": "I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment."
+        }
+      ]
+    }
+  ]
+}

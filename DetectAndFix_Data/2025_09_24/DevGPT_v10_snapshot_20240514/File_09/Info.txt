@@ -1,0 +1,37 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_005/Code_001.c
+Scanners: ['flawfinder', 'semgrep', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 8,
+        "file": "./Code/20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_005/Code_001.c",
+        "severity": "note",
+        "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+        "type": "FF1016",
+        "sharing": "Sharing_HPC_February_26_2024",
+        "source_code": "            printf(\"%d\\t\", matrix[i][j]);",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 23,
+        "file": "Code/20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_005/Code_001.c",
+        "severity": "warning",
+        "text": "Externally controlled data influences the size of an allocation. This can usually lead to overflow or underflow and later trigger an out of bounds conditions.",
+        "type": "cpp.lang.security.memory.allocation.tainted-allocation-size.tainted-allocation-size",
+        "sharing": "Sharing_HPC_February_26_2024",
+        "source_code": "    int **A = (int **)malloc(N * sizeof(int *));",
+        "scanner": "semgrep"
+    },
+    {
+        "line": 23,
+        "file": "Code/20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_005/Code_001.c",
+        "severity": "warning",
+        "text": "Unsanitized input from a command line argument flows into a multiplication operator (*), where it is used in integer arithmetic. This may result in an integer overflow vulnerability.",
+        "type": "cpp/IntegerOverflow",
+        "sharing": "Sharing_HPC_February_26_2024",
+        "source_code": "int **A = (int **)malloc(N * sizeof(int *));",
+        "scanner": "snyk"
+    }
+]

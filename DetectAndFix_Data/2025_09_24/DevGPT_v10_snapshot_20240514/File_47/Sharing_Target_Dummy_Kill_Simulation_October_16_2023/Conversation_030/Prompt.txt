@@ -1,0 +1,1 @@
+The >= comparisons in canDealDamage and updateActivity are prone to error because of floating point calculations. Instead of doing >=, can you make it so they check for almost equality using an epsilon?

@@ -1,0 +1,19 @@
+Yes, to correctly interpret the data received on the receiver side, you'll need to parse the custom headers you set on the sender side. This means that the receiver needs to know the format and structure of the custom headers so that it can extract the relevant information from incoming packets.
+
+Here's what you'll typically need to do on the receiver side:
+
+1. **Define the same custom protocol header structure**: You need to define the same C struct that represents the header for your custom protocol. This struct should match the structure of the header you set on the sender side.
+
+2. **Receive the packet**: Use `recvfrom()` or a similar function to receive the packet on the receiver side.
+
+3. **Parse the custom header**: Once you've received the packet, you'll need to extract the custom header from it. You can do this by casting the received packet buffer to your custom header struct.
+
+4. **Access the header fields**: Once you have the custom header struct, you can access its fields to retrieve any information encoded in the header.
+
+5. **Process the payload data**: After parsing the header, you can process any payload data included in the packet as needed.
+
+Here's a very simplified example of what the receiver-side code might look like:
+
+[CODE_BLOCK_0]
+
+In this example, we define the same custom protocol header struct `my_protocol_header` on the receiver side as on the sender side. After receiving the packet, we parse the custom header from it and access its fields to extract the information encoded in the header. Finally, we process any payload data included in the packet as needed.

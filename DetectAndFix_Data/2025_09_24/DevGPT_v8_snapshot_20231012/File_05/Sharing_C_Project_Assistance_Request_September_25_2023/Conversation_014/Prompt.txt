@@ -1,0 +1,1 @@
+Whenever I print the  team standing in my terminal the placement of the different stats are places wrong

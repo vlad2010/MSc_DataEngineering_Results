@@ -1,0 +1,1 @@
+How can I use c++ to create a svg file

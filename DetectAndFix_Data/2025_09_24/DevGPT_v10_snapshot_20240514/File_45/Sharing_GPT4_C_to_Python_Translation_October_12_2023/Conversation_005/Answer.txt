@@ -1,0 +1,23 @@
+Alright, to incorporate an interactive demo for `DemoMarkdown`, we'll add a text input where users can enter markdown content. This content will then be rendered below the text input. 
+
+Here's how the modification would look in the C++ code:
+
+1. **Modify the AppState Structure**:
+
+Add a new member to the `AppState` structure to hold the user's input for the markdown content.
+
+[CODE_BLOCK_0]
+
+2. **Modify the `DemoMarkdown` Function**:
+
+Introduce a text input field and render the content from the field using the markdown renderer.
+
+[CODE_BLOCK_1]
+
+Notes:
+
+- We use `ImGui::InputTextMultiline` to provide a multi-line text input field for the markdown content.
+- The size of the `MarkdownInput` buffer is set to `512`. This is arbitrary and can be adjusted as needed.
+- `HelloImGui::EmToPixels(10)` is used to set the height of the text input to approximately 10 lines of text.
+
+This modification allows users to interactively enter markdown content and see it rendered in real-time below the input field, making the `DemoMarkdown` function more engaging.

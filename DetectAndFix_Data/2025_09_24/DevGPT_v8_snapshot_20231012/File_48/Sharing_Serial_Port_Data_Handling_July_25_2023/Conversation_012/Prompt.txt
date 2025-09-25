@@ -1,0 +1,1 @@
+Can we remove the scrolling feature from the heart rate plot as well? Display all the received data.

@@ -1,0 +1,47 @@
+Given the C++ code, here's the Python translation:
+
+[CODE_BLOCK_0]
+            assets/
+                +-- fonts/
+                |         +-- DroidSans.ttf             # default fonts used by HelloImGui in order to
+                |         +-- fontawesome-webfont.ttf   # improve text rendering.
+                +-- images/
+                          +-- world.jpg                 # you can add any asset here!
+            [CODE_BLOCK_1]cpp
+            HelloImGui::SetAssetsFolder("my_assets"); // (By default, HelloImGui will search inside "assets")
+            [CODE_BLOCK_2]cpp
+            ImVec2 imageSize = HelloImGui::EmToVec2(5.f, 5.f);
+            HelloImGui::ImageFromAsset("images/world.jpg", imageSize);
+            [CODE_BLOCK_3]cpp
+            ImGuiMd::Render(markdown_string);           # render a markdown string
+            # or
+            ImGuiMd::RenderUnindented(markdown_string);  # remove top-most indentation before rendering
+            [CODE_BLOCK_4]
+            assets/
+            +-- fonts/
+            |         +-- DroidSans.ttf
+            |         +-- Roboto/
+            |         |         +-- LICENSE.txt
+            |         |         +-- Roboto-Bold.ttf
+            |         |         +-- Roboto-BoldItalic.ttf
+            |         |         +-- Roboto-Regular.ttf
+            |         |         \\-- Roboto-RegularItalic.ttf
+            |         +-- SourceCodePro-Regular.ttf
+            |         +-- fontawesome-webfont.ttf
+            +-- images/
+                +-- markdown_broken_image.png
+            [CODE_BLOCK_5]cpp
+            ImmApp::AddOnsParams addons { .withMarkdown = true };
+            ImmApp::Run(runnerParams, addons);
+            [CODE_BLOCK_6]cpp
+            ImmApp::AddOnsParams addons { .withImplot = true };
+            ImmApp::Run(runnerParams, addons);
+            [CODE_BLOCK_7]
+
+Here's a breakdown of the transformation:
+
+1. **Using Python's dictionary**: C++'s `std::map` has been translated into a Python dictionary. In Python, dictionaries are native and are one of its most powerful built-in types.
+
+2. **Raw Strings**: In C++, we often use the `R"(...)"` notation for raw string literals. Python's equivalent is `"""..."""`.
+
+3. **Type Annotations**: Added type annotations (`Dict` from the `typing` module) for

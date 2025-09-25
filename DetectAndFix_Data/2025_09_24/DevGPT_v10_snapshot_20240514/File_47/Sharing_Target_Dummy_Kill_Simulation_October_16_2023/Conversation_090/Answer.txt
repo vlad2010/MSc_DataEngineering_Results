@@ -1,0 +1,9 @@
+I apologize for the oversight. You're correct; the `canCast` function should also check if the shared cooldown is over before an ability can be cast. Here's the corrected `canCast` function:
+
+[CODE_BLOCK_0]
+
+And the updated code in the `main` function:
+
+[CODE_BLOCK_1]
+
+Now, the `canCast` function checks if both the ability's individual cooldown and the shared cooldown are over before an ability can be cast.

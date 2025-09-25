@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Complex_algorithm_improved_for_readability_and_increased_clarity_20240221T202605Z/Sharing_Base64_Kode_Otimisasi_Dokumentasi_February_22_2024/Conversation_001/Code_001.c
+Scanners: ['cppcheck', 'flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 50,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Complex_algorithm_improved_for_readability_and_increased_clarity_20240221T202605Z/Sharing_Base64_Kode_Otimisasi_Dokumentasi_February_22_2024/Conversation_001/Code_001.c",
+        "severity": "warning",
+        "text": "Memory is allocated but not initialized: dst ",
+        "type": "uninitdata",
+        "sharing": "Sharing_Base64_Kode_Otimisasi_Dokumentasi_February_22_2024",
+        "source_code": "return !0<t ? // If t is greater than 0 ^",
+        "scanner": "cppcheck"
+    },
+    {
+        "line": 15,
+        "file": "./Code/20240513_160734_pr_sharingsjson/Source_Complex_algorithm_improved_for_readability_and_increased_clarity_20240221T202605Z/Sharing_Base64_Kode_Otimisasi_Dokumentasi_February_22_2024/Conversation_001/Code_001.c",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_Base64_Kode_Otimisasi_Dokumentasi_February_22_2024",
+        "source_code": "    static const char base64_digits[256] = {",
+        "scanner": "flawfinder"
+    }
+]

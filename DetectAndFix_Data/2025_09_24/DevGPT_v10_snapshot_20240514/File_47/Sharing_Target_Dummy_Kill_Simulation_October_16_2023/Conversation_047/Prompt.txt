@@ -1,0 +1,1 @@
+The epsilon comparisons for the shared cooldown are correct, but you changed the comparisons in canDealDamage and updateActivity also. Please revert those two.

@@ -1,0 +1,11 @@
+这行代码出现在 `RingBuffer` 类的 `push` 函数中。它首先对 `m_write_index`（一个原子变量）执行原子加法操作，然后对结果取模以得到在环形缓冲区中的索引。
+
+让我们逐部分解释这行代码：
+
+- `m_write_index.fetch_add(1, std::memory_order_relaxed)`：这部分调用了 `std::atomic` 类的 `fetch_add` 成员函数，它以原子方式将 `m_write_index` 的值增加 `1`，然后返回增加之前的值。`std::memory_order_relaxed` 是一个参数，用来指定内存访问的同步级别。`memory_order_relaxed` 表示这个操作不需要与其他原子操作进行同步，也就是说，它不保证其他线程能立即看到这个操作的结果。
+
+- `% m_size`：这部分将 `fetch_add` 的结果对 `m_size` 取模，得到一个在 `0` 到 `m_size - 1` 之间的值。这是因为 `RingBuffer` 是一个环形缓冲区，所以我们需要一个在缓冲区大小范围内的索引。
+
+- `unsigned int write_index = ...`：这部分将结果赋值给 `write_index` 变量。
+
+综合起来，这行代码的作用是原子地递增 `m_write_index`，然后取模得到在环形缓冲区中的索引，并将这个索引保存在 `write_index` 变量中。

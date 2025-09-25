@@ -1,0 +1,9 @@
+On macOS, you can obtain the current executable's pathname using the `_NSGetExecutablePath` function, which is defined in `<mach-o/dyld.h>`. This function is macOS-specific and provides a way to get the path to the current executable without relying on Linux-specific features like `/proc/self/exe`.
+
+Here's a basic example of how to use `_NSGetExecutablePath`:
+
+[CODE_BLOCK_0]
+
+This program attempts to store the path of the current executable in the `path` buffer. If the buffer is too small, `_NSGetExecutablePath` will return a non-zero value, and `size` will be updated to the size needed to store the entire path. You can then allocate a buffer of the appropriate size and call `_NSGetExecutablePath` again.
+
+Keep in mind that the path returned by `_NSGetExecutablePath` may be a symbolic link rather than the actual path. You might need to resolve it using `realpath` or similar functions if you require the physical path.

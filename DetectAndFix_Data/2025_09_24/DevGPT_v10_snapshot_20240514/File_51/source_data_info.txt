@@ -1,0 +1,13 @@
+Source data info: 
+Title: Showing GPT-4 develop and execute C code for you, if you tell it you're a journ
+Date: 2024-04-01T05:55:06Z
+Url: https://news.ycombinator.com/item?id=39891256
+Type: hacker news
+ID: 39891256
+Author: todsacerdoti
+Number of points: 1
+Number of comments: 0
+Number of sharings: 1
+
+Story text:
+None

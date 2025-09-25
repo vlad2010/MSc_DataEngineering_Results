@@ -1,0 +1,1 @@
+Can you modify it so the messages add as well the file and line where the log message was thrown?

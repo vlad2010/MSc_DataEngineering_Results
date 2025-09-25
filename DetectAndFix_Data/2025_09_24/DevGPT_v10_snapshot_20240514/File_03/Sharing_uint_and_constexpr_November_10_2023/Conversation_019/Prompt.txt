@@ -1,0 +1,1 @@
+in the constructor parameter, isn't it better to also use constexpr? like `constexpr char id[3]`

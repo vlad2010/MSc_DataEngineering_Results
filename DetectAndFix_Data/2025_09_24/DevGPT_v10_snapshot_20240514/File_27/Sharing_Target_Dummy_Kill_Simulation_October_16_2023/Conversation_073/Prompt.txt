@@ -1,0 +1,1 @@
+Alright, but the updateActivity call still needs to go before both checks.

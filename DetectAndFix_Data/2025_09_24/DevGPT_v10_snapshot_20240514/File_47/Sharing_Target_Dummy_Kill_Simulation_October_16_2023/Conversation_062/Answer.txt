@@ -1,0 +1,5 @@
+Yes, you can use the `DamageOverTimeAbility` class for an ability that doesn't do damage over time. Instead, you can design the ability to deal a single instance of damage when cast, and then be ready to cast again after a cooldown. Here's how you can modify the class:
+
+[CODE_BLOCK_0]
+
+In this modified `DamageOverTimeAbility` class, we've replaced the `damagePerTick` and `durationSeconds` properties with a single `damage` property. The ability can be cast when the cooldown has passed, and it deals a single instance of damage when cast. You can create an instance of this class for abilities that don't deal damage over time but deal a single instance of damage.

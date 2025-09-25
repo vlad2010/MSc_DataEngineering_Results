@@ -1,0 +1,5 @@
+Certainly! Here's the complete C++ program that simulates abilities with priorities, individual cooldowns, and a shared cooldown:
+
+[CODE_BLOCK_0]
+
+This code simulates the abilities, their priorities, individual cooldowns, and shared cooldown as requested. It also includes the printing of damage dealt, ability names, and the dummy's health at each damage instance.

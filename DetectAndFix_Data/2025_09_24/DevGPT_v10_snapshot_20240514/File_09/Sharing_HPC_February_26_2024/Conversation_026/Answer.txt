@@ -1,0 +1,5 @@
+To adapt the parallel matrix multiplication code to output the results in the same CSV format as the sequential code, you only need to adjust the `printf` statement to match the desired format. The following modification to the code will output the matrix size `N` and the CPU time used for the multiplication in CSV format, similar to the sequential version:
+
+[CODE_BLOCK_0]
+
+This version of the code calculates each row of the result matrix `C` in a separate child process using `fork()`. The shared memory segments for matrices `A`, `B`, and `C` allow these matrices to be accessed and modified by all processes. After all child processes have completed their computations (verified using `wait()`), the parent process calculates the total CPU time used for the multiplication and prints it along with the size `N` in CSV format. This format is suitable for further analysis or for appending to a CSV file containing results from multiple runs.

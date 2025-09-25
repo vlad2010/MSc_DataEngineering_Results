@@ -1,0 +1,14 @@
+To optimize your matrix multiplication code using `fork()` for parallel processing and shared memory for inter-process communication, you can follow these steps:
+
+1. **Divide the Task**: Determine how many rows of the result matrix each child process should compute based on the number of processors you wish to use.
+2. **Shared Memory**: Use shared memory for matrices A, B, and C so that all processes can access them.
+3. **Child Processes**: Each child process will compute a portion of the result matrix C.
+4. **Parent Process**: Waits for all child processes to finish and then gathers the results from the shared memory.
+
+Here's the optimized code:
+
+[CODE_BLOCK_0]
+
+### Key Points:
+
+- **Shared Memory**: Matrices A, B, and C

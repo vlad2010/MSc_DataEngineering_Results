@@ -1,0 +1,1 @@
+I've just realized that you have 3 doubles, an int, and a string in the list of parameters when there needs to be 4 doubles, an int, and a string in the list of parameters, representing damage, interval, duration, cooldown, priority, and name.

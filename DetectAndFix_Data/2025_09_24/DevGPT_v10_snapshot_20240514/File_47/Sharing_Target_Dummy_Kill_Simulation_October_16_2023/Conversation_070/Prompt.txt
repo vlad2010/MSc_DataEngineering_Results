@@ -1,0 +1,1 @@
+So what I'd like is to add an additional variable to the Ability class to represent its individual cooldown. Right now before casting the ability, the loop checks if the ability is inactive and if the shared cooldown is over. I also want it to check if has been at least (individual cooldown) seconds since it was last cast.

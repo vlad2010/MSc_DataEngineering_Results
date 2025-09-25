@@ -1,0 +1,3 @@
+Right now there are two
+if (ability.canDealDamage(elapsedTimeSeconds))
+in the main loop. Can you move the first one down and combined it with the second one?

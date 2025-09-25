@@ -1,0 +1,56 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```cpp
+#include <iostream>
+#include <fstream>
+#include <ctime>
+
+class Logger {
+public:
+    Logger(const std::string& filename = "") : logLevel(LogLevel::DEBUG) {
+        if (!filename.empty()) {
+            logFile.open(filename, std::ios::app);
+            if (!logFile.is_open()) {
+                std::cerr << "Error opening log file: " << filename << std::endl;
+            }
+        }
+    }
+
+    ~Logger() {
+        if (logFile.is_open()) {
+            logFile.close();
+        }
+    }
+
+    template<typename T>
+    void log(const T& message, const char* file, int line, const char* function, LogLevel level) {
+        if (level <= logLevel) {
+            std::ostream& output = logFile.is_open() ? logFile : std::cout;
+            std::time_t currentTime = std::time(nullptr);
+            output << "[" << std::asctime(std::localtime(&currentTime)) << "] "
+                   << "[" << file << ":" << line << "] "
+                   << "[" << function << "] "
+                   << logLevelToString(level) << ": " << message << std::endl;
+        }
+    }
+
+private:
+    std::ofstream logFile;
+    LogLevel logLevel;
+
+    std::string logLevelToString(LogLevel level) const {
+        switch (level) {
+            case LogLevel::ERROR:
+                return "ERROR";
+            case LogLevel::WARNING:
+                return "WARNING";
+            case LogLevel::INFO:
+                return "INFO";
+            case LogLevel::DEBUG:
+                return "DEBUG";
+            default:
+                return "";
+        }
+    }
+};
+
+```)

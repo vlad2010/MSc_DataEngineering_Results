@@ -1,0 +1,18 @@
+Now, we'll focus on the `ssh_utils.c` file. This file is crucial for performing the cryptographic operations necessary for SSH decryption, including the actual decryption process and any required key derivations or integrity checks.
+
+### `ssh_utils.c`
+
+[CODE_BLOCK_0]
+
+### Explanation
+
+- **Initialization**: `ssh_crypto_init` function is responsible for initializing the cryptographic library (Libgcrypt in this case). It's important for setting up secure memory and other library-specific settings.
+
+- **Decryption Function**: `decrypt_ssh_payload` is a simplified example of a decryption function using AES-128-CBC. It assumes you have the encrypted data, along with a decryption key and IV (Initialization Vector). This function will need to be adapted based on the actual encryption used in the SSH session.
+
+    - The decryption process involves opening a cipher handle, setting the key and IV, performing the decryption, and then cleaning up.
+    - Error handling is included to ensure that resources are freed and errors are reported properly.
+
+This file is a critical component for the SSH decryption process, handling the actual decryption of data based on the encryption settings negotiated during the SSH session setup. The key and IV used in this example are placeholders and need to be replaced with actual values obtained from the SSH session or user input.
+
+Please type "Continue" if you'd like to proceed with the `ssh_key_handler.c` file, which will manage the loading and handling of SSH keys.

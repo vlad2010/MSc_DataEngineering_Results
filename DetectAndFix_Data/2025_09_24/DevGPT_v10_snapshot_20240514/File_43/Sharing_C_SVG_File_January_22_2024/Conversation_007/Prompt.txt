@@ -1,0 +1,2 @@
+add a function to do this
+<circle cx="504.2" cy="403.5" r="3" stroke="purple" fill="purple" stroke-width="1" />

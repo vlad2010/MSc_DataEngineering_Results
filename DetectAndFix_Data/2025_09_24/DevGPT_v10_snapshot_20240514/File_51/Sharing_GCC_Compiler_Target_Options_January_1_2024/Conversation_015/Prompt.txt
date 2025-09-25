@@ -1,0 +1,1 @@
+You're forgetting to test the fields inside `current_sa` each time you receive the object from the kernel. Please unit test its fields and return unique exit codes when the check doesn't succeed.

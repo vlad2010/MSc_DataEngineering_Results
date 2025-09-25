@@ -1,0 +1,1 @@
+I want to block all keyboard input programatically, preferrably in C/C++

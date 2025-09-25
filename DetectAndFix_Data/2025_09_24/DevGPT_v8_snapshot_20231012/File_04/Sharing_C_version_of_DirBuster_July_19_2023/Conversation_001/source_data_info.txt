@@ -1,0 +1,13 @@
+Source data info: 
+Title: GPT-4 is getting worse over time, not better
+Date: 2023-07-19T13:56:18.000Z
+Url: https://news.ycombinator.com/item?id=36786407
+Type: hacker news
+ID: 36786407
+Author: taytus
+Number of points: 309
+Number of comments: 50
+Number of sharings: 4
+
+Story text:
+None

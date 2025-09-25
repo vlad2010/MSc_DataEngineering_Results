@@ -1,0 +1,1 @@
+sleuthkit.zipZip Archivethe zip file name is sleuthkit.zip and the relative path is tsk/hashdb/binsrch_index.cpp, 

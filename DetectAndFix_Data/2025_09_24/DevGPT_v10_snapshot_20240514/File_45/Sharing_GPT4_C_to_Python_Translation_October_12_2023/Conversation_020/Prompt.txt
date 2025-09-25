@@ -1,0 +1,36 @@
+Ok, I made some changes. Please summarize them.
+
+```python
+def demo_markdown(appState: AppState):
+    """A demo about the usage of the markdown renderer"""
+    markdown_demo = """
+        # Demo markdown usage
+
+        *Let's ask GPT4 to give us some fun programming fortunes:*
+
+        1. **Bug Hunt**: In the world of software, the best debugger was, is, and will always be a _good night's sleep_.
+
+        2. **Pythonic Wisdom**:
+            > They say if you can't explain something simply, you don't understand it well enough. Well, here's my Python code for simplicity:
+            ```python
+            def explain(thing):
+                return "It's just a " + thing + ". Nothing fancy!"
+            ```
+    """
+    imgui_md.render_unindented(markdown_demo)
+
+    # Interactive demo
+    imgui.separator()
+    imgui_md.render("*Try it yourself*")
+    imgui.same_line(hello_imgui.em_size(30.0))
+    if imgui.small_button("Edit the fortune markdown"):
+        appState.markdown_input = demo_utils.unindent_markdown(markdown_demo)
+    _, appState.markdown_input = imgui.input_text_multiline("##Markdown Input", appState.markdown_input, hello_imgui.em_to_vec2(40.0, 5.0))
+    imgui_md.render_unindented(appState.markdown_input)
+    imgui.separator()
+
+    # Display help
+    _, appState.show_markdown_info = imgui.checkbox("More info##Markdown", appState.show_markdown_info)
+    if appState.show_markdown_info:
+        imgui_md.render_unindented(get_doc("MarkdownDoc"))
+```

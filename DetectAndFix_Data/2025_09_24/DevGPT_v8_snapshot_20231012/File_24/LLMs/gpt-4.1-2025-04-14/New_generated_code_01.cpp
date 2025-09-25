@@ -1,0 +1,1 @@
+#define HUSB238_I2CADDR_DEFAULT 0xXX  // Replace with actual I2C address

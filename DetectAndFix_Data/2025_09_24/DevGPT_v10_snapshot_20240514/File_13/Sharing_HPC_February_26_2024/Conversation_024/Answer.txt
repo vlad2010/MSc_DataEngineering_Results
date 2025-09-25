@@ -1,0 +1,9 @@
+Para optimizar el código de multiplicación de matrices usando procesos y aprovechar la concurrencia en sistemas con múltiples núcleos de CPU, puedes utilizar `fork()` para crear procesos hijos que realicen partes de la multiplicación de la matriz en paralelo. Después de que todos los procesos hijos completen su trabajo, el proceso padre puede reunir los resultados. La función `wait()` se utiliza para asegurarse de que el proceso padre espere a que todos los procesos hijos terminen antes de proceder.
+
+El siguiente es un ejemplo simplificado de cómo podrías estructurar este tipo de programa en C. Este ejemplo divide la tarea de multiplicación de matrices en partes que se ejecutan en paralelo por diferentes procesos. Ten en cuenta que este es un ejemplo básico para ilustrar el concepto y podría necesitar ajustes para adaptarse a tus necesidades específicas.
+
+[CODE_BLOCK_0]
+
+Este código crea un proceso hijo para cada fila de la matriz resultante \( C \), donde cada proceso hijo realiza la multiplicación de una fila de \( A \) por la matriz \( B \) y almacena el resultado en \( C \). El proceso padre espera a que todos los procesos hijos terminen antes de continuar.
+
+Recuerda que este código es un ejemplo básico para ilustrar cómo podrías comenzar a paralelizar la multiplicación de matrices usando procesos. Dependiendo de tus requisitos específicos y del tamaño de las matrices, podrías necesitar implementar mecanismos más avanzados para gestionar la memoria y sincronizar los procesos.

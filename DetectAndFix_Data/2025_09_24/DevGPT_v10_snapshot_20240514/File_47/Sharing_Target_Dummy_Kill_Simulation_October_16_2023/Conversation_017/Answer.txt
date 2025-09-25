@@ -1,0 +1,5 @@
+I apologize for the oversight. To make sure the loop continues until the dummy's health reaches 0, you can modify the code as follows, removing the unnecessary random number generation:
+
+[CODE_BLOCK_0]
+
+This code will ensure the loop continues until the dummy's health reaches 0, and it removes the unnecessary random number generation.

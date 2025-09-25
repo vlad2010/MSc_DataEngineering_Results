@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Process Listener with Windows API
+Date:June 29, 2023
+Url:https://chat.openai.com/share/966a37b6-2afb-4c60-b0ae-76f902170356
+Model name:GPT-3.5Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:98463

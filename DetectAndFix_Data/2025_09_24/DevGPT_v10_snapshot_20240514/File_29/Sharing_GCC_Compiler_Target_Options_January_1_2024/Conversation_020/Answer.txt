@@ -1,0 +1,5 @@
+The use of the loop with `sigsuspend(&oldmask)` in the `sa_resethand_test` program is intended to wait for the signal handler to be invoked while avoiding busy-waiting. Let's break down what's happening here:
+
+1. **Blocking `SIGINT` with `sigprocmask()`:** Before forking the child process, `SIGINT` is added to the signal mask using `sigprocmask(SIG_BLOCK, &mask, &oldmask)`. This blocks `SIGINT`, preventing the signal from being delivered and handled immediately if the child sends it before the parent is ready.
+
+2. **Using `sigsuspend()` to Wait for the Signal:** After the child process is forked and sends `SIGINT`, the parent process needs to wait for this signal. `sigsuspend()` is used for this purpose. It temporarily replaces the current signal mask with `oldmask` (which doesn't block `SIGINT`) and suspends the process until a signal is delivered. If `SIGINT` is received

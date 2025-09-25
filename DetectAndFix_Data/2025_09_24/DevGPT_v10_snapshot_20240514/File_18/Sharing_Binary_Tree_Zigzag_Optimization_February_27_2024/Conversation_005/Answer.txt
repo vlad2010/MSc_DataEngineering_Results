@@ -1,0 +1,11 @@
+Certainly! Here are the new descriptions for the modified functions:
+
+1. **Cleaner Zigzag Function Signature:**
+
+   - `std::vector<std::string> binTree::zigzagLeft(binTreeNode* r, std::vector<std::string>& path)`: This function performs a left zigzag traversal starting from the given node `r`. It appends the nodes' locations to the provided `path` vector and returns the vector representing the longest left zigzag path.
+
+   - `std::vector<std::string> binTree::zigzagRight(binTreeNode* r, std::vector<std::string>& path)`: This function performs a right zigzag traversal starting from the given node `r`. It appends the nodes' locations to the provided `path` vector and returns the vector representing the longest right zigzag path.
+
+   - `std::vector<std::string> binTree::zigzag()`: This function initiates the zigzag traversal for both left and right sides from the root of the binary tree. It compares the lengths of the resulting zigzag paths and returns the vector representing the longest zigzag path overall.
+
+These descriptions aim to provide a clear understanding of the purpose and behavior of each function in the context of the zigzag traversal in a binary tree.

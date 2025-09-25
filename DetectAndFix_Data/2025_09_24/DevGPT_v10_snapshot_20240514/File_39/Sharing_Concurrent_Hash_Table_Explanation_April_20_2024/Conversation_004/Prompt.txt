@@ -1,0 +1,1 @@
+Are you sure we have to use a hash table size because this is a linked list?

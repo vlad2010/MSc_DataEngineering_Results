@@ -1,0 +1,1 @@
+Almost there. Can you move the processSuccessor = true; one line up, as stack.push_back() may invalidate that refrence? And can the !processSuccessor condition be removed from the second if in the while loop, as it is always false at that point ?

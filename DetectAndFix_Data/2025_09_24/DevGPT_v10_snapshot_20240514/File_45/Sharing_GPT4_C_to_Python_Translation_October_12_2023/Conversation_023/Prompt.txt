@@ -1,0 +1,40 @@
+Now, let's translate
+
+```cpp
+// Our main function
+int main(int, char**)
+{
+    // This call is specific to the ImGui Bundle interactive manual. In a standard application, you could write:
+    //         HelloImGui::SetAssetsFolder("my_assets"); // (By default, HelloImGui will search inside "assets")
+    ChdirBesideAssetsFolder();
+
+    AppState appState;         // Our global appState
+
+    // This is our GUI function:
+    //     it will display the widgets
+    //     it captures the appState, since it can modify it
+    auto gui = [&appState]()
+    {
+        DemoAssets(appState);
+        ImGui::NewLine();
+        DemoMarkdown(appState);
+        ImGui::NewLine();
+        DemoPlot(appState);
+    };
+
+    // Then, we start our application:
+    //     First, we set some RunnerParams, with simple settings
+    HelloImGui::SimpleRunnerParams runnerParams;
+    runnerParams.windowSize = {1000, 1000};
+    //     Here we set our GUI function
+    runnerParams.guiFunction = gui;
+    //     Then, we need to activate two addons: ImPlot and Markdown
+    ImmApp::AddOnsParams addons;
+    addons.withImplot = true;
+    addons.withMarkdown = true;
+    //     And we are ready to go!
+    ImmApp::Run(runnerParams, addons);
+
+    return 0;
+}
+```

@@ -1,0 +1,1 @@
+Good, but now I'd like for there to be a variable for how many ticks there are in a second so I can adjust the tick rate if I want, and for the ability cooldown to be in terms of seconds instead of ticks.

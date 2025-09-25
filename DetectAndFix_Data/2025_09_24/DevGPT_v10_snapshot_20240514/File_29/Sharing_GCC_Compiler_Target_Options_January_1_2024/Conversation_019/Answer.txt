@@ -1,0 +1,7 @@
+The `sa_resethand_test` program using `sigprocmask()` and `sigsuspend()` was successfully compiled and executed in my environment, exiting with an exit code of `0`. This indicates that all the checks, including the proper handling and resetting of the signal handler for `SIGINT`, passed as expected.
+
+Here's the code for you to try:
+
+[CODE_BLOCK_0]
+
+This program uses `sigprocmask()` to block `SIGINT` before forking the child process. It then uses `sigsuspend()` to wait for signals while temporarily restoring the old signal mask, ensuring that `SIGINT` is handled only during the `sigsuspend()` call. This approach effectively prevents the race condition between the parent and child processes. You can compile and run this in your environment to validate the behavior of the `SA_RESETHAND` flag.

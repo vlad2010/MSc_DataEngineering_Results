@@ -1,0 +1,9 @@
+Para llenar las matrices con números aleatorios en C, puedes utilizar la función `rand()` de la biblioteca estándar `stdlib.h`. Sin embargo, debes tener en cuenta que `rand()` genera números en un rango desde 0 hasta `RAND_MAX` (un valor definido en `stdlib.h`). Si deseas limitar este rango, puedes usar el operador módulo `%` para obtener un valor dentro de un rango específico.
+
+Aquí te muestro cómo modificar el código anterior para inicializar las matrices A y B con números aleatorios:
+
+[CODE_BLOCK_0]
+
+En este código, he añadido `#include <time.h>` para poder usar la función `time()`, que se pasa como argumento a `srand()` para inicializar el generador de números aleatorios con una semilla diferente cada vez que se ejecuta el programa. Esto asegura que obtengas una secuencia diferente de números aleatorios en cada ejecución.
+
+Los números aleatorios se generan en el rango de 0 a 99 gracias al uso de `rand() % 100`. Si deseas un rango diferente, puedes ajustar el valor `100` a otro valor según tus necesidades.

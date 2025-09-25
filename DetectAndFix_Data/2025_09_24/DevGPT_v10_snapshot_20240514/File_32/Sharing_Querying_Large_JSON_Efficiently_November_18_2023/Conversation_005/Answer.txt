@@ -1,0 +1,5 @@
+Certainly! Counting Sort is a non-comparative integer sorting algorithm that works well when the range of input values (keys) is known and not too large. Here's a simple implementation of Counting Sort in C:
+
+[CODE_BLOCK_0]
+
+This program demonstrates how to use Counting Sort to sort an array of integers. The `countingSort` function takes an array and its size as input, sorts the array in-place, and then the sorted array is printed in the `main` function.

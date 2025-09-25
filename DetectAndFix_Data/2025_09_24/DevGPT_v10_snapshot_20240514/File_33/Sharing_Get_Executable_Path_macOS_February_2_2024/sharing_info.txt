@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Get Executable Path macOS
+Date:February 2, 2024
+Url:https://chat.openai.com/share/89b40115-9778-49d0-b159-705995a3d25e
+Model name:GPT-4Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:98310

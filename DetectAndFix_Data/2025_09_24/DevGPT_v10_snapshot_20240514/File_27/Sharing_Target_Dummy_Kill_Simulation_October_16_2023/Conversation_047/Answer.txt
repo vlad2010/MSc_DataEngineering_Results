@@ -1,0 +1,5 @@
+I apologize for the oversight. Here's the corrected code with the parameters for ability1 and ability2 set back to 10.0 and 5.0, and the use of an epsilon for comparisons:
+
+[CODE_BLOCK_0]
+
+In this version, the shared cooldown starts at 0 seconds, and the shared cooldown is set to 1 second after an ability is cast, using an epsilon for safe comparisons.

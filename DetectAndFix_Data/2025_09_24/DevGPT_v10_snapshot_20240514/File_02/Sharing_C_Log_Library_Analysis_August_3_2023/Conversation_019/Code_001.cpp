@@ -1,0 +1,1 @@
+RingBuffer(size_t const size)

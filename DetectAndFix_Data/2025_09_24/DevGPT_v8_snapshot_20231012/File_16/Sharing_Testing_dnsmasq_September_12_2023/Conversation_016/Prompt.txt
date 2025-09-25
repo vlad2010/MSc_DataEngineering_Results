@@ -1,0 +1,2 @@
+So in this chat[1] we determined that the interface needs to be connected to a LAN to go UP and it takes several seconds (3-4) before it's up.
+[1]:https://chat.openai.com/share/8cc886c6-bad2-4e43-9a7a-9ffbef2badba

@@ -1,0 +1,1 @@
+class RingBuffer : public BufferBase {

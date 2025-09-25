@@ -1,0 +1,7 @@
+Yes, there is a C++ API for Graphviz called "Graphviz-C". Graphviz is an open-source graph visualization software package that provides tools for creating and manipulating graph structures. The C++ API allows you to programmatically generate and manipulate graphs using the Graphviz library.
+
+The Graphviz-C API provides a set of functions and data structures that you can use to create and manipulate graphs, set attributes for nodes and edges, and perform various operations on the graph. It allows you to generate Graphviz DOT language files programmatically and then use the Graphviz tools to render the graphs in different formats such as PNG, SVG, PDF, etc.
+
+To use the Graphviz-C API in your C++ code, you will need to include the appropriate header files and link against the Graphviz library during the compilation process. You can find the official documentation and examples for the Graphviz-C API on the official Graphviz website.
+
+Note that the Graphviz-C API is a C API, so you will need to use C-style function calls and data structures in your C++ code. If you prefer a more C++-friendly API, there are also third-party libraries and wrappers available that provide a more object-oriented and idiomatic C++ interface for working with Graphviz.

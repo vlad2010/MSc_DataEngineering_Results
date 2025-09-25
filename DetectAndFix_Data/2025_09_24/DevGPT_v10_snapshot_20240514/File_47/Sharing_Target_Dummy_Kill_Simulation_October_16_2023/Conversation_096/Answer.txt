@@ -1,0 +1,5 @@
+Certainly! Here's the complete code with the `Ability` class and main function:
+
+[CODE_BLOCK_0]
+
+This code includes the requested changes and now has four abilities with their parameters and cool names, an individual cooldown for each ability, and the ability to change `sharedCooldownValue` and `ticksPerSecond` at the top of the main function. It also prints the ability names when they deal damage, as well as the dummy's health at each damage tick.

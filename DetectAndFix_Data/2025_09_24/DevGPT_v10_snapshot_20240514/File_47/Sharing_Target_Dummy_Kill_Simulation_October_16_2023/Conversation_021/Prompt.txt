@@ -1,0 +1,1 @@
+Instead of having a function canUse, it should check if the ability is active, and if it is, it should check if (cooldown) seconds have passed since it last dealt damage, and if that's true, it should deal damage.

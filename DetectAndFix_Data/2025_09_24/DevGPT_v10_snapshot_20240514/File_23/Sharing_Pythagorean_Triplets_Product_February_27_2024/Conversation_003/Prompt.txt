@@ -1,0 +1,1 @@
+can you add some comments to explain the math in the code

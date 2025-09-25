@@ -1,0 +1,1 @@
+Likewise, since the class works for all abilities, not just damage over time abilities, please rename it to Ability.

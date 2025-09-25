@@ -1,0 +1,1 @@
+the bit we are reading is bit #7, however the register address will differ depending on what pd is passed in

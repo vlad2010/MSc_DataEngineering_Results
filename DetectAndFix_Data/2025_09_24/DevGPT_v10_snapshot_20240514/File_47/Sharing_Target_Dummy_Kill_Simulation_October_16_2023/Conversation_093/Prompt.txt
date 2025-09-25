@@ -1,0 +1,1 @@
+We had combined the canDealDamage checks into a single check, and we had moved the tickspersecond and sharedcooldownvalue to the top of main.

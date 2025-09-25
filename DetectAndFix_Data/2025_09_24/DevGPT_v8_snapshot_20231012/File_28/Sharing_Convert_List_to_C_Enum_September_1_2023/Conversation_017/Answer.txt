@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here's the enum for the HUSB 5V current contract with simplified names and Doxygen-style inline comments using the ///< format:[CODE_BLOCK_0]Each enum value has an inline Doxygen comment indicating its current value in amperes. Is this suitable for your needs?

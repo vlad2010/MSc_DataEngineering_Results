@@ -1,0 +1,16 @@
+`ofstream` is a class in the C++ Standard Library that provides functionality for writing to files. It stands for "output file stream." It is part of the `<fstream>` header and is derived from the `ostream` class, which is used for output operations.
+
+Here's a brief explanation of `ofstream`:
+
+- **Purpose:** `ofstream` is specifically designed for writing to files. It allows you to create, open, and write to files in a C++ program.
+
+- **Usage:** To use `ofstream`, you typically create an instance of the class, associate it with a file by opening the file, and then use it to write data to the file.
+
+- **Example:**
+  [CODE_BLOCK_0]
+
+In this example, `outputFile` is an instance of `ofstream`, and it is used to write text to the file "example.txt." The `<<` operator is overloaded for `ofstream` to facilitate writing data to the file.
+
+Remember to close the file using the `close` member function to ensure that all data is properly flushed and the file resources are released.
+
+`ofstream` is part of a trio of file stream classes in C++ along with `ifstream` (input file stream) and `fstream` (file stream, which can be used for both input and output). These classes make it convenient to work with files in C++ programs.

@@ -1,0 +1,1 @@
+udp 프로토콜을 사용하고 내가 server야. client가 16진수로 aa 03 da 00 01을 보내주는데 server는 da03aa로 받고있어. 뭐가 문제일까

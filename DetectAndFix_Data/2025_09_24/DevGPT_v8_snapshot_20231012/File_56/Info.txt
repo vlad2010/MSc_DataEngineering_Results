@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_235128_issue_sharingsjson\Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z\Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023\Conversation_016\Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 38,
+        "file": "./Code/20231012_235128_issue_sharingsjson/Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z/Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023/Conversation_016/Code_001.c",
+        "severity": "note",
+        "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+        "type": "FF1016",
+        "sharing": "Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023",
+        "source_code": "    printf(\"Socket successfully bound to %s:%d with SO_REUSEADDR enabled\\n\", \"192.168.1.2\", 12345);",
+        "scanner": "flawfinder"
+    }
+]

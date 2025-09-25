@@ -1,0 +1,3 @@
+OK. I am not using dearpygui, but I am using ImGuiBundle (my own library). It provide a very close correspondence between C++ and python, as I explained you in the beginning of our conversation. Do you remember the examples (C++ and corresponding code in python) I gave you at the start of our conversation?
+
+If you remember, please reformulate what you undertood. If not, I will reexplain you.

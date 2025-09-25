@@ -1,0 +1,13 @@
+in the main loop, if IsDefined(indices[w].first) was true, the else branch should not set processSuccor, and only update  indices[v].second = = std::min(indices[v].second, indices[w].first if (onStackFlag[w].value()). See this code snippet:
+	if (!IsDefined(indices[w].first))
+	{
+		// Successor w has not yet been visited; recurse on it
+		strongconnect(w);
+		MakeMin(indices[v].second, indices[w].second);
+	}
+	else if (onStackFlag[w].value())
+		// Successor w is in stack S and hence in the current SCC
+		// If w is not on stack, then (v, w) is an edge pointing to an SCC already found and must be ignored
+		// The next line may look odd - but is correct.
+		// It says w.index not w.lowlink; that is deliberate and from the original paper
+		MakeMin(indices[v].second, indices[w].first);

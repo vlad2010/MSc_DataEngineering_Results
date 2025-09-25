@@ -1,0 +1,1 @@
+Item& item = m_ring[write_index];

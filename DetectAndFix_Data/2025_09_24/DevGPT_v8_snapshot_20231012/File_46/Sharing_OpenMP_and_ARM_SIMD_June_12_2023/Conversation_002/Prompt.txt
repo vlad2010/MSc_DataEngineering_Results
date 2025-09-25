@@ -1,0 +1,1 @@
+Ok, I want to first start by getting a regular C program that does a dot product on two large vectors of floating point numbers.

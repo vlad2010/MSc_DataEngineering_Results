@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Do Users Write More Insecure Code with AI Assistants? https://arxiv.org/pdf/2211.03622.pdf
+Date:January 5, 2024
+Url:https://chat.openai.com/share/babb5d95-8220-48d3-b540-cc0314072b8e
+Model name:GPT-4Number of prompts:6
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:134654

@@ -1,0 +1,1 @@
+sleuthkit.zipZip Archivetools/tsk/hashdb/binsrch_index.cpp is where you want to look.  Repeat instructions from my last prompt after finding this file.

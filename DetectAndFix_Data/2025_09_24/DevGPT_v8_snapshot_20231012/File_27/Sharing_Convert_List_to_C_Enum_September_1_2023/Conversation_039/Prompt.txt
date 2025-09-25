@@ -1,0 +1,1 @@
+CC_DIR is 7th bit not 6th

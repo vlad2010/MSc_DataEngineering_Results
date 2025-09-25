@@ -1,0 +1,1 @@
+give me an example of generating a graph for FSM state transitions using this API

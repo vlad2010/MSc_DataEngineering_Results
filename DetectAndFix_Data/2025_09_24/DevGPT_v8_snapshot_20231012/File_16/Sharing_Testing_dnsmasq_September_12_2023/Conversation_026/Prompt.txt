@@ -1,0 +1,1 @@
+How do I list network namespaces, I assume that's possible, if so change the script to use  paraemter`all` to show all the nns and `all list` to list just the nns names

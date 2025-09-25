@@ -1,0 +1,5 @@
+I apologize for the mistake. The correct function to sort a vector should be `std::sort`, not `std.sort`. Here's the corrected line:
+
+[CODE_BLOCK_0]
+
+Please make sure you've used `std::sort` as shown above, and the error should be resolved.

@@ -1,0 +1,1 @@
+ChatGPTSure, I can convert that list into a C enum structure for you. The enum will look like this:[CODE_BLOCK_0]In this enum, each name is formed by replacing the dots and spaces in your original values with underscores, and appending the units (A for amperes) to the end. The binary numbers are represented in C syntax with 0b as a prefix.

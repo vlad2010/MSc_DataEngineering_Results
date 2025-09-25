@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Scraping_Bank_Holidays_C_July_3_2023\Conversation_019\Code_001.cpp
+Scanners: ['snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 29,
+        "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Scraping_Bank_Holidays_C_July_3_2023/Conversation_019/Code_001.cpp",
+        "severity": "warning",
+        "text": "Unsanitized input from the standard input flows into curl_easy_setopt, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.",
+        "type": "cpp/Ssrf",
+        "sharing": "Sharing_Scraping_Bank_Holidays_C_July_3_2023",
+        "source_code": "curl_easy_setopt(curl, CURLOPT_URL, url.c_str());",
+        "scanner": "snyk"
+    }
+]

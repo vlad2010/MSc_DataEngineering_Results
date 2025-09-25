@@ -1,0 +1,5 @@
+Certainly, you can combine the two `if` statements that check if an ability can deal damage into a single `if` statement. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+Now, there's only one check for abilities that can deal damage, and it deals damage to the dummy as well.

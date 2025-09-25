@@ -1,0 +1,5 @@
+You are absolutely correct. The `ticks++` should be at the end of the loop, just before `elapsedTimeSeconds` is incremented. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+Thank you for pointing out the correct placement of `ticks++`.

@@ -1,0 +1,21 @@
+I apologize for the oversight. Yes, I do remember the guidelines and the examples you provided earlier. Let's summarize:
+
+1. **Handling value changes with ImGui**:
+   
+   C++:
+   [CODE_BLOCK_0]
+   becomes Python:
+   [CODE_BLOCK_1]
+
+2. **Enums**:
+
+   C++:
+   [CODE_BLOCK_2]
+   becomes Python:
+   [CODE_BLOCK_3]
+
+3. **Numeric buffers**: In Python, you mentioned using numpy arrays instead of C-style arrays. 
+
+4. **Static variables**: In the ImGui demo code in C++, static variables are commonly used. You introduced a `static` decorator in Python to mimic this behavior. The static variables in a function are accessed as attributes of the function itself.
+
+Given this understanding, let's attempt translating your C++ code into Python using your ImGuiBundle library.

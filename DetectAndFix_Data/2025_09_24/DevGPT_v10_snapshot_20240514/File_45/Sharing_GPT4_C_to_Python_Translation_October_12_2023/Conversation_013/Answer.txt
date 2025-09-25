@@ -1,0 +1,5 @@
+Sure, given your requirements, we can translate the `AppState` structure to a Python dataclass like this:
+
+[CODE_BLOCK_0]
+
+Using the `@dataclass` decorator automatically provides a constructor, a string representation, and other utility methods to the class. The type annotations provide clear type information for each field in the class.

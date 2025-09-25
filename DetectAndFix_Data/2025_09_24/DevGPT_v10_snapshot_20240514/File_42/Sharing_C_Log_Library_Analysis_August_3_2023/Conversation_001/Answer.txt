@@ -1,0 +1,28 @@
+让我们开始分析这个文件。我将首先打开文件并读取内容。
+这是一个 C++ 头文件，定义了一个名为 `nanolog` 的命名空间。在此命名空间内，定义了一个枚举类 `LogLevel` 和一个类 `NanoLogLine`。
+
+1. `LogLevel` 枚举类有三个级别：INFO、WARN 和 CRIT。
+2. `NanoLogLine` 类有以下成员：
+   - 一个接受四个参数（日志级别、文件名、函数名、行号）的构造函数。
+   - 一个析构函数。
+   - 一个移动构造函数和一个移动赋值运算符。
+   - 一个名为 `stringify` 的成员函数，它接受一个 `std::ostream` 引用作为参数。
+
+现在，我将展示文件的完整结构和内容。请注意，由于文件可能很长，我将仅展示前 5000 个字符。如果你需要查看更多内容或有特定的问题，请告诉我。
+这是一个用于日志记录的 C++ 头文件。下面是文件中定义的类和函数的详细解释：
+
+1. **`nanolog::LogLevel`**: 这是一个枚举类，用于定义日志级别。有三个可能的值：INFO、WARN 和 CRIT。
+
+2. **`nanolog::NanoLogLine`**: 这是一个类，用于表示单行日志。它有许多成员函数和运算符重载，以支持对不同类型的数据进行日志记录。这个类也有两个模板函数 `operator<<` ，这些函数的可用性取决于传入参数的类型。
+
+3. **`nanolog::NanoLog`**: 这是一个结构，有一个 `operator==` 函数用于添加日志。
+
+4. **`nanolog::NonGuaranteedLogger` 和 `nanolog::GuaranteedLogger`**: 这两个结构体用于初始化日志系统。非保证日志使用环形缓冲区来保存日志行，当环形缓冲区满时，旧的日志行将被删除。而保证日志则保证日志行不会被丢弃。
+
+5. **`nanolog::set_log_level(LogLevel level)`**: 这个函数用于设置系统日志级别。
+
+6. **`nanolog::is_logged(LogLevel level)`**: 这个函数用于判断当前的日志级别是否大于等于系统设置的日志级别。如果是，就会记录日志。
+
+7. **`nanolog::initialize(GuaranteedLogger gl, std::string const& log_directory, std::string const& log_file_name, uint32_t log_file_roll_size_mb)` 和 `nanolog::initialize(NonGuaranteedLogger ngl, std::string const& log_directory, std::string const& log_file_name, uint32_t log_file_roll_size_mb)`**: 这两个函数用于初始化日志系统，参数包括日志目录、日志文件名和日志文件滚动大小。
+
+此外，文件中还定义了一些宏，例如 `LOG_INFO`、`LOG_WARN` 和 `LOG_CRIT`，用于生成特定级别的日志。这些宏首先检查是否应记录给定级别的日志，然后生成一个 `NanoLogLine` 对象。

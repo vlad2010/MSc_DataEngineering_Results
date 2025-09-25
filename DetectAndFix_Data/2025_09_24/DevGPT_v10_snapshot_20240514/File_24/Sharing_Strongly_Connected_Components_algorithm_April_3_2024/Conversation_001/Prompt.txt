@@ -1,0 +1,1 @@
+how can i call a function object recursively from a lambda function that is assigned to that object ?

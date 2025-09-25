@@ -1,0 +1,23 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```cs
+using System;
+using System.Security.Cryptography;
+using System.Text;
+
+public static class PasswordEncryption
+{
+    public static string EncryptPassword(string userName)
+    {
+        using (SHA256 sha256Hash = SHA256.Create())
+        {
+            byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));
+            StringBuilder sBuilder = new StringBuilder();
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+            return sBuilder.ToString();
+        }
+    }
+}
+```)

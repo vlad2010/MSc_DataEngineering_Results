@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Create CHUNK_Iterator Function
+Date:January 7, 2024
+Url:https://chat.openai.com/share/5b7dc6b4-04f1-491f-8a1c-a2bef17681db
+Model name:GPT-3.5Number of prompts:6
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:164173

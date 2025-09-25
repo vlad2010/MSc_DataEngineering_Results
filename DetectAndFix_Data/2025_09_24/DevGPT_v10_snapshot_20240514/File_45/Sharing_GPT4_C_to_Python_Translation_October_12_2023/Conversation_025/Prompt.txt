@@ -1,0 +1,100 @@
+Ok, I made some adaptations so that the text gives explantations  for python:
+
+```python
+def get_doc(which_doc: str) -> str:
+    """Return the associated documentation string based on the key."""
+
+    docs: Dict[str, str] = {
+        "AssetsIntro": """
+            # Demos assets
+            In order to improve text rendering, HelloImGui will load a default font (DroidSans) as well as "Font Awesome" to be able to display some icons.
+        """,
+
+        "AssetsDoc": """
+            **About assets**
+
+            HelloImGui and ImmApp applications rely on the presence of an `assets` folder.
+            The typical layout of an assets folder looks like this:
+            ```
+            assets/
+                +-- fonts/
+                |         +-- DroidSans.ttf             # default fonts used by HelloImGui in order to
+                |         +-- fontawesome-webfont.ttf   # improve text rendering.
+                +-- images/
+                          +-- world.jpg                 # you can add any asset here!
+            ```
+
+            You can change the assets folder via:
+            ```cpp
+            hello_imgui.set_assets_folder("my_assets"); // (By default, HelloImGui will search inside "assets")
+            ```
+
+            **Where to find the default assets**
+
+            Look at the [imgui_bundle/bindings/imgui_bundle/assets](https://github.com/pthom/imgui_bundle/tree/main/bindings/imgui_bundle/assets) folder which provides them.
+            You can copy it into your execution folder.
+
+            **How was this image displayed**
+
+            This image was found inside the assets folder at `assets/images/world.jpg` and displayed via HelloImGui with the following code:
+            ```python
+            image_size = hello_imgui.em_to_vec2(5., 5.)
+            hello_imgui.image_from_asset("images/world.jpg", imageSize);
+            ```
+
+            *Note: prefer to specify sizes using the ["em" unit](https://en.wikipedia.org/wiki/Em_(typography)). Here, `image_size` is equivalent to the size of 5 lines of text.*
+        """,
+
+        "MarkdownDoc": """
+            This markdown string was rendered by calling:
+            ```python
+            imgui_md.render(markdown_string);             # render a markdown string
+            # or
+            imgui_md.render_unindented(markdown_string);  # remove top-most indentation before rendering
+            ```
+
+            This markdown renderer is based on [imgui_md](https://github.com/mekhontsev/imgui_md), by Dmitry Mekhontsev.
+            It supports the most common markdown features: emphasis, link, code blocks, etc.
+
+            In order to work, it needs a few files in the assets folder:
+            ```
+            assets/
+            +-- fonts/
+            |         +-- DroidSans.ttf
+            |         +-- Roboto/
+            |         |         +-- LICENSE.txt
+            |         |         +-- Roboto-Bold.ttf
+            |         |         +-- Roboto-BoldItalic.ttf
+            |         |         +-- Roboto-Regular.ttf
+            |         |         \\-- Roboto-RegularItalic.ttf
+            |         +-- SourceCodePro-Regular.ttf
+            |         +-- fontawesome-webfont.ttf
+            +-- images/
+                +-- markdown_broken_image.png
+            ```
+
+            Note: in order to use ImPlot, you need to "activate" this add-on, like this:
+            ```python
+            addons = immapp.AddOnsParams(with_markdown=True)
+            immapp.run(runner_params, addons);
+            ```
+        """,
+
+        "PlotIntro": """
+            # Demo Plot
+            By using ImPlot, you can display lots of different plots. See [online demo](https://traineq.org/implot_demo/src/implot_demo.html) which demonstrates lots of plot types (LinePlot, ScatterPlot, Histogram, Error Bars, Heatmaps, etc.)
+        """,
+
+        "PlotDoc": """
+            Note: in order to use ImPlot, you need to "activate" this add-on, like this:
+            ```cpp
+            addons = immapp.AddOnsParams(with_implot=True)
+            immapp.run(runnerParams, addons);
+            ```
+        """
+    }
+
+    return docs[which_doc]
+```
+
+Please summarize the changes and check if I missed anything.

@@ -1,0 +1,13 @@
+Source data info: 
+Title: Create proof of concept algorithm for sorting
+Date: 2023-11-17T23:57:19Z
+Url: https://github.com/parimsuka/hackaTUM-check24/issues/5
+Type: issue
+ID: No id
+Author: amrouda50
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

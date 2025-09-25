@@ -1,0 +1,1 @@
+I still don't want to measure wall clock time, it should be calculated in terms of in-game ticks.

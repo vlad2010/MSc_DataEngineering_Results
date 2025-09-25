@@ -1,0 +1,15 @@
+int CHUNK_GetIthRecordInChunk(CHUNK* chunk,  int i, Record* record){
+Retrieves the ith record from a CHUNK of blocks in a heap file. Returns 0 if successful, populating the 'record' parameter; otherwise, -1. Assumes sequential ordering of records within the chunk.
+
+int CHUNK_UpdateIthRecord(CHUNK* chunk,  int i, Record record){
+Updates the ith record in a chunk. Returns 0 if successful; -1 if unsuccessful. Facilitates efficient and controlled updates within a chunk.
+
+void CHUNK_Print(CHUNK chunk)
+This function is used to print the records within a chunk.
+
+CHUNK_RecordIterator CHUNK_CreateRecordIterator(CHUNK *chunk){
+Creates a record iterator for efficient traversal within a CHUNK.
+
+int CHUNK_GetNextRecord(CHUNK_RecordIterator *iterator,Record* record){
+Function to get the next record from the iterator.
+

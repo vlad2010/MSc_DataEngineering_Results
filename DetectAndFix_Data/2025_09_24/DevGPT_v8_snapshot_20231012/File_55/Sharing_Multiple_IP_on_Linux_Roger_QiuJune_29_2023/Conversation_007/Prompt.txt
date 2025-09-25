@@ -1,0 +1,1 @@
+So when 1 interface has both an IPv4 and IPv6 address, that's no different from IP aliasing like above where an interface has 2 IPs assigned?

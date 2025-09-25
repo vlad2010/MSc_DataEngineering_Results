@@ -1,0 +1,9 @@
+当 `NanoLogger` 的状态变为 `READY` 但缓冲区中还没有日志时，后台线程会运行 `pop` 函数尝试从缓冲区中读取日志。但是，如果此时缓冲区是空的，`pop` 函数会让后台线程暂时睡眠一段时间（50微秒），然后重新尝试读取。
+
+这是通过 `pop` 函数中的以下代码实现的：
+
+[CODE_BLOCK_0]
+
+这段代码中，`m_buffer_base->try_pop(logline)` 尝试从缓冲区中读取一个日志行。如果缓冲区为空，`try_pop` 函数会返回 `false`，然后执行 `std::this_thread::sleep_for(std::chrono::microseconds(50))` 使线程暂时睡眠。
+
+所以，如果 `NanoLogger` 的状态已经是 `READY`，但是你还没有调用日志宏写入日志，后台线程会不断的尝试读取日志、暂时睡眠、然后再次尝试，直到有日志被写入缓冲区。

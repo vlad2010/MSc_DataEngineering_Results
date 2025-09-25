@@ -1,2 +1,2 @@
-# MSc_DataEngineering_Results
-Publicly available data for my MSc Data Engineering
+# Secure coding with AI
+Publicly available data for "Secure Coding with AI" paper

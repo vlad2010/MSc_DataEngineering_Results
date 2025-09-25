@@ -1,0 +1,14 @@
+Sure! Translating the given code to Python and adapting it to your ImGuiBundle library:
+
+[CODE_BLOCK_0]python
+            def explain(thing):
+                return "It's just a " + thing + ". Nothing fancy!"
+            [CODE_BLOCK_1]
+
+Please note:
+
+1. I've removed the need to handle C-style string manipulation with functions like `strcpy` since Python strings are dynamic.
+2. I assumed the function `CodeUtils::UnindentMarkdown` corresponds to the Python function `demo_utils.unindent_markdown`.
+3. The C++ version used the size of the buffer as the third argument to `InputTextMultiline`. Since you mentioned that it's not necessary in your library for Python, I've omitted it.
+
+Let me know if this matches your expectations!

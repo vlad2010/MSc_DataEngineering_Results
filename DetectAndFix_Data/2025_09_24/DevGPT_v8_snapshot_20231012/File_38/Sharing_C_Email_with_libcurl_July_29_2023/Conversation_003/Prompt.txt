@@ -1,0 +1,1 @@
+te code executes until the line CURLcode res = curl_easy_perform(curl); then freezes. Any idea how to fix it?

@@ -1,0 +1,9 @@
+The issue you're facing when uncommenting the thread loops might be related to the way you handle file pointers (`in_fp`) in your threads. 
+
+When you read from a file pointer in one thread, the file pointer's position advances, so if multiple threads are reading from the same file pointer without synchronization, they might read unexpected data or interfere with each other's reading.
+
+To fix this, you can ensure that each thread has its own file pointer or properly synchronize access to the shared file pointer. One way to achieve this is by using a mutex to lock access to the file pointer while reading. Here's a modified version of your code with mutex synchronization:
+
+[CODE_BLOCK_0]
+
+In this modified version, I added a mutex (`file_mutex`) to synchronize access to the input file pointer (`in_fp`). Each thread locks the mutex before reading from the file and unlocks it afterwards to ensure exclusive access to the file pointer during reading.

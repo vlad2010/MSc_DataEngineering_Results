@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Mostrar_errores_OpenCL_June_14_2023\Conversation_002\Code_002.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 4,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Mostrar_errores_OpenCL_June_14_2023/Conversation_002/Code_002.c",
+        "severity": "error",
+        "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+        "type": "FF1016",
+        "sharing": "Sharing_Mostrar_errores_OpenCL_June_14_2023",
+        "source_code": "    printf(\"Error: %s\\n",
+        "scanner": "flawfinder"
+    }
+]

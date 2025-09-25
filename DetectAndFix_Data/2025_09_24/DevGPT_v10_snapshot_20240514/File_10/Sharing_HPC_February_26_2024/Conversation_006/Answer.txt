@@ -1,0 +1,15 @@
+Para agregar una bandera que controle la impresión de la matriz resultante a través de un parámetro de línea de comandos, puedes ampliar el código para aceptar un segundo argumento. Este argumento puede ser, por ejemplo, un `1` para imprimir la matriz y `0` para no hacerlo. A continuación, te muestro cómo modificar el código para incluir esta funcionalidad:
+
+[CODE_BLOCK_0]
+
+En este código, se utiliza el segundo argumento de la línea de comandos (`argv[2]`) para determinar si se debe imprimir la matriz resultante. Este argumento se convierte a un entero y se almacena en la variable `imprimir`. Si `imprimir` es `1`, la matriz se imprimirá; si es `0`, el programa realizará los cálculos pero no imprimirá la matriz.
+
+Para compilar y ejecutar el programa, usarías un comando similar al siguiente:
+
+[CODE_BLOCK_1]
+
+O:
+
+[CODE_BLOCK_2]
+
+Esto te permite tener un control más fino sobre la salida del programa desde la línea de comandos.

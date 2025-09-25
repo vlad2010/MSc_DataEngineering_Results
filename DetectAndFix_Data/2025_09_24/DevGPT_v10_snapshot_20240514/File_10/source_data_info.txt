@@ -1,0 +1,13 @@
+Source data info: 
+Title: Concurrency with process and pipes
+Date: 2024-02-26T13:47:01Z
+Url: https://github.com/cgutierrezos/HPC/issues/4
+Type: issue
+ID: No id
+Author: cgutierrezos
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

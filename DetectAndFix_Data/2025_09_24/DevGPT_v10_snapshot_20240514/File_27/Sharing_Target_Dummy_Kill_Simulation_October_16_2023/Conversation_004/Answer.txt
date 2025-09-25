@@ -1,0 +1,5 @@
+If you want to measure the time in terms of in-game ticks without introducing sleep, you can calculate it based on your tick interval (e.g., 1 tick = 0.1 seconds) and the number of ticks. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+In this version, we calculate the elapsed time based on the number of ticks and the tick duration (0.1 seconds per tick). This approach allows you to measure the time it takes to kill the dummy without introducing artificial sleep and still displays it in seconds at the end.

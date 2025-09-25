@@ -1,0 +1,1 @@
+Only function declarations, no implementations. Functions for every register.

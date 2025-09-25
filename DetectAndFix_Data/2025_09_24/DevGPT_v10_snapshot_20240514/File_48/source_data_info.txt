@@ -1,0 +1,13 @@
+Source data info: 
+Title: Do Users Write More Insecure Code with AI Assistants?
+Date: 2024-01-04T19:25:41.000Z
+Url: https://news.ycombinator.com/item?id=38871141
+Type: hacker news
+ID: 38871141
+Author: raggi
+Number of points: 5
+Number of comments: 2
+Number of sharings: 1
+
+Story text:
+None

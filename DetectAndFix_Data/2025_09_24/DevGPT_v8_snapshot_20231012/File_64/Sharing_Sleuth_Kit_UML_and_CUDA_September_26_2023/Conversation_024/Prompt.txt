@@ -1,0 +1,1 @@
+sleuthkit.zipZip Archivewait this is a lot of work, can't I check out a new branch called Cuda and just edit the binsrch_index.cpp and rename it to binsrch_index_cuda.cu?  That way all the include statements are already there.  

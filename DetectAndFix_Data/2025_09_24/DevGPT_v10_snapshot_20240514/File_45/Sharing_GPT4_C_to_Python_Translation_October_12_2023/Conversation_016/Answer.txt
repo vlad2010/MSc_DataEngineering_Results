@@ -1,0 +1,18 @@
+Certainly! Here's a summary of the changes you made:
+
+1. **Function Naming Convention**: You changed the function naming from CamelCase (`GetDoc`, `DemoAssets`) to snake_case (`get_doc`, `demo_assets`) to adhere to the PEP 8 style guide for Python code.
+
+2. **Module Imports**: 
+   - You imported `icons_fontawesome` to get the actual icons. In the C++ version, they were constants; in Python, they are accessed via this module.
+
+3. **Method Names**:
+   - You've adapted some method names to follow Python's naming convention. For example, `RenderUnindented` became `render_unindented`, `EmToVec2` became `em_to_vec2`, and `ImageFromAsset` became `image_from_asset`.
+
+4. **Accessing Attributes**:
+   - In the original C++ code, attributes of the `appState` were accessed using the `.` operator and were CamelCase. In your Python version, you adapted them to snake_case (e.g., `ShowAssetsInfo` became `show_assets_info`).
+
+5. **Commented Out Placeholder Function**: You added a placeholder (`...`) for the `get_doc` function, indicating that its actual implementation will be provided later.
+
+6. **Constants Access**: The FontAwesome icon constants were accessed from the `icons_fontawesome` module, instead of being standalone constants.
+
+Overall, the changes reflect a mix of Pythonic naming conventions, the structure of the `imgui_bundle` library in Python, and some specific design choices to make the code more idiomatic for Python while maintaining the functionality of the original C++ code.

@@ -1,0 +1,37 @@
+Ok, I had to do a few changes, here they are:
+
+```python
+from imgui_bundle import imgui, implot, immapp, hello_imgui, imgui_md, icons_fontawesome
+
+def get_doc(which_doc: str) -> str:
+    """Will be implemented later"""
+    ...
+
+
+def demo_assets(appState: AppState):
+    imgui_md.render_unindented(get_doc("AssetsIntro"))
+
+    imgui.text("Here are some icons from Font Awesome: ")
+    imgui.same_line()
+    imgui.set_cursor_pos_x(hello_imgui.em_size(40.0))
+    imgui.text(icons_fontawesome.ICON_FA_INFO + " " + icons_fontawesome.ICON_FA_EXCLAMATION_TRIANGLE + " " + icons_fontawesome.ICON_FA_SAVE)
+
+    imgui.text("Here is an image that was loaded from the assets: ")
+    imgui.same_line()
+    imgui.set_cursor_pos_x(hello_imgui.em_size(40.0))
+
+    # Prefer to specify sizes using the "em" unit: see https://en.wikipedia.org/wiki/Em_(typography)
+    # Below, imageSize is equivalent to the size of 5 lines of text
+    imageSize = hello_imgui.em_to_vec2(3.0, 3.0)
+    hello_imgui.image_from_asset("images/world.jpg", imageSize)
+
+    # Display help
+    _, appState.show_assets_info = imgui.checkbox("More info", appState.show_assets_info)
+    if appState.show_assets_info:
+        imgui_md.render_unindented(get_doc("AssetsDoc"))
+
+```
+
+Please summarize the changes I had to do.
+...
+

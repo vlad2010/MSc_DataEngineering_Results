@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Java Access Modifiers.
+Date:July 19, 2023
+Url:https://chat.openai.com/share/2141682a-9089-4e5e-bfc8-790dd16f68f0
+Model name:Default (GPT-3.5)Number of prompts:4
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:91588

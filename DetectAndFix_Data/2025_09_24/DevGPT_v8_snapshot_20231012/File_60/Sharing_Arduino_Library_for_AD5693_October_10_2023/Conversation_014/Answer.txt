@@ -1,0 +1,1 @@
+ChatGPTCertainly! Here's the updated enum with the more descriptive names:[CODE_BLOCK_0]In this updated enum, the names for the operating modes are more descriptive, making it easier to understand their functionality when reading the code.Would you like to proceed to the next part of the library?

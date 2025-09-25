@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Aptitude Test Result: B) One Column
+Date:July 20, 2023
+Url:https://chat.openai.com/share/e91b3827-8518-4656-b4c4-79d1bbdb3f4d
+Model name:Default (GPT-3.5)Number of prompts:15
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:14
+HTML content size:206653

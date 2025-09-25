@@ -1,0 +1,1 @@
+Exit code 1 means your test didn't work. I'm assuming your POSIX system isn't broken. It must be something bad about your test. Could you fix your test?

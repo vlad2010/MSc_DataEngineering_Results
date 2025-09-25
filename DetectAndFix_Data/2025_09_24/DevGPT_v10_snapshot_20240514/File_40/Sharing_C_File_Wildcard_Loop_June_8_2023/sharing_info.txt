@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C File Wildcard Loop
+Date:June 8, 2023
+Url:https://chat.openai.com/share/312f3f74-4c0a-4be7-b4e0-ae846657f221
+Model name:GPT-3.5Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:99406

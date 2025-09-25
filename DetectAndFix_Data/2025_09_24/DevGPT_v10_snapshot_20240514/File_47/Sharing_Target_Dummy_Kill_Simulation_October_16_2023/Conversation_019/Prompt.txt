@@ -1,0 +1,1 @@
+This is close, but both abilities are slightly off when they deal damage. For example, ability 2 deals damage at tick 0, then 51, then 102, then 153, then 203, then 253, when it should be ticks 0, 50, 100, 150, 200, and 250.

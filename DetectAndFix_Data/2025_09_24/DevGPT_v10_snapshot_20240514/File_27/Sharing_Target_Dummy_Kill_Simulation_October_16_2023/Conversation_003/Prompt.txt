@@ -1,0 +1,1 @@
+Alright, now instead of measuring the wall clock time, I'd like to measure how fast it takes in terms of in-game ticks, which would be equivalent to some real time interval, e.g. 1 tick = 0.1 seconds.

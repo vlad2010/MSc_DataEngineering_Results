@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_How_to_update_your_project__20240213T064829Z/Sharing_Final_projectx_February_13_2024/Conversation_006/Code_002.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 4,
+        "file": "./Code/20240513_202333_issue_sharingsjson/Source_How_to_update_your_project__20240213T064829Z/Sharing_Final_projectx_February_13_2024/Conversation_006/Code_002.cpp",
+        "severity": "note",
+        "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+        "type": "FF1047",
+        "sharing": "Sharing_Final_projectx_February_13_2024",
+        "source_code": "    receivedHour = atoi((char *)payload);",
+        "scanner": "flawfinder"
+    }
+]

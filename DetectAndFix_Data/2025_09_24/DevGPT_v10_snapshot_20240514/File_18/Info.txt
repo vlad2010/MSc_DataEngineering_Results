@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Closes_Issue_94_20240227T042010Z/Sharing_Binary_Tree_Zigzag_Optimization_February_27_2024/Conversation_001/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 1,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Closes_Issue_94_20240227T042010Z/Sharing_Binary_Tree_Zigzag_Optimization_February_27_2024/Conversation_001/Code_001.cpp",
+        "severity": "warning",
+        "text": "Internal error. AST cyclic dependency. ",
+        "type": "internalError",
+        "sharing": "Sharing_Binary_Tree_Zigzag_Optimization_February_27_2024",
+        "source_code": "for (auto word : ladder) ^",
+        "scanner": "cppcheck"
+    }
+]

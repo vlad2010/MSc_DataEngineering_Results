@@ -1,0 +1,1 @@
+Ahora necesito optimizar este codigo utilizando procesos, Como le doy concurrencia con procesos, directamente dando llamados al sistema operativo (Fork-Join-wait), medir el tiempo de los procesos 

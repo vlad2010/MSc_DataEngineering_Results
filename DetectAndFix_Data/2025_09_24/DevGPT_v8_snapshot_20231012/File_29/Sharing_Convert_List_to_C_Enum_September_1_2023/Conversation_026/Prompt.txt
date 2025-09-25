@@ -1,0 +1,1 @@
+not yet, we need a register bit object, which will let us access the 7th bit of the PD_STATUS0 register

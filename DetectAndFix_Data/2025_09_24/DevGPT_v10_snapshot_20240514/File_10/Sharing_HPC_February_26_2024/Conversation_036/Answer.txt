@@ -1,0 +1,15 @@
+The segmentation fault in your code is due to the way the matrices `A`, `B`, and `C` are passed to the `allocateMatrices` function. In C, function arguments are passed by value, meaning the `allocateMatrices` function receives copies of the pointers `A`, `B`, and `C`. Any changes made to these pointers within the function (such as allocating memory to them) won't affect the original pointers in the `main` function.
+
+To fix this issue, you need to pass pointers to the pointers (double pointers) to the `allocateMatrices` function, allowing the function to modify the original pointers in `main`. Here's how you can adjust your `allocateMatrices` and `main` functions:
+
+### Modified `allocateMatrices` Function:
+
+[CODE_BLOCK_0]
+
+### Adjustments in `main`:
+
+[CODE_BLOCK_1]
+
+In the `allocateMatrices` function, you now pass the address of `A`, `B`, and `C` from `main` (`&A`, `&B`, `&C`), which allows `allocateMatrices` to modify the original pointers. Inside `allocateMatrices`, you then dereference these triple pointers (`*A`, `*B`, `*C`) to allocate memory to the original pointers in `main`.
+
+Remember to free the allocated memory for each matrix at the end of your program to avoid memory leaks. Also, ensure that the rest of your program logic, including matrix multiplication and any printing or result processing, is added to `main` after the matrices are filled.

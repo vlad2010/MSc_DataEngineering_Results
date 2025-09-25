@@ -1,0 +1,5 @@
+Certainly, here's the corrected code:
+
+[CODE_BLOCK_0]
+
+This code now correctly subtracts epsilon when checking if abilities can be cast or deal damage, preventing false positives due to floating-point errors.

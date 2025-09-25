@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_Mudar_hashing_MD5_para_SHA256_20240306T011618Z/Sharing_SHA256_Hash_Method_March_6_2024/Conversation_001/Code_001.cs
+Scanners: ['semgrep']
+
+Detect info from scanners: 
+[
+    {
+        "line": 11,
+        "file": "Code/20240513_202333_issue_sharingsjson/Source_Mudar_hashing_MD5_para_SHA256_20240306T011618Z/Sharing_SHA256_Hash_Method_March_6_2024/Conversation_001/Code_001.cs",
+        "severity": "warning",
+        "text": "Insecure cryptographic hash algorithms should not be used, they often have known vulnerabilities like collision. Use a more secure hash algorithm instead such as `HMACSHA256`. If you hash passwords, use a slow hash function like `Argon2` or `scrypt`.",
+        "type": "csharp.dotnet.crypto.hash.insecure-crypto-hash.insecure-crypto-hash",
+        "sharing": "Sharing_SHA256_Hash_Method_March_6_2024",
+        "source_code": "            byte[] data = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(userName));",
+        "scanner": "semgrep"
+    }
+]

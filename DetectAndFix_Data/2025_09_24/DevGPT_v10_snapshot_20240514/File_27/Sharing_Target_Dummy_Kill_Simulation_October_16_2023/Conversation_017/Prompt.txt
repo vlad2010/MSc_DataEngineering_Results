@@ -1,0 +1,1 @@
+The loop once again ends when elapsedTimeSeconds <= ability1.durationSeconds, when it should only ever end when the dummy's health reaches 0. Also you've reintroduced the random number generation which is unnecessary.

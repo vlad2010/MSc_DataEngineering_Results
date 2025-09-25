@@ -1,0 +1,1 @@
+   std::ofstream svgFile("output.svg");

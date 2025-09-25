@@ -1,0 +1,15 @@
+To create a function in Python that signs a message using an ECDSA signing key, you will first need to have the `ecdsa` package installed. This package provides tools for working with Elliptic Curve Digital Signature Algorithm (ECDSA). You can install it using pip:
+
+[CODE_BLOCK_0]
+
+After installing the `ecdsa` package, you can write a function to sign a message. The function will take a message and a signing key, and it will return the signature. Here's a basic example:
+
+[CODE_BLOCK_1]
+
+In this example, the `sign_message` function does the following:
+1. It hashes the input message using SHA-256. This is a common practice since ECDSA works with fixed-size input.
+2. It signs the hashed message using the provided ECDSA private key.
+
+The `generate` method creates a new ECDSA private key. The `SECP256k1` curve is widely used, including in applications like Bitcoin.
+
+Remember, in a real-world application, you should handle keys very securely and never expose them or hard-code them into your application. Also, the `sign_message` function is simplified for demonstration purposes. In a production environment, you should include proper error handling and input validation.

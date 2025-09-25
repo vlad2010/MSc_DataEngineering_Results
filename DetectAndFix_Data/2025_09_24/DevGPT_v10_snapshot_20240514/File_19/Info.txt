@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Complex_Code_Hash_Voting__Camden_Y_20240225T224155Z/Sharing_Code_Simplification_in_C_February_26_2024/Conversation_002/Code_001.cpp
+Scanners: ['cppcheck', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 45,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Complex_Code_Hash_Voting__Camden_Y_20240225T224155Z/Sharing_Code_Simplification_in_C_February_26_2024/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "Local variable 'candidate' shadows outer variable ",
+        "type": "shadowVariable",
+        "sharing": "Sharing_Code_Simplification_in_C_February_26_2024",
+        "source_code": "std::vector<std::string> binTree::zigzag(binTreeNode* r, bool childType, std::vector<std::string>& path) ^",
+        "scanner": "cppcheck"
+    },
+    {
+        "line": 18,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Complex_Code_Hash_Voting__Camden_Y_20240225T224155Z/Sharing_Code_Simplification_in_C_February_26_2024/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "Unsanitized input from the standard input flows into std::ifstream constructor, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.",
+        "type": "cpp/PT",
+        "sharing": "Sharing_Code_Simplification_in_C_February_26_2024",
+        "source_code": "ifstream infile(filename);",
+        "scanner": "snyk"
+    }
+]

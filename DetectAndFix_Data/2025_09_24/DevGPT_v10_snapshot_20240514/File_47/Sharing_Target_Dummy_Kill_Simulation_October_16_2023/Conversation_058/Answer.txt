@@ -1,0 +1,5 @@
+You're correct; I made an oversight. In the for loop, the `ability` variable should not be constant, as it needs to be updated within the loop. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+Now the `ability` variable is not const, allowing for updates within the loop. The `canDealDamage` and `updateActivity` functions continue to use the specified comparisons.

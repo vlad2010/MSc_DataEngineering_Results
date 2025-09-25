@@ -1,0 +1,5 @@
+You're correct; the call to the Jenkins hash function in the `insert` function is redundant since we're not using the hash value for anything other than checking for record existence. We can remove it. Here's the modified `insert` function without the unnecessary Jenkins hash function call:
+
+[CODE_BLOCK_0]
+
+With this modification, the function now directly checks if a record with the given name exists in the hash table without computing the hash value. Thank you for catching that redundancy!

@@ -1,0 +1,5 @@
+I apologize for the oversight. To ensure the loop continues until the dummy is dead and to use abilities immediately, you can make the following adjustments:
+
+[CODE_BLOCK_0]
+
+In this corrected code, both abilities are used immediately, and the loop continues until the dummy is dead.

@@ -1,0 +1,2 @@
+Please make the updateActivity function use the comparison:
+std::abs(elapsedTime - lastCastTime) >= durationSeconds - epsilon

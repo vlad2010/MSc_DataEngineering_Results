@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+void multiplyRowByMatrix(int **A, int **B, int **C, int N, int row) {
+    for (int j = 0; j < N; j++) {
+        for (int k = 0; k < N; k++) {
+            C[row][j] += A[row][k] * B[k][j];
+        }
+    }
+}
+
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        printf("Usage: %s <N>\n", argv[0]);
+        return -1;
+    }
+
+    int N = atoi(argv[1]); // Converts the command line argument to an integer
+    srand(time(NULL));
+
+    // Shared memory allocation for matrices A, B, and C
+    int shmidA = shmget(IPC_PRIVATE, N*N*sizeof(int), IPC_CREAT | 0666);
+    int shmidB = shmget(IPC_PRIVATE, N*N*sizeof(int), IPC_CREAT | 0666);
+    int shmidC = shmget(IPC_PRIVATE, N*N*sizeof(int), IPC_CREAT | 0666);
+
+    int *shm_A = shmat(shmidA, NULL, 0);
+    int *shm_B = shmat(shmidB, NULL, 0);
+    int *shm_C = shmat(shmidC, NULL, 0);
+
+    // Convert flat arrays back to 2D arrays for easier handling
+    int **A = (int **)malloc(N * sizeof(int *));
+    int **B = (int **)malloc(N * sizeof(int *));
+    int **C = (int **)malloc(N * sizeof(int *));
+    for (int i = 0; i < N; i++) {
+        A[i] = shm_A + N*i;
+        B[i] = shm_B + N*i;
+        C[i] = shm_C + N*i;
+    }
+
+    // Filling matrices A and B with random values
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            A[i][j] = rand() % 100;
+            B[i][j] = rand() % 100;
+            C[i][j] = 0; // Initialize matrix C to 0
+        }
+    }
+
+    clock_t start, end;
+    double cpu_time_used;
+    start = clock(); // Start timing the multiplication
+
+    // Fork a new process for each row in the result matrix C
+    for (int i = 0; i < N; i++) {
+        pid_t pid = fork();
+        if (pid == 0) { // Child process
+            multiplyRowByMatrix(A, B, C, N, i);
+            exit(0); // Child process exits after computing its row
+        }
+    }
+
+    // Wait for all child processes to complete
+    while (wait(NULL) > 0);
+
+    end = clock(); // End timing the multiplication
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+
+    printf("Matrix multiplication completed in %f seconds\n", cpu_time_used);
+
+    // Detach and remove shared memory
+    shmdt(shm_A);
+    shmdt(shm_B);
+    shmdt(shm_C);
+    shmctl(shmidA, IPC_RMID, NULL);
+    shmctl(shmidB, IPC_RMID, NULL);
+    shmctl(shmidC, IPC_RMID, NULL);
+
+    free(A);
+    free(B);
+    free(C);
+
+    return 0;
+}

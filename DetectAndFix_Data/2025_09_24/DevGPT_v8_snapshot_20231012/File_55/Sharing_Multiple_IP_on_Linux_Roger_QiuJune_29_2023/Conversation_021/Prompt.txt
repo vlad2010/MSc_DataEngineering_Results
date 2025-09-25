@@ -1,0 +1,5 @@
+Let's go back to when we have 2 interfaces (interface A and interface B) each connected to different networks, however both interfaces share the same IP 192.168.1.2.
+
+If I have 2 sockets, socket A and socket B. Suppose socket A binds to 192.168.1.2. Suppose socket B binds to 192.168.1.2 but uses `SO_BINDTODEVICE` to only bind to interface B.
+
+How does `SO_REUSEADDR` and `SO_REUSEPORT` affect this and also explain what happens between TCP and UDP.

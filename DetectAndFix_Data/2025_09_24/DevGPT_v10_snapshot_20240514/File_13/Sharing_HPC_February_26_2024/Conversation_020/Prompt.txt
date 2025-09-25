@@ -1,0 +1,1 @@
+can you give me a sh script showing the 2 factor and how it grows in a foor loop, and can you give me the readme too

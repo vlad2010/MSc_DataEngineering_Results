@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Target_Dummy_Kill_Simulation_October_16_2023/Conversation_041/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 83,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Target_Dummy_Kill_Simulation_October_16_2023/Conversation_041/Code_001.cpp",
+        "severity": "warning",
+        "text": "Identical inner 'if' condition is always true. ",
+        "type": "identicalInnerCondition",
+        "sharing": "Sharing_Target_Dummy_Kill_Simulation_October_16_2023",
+        "source_code": "this->arr = new T[stackSize]; ^",
+        "scanner": "cppcheck"
+    }
+]

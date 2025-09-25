@@ -1,0 +1,1 @@
+The ability still needs to track when the last time it dealt damage was using a lastDamageTime variable. Also there is a static_cast(int) that should be a static_cast<int>.

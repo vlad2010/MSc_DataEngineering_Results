@@ -1,0 +1,1 @@
+how can I check if libxml2 is already installed in ubuntu?

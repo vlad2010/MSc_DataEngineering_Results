@@ -1,0 +1,1 @@
+Please run `gcc -o sa_resethand_test sa_resethand_test.c && ./sa_resethand_test` to test if your system is working correctly.

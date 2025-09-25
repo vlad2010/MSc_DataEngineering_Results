@@ -1,0 +1,5 @@
+Certainly! Here's the updated code with the new ability and increased dummy health:
+
+[CODE_BLOCK_0]
+
+I've added the new ability with 5 damage, no interval, duration, or cooldown, and lowest priority to the list of abilities, and increased the dummy's health to 250.

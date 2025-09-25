@@ -1,0 +1,1 @@
+y como puedo parametrizar el N por linea de comandos, para no tener que estar compilanndo el codigo cada vez que quiera que cambie

@@ -1,0 +1,15 @@
+Certainly! Below is a README.md formatted for GitHub, providing clear and structured documentation for your sequential matrix multiplication program and the accompanying shell script designed for fixed values of \( N \).
+
+[CODE_BLOCK_0]bash
+gcc -o matrix_multiplication_sequential matrix_multiplication.c
+[CODE_BLOCK_1]bash
+./matrix_multiplication_sequential N [print_flag]
+[CODE_BLOCK_2]bash
+./matrix_multiplication_sequential 500 1
+[CODE_BLOCK_3]bash
+    chmod +x run_tests.sh matrix_multiplication_sequential
+    [CODE_BLOCK_4]bash
+    ./run_tests.sh
+    [CODE_BLOCK_5]
+
+When adding this to a `README.md` file on GitHub, the markdown formatting will help organize the content into sections, code blocks, and lists for better readability and clarity. Make sure to adjust paths, filenames, and other specific details to match your project's structure and requirements.

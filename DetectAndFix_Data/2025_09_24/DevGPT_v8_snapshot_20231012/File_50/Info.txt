@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Using_ioctl_in_macOS_October_10_2023\Conversation_003\Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 6,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Using_ioctl_in_macOS_October_10_2023/Conversation_003/Code_001.cpp",
+        "severity": "note",
+        "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+        "type": "FF1017",
+        "sharing": "Sharing_Using_ioctl_in_macOS_October_10_2023",
+        "source_code": "        fprintf(stderr, \"Error initializing Carbon Event Manager\\n\");",
+        "scanner": "flawfinder"
+    }
+]

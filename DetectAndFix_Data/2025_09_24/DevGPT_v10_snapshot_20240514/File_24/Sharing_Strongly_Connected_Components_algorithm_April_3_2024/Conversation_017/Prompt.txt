@@ -1,0 +1,1 @@
+can you provide a simpler or more elegant algorithm for strongly connected components than Tarjan's algorithm that also uses less memory ?

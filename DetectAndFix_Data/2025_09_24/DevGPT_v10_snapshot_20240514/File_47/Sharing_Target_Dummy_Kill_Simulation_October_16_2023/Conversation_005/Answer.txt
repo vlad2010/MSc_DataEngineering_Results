@@ -1,0 +1,5 @@
+To introduce an ability that does a certain amount of damage and can only be cast once per second, you can modify the code as follows:
+
+[CODE_BLOCK_0]
+
+In this code, we have introduced an ability that deals a certain amount of damage (`abilityDamage`) and has a cooldown (`abilityCooldown`) of 1 second. The ability can only be used if the cooldown has expired. The program simulates using the ability, tracks the time of the last ability usage, and calculates the elapsed time in seconds to kill the dummy. The ability is used once per second if the cooldown allows, and the time is measured in seconds as requested.

@@ -1,0 +1,1 @@
+Instead of printing out the dummy's health at every tick, I'd like its health to be printed out each time it takes damage.

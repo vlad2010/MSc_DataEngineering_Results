@@ -1,0 +1,1 @@
+gain2x is bit D11, fix the rest of the bit shifts too

@@ -1,0 +1,1 @@
+If you assign 2 or more IPs to the same interface, does that mean other machines on the network can reach the original machine using both IPs?

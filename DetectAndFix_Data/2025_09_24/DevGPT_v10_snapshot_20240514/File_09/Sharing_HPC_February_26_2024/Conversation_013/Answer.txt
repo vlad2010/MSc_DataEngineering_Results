@@ -1,0 +1,70 @@
+Sure, I'll update the shell script and README documentation to clarify that it's intended for sequential matrix multiplication.
+
+### Updated Shell Script (`run_tests.sh`)
+
+[CODE_BLOCK_0]
+
+Make sure to rename your executable to `matrix_multiplication_sequential` or adjust the `EXECUTABLE` variable in the script to match the name of your actual executable file.
+
+### Updated README Documentation
+
+---
+
+# Sequential Matrix Multiplication Program
+
+This program performs sequential matrix multiplication for NxN matrices, where N is a parameter specified by the user. The matrices are filled with random numbers, and the program measures the CPU time taken to perform the multiplication, focusing solely on the computation time and excluding memory management operations.
+
+## Dependencies
+
+- GCC Compiler or any standard C compiler
+- Bash Shell for running the automation script
+- Linux/Unix environment for the shell script
+
+## Compilation
+
+Compile the sequential matrix multiplication program with:
+
+[CODE_BLOCK_1]
+
+This creates an executable named `matrix_multiplication_sequential`.
+
+## Usage
+
+Run the program with:
+
+[CODE_BLOCK_2]
+
+- `N`: Size of the NxN matrices.
+- `[print_flag]`: Optional. Use `1` to print matrices A, B, and C. Defaults to `0` (no print) if omitted.
+
+Example:
+
+[CODE_BLOCK_3]
+
+This runs the sequential multiplication for 500x500 matrices and prints them along with the result.
+
+## Automating Runs with the Shell Script
+
+The `run_tests.sh` script automates running the program for various matrix sizes, demonstrating how performance scales with size in a sequential execution context.
+
+### Script Execution
+
+1. Make the script and program executable:
+
+   [CODE_BLOCK_4]
+
+2. Execute the script:
+
+   [CODE_BLOCK_5]
+
+The script starts with matrices of size 500x500, doubling the size in each step until a predefined maximum. Results are recorded in `sequential_results.csv`.
+
+### Customization
+
+Adjust starting size, maximum size, and scaling factor within the script as needed:
+
+[CODE_BLOCK_6]
+
+---
+
+This README now emphasizes that the provided code and script are for sequential matrix multiplication, ensuring clarity on the program's operation and intended use.

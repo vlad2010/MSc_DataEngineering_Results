@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_CHUNK_Iterator_Function_January_7_2024/Conversation_004/Code_001.c
+Scanners: ['flawfinder', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 7,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_CHUNK_Iterator_Function_January_7_2024/Conversation_004/Code_001.c",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_Create_CHUNK_Iterator_Function_January_7_2024",
+        "source_code": "    char name[15];",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 81,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Create_CHUNK_Iterator_Function_January_7_2024/Conversation_004/Code_001.c",
+        "severity": "warning",
+        "text": "Using strcpy can lead to buffer overflow vulnerabilities, if arbitrary user input is able to flow into this function without the length of the input being checked. Use the safer alternative strncpy instead.",
+        "type": "cpp/UnsafeFunctionStringHandling",
+        "sharing": "Sharing_Create_CHUNK_Iterator_Function_January_7_2024",
+        "source_code": "strcpy(chunk->records[i].name, record.name);",
+        "scanner": "snyk"
+    }
+]

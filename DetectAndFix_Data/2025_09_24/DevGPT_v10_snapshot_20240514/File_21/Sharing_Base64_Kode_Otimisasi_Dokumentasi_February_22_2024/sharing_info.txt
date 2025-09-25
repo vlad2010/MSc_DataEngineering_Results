@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Base64 Kode Otimisasi Dokumentasi
+Date:February 22, 2024
+Url:https://chat.openai.com/share/fa63cffd-e94d-4939-ad72-80b5706003de
+Model name:GPT-3.5Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:109298

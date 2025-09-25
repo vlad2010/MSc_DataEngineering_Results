@@ -1,0 +1,1 @@
+what does this line of code do? "cc -o ssmap -Wall -std=gnu99 -g -O0 -ggdb main.o streets.o -lm"

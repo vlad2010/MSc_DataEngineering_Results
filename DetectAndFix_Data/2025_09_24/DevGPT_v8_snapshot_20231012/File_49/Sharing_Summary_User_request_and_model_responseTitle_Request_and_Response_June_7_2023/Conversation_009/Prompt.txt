@@ -1,0 +1,1 @@
+is there a macro similar to __FILE__ and __LINE__  to output the function where the log was thrown?

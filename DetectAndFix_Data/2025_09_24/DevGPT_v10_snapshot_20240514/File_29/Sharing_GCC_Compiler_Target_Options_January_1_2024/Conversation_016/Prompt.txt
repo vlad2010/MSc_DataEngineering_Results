@@ -1,0 +1,10 @@
+I took a look. I changed your code to have better unit testing style by saying this:
+
+  if (current_sa.sa_handler != signal_handler)
+    exit(12);
+  if (current_sa.sa_flags != SA_RESETHAND)
+    exit(17);
+
+That helped me determine which condition failed. It was 17.  If I printf() the flags the kernel returns, then it gives me `0x84000000`. That's Linux notation for`SA_RESETHAND |  SA_RESTORER` (I had to consult the kernel sources, whew!).
+
+Your testing method should have probably used & operator to check only for the flag you care about. Try making the changes. Run it. If it works, give me the code. Also feel free  to add more checks / tests of your own if you can think of any.

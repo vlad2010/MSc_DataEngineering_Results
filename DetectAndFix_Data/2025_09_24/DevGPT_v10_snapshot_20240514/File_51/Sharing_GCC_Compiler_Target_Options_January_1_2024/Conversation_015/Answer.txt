@@ -1,0 +1,9 @@
+The detailed `sa_resethand_test` program was compiled and executed, but it exited with an exit code of `12`. This specific exit code indicates that the initial sanity check failed: the retrieved signal handler or flags for `SIGINT` did not match the expected values after setting them with `sigaction()`.
+
+This result suggests that either the signal handler (`sa_handler`) was not correctly set to `signal_handler`, or the flags (`sa_flags`) did not correctly include `SA_RESETHAND` when checked immediately after the `sigaction()` call.
+
+Here is the detailed code for you to review and run in your environment:
+
+[CODE_BLOCK_0]
+
+Please compile and run this program in your environment to confirm its behavior and diagnose the issue.

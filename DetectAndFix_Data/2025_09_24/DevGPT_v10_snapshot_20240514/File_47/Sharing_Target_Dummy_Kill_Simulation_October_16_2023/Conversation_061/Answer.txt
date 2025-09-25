@@ -1,0 +1,5 @@
+Certainly, you can subtract 1 from the tick count before calculating the total elapsed time. Here's the modified line:
+
+[CODE_BLOCK_0]
+
+This will calculate the total elapsed time accurately.

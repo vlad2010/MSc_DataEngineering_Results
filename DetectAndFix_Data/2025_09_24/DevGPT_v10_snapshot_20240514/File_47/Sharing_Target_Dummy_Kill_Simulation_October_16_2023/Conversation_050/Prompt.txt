@@ -1,0 +1,4 @@
+You've once again changed the canDealDamage and updateActivity functions. Those should be of the form:
+std::abs(elapsedTime - lastDamageTime) >= cooldownSeconds - epsilon
+And the main loop comparisons should be of the form:
+!ability1.isActive && sharedCooldown <= epsilon

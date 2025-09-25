@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_230826_commit_sharingsjson\Source_NoId_NoDate\Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023\Conversation_002\Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 83,
+        "file": "./Code/20231012_230826_commit_sharingsjson/Source_NoId_NoDate/Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023/Conversation_002/Code_001.c",
+        "severity": "note",
+        "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+        "type": "FF1004",
+        "sharing": "Sharing_ThreadSafe_Queue_with_pthreads_August_4_2023",
+        "source_code": "\tmemcpy(&q->buf[q->tail * q->elem_size], data, q->elem_size);",
+        "scanner": "flawfinder"
+    }
+]

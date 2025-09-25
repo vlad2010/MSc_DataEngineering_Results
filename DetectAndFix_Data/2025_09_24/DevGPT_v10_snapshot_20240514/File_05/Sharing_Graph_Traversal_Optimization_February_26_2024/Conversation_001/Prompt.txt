@@ -1,0 +1,401 @@
+Vertex.hpp
+#ifndef VERTEX_H_
+#define VERTEX_H_
+
+template <class Type>
+class vertex
+{
+	
+	struct node
+	{
+		Type item;
+		node * link;
+	};
+	
+public:
+
+	class edgeIterator
+	{
+	public:
+	
+		friend class vertex;
+		edgeIterator();
+		edgeIterator(node*);
+		edgeIterator operator++(int);
+		Type operator*();
+		bool operator==(const edgeIterator&);
+		bool operator!=(const edgeIterator&);
+		
+	private:
+	
+		node * current;
+	};
+	
+	vertex();
+	vertex(const vertex<Type>&);
+	const vertex& operator=(const vertex<Type>&);
+	~vertex();
+	edgeIterator begin();
+	edgeIterator end();
+	void addEdge(const Type&);
+	
+private:
+
+	node * neighbors;
+};
+
+template <class Type>
+vertex<Type>::vertex()
+{
+	neighbors = nullptr;
+}
+
+template <class Type>
+vertex<Type>::vertex(const vertex<Type>& copy)
+{	
+	neighbors = new node;
+	neighbors->item = copy.neighbors->item;
+	neighbors->link = new node;
+
+	auto * current = neighbors->link;
+	auto * current_copy = copy.neighbors->link;
+	while (current != nullptr) {
+		
+		current->item = current_copy->item;
+
+		current_copy = current_copy->link;
+		
+		if (current_copy != nullptr){
+			current->link = new node;
+		}else {
+			current->link = nullptr;
+		}
+		current = current->link;
+	}
+	
+}
+
+template <class Type>
+const vertex<Type>& vertex<Type>::operator=(const vertex<Type>& rhs)
+{
+	if (neighbors != nullptr) {
+		auto it = this->begin();
+		while (it != nullptr) {
+			delete it.current;
+			it++;
+		}
+	}
+	
+	neighbors = new node;
+	neighbors->item = rhs.neighbors->item;
+	neighbors->link = new node;
+
+	auto current = neighbors->link;
+	auto current_copy = rhs.neighbors->link;
+	while (current != nullptr) {
+		
+		current->item = current_copy->item;
+
+		current_copy = current_copy->link;
+
+		if (current_copy != nullptr) {
+			current->link = new node;
+		}else {
+			current->link = nullptr;
+		}
+		current = current->link;
+
+	}
+	
+	return *this;
+}
+
+template <class Type>
+vertex<Type>::~vertex()
+{
+	auto it = this->begin();
+	while (it != nullptr) {
+		delete it.current;
+		it++;
+	}
+}
+
+template <class Type>
+typename vertex<Type>::edgeIterator vertex<Type>::begin()
+{
+	return this->neighbors;
+}
+
+template <class Type>
+typename vertex<Type>::edgeIterator vertex<Type>::end()
+{
+	return nullptr;
+}
+
+template <class Type>
+void vertex<Type>::addEdge(const Type& data)
+{
+	node * new_node = new node;
+
+	new_node->item = data;
+	new_node->link = nullptr;
+	if (this->neighbors == nullptr) {
+		this->neighbors = new_node;
+	}else {
+		new_node->link = this->neighbors;
+		this->neighbors = new_node;
+	}
+}
+
+template <class Type>
+vertex<Type>::edgeIterator::edgeIterator()
+{
+	current = nullptr;
+}
+
+template <class Type>
+vertex<Type>::edgeIterator::edgeIterator(node* rhs)
+{
+	current = rhs;
+}
+
+template <class Type>
+typename vertex<Type>::edgeIterator vertex<Type>::edgeIterator::operator++(int)
+{
+	current = current->link;
+	return *this;
+}
+
+template <class Type>
+Type vertex<Type>::edgeIterator::operator*()
+{
+	return this->current->item;
+}
+
+template <class Type>
+bool vertex<Type>::edgeIterator::operator==(const edgeIterator& rhs)
+{
+	return (this->current == rhs.current);
+}
+
+template <class Type>
+bool vertex<Type>::edgeIterator::operator!=(const edgeIterator& rhs)
+{
+	return (this->current != rhs.current);
+}
+
+#endif // VERTEX_H_
+
+main.cpp
+#include <bits/stdc++.h>
+#include <vertex.hpp>
+///---------------------------------------------------------
+/// func: DFS()
+/// @param unordered_map Police Station Map to traverse
+/// @param unordered_map Keys  
+/// @return true if found exit, false if exit cannot be found
+///---------------------------------------------------------
+bool DFS(std::unordered_map<std::string, vertex<std::string>>& map, 
+		 std::unordered_map<std::string, std::vector<std::string>>& keys);
+
+///---------------------------------------------------------
+/// func: crossEdges()
+/// @param unordered_map Police Station Map to traverse
+/// @param unordered_map Keys  
+/// @return true if found exit, false if exit cannot be found
+/// @note The work.
+///---------------------------------------------------------
+std::string crossEdges(std::string current,
+				std::unordered_map<std::string, vertex<std::string>>& map, 
+		 		std::unordered_map<std::string, std::vector<std::string>>& keys,
+				std::unordered_map<std::string, bool>& visited);
+
+int main()
+{
+	//----------------------
+	// load police station map
+	//----------------------
+	std::ifstream police_station;
+    bool valid_file = false;
+    std::string str;
+    while (!valid_file) {
+
+        std::cout << "Police Station File: ";
+        std::cin >> str;
+        police_station.open(str);
+        
+        if (police_station.is_open()) { // check if valid file
+            valid_file = true; // awesome
+        }else {
+            police_station.clear();
+        }
+	}
+
+	//----------------------
+	// constructing the graph
+	//----------------------
+	std::unordered_map<std::string, vertex<std::string>> map;
+	std::stringstream ss;
+	str.clear();
+	while (!police_station.eof()) {
+
+		std::string kee;
+		std::string value;
+
+		std::getline(police_station, str, '\n');
+		ss.clear();
+		if (!str.empty()) {
+			ss << str;
+			ss >> kee; // key
+			ss >> value; // value
+			map[kee].addEdge(value); // adding edge to the nodes
+			map[value].addEdge(kee); // do it 2x because the graph is undirected
+		}
+
+	}
+	police_station.close();
+
+	//----------------------
+	// get the key locations
+	//----------------------
+	std::unordered_map<std::string, std::vector<std::string>> keys;
+    valid_file = false;
+    str.clear();
+    while (!valid_file) {
+
+        std::cout << "Keys File: ";
+        std::cin >> str;
+        police_station.open(str);
+        
+        if (police_station.is_open()) { // check if valid file
+            valid_file = true; // awesome
+        }else {
+            police_station.clear();
+        }
+	}
+	
+	while (!police_station.eof()) {
+
+		std::string kee;
+		std::string value;
+
+		std::getline(police_station, str, '\n');
+		ss.clear();
+		if (!str.empty()) {
+			ss << str;
+			ss >> kee;
+			ss >> value;
+
+			keys[kee].push_back(value);
+
+			value.clear();
+			ss >> value;
+
+			keys[kee].push_back(value);
+		}
+
+	}
+	police_station.close();
+
+	//----------------------
+	// initiating graph traversal using Depth First Search
+	//----------------------
+	bool success = DFS(map, keys);
+
+	if (success) {
+		std::cout << "Ok Leon, you escaped the police station, now to find Ada\n";
+	}else {
+		std::cout << "Ok Leon, your first day will be your last day on the force\n";
+	}
+
+	return 0;
+}
+
+bool DFS(std::unordered_map<std::string, vertex<std::string>>& map, 
+		 std::unordered_map<std::string, std::vector<std::string>>& keys)
+{
+	std::unordered_map<std::string, bool> visited;
+	
+	// manually visit the mainhall to get starting position
+	std::string room = "MainHall";
+	visited[room] = true;
+
+	// get starting position in traversal
+	auto current_it = map[room].begin();
+	std::string current = *current_it;
+
+	bool found = false;
+	while (!found) {
+
+		current = *current_it; // get current room
+
+		// traverse until dead end encountered
+		room = crossEdges(current, map, keys, visited);
+
+		// if found exit or hit dead end
+		if (room == "Exit") {
+
+			found = true;
+
+		}else if (room == "End") {
+
+			break;
+
+		}
+
+		// if dead end happens to be a key room
+		// add edges and go new edge
+		if (!keys[room].empty()) {
+			map[keys[room][0]].addEdge(keys[room][1]);
+			map[keys[room][1]].addEdge(keys[room][0]);
+			
+			current_it = map[keys[room][0]].begin();
+			keys[room].clear();
+
+		}else {
+			// try another edge from parent node
+			current_it = map[room].begin();
+		}
+		
+
+		
+	}
+
+	return found;
+}
+
+std::string crossEdges(std::string current,
+				std::unordered_map<std::string, vertex<std::string>>& map, 
+		 		std::unordered_map<std::string, std::vector<std::string>>& keys,
+				std::unordered_map<std::string, bool>& visited)
+{
+	// === base case ===
+	if (current == "Exit") return "Exit";
+
+	// mark visited
+	visited[current] = true;
+
+	// if its a key room, go back and unlock doors
+	if (!keys[current].empty()) return current;
+
+	/// === general case ===
+	std::string str = "End";
+	for (auto begin = map[current].begin(); begin != map[current].end(); begin++) {
+
+		if (visited[*begin]) continue; 
+		
+		// traverse until dead end reached
+		str = crossEdges(*begin, map, keys, visited);
+
+		// return dead end to parent
+		if (str != "End") {
+			return str;
+		}
+		
+	}
+	
+	// return if no escape
+	return str;
+}
+
+This is a complex algorithmic operation that is difficult to understand or optimize by some. Provide insights on potential simplifications, alternative algorithms, or optimizations to enhance the function’s readability or performance. Implement any recommended changes or improvements based on your insights. Refactor the code segment to incorporate the suggested optimizations, clarify complex logic, or address identified issues.

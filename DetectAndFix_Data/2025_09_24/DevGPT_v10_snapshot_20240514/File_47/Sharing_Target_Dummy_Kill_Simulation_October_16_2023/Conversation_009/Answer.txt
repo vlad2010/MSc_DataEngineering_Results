@@ -1,0 +1,5 @@
+Sure, you can introduce a variable for the tick rate to adjust the game's speed, and you can change the ability cooldown to be in terms of seconds. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+In this code, you can adjust the `ticksPerSecond` variable to change the tick rate. The `abilityCooldownSeconds` is now specified in seconds, allowing you to easily control the ability's cooldown in the game.

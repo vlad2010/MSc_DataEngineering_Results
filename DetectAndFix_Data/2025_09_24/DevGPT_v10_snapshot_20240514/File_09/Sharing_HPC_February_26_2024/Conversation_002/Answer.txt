@@ -1,0 +1,15 @@
+El error que estás viendo se refiere a una característica del lenguaje C que permite declarar variables dentro de la inicialización de un bucle `for`, pero esto está permitido en el estándar C99 o más reciente. Si estás usando un compilador que no está configurado para usar C99 o una versión más reciente por defecto, podrías encontrarte con este problema.
+
+Para resolverlo, tienes dos opciones:
+
+1. **Mover la declaración de las variables fuera de los bucles `for`**: Esto hace que el código sea compatible con estándares más antiguos de C. Modificaré el código anterior para ajustarlo a este enfoque:
+
+    [CODE_BLOCK_0]
+
+2. **Compilar el código en modo C99 (o más reciente)**: Si estás utilizando `gcc`, puedes agregar el flag `-std=c99` (o `-std=c11` para C11, que es aún más reciente) a tu comando de compilación para habilitar el estándar C99. Por ejemplo:
+
+    [CODE_BLOCK_1]
+
+    Esto te permitirá usar la declaración de variables dentro de los bucles `for`.
+
+Puedes elegir el enfoque que prefieras en función de tus necesidades y preferencias.

@@ -1,0 +1,5 @@
+I apologize for the confusion. If you're still encountering issues, there might be a problem with your compiler or development environment. However, I'll provide a slightly modified version of the code to ensure compatibility:
+
+[CODE_BLOCK_0]
+
+If the issue persists, please make sure you're using a C++ compiler that supports the C++11 standard or later. If you can provide more details about the specific error message you're receiving, it would be helpful for further assistance.

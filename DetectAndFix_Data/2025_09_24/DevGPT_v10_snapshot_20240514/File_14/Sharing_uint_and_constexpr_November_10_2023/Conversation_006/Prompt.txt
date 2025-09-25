@@ -1,0 +1,1 @@
+would it be better to use something like uint8_t for array index considering the max index is known?

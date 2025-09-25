@@ -1,0 +1,9 @@
+是的，当你创建一个 `NanoLogger` 对象时，会执行以下步骤：
+
+1. 根据传入的参数，选择创建一个 `RingBuffer`（对应 `NonGuaranteedLogger`）或 `QueueBuffer`（对应 `GuaranteedLogger`）。
+2. 创建一个 `FileWriter` 对象，用于写入日志文件。
+3. 启动一个后台线程，这个线程运行 `pop` 函数，从缓冲区中读取日志并通过 `FileWriter` 写入到日志文件。
+
+这些操作都在 `NanoLogger` 的构造函数中完成。构造函数结束后，`NanoLogger` 就已经准备好接收和处理日志了。你可以通过 `add` 函数向 `NanoLogger` 添加日志，这些日志会被放入缓冲区，然后由后台线程异步写入到日志文件。
+
+当 `NanoLogger` 对象被销毁时，它的析构函数会将状态设置为 `SHUTDOWN`，然后等待后台线程退出。这确保了即使在 `NanoLogger` 对象被销毁时，所有的日志都能被正确地写入到日志文件。

@@ -1,0 +1,5 @@
+I apologize for the oversight. It seems there might be an issue with the compilation due to the absence of the `using namespace std;` statement. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+By adding `using namespace std;`, you won't encounter the "expected a type specifier" error. This statement allows you to use `cout`, `cerr`, `ofstream`, and other standard C++ identifiers without explicitly specifying the namespace.

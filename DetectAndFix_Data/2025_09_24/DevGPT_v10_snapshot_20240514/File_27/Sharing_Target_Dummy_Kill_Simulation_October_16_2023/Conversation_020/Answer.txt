@@ -1,0 +1,5 @@
+You're absolutely right; you can manage the ability's activity using a boolean variable to indicate if the ability is active. Here's the modified code:
+
+[CODE_BLOCK_0]
+
+This code manages ability activity with a boolean flag and correctly handles ability expiration and recasting.

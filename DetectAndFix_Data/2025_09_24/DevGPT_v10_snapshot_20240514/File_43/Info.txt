@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_SVG_File_January_22_2024/Conversation_010/Code_002.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 4,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_C_SVG_File_January_22_2024/Conversation_010/Code_002.cpp",
+        "severity": "note",
+        "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+        "type": "FF1040",
+        "sharing": "Sharing_C_SVG_File_January_22_2024",
+        "source_code": "    svgFile.open(filename);",
+        "scanner": "flawfinder"
+    }
+]

@@ -1,0 +1,1 @@
+ok next write bool Wire_scan(uint8_t i2caddr) that will return true if the i2caddr is ack'ed

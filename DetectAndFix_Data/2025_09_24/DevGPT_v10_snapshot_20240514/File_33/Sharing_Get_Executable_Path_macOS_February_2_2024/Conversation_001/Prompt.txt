@@ -1,0 +1,1 @@
+how can i get the current executable's pathname in C on macOS? It seems /proc/self/exe does not exist on macOS.

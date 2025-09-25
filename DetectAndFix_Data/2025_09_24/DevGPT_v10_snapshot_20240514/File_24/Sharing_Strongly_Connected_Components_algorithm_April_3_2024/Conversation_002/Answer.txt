@@ -1,0 +1,15 @@
+In C++, achieving recursion with a lambda function that is assigned to a function object (such as `std::function`) requires a slightly different approach compared to Python. C++ lambdas can capture variables from their enclosing scope, including themselves, but you must ensure the lambda is stored in a way that it can capture a reference to itself. This is typically done by using `std::function`, which can hold any callable that matches its signature.
+
+However, a lambda cannot directly capture itself by value because its type is not known when it's first defined. To circumvent this limitation, you can capture a `std::function` that refers to the lambda indirectly. Here's how you can do it:
+
+### Example: Factorial Function
+
+[CODE_BLOCK_0]
+
+In this example:
+
+1. We declare a `std::function<int(int)> factorial;` that can hold a function taking an `int` and returning an `int`.
+2. We assign a lambda to `factorial` that captures `factorial` by reference. This allows the lambda to call itself recursively.
+3. The lambda checks if `n` is less than or equal to 1, in which case it returns 1. Otherwise, it returns `n * factorial(n - 1)`, effectively calling itself.
+
+This pattern lets you define recursive lambdas in C++ by using the capture list to hold a reference to the `std::function` object containing the lambda.

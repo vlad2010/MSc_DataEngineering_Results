@@ -1,0 +1,19 @@
+To write a function in C that converts an integer to a string representation with commas for thousands separators, you need to handle a few key steps:
+
+1. Determine the length of the string required.
+2. Convert the integer to a string without commas.
+3. Insert commas appropriately.
+
+Here's an implementation in C:
+
+[CODE_BLOCK_0]
+
+This function works as follows:
+
+1. It uses `sprintf` to convert the integer to a string without commas.
+2. It calculates the number of commas needed and the final string length.
+3. It allocates memory for the final string and checks for allocation failure.
+4. It then iterates through the initial string and copies characters to the final string, inserting commas at appropriate positions.
+5. Finally, it returns the resulting string. Note that it's the responsibility of the caller to free the allocated memory.
+
+This function only handles positive integers. If you need to handle negative integers, you'll need to add additional logic to handle the sign.

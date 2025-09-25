@@ -1,0 +1,1 @@
+Let's revert back to the scrolling plot. To solve the "dizzying" issue, I want to increase the resolution of the x-axis so that it the scrolling effect is slower. Is this possible?

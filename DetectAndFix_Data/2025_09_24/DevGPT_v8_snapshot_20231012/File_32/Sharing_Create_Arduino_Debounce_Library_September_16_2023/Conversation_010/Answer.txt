@@ -1,0 +1,1 @@
+ChatGPTCertainly. I apologize for the oversight. Here's the cleaned up version:[CODE_BLOCK_0]With this version, there's no duplicated else.

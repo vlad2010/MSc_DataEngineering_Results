@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Target_Dummy_Kill_Simulation_October_16_2023/Conversation_016/Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 36,
+        "file": "./Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_Target_Dummy_Kill_Simulation_October_16_2023/Conversation_016/Code_001.cpp",
+        "severity": "warning",
+        "text": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+        "type": "FF1048",
+        "sharing": "Sharing_Target_Dummy_Kill_Simulation_October_16_2023",
+        "source_code": "    srand(static_cast<unsigned int>(time(nullptr)));",
+        "scanner": "flawfinder"
+    }
+]

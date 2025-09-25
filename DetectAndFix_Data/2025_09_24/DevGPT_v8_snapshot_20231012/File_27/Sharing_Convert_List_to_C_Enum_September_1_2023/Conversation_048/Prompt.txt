@@ -1,0 +1,1 @@
+now write a similar funciton called `HUSB238_CurrentSetting currentDetected(HUSB238_PDOSelection pd)` that returns bits [3:0]

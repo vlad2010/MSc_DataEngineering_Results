@@ -1,0 +1,5 @@
+Certainly! We can use `pthread_t` instead of the `pthread_rwlock_t` for locking. Here's the modified implementation using `pthread_t` for locking:
+
+[CODE_BLOCK_0]
+
+In this version, `pthread_mutex_t` is used for locking instead of `pthread_rwlock_t`. The `pthread_mutex_lock` and `pthread_mutex_unlock` functions are used to acquire and release the lock, respectively. This implementation should provide the necessary thread safety for the hash table operations.

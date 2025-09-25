@@ -1,0 +1,20 @@
+Sure! Here are the primary changes and adaptations you made for the Python context:
+
+1. **Asset Configuration**: 
+   - You changed the example code for setting the assets folder from C++ syntax `HelloImGui::SetAssetsFolder("my_assets");` to Python syntax `hello_imgui.set_assets_folder("my_assets");`.
+
+2. **Markdown Rendering**:
+   - The example code to render a markdown string was converted from C++'s `ImGuiMd::Render(markdown_string);` to Python's `imgui_md.render(markdown_string);`.
+
+3. **Fonts and Assets**:
+   - You adjusted the explanation about where to find the default assets to fit the Python context. You removed mentions of copying assets next to the CMakeLists.txt, which is more relevant for C++ projects.
+
+4. **Image Displaying**:
+   - The code example demonstrating how an image was displayed was modified to Python syntax. Specifically, the vector definition for image size was changed to `image_size = hello_imgui.em_to_vec2(5., 5.)` and the method call syntax was also adjusted.
+
+5. **Markdown and ImPlot Activation**:
+   - The sample code snippets for activating markdown and ImPlot functionalities were updated. For instance, `ImmApp::AddOnsParams addons { .withMarkdown = true };` in C++ became `addons = immapp.AddOnsParams(with_markdown=True)` in Python.
+
+Overall, the changes you made primarily revolve around converting C++ method calls, data structures, and conventions to their Python counterparts, ensuring the explanations and sample codes are idiomatic to Python.
+
+I didn't spot any misses, and your adaptations seem spot-on for someone familiar with the Python context.

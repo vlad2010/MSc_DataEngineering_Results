@@ -1,0 +1,22 @@
+Now I have these Abbreviation,FullName,SpecialRanking,Position,GamesPlayed,GamesWon,GamesDrawn,GamesLost,GoalsFor,GoalsAgainst,Points,CurrentStreak
+FCK,F.C. København,Champion,1,0,0,0,0,0,0,0,W0
+BIF,Brøndby IF,Runner-up,2,0,0,0,0,0,0,0,W0
+FCM,FC Midtjylland,third-place,3,0,0,0,0,0,0,0,L0
+OB,Odense Boldklub,fith-place,5,0,0,0,0,0,0,0,W0
+SIF,Silkeborg IF,seventh-place,7,0,0,0,0,0,0,0,D0
+RFC,Randers FC,eith-place,8,0,0,0,0,0,0,0,L0
+VB,Viborg FF,ninth-place,9,0,0,0,0,0,0,0,W0
+AGF,AGF Fodbold,tenth-place,10,0,0,0,0,0,0,0,D0
+HIF,Hvidovre IF,eleventh-place,11,0,0,0,0,0,0,0,L0
+FCN,FC Nordsjælland,twelve-place,12,0,0,0,0,0,0,0,W0
+ I still need some more Idk Abbreviation,FullName,SpecialRanking,Position,GamesPlayed,GamesWon,GamesDrawn,GamesLost,GoalsFor,GoalsAgainst,Points,CurrentStreak
+FCK,F.C. København,Champion,1,0,0,0,0,0,0,0,W0
+BIF,Brøndby IF,Runner-up,2,0,0,0,0,0,0,0,W0
+FCM,FC Midtjylland,third-place,3,0,0,0,0,0,0,0,L0
+OB,Odense Boldklub,fith-place,5,0,0,0,0,0,0,0,W0
+SIF,Silkeborg IF,seventh-place,7,0,0,0,0,0,0,0,D0
+RFC,Randers FC,eith-place,8,0,0,0,0,0,0,0,L0
+VB,Viborg FF,ninth-place,9,0,0,0,0,0,0,0,W0
+AGF,AGF Fodbold,tenth-place,10,0,0,0,0,0,0,0,D0
+HIF,Hvidovre IF,eleventh-place,11,0,0,0,0,0,0,0,L0
+FCN,FC Nordsjælland,twelve-place,12,0,0,0,0,0,0,0,W0

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:IPv6 Query Conditions: AI_ADDRCONFIG
+Date:September 17, 2023
+Url:https://chat.openai.com/share/1c710df6-e9a6-49d7-994b-feb3d3130e1b
+Model name:Default (GPT-3.5)Number of prompts:14
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:13
+HTML content size:187417

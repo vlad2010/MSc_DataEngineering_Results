@@ -1,0 +1,5 @@
+Here's the complete code with the adjustments you've requested:
+
+[CODE_BLOCK_0]
+
+In this version, the fourth ability has a priority of 0, and the sharedCooldown is updated to 0.0 after casting an ability.

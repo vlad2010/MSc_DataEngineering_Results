@@ -1,0 +1,13 @@
+Could you make comments for these new functions using this comment example?
+
+/*
+ *  zigzag(): Returns the vector with the longest path.
+ *  parameters: binTreeNode * r - node to be passed in
+ *              bool childType - determines which side the node is on
+ *              std::vector<std::string> path - the current zigzag path
+ *  return value: Returns a string vector.
+ *  Algorithm: Calls each side recursively, and compares the two longest paths. If the node is on the left side, it checks the child's right
+ *             side and see if it's nullptr. If it's not nullptr, then the current node is added to path and recursively calls itself on both
+ *             sides of the child. However, depending on what side, the vector that is passed in is either path or an empty vector. This entire
+ *             process happens on the left side as well.
+ */

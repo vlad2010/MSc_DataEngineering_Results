@@ -1,0 +1,5 @@
+Certainly! You can give each ability a cool-sounding name when initializing them. Here's the updated code with cool ability names:
+
+[CODE_BLOCK_0]
+
+Now, each ability has a cool-sounding name associated with it when initializing.

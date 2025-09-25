@@ -1,0 +1,15 @@
+Certainly! Let's create a header file (`svg_writer.h`) and an implementation file (`svg_writer.cpp`). This will organize the code into functions.
+
+### svg_writer.h
+
+[CODE_BLOCK_0]
+
+### svg_writer.cpp
+
+[CODE_BLOCK_1]
+
+### main.cpp
+
+[CODE_BLOCK_2]
+
+Now, the SVG-related functionality is encapsulated in functions, providing a more modular and organized structure. You can easily reuse these functions in other parts of your code or projects.

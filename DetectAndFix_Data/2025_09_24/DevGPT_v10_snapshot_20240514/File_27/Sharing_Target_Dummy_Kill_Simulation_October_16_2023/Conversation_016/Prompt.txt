@@ -1,0 +1,1 @@
+Right now if I adjust the cooldown variable for each ability, they still each fire every tick, instead of once every (cooldown) seconds.

@@ -1,0 +1,28 @@
+You're absolutely correct. I apologize for the oversight. Here's the corrected constructor:
+
+[CODE_BLOCK_0]
+
+Thank you for pointing that out, and I appreciate your understanding.
+Seconds = static_cast<double>(ticks - 1) / ticksPerSecond;
+    std::cout << "Target dummy killed in " << totalElapsedTimeSeconds << " seconds." << std::endl;
+
+    return 0;
+}
+```
+
+This code now includes the individual cooldown and shared cooldown mechanism, cool ability names, and prints out health, ability names, current tick, and time as requested.
+ 1.0 / ticksPerSecond;
+        }
+
+        elapsedTimeSeconds += 1.0 / ticksPerSecond;
+        ticks++;
+    }
+
+    double totalElapsedTimeSeconds = static_cast<double>(ticks - 1) / ticksPerSecond;
+    std::cout << "Target dummy killed in " << totalElapsedTimeSeconds << " seconds." << std::endl;
+
+    return 0;
+}
+```
+
+This code includes the changes you requested, such as individual cooldowns, cool ability names, and the option to adjust `sharedCooldownValue` and `ticksPerSecond`. It prints the health, ability names, current tick, and time as specified.

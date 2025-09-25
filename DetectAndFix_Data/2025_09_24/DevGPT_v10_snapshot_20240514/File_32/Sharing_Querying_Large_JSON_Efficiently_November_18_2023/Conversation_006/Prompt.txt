@@ -1,0 +1,1 @@
+is there an algorithm that we can query sorted N first elements in constant time

@@ -1,0 +1,1 @@
+The constructor for DamageOverTimeAbility should initialize lastDamageTime to -cooldown instead of -duration.

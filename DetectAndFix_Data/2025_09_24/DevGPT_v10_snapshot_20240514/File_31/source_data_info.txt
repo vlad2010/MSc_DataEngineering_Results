@@ -1,0 +1,13 @@
+Source data info: 
+Title: Pull Request for all my ChatGPT lab tasks
+Date: 2024-02-26T23:43:08Z
+Url: https://github.com/FernFinder/UNLV-S24-CS472-Group7/pull/64
+Type: pull request
+ID: No id
+Author: barkangel
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 3
+
+Story text:
+

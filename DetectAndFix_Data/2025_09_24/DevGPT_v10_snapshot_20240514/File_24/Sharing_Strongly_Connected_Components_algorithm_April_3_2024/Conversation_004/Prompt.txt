@@ -1,0 +1,1 @@
+this code misses the point that after a recursive call of strongconnect(w), indices[v].second must be minimized by indices[w].second whereas if indices[w].first was already defined, w was not visited recursively and then only if onStackFlag[w]) , indices[v].second must be minimized by indices[w].first (and not second). Please adjust the code to take this into account.

@@ -1,0 +1,1 @@
+ChatGPTGot it. You have an executable file named grades that contains student names and their exam scores, and you also have a C++ file named bubble.cpp which includes a function to sort an array of student pointers based on their mean field.Is there anything more you'd like to add? Feel free to say "done" when you're ready for me to proceed with assistance.

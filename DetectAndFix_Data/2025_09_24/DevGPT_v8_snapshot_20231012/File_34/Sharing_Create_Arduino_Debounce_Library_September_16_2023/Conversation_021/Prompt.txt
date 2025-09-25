@@ -1,0 +1,1 @@
+the constructor should not digitalRead, can set the two state's to !polarity 

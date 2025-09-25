@@ -1,0 +1,18 @@
+Absolutely, splitting the functionality into separate write and read functions is a good approach for modularity. Here are the `Wire_writeBytes` and `Wire_readBytes` functions, along with a revised `Wire_readRegister` using these new functions.
+
+### Wire_writeBytes
+This function sends bytes to a specified I2C address:
+
+[CODE_BLOCK_0]
+
+### Wire_readBytes
+This function reads bytes from a specified I2C address:
+
+[CODE_BLOCK_1]
+
+### Revised Wire_readRegister
+Now using `Wire_writeBytes` to send the register address and `Wire_readBytes` to read the data:
+
+[CODE_BLOCK_2]
+
+These functions manage the lower-level details of I2C communication, making the main function `Wire_readRegister` simpler and more intuitive to use. It also makes the code more maintainable and reusable for other parts of your project that might require I2C communications.

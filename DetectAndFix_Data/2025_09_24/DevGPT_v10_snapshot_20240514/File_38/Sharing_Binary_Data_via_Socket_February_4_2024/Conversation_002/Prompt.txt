@@ -1,0 +1,3 @@
+I want to set all the headers in a packet (IP header, TCP header, ...) and then send it via a socket in C.
+Is that possible?
+If yes, how should I do that?

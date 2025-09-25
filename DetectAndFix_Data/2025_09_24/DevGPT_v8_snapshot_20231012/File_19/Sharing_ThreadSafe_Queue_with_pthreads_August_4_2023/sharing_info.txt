@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Thread-Safe Queue with pthreads
+Date:August 4, 2023
+Url:https://chat.openai.com/share/e4e17d6b-e664-44c1-b4bd-220ad8cb0df3
+Model name:GPT-4Number of prompts:7
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:137829

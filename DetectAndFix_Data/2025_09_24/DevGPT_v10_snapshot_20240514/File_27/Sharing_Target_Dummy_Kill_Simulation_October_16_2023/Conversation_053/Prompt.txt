@@ -1,0 +1,4 @@
+canDealDamage should always use the comparison:
+std::abs(elapsedTime - lastDamageTime) >= cooldownSeconds - epsilon
+And updateActivity should always use the comparison:
+std::abs(elapsedTime - lastCastTime) >= durationSeconds - epsilon

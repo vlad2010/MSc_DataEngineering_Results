@@ -1,0 +1,1 @@
+we should just return the ccBit.read() instead of assigning it and then returning

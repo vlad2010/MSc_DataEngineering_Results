@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Task_21_Code_Refactoring__Daniel_20240226T205948Z/Sharing_Fix_C_code_issues_February_27_2024/Conversation_002/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 14,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Task_21_Code_Refactoring__Daniel_20240226T205948Z/Sharing_Fix_C_code_issues_February_27_2024/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "Variable 'symbol' is assigned in constructor body. Consider performing initialization in initialization list. ",
+        "type": "useInitializationList",
+        "sharing": "Sharing_Fix_C_code_issues_February_27_2024",
+        "source_code": "for (auto& neighbor : map[current]) { ^",
+        "scanner": "cppcheck"
+    }
+]

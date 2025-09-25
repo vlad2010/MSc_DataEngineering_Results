@@ -1,0 +1,5 @@
+You're right, using a tolerance (epsilon) when comparing floating-point values is a good practice to handle potential precision issues. Here's the modified code with epsilon-based comparisons in the `canDealDamage` and `updateActivity` functions:
+
+[CODE_BLOCK_0]
+
+In this code, the epsilon value is used to check for almost equality when comparing floating-point values in the `canDealDamage` and `updateActivity` functions. You can adjust the epsilon value based on your specific requirements.

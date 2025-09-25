@@ -1,0 +1,1 @@
+neither of those are convenient, I guess I'll have to make a nsshow.sh, actually please create the script with a usage if no parameters are given, txs in advance.

@@ -1,0 +1,1 @@
+yes. next function is called getPDresponse, it will return bits 3-5 from PD0, similar but now we use I2CRegisterBits

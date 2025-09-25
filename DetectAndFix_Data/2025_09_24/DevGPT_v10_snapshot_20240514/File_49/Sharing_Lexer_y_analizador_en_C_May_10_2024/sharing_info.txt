@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Lexer y analizador en C
+Date:May 10, 2024
+Url:https://chat.openai.com/share/ccc23d98-6d4f-4be5-b9b6-b4464ff1bf9d
+Model name:GPT-4Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:138717

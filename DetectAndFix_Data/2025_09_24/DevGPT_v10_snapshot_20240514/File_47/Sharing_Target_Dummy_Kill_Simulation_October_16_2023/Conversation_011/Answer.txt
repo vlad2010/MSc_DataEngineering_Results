@@ -1,0 +1,5 @@
+You're absolutely right; there is an off-by-one error in the code that causes the ability to be used every 11 ticks instead of every 10. To fix this issue, you can adjust the `abilityCooldown` calculation as follows:
+
+[CODE_BLOCK_0]
+
+In this code, I've adjusted the `abilityCooldown` calculation to subtract one tick's worth of time from the cooldown to ensure the ability is used correctly every 10 ticks.

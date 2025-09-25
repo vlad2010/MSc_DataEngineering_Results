@@ -1,0 +1,15 @@
+Certainly! Here's an example of how you can use the Graphviz-C API in C++ to generate a graph for FSM (Finite State Machine) state transitions:
+
+[CODE_BLOCK_0]
+
+In this example, we create a directed graph representing a Finite State Machine with three states: State1, State2, and State3. We create edges to represent state transitions, and we set labels for the edges to represent the triggering events.
+
+The `agnode` function is used to create nodes in the graph, and `agedge` is used to create directed edges between nodes. The `agsafeset` function is used to set attributes for the edges, in this case, the label attribute representing the events.
+
+After creating the graph and setting the attributes, we save the graph to a DOT file named "fsm.dot" using the `agwrite` function. Finally, we clean up the resources by calling `agclose` to close the graph.
+
+You can then use the Graphviz tools (e.g., the `dot` command) to render the DOT file to a desired format such as PNG, SVG, or PDF. For example, you can use the following command to generate a PNG image from the DOT file:
+
+[CODE_BLOCK_1]
+
+This will create a PNG image (`fsm.png`) representing the FSM state transitions graph.

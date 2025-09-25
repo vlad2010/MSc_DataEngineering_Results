@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_235128_issue_sharingsjson\Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z\Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023\Conversation_012\Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 22,
+        "file": "./Code/20231012_235128_issue_sharingsjson/Source_Local_Network_Traversal__Multicast_Discovery_20210526T084136Z/Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023/Conversation_012/Code_001.c",
+        "severity": "note",
+        "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+        "type": "FF1022",
+        "sharing": "Sharing_Multiple_IP_on_Linux_Roger_QiuJune_29_2023",
+        "source_code": "    if (setsockopt(sockfd, SOL_SOCKET, SO_BINDTODEVICE, interface, strlen(interface)) < 0) {",
+        "scanner": "flawfinder"
+    }
+]

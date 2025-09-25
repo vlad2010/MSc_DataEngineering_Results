@@ -1,0 +1,5 @@
+I apologize for the oversight. If you want to remove the sleep entirely and control the tick rate manually, you can update the code as follows:
+
+[CODE_BLOCK_0]
+
+In this code, the sleep has been removed, and the tick rate is controlled manually using the `ticksPerSecond` variable. The `abilityCooldown` is in terms of seconds.

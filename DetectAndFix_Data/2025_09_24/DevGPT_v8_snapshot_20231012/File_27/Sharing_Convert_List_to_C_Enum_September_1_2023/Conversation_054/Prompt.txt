@@ -1,0 +1,1 @@
+for all the functions so far, provide prototypes for the header

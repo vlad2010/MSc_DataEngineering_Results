@@ -1,0 +1,5 @@
+Certainly! You can use variables to store numbers and then use those variables in your SVG content. Here's an example:
+
+[CODE_BLOCK_0]
+
+In this example, I've introduced variables (`svgWidth`, `svgHeight`, `rectWidth`, and `rectHeight`) to represent the dimensions of the SVG and the rectangle. You can adjust these variables as needed for your specific requirements. Using variables makes it easier to manage and modify your SVG content dynamically.

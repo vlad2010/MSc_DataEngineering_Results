@@ -1,0 +1,1 @@
+ChatGPTGot it. Here's the updated begin() function for Adafruit_Debounce.cpp:[CODE_BLOCK_0]In this implementation, I've added a check for _pin being non-negative. If _polarity is LOW, the mode is set to INPUT_PULLUP. If there's support for INPUT_PULLDOWN (as verified with a preprocessor directive), and _polarity is not LOW, then the mode is set to INPUT_PULLDOWN.

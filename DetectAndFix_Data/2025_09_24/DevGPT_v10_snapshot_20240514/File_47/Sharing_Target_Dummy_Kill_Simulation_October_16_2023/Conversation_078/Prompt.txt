@@ -1,0 +1,1 @@
+Right now the sharedCooldown is set to 1 after an ability is cast, so if someone wants to change what that gets set to, it has to be done in the body of the code. Can you make sharedCooldown = 1.0 use a variable that can be changed near the top of main?

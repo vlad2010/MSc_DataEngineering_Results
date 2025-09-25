@@ -1,0 +1,1 @@
+The castAbility function shouldn't update the lastDamageTime since the castAbility function doesn't deal damage. The main loop should update the lastDamageTime right after it deals damage to the dummy.

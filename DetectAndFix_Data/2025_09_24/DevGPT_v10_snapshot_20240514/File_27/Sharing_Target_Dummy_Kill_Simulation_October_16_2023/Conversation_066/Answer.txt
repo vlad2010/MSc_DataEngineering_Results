@@ -1,0 +1,5 @@
+Certainly, you can add individual cooldowns to abilities so that an ability can only be cast if both its individual cooldown and the shared cooldown between all abilities are over. Here's an updated version of the program that includes individual cooldowns for each ability:
+
+[CODE_BLOCK_0]
+
+This updated program includes individual cooldowns for each ability and enforces that an ability can only be cast when both its individual cooldown and the shared cooldown have passed. This allows for more fine-grained control over ability usage.

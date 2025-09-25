@@ -1,0 +1,5 @@
+To introduce an ability that does damage over a period of time (DOT) with customizable damage per tick, cooldown, and total duration, you can modify the code as follows:
+
+[CODE_BLOCK_0]
+
+In this code, I've introduced two damage over time (DOT) abilities, `ability1` and `ability2`. These abilities do damage over time with customizable damage per tick, cooldown, and total duration. The program checks if each ability can be used based on its cooldown and applies the DOT damage accordingly.

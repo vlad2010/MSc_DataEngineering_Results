@@ -1,0 +1,10 @@
+I apologize for the oversight. Here's the code with the updated `canDealDamage` and `updateActivity` functions, which use the requested comparisons:
+
+[CODE_BLOCK_0]
+
+This code uses the specified comparisons in `canDealDamage` and `updateActivity` for all abilities. Abilities are sorted by priority, and the iteration follows the order from highest to lowest priority.
+0;
+}
+```
+
+This code uses the specified comparisons in `canDealDamage` and `updateActivity` for all abilities. Abilities are sorted by priority, and the iteration follows the order from highest to lowest priority.

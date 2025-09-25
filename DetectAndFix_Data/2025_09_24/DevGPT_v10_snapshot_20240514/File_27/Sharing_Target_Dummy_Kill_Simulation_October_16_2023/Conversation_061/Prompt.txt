@@ -1,0 +1,1 @@
+Could I use the DamageOverTimeAbility class to have an ability that doesn't actually do damage over time? That is, an ability that gets cast and deals one instance of damage, and then is ready to be cast again?

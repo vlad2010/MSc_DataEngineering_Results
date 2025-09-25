@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_uint_and_constexpr_November_10_2023/Conversation_006/Code_001.cpp
+Scanners: ['snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 2,
+        "file": "Code/20240513_230924_file_sharingsjson/Source_NoId_NoDate/Sharing_uint_and_constexpr_November_10_2023/Conversation_006/Code_001.cpp",
+        "severity": "warning",
+        "text": "Leaking memory. [Int] is allocated on the heap and never freed",
+        "type": "cpp/MemoryLeak",
+        "sharing": "Sharing_uint_and_constexpr_November_10_2023",
+        "source_code": "int* dynamicArray = new int[arraySize];",
+        "scanner": "snyk"
+    }
+]

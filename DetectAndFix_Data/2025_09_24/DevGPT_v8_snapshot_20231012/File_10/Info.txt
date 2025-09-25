@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_C_Email_with_libcurl_July_29_2023\Conversation_027\Code_001.cpp
+Scanners: ['flawfinder', 'semgrep']
+
+Detect info from scanners: 
+[
+    {
+        "line": 18,
+        "file": "./Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_027/Code_001.cpp",
+        "severity": "note",
+        "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+        "type": "FF1004",
+        "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+        "source_code": "    memcpy(ptr, email_data->data, len);",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 42,
+        "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_C_Email_with_libcurl_July_29_2023/Conversation_027/Code_001.cpp",
+        "severity": "warning",
+        "text": "The application may be making an insecure HTTP request which may allow attackers to intercept plaintext information. Instead, the URL should use HTTPS to ensure that the request is encrypted.",
+        "type": "cpp.lang.security.uri.http-url.http-url",
+        "sharing": "Sharing_C_Email_with_libcurl_July_29_2023",
+        "source_code": "    curl_easy_setopt(curl, CURLOPT_URL, \"http://httpbin.org/post\"); // Replace with your desired URL",
+        "scanner": "semgrep"
+    }
+]

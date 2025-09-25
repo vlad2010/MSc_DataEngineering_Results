@@ -1,0 +1,9 @@
+The output of the command `gcc -Q --help=target` displays a variety of target-specific options for the GCC compiler. Here are some excerpts from the output:
+
+- Options related to architecture and specific processor features, like `-m128bit-long-double`, `-m16`, `-m32`, `-m64`, `-m3dnow`, `-mabm`, `-maes`, and many more. Most of these options are either enabled or disabled.
+- ABI and alignment options such as `-mabi=`, `-malign-data=`, `-malign-double`, `-malign-functions=`, and so on.
+- Options for specific processor architectures under `-march=`, such as `x86-64`, `nehalem`, `sandybridge`, `haswell`, and others.
+- Vectorization options and stack protector settings.
+- Additional options for tuning performance for specific processor types with `-mtune=`.
+
+This is a partial summary, and the complete output includes detailed settings that control various aspects of code generation and optimization for the target architecture. The full output is quite extensive and covers a wide range of compiler settings.

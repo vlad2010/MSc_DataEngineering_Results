@@ -1,0 +1,1 @@
+The loop only works because elapsedTimeSeconds <= ability1.durationSeconds doesn't evaluate to true. If I increase the dummy's health or decrease how often the ability ticks, the loop will still end prematurely.

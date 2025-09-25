@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Fix C++ code issues.
+Date:February 27, 2024
+Url:https://chat.openai.com/share/0400a76b-d208-43e5-aa85-46f076997ae7
+Model name:GPT-3.5Number of prompts:2
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:2
+HTML content size:115861

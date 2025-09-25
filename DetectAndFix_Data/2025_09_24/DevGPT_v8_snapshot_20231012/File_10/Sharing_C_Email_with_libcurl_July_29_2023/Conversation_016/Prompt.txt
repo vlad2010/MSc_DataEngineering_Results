@@ -1,0 +1,35 @@
+THis is the full verbose output: *   Trying 64.233.184.109:465...
+* TCP_NODELAY set
+* Connected to smtp.gmail.com (64.233.184.109) port 465 (#0)
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* Server certificate:
+*  subject: CN=smtp.gmail.com
+*  start date: Jul 10 08:20:57 2023 GMT
+*  expire date: Oct  2 08:20:56 2023 GMT
+*  subjectAltName: host "smtp.gmail.com" matched cert's "smtp.gmail.com"
+*  issuer: C=US; O=Google Trust Services LLC; CN=GTS CA 1C3
+*  SSL certificate verify ok.
+* old SSL session ID is stale, removing
+< 220 smtp.gmail.com ESMTP 8-20020a05600c028800b003fb225d414fsm7891698wmk.21 - gsmtp
+> EHLO gram
+< 250-smtp.gmail.com at your service, [62.87.103.95]
+< 250-SIZE 35882577
+< 250-8BITMIME
+< 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+< 250-ENHANCEDSTATUSCODES
+< 250-PIPELINING
+< 250-CHUNKING
+< 250 SMTPUTF8
+> AUTH PLAIN
+< 334 
+> AHdhdGNodG93ZXIudGVzdDIwMjNAZ21haWwuY29tAHd4YXF2dGVsbmNxYmxpdXg=
+< 235 2.7.0 Accepted
+> VRFY spam.mhered@gmail.com
+< 252 2.1.5 Send some mail, I'll try my best 8-20020a05600c028800b003fb225d414fsm7891698wmk.21 - gsmtp
+252 2.1.5 Send some mail, I'll try my best 8-20020a05600c028800b003fb225d414fsm7891698wmk.21 - gsmtp
+* Connection #0 to host smtp.gmail.com left intact
+Email sent successfully.
+[1] + Done

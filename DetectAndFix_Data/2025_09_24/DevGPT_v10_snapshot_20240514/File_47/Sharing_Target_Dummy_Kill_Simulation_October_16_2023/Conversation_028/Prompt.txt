@@ -1,0 +1,1 @@
+You've recombined lastCastTime and lastDamageTime into the same variable. canDealDamage should check lastDamageTime and the main loop should update lastDamageTime after calling takeDamage.

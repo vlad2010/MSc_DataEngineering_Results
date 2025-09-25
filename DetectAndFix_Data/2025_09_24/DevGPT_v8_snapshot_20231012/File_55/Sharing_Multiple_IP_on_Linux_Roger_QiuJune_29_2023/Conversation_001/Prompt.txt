@@ -1,0 +1,1 @@
+In Linux, when you attach an ethernet cable to machine, you get a new ethernet interface. In this interface, you can assign an IP address. Is it possible for there to be more than 1 IP address for a single interface?

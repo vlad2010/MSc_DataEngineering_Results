@@ -1,0 +1,1 @@
+sleuthkit.zipZip ArchiveThat is the sleuth kit source code, can you tell me how it all works together and if you can draw me a series of UML diagrams using ascii art for each module or group of classes or files, etc and then a  mother diagram that ties them all together.  I am looking for opportunities to use CUDA C to accelerate this.

@@ -1,0 +1,1 @@
+no, i mean fixed N, like 100, 500, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, can you fix the readme and the script

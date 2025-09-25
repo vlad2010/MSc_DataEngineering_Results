@@ -1,0 +1,1 @@
+how to pass parameters and arguments to control the prints of the multiplication, i like to pass it with -v or --verbose

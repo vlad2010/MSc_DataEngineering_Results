@@ -1,0 +1,1 @@
+error: cannot bind non-const lvalue reference of type 'std::unique_ptr<Node<int>, std::default_delete<Node<int> > >&' to an rvalue of type 'std::remove_reference<std::unique_ptr<Node<int>, std::default_delete<Node<int> > >&>::type' {aka 'std::unique_ptr<Node<int>, std::default_delete<Node<int> > >'}

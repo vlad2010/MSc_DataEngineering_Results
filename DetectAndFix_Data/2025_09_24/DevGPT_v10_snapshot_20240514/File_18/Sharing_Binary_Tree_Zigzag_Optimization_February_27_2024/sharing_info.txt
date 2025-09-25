@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Binary Tree Zigzag Optimization
+Date:February 27, 2024
+Url:https://chat.openai.com/share/7092883b-2eb6-4d6c-9019-e1ca32037b3d
+Model name:GPT-3.5Number of prompts:6
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:152580

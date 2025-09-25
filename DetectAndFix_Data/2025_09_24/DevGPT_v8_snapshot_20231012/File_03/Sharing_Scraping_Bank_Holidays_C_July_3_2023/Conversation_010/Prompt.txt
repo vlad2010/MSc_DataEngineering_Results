@@ -1,0 +1,1 @@
+THe headers are included. Also all other functions work ok the only error is on identifier "xmlXPathRegisterNs". Can you double check?

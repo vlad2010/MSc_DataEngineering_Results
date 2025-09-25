@@ -1,0 +1,1 @@
+    constexpr char sensorNames[][3] = {"FL", "FR", "BL", "BR"};

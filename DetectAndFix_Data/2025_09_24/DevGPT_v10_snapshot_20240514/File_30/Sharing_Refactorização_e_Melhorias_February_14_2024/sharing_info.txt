@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Refactorização e Melhorias.
+Date:February 14, 2024
+Url:https://chat.openai.com/share/b16429af-2bfe-4f4b-857f-a4215483363a
+Model name:GPT-3.5Number of prompts:1
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:1
+HTML content size:106258

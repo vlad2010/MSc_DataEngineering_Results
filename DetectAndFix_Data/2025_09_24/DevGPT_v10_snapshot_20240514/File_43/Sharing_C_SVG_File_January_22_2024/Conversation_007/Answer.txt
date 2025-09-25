@@ -1,0 +1,15 @@
+Certainly! Let's add a function to create a circle in the SVG file.
+
+### svg_writer.h
+
+[CODE_BLOCK_0]
+
+### svg_writer.cpp
+
+[CODE_BLOCK_1]
+
+### main.cpp
+
+[CODE_BLOCK_2]
+
+Now, you have a `writeCircle` function that adds a circle to the SVG file with specified parameters. You can call this function in your `main.cpp` or any other part of your code as needed.

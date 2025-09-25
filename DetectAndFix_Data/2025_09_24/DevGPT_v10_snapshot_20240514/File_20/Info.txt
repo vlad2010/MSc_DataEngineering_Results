@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Complex_Code_for_12_days_of_Christmas_20240226T055428Z/Sharing_GolfCode_February_26_2024/Conversation_002/Code_001.c
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 4,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Complex_Code_for_12_days_of_Christmas_20240226T055428Z/Sharing_GolfCode_February_26_2024/Conversation_002/Code_001.c",
+        "severity": "warning",
+        "text": "Omitted return type of function 'main' defaults to int, this is not supported by ISO C99 and later standards. ",
+        "type": "returnImplicitInt",
+        "sharing": "Sharing_GolfCode_February_26_2024",
+        "source_code": "main(t,_,a) ^",
+        "scanner": "cppcheck"
+    }
+]

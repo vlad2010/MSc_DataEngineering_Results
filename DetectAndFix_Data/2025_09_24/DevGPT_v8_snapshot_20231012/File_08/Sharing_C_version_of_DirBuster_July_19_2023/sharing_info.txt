@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C version of DirBuster.
+Date:July 19, 2023
+Url:https://chat.openai.com/share/842361c7-7ee5-49a3-9388-4af7c55bbddc
+Model name:GPT-4Number of prompts:7
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:6
+HTML content size:113246

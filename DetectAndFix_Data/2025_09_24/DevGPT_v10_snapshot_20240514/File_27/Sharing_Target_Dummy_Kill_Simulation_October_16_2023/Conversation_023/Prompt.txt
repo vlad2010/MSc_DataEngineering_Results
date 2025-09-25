@@ -1,0 +1,1 @@
+The canDealDamage function shouldn't check the lastUsedTime, it should check a separate variable that tracks when the ability last dealt damage.

@@ -1,0 +1,151 @@
+You are going to help me translate code between C++ and Python. I'm developping a library based on ImGui (named ImGuiBundle). It enables to have a very close translation between C++ and Python.
+
+Please examine this example. Those two codes are equivalent, first in C++ then in Python.
+
+```cpp
+#include "immapp/immapp.h"
+#include "implot/implot.h"
+#include "imgui-knobs/imgui-knobs.h"
+#include <cmath>
+#include <vector>
+#include <utility>
+
+
+// Just a parametric curve to demonstrate how to edit its parameters a, b, & c
+class Curve
+{
+public:
+    float a = 2.0f;
+    float b = 60.0f;
+    float c = 2.0f;
+
+    // Return x and y arrays that we will draw
+    std::pair<std::vector<float>, std::vector<float>> getXY()
+    {
+        float t = 0.0f;
+        std::vector<float> x, y;
+        while (t < 6.28f)
+        {
+            x.push_back(2 * std::cos(t) + std::sin(a * t) * std::cos(b * t));
+            y.push_back(std::sin(c * t) + std::sin(60 * t));
+            t += 0.001f;
+        }
+        return std::make_pair(x, y);
+    }
+};
+
+Curve curve;
+
+
+// Our gui function, which will be invoked by the application loop
+void gui()
+{
+    auto [x, y] = curve.getXY();
+
+    // Draw the x/y curve
+    ImPlot::BeginPlot("Play with me");
+    ImPlot::PlotLine("curve", x.data(), y.data(), x.size());
+    ImPlot::EndPlot();
+
+    // Edit the curve parameters: no callback is needed
+    ImGuiKnobs::Knob("a", &curve.a, 0.5f, 5.0f);
+    ImGui::SameLine();
+    ImGuiKnobs::Knob("b", &curve.b, 55.0f, 65.0f);
+    ImGui::SameLine();
+    ImGuiKnobs::Knob("c", &curve.c, 0.5f, 5.0f);
+
+    //                               // As an illustration of the Immediate Gui paradigm,
+    if (ImGui::Button("Random"))     // this draws a button
+    {                                // and you handle its action immediately!
+        curve.a = (float)rand() / (float)RAND_MAX * (5.0f - 0.5f) + 0.5f;
+        curve.b = (float)rand() / (float)RAND_MAX * (65.0f - 55.0f) + 55.0f;
+        curve.c = (float)rand() / (float)RAND_MAX * (5.0f - 0.5f) + 0.5f;
+    }
+}
+
+
+int main()
+{
+    // Just set you application params (gui function, etc)
+    HelloImGui::RunnerParams params;
+    params.callbacks.ShowGui = gui;
+    // Select your addons
+    ImmApp::AddOnsParams addOns;
+    addOns.withImplot = true;
+    // And run
+    ImmApp::Run(params, addOns);
+    return 0;
+}
+```
+
+```python
+import random
+
+import numpy as np
+from imgui_bundle import imgui, immapp, implot, imgui_knobs, hello_imgui
+
+
+class Curve:
+    "Just a parametric curve to demonstrate how to edit its parameters a, b, & c"
+    a = 2.0
+    b = 60.0
+    c = 2.0
+
+    def get_xy(self):
+        """Return x and y arrays that we will draw"""
+        t = np.arange(0, np.pi * 2, 0.001)
+        x = 2 * np.cos(t) + np.sin(self.a * t) * np.cos(self.b * t)
+        y = np.sin(self.c * t) + np.sin(60 * t)
+        return x, y
+
+
+curve = Curve()
+
+
+def gui():
+    "Our gui function, which will be invoked by the application loop"
+    x, y = curve.get_xy()
+
+    # Draw the x/y curve
+    implot.begin_plot("Play with me")
+    implot.plot_line("curve", x, y)
+    implot.end_plot()
+
+    # Edit the curve parameters: no callback is needed
+    _, curve.a = imgui_knobs.knob("a", curve.a, 0.5, 5.0)
+    imgui.same_line()
+    _, curve.b = imgui_knobs.knob("b", curve.b, 55, 65)
+    imgui.same_line()
+    _, curve.c = imgui_knobs.knob("c", curve.c, 0.5, 5.0)
+
+    #                             # As an illustration of the Immediate Gui paradigm,
+    if imgui.button("Random"):  # this draws a button
+        #                         # and you handle its action immediately!
+        curve.a = random.uniform(0.5, 5)
+        curve.b = random.uniform(55, 65)
+        curve.c = random.uniform(0.5, 5)
+
+
+# Start your application in one line
+immapp.run(gui, with_implot=True)
+```
+
+As you can see, when translating to Python:
+
+1/ CamelCase is transformed to snake_case (except for Classes)
+
+2/ Values modifications are handled differently. For example
+
+In c++:
+```cpp
+bool modified = ImGuiKnobs::Knob("a", &curve.a, 0.5f, 5.0f);
+```
+will display a knob that enables to edit a float value. It changes its value in place, and returns true if modified
+
+In contrast with python: 
+```python
+modified, curve.a = imgui_knobs.knob("a", curve.a, 0.5, 5.0)
+```
+i.e. imgui_knobs.knob returns a tuple (modified, new_value).
+
+Do you understand the principle? I will ask you to make some more translation in the future.

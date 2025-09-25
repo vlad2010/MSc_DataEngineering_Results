@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_040/Code_001.c
+Scanners: ['flawfinder', 'snyk']
+
+Detect info from scanners: 
+[
+    {
+        "line": 59,
+        "file": "./Code/20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_040/Code_001.c",
+        "severity": "note",
+        "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+        "type": "FF1016",
+        "sharing": "Sharing_HPC_February_26_2024",
+        "source_code": "        printf(\"Usage: %s <N> [-p num_processors]\\n\", argv[0]);",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 13,
+        "file": "Code/20240513_202333_issue_sharingsjson/Source_Concurrency_with_process_and_pipes_20240226T134701Z/Sharing_HPC_February_26_2024/Conversation_040/Code_001.c",
+        "severity": "warning",
+        "text": "Unsanitized input from a command line argument flows into a multiplication operator (*), where it is used in integer arithmetic. This may result in an integer overflow vulnerability.",
+        "type": "cpp/IntegerOverflow",
+        "sharing": "Sharing_HPC_February_26_2024",
+        "source_code": "*shmid = shmget(IPC_PRIVATE, N * N * sizeof(int), IPC_CREAT | 0666);",
+        "scanner": "snyk"
+    }
+]

@@ -1,0 +1,11 @@
+Sure, I'll provide the code and documentation in English from now on. Let's start with the shell script for running the matrix multiplication program for various sizes of \( N \), starting from 500 and scaling up in interesting steps for performance analysis. Here's the script with English comments:
+
+[CODE_BLOCK_0]
+
+To use this script:
+
+1. Save the code to a file, for example, `run_tests.sh`.
+2. Make sure your shell script and your `matrix_multiplication` program are executable. You can do this with the command `chmod +x run_tests.sh` and `chmod +x matrix_multiplication`.
+3. Execute the script from the terminal with `./run_tests.sh`.
+
+This script increases \( N \) by multiplying it by a factor of 2 in each iteration, starting from 500 up to a maximum of 8000 (or whichever maximum value you choose to set). You can adjust `MAX_N` and `FACTOR` according to your system capabilities and your analysis requirements. Keep in mind that for large values of \( N \), matrix multiplication can take a significant amount of time, so be sure to set these values according to your needs and patience.

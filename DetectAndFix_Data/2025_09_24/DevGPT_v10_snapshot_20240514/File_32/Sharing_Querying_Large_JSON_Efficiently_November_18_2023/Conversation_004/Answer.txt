@@ -1,0 +1,31 @@
+The efficiency of sorting algorithms depends on various factors, including the size of the dataset, the distribution of data, and the characteristics of the sorting algorithm. Here are a few sorting algorithms commonly used for numbers, along with their average time complexities:
+
+### 1. **QuickSort:**
+   - **Average Time Complexity:** O(n log n)
+   - QuickSort is often considered one of the fastest sorting algorithms for general cases. It has good average-case performance and is widely used.
+
+### 2. **MergeSort:**
+   - **Average Time Complexity:** O(n log n)
+   - MergeSort is a stable sorting algorithm that also has an average time complexity of O(n log n). It is suitable for large datasets and is known for its consistent performance.
+
+### 3. **HeapSort:**
+   - **Average Time Complexity:** O(n log n)
+   - HeapSort uses a binary heap data structure and has an average time complexity of O(n log n). While it may not be as commonly used as QuickSort or MergeSort, it is still a reliable sorting algorithm.
+
+### 4. **TimSort:**
+   - **Average Time Complexity:** O(n log n)
+   - TimSort is a hybrid sorting algorithm derived from MergeSort and InsertionSort. It is designed to perform well on many kinds of real-world data. It is the default sorting algorithm in Python's `sorted()` function.
+
+### 5. **Radix Sort:**
+   - **Average Time Complexity:** O(nk)
+   - Radix Sort is a non-comparative sorting algorithm that works well for integer data. Its time complexity depends on the length of the keys (digits), making it suitable for certain cases.
+
+### 6. **Bucket Sort:**
+   - **Average Time Complexity:** O(n + k)
+   - Bucket Sort is suitable when the input is uniformly distributed across a range. It divides the input into buckets and sorts each bucket individually, often with an efficient sorting algorithm like InsertionSort.
+
+### 7. **Counting Sort:**
+   - **Average Time Complexity:** O(n + k)
+   - Counting Sort is efficient for sorting integers when the range of possible key values is known and not too large. It is a non-comparative integer sorting algorithm with linear time complexity.
+
+The "fastest" sorting algorithm depends on the specific characteristics of your data and the constraints of your use case. For general-purpose sorting, QuickSort, MergeSort, and TimSort are often good choices. It's recommended to consider the specific requirements and constraints of your application before choosing a sorting algorithm.

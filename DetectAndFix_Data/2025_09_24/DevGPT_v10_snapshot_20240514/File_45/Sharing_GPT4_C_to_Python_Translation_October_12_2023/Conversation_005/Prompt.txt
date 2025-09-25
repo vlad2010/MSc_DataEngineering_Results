@@ -1,0 +1,2 @@
+Please let's add a interactive demo for DemoMarkdown: display a TextInput and render it below.
+Add this to the AppState and fill it with a nice starting value

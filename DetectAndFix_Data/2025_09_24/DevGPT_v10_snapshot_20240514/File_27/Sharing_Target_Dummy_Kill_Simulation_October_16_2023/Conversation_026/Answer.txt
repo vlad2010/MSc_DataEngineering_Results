@@ -1,0 +1,5 @@
+You're absolutely right. My apologies for the oversight. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+In this code, the `lastDamageTime` variable is correctly used to track when the ability last dealt damage, and the `static_cast<int>` is fixed to `static_cast<int>`.

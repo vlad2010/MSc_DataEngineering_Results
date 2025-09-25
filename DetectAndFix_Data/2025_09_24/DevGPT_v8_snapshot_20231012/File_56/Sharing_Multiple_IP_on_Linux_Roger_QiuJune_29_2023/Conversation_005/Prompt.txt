@@ -1,0 +1,1 @@
+So you cannot have a socket bound to 192.0.2.1:12345 and 198.51.100.1:12345 at the same time?

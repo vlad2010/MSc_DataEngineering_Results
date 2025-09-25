@@ -1,0 +1,67 @@
+I would like to ask you to behave like senior software developer with expertise in software security to answer the next question. You must find security issues in the code snippet below in this message. Give me your analysis and the way to fix the code if possible. Try to identify CWE number or any other number for formal classifications. Please write code where detected security issue is fixed, please write all code in one code fragment.
+(```cpp
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <unordered_map>
+
+using namespace std;
+
+int main() {
+    // Variable declarations
+    int cases = 0, partyAmount = 0, voteAmount = 0;
+    string filename, party, candidate, vote, winner;
+    int maxVotes = 0;
+    bool tie = false;
+
+    // File handling
+    cout << "Enter filename: ";
+    cin >> filename;
+    ifstream infile(filename);
+    infile >> cases;
+
+    for (int i = 0; i < cases; i++) {
+        // Reset variables for each case
+        unordered_map<string, int> votes;
+        unordered_map<string, string> parties;
+        tie = false;
+
+        // Read party information
+        infile >> partyAmount;
+        infile.ignore();
+        for (int j = 0; j < partyAmount; j++) {
+            getline(infile, candidate);
+            getline(infile, party);
+            parties[candidate] = party;
+        }
+
+        // Read vote information
+        infile >> voteAmount;
+        infile.ignore();
+        for (int j = 0; j < voteAmount; j++) {
+            getline(infile, vote);
+            votes[vote]++;
+        }
+
+        // Find the winner or check for a tie
+        for (auto& [candidate, voteCount] : votes) {
+            if (voteCount > maxVotes) {
+                winner = parties[candidate];
+                maxVotes = voteCount;
+                tie = false;
+            } else if (voteCount == maxVotes) {
+                tie = true;
+            }
+        }
+
+        // Display results
+        if (tie) {
+            cout << "Case " << i + 1 << " results: Tie" << endl;
+        } else {
+            cout << "Case " << i + 1 << " results: " << winner << endl;
+        }
+    }
+
+    return 0;
+}
+```)

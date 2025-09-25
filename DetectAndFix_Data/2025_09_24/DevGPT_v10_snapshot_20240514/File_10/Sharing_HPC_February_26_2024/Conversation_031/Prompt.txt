@@ -1,0 +1,1 @@
+how to configure visual studio with wsl to not to throw errors by libraries

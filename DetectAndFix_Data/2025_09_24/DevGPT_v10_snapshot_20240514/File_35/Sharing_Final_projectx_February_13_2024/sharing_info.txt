@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Final projectx
+Date:February 13, 2024
+Url:https://chat.openai.com/share/ecaa6715-473e-49df-883b-4b8e4306d477
+Model name:GPT-3.5Number of prompts:7
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:7
+HTML content size:157460

@@ -1,0 +1,1 @@
+Is it not necessary to add a link to libxml2 as well?

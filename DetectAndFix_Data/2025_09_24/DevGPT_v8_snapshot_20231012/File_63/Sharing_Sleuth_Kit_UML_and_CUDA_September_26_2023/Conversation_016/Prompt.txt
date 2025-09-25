@@ -1,0 +1,1 @@
+Wait, wait, wait, wait.  Is this a recursive binary search?  So first iteration, low to up is the entire array?  That could be huge for a hash database right?

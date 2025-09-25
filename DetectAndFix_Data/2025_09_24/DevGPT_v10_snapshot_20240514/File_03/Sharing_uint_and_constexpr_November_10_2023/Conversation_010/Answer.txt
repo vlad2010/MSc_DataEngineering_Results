@@ -1,0 +1,5 @@
+In the C and C++ standard libraries, `uint8_t` is the smallest fixed-width integer type. It's explicitly defined to be an 8-bit unsigned integer. The `uint8_t` type provides a guaranteed size of exactly 8 bits, and it is intended to be the smallest integer type in terms of storage size.
+
+While there are smaller types, such as `char` or `signed char`, their sizes are not fixed and can vary across different systems. For example, `char` is typically 8 bits on most systems, but it's not guaranteed. The `uint8_t` type was introduced to ensure a fixed-size 8-bit unsigned integer regardless of the platform.
+
+If you need an integer type with a fixed size of 8 bits, `uint8_t` is the most reliable choice. Keep in mind that not all systems may support `uint8_t` if they don't have an 8-bit data type available. However, on modern systems, it is widely supported.

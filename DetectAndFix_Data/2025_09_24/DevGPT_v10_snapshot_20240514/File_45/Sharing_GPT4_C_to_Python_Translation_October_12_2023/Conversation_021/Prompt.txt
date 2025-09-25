@@ -1,0 +1,37 @@
+Now, let's translate
+```cpp
+// A demo showcasing the usage of ImPlot
+void DemoPlot(AppState& appState)
+{
+    ImGuiMd::RenderUnindented(GetDoc("PlotIntro"));
+
+    static const char* data_labels[]    = {"Frogs", "Hogs", "Dogs", "Logs"};
+
+    ImGui::Text("Edit Pie Chart values");
+    ImGui::SetNextItemWidth(250);
+    ImGui::DragFloat4("Pie Data", appState.PlotData.data(), 0.01f, 0, 1);
+
+    // Prefer to specify sizes using the "em" unit: see https://en.wikipedia.org/wiki/Em_(typography)
+    //     Below, plotSize is equivalent to the size of 20 lines of text
+    ImVec2 plotSize = ImmApp::EmToVec2(15.f, 15.f);
+
+    if (ImPlot::BeginPlot("Pie Chart", plotSize))
+    {
+        ImPlot::SetupAxes("", "", ImPlotAxisFlags_NoDecorations, ImPlotAxisFlags_NoDecorations);
+        ImPlot::PlotPieChart(
+            data_labels,
+            appState.PlotData.data(), appState.PlotData.size(), // data and count
+            0.5, 0.5, // pie center position in the plot(x, y). Here, it is centered
+            0.35,      // pie radius relative to plotSize
+            "%.2f",   // fmt
+            90        // angle
+            );
+            ImPlot::EndPlot();
+    }
+
+    // Display help
+    ImGui::Checkbox("More info##Implot", &appState.ShowImplotInfo);
+    if (appState.ShowImplotInfo)
+        ImGuiMd::RenderUnindented(GetDoc("PlotDoc"));
+}
+```

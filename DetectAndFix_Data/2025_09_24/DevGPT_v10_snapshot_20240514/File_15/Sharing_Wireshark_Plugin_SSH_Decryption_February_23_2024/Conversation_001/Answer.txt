@@ -1,0 +1,29 @@
+Creating a Wireshark plugin to decrypt SSH connections requires a deep understanding of both the SSH protocol and the Wireshark plugin architecture. This project involves complex operations such as packet parsing, cryptographic operations, and integration with Wireshark's extensible plugin system. Here's an overview of the code organization and structure for this project:
+
+### Code Structure Overview
+
+1. **`ssh_decryptor.c`**: The main plugin source file. It registers the plugin with Wireshark, sets up the SSH decryption capabilities, and includes the logic for parsing SSH packets and applying decryption based on the supplied key.
+
+2. **`ssh_utils.c`**: A utility file containing functions for cryptographic operations such as key derivation, decryption algorithms (AES, for instance), and integrity checks necessary for SSH.
+
+3. **`ssh_key_handler.c`**: Handles loading and parsing of the supplied SSH key. It includes functionality to validate the key format and convert it into a format usable for decryption.
+
+4. **`Makefile`**: Used to compile the plugin. It includes instructions for building the plugin and linking it with necessary libraries, especially those for cryptographic operations and Wireshark's plugin system.
+
+5. **`plugin.rc`**: A resource file for Windows builds, necessary for integrating the plugin into Wireshark under Windows environments.
+
+### Brief Descriptions
+
+- **`ssh_decryptor.c`**: This is the core of the plugin, interfacing directly with Wireshark. It includes the registration of the plugin module, hooks for packet processing, and the logic to determine if a packet is part of an SSH session that can be decrypted with the provided key.
+
+- **`ssh_utils.c`**: Provides essential cryptographic utilities for SSH, including functions for symmetric decryption, key exchange algorithms, and possibly HMAC verification to ensure packet integrity.
+
+- **`ssh_key_handler.c`**: Manages the SSH key(s) provided by the user. It ensures that keys are loaded correctly, potentially supports different key formats (e.g., PEM), and prepares them for use in decryption.
+
+- **`Makefile`**: Facilitates the compilation process, ensuring that the plugin is correctly built as a shared library (.so or .dll, depending on the platform) that can be loaded by Wireshark.
+
+- **`plugin.rc`**: Contains metadata and version information for Windows, ensuring the plugin integrates seamlessly into the Wireshark ecosystem on Windows platforms.
+
+### Next Steps
+
+Please confirm by typing "Continue" if you would like to start with the code for the first file, `ssh_decryptor.c`. After that, we'll proceed step by step through each file in the list.

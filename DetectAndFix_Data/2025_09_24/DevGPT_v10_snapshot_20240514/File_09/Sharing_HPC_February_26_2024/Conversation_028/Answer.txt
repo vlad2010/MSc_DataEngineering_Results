@@ -1,0 +1,12 @@
+To allow the number of processes (chunks) to be specified via a command-line parameter, you can modify the program to accept an additional argument that determines the number of processes to use for the matrix multiplication. This argument will replace the `MAX_PROCESSES` constant, providing more flexibility in controlling the level of concurrency.
+
+Here's the updated version of the code that includes this functionality:
+
+[CODE_BLOCK_0]
+
+In this version:
+- The program now requires two command-line arguments: the size of the matrix (`N`) and the number of processes to use for the computation (`num_processes`).
+- The number of processes is dynamically determined based on the second command-line argument, allowing you to specify 2, 4, 6, 8, or 10 processes as required.
+- Each process works on a chunk of rows in the matrix, with the chunk size and the range of rows each process handles calculated based on the total number of processes.
+
+This modification provides the flexibility to experiment with different levels of parallelism to analyze the performance impact of using various numbers of processes for the matrix multiplication task.

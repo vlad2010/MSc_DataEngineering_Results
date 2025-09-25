@@ -1,0 +1,9 @@
+Para medir el tiempo de reloj del proceso de multiplicación de matrices sin incluir la reserva de memoria, el llenado de las matrices y la liberación de memoria, puedes utilizar la función `clock()` de la biblioteca `time.h`. Esta función te permite medir el tiempo de CPU utilizado por un segmento específico de tu código.
+
+Primero, incluye la biblioteca `time.h` en tu código. Luego, utiliza `clock()` al inicio y al final del segmento de código que deseas medir, en este caso, la sección de multiplicación de matrices. La diferencia entre estos dos tiempos, dividida por `CLOCKS_PER_SEC` (una constante definida en `time.h` que representa el número de "ticks" de reloj por segundo), te dará el tiempo en segundos que tomó ejecutar esa sección del código.
+
+Aquí tienes un ejemplo de cómo implementarlo en tu código:
+
+[CODE_BLOCK_0]
+
+Este código mide el tiempo de CPU utilizado solo por la sección de multiplicación de matrices. La variable `start` almacena el tiempo antes de comenzar la multiplicación, y `end` almacena el tiempo justo después de que se completa la multiplicación. La diferencia entre estos dos tiempos, dividida por `CLOCKS_PER_SEC`, da el tiempo total utilizado en segundos. Este tiempo se imprime al final del programa.

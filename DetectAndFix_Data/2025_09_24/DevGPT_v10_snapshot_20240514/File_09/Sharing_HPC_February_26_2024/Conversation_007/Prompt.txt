@@ -1,0 +1,1 @@
+Se interesa medir el tiempo de reloj del proceso de multiplicación de matrices, sin tener en cuenta otro procesos como reserva de memoria, llenado de matrices y liberación, solo la multiplicación, 

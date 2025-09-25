@@ -1,0 +1,5 @@
+I apologize for the oversight. It appears I miscalculated the cooldown duration for the ability in terms of ticks. To achieve a cooldown of 10 ticks (equivalent to 1 second), you should adjust the `abilityCooldown` value accordingly. Here's the corrected code:
+
+[CODE_BLOCK_0]
+
+I've updated the `abilityCooldownTicks` to 10, which will represent a cooldown of 1 second in terms of in-game ticks. This should make the dummy die in approximately 3 seconds.

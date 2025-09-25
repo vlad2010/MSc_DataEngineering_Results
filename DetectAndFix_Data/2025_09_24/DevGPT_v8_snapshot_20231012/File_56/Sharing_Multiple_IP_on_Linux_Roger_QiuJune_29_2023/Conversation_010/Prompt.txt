@@ -1,0 +1,1 @@
+If a computer has 3 interfaces, 2 of the interfaces are connected to the same network and a third interface is connected to a second network. Is it possible for the third interface to have the same IP as one of the first 2 interfaces? Because there are 2 networks?

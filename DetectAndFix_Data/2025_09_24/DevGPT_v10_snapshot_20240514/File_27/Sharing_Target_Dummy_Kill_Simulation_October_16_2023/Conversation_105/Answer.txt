@@ -1,0 +1,5 @@
+Certainly! Here's the code with the modification to print the dummy's health as part of the big print statement when an ability deals damage:
+
+[CODE_BLOCK_0]
+
+The dummy's health is now printed as part of the big print statement when an ability deals damage.

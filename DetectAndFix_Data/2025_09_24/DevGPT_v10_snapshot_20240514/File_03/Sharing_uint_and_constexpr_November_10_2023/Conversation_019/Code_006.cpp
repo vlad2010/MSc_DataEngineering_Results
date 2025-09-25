@@ -1,0 +1,2 @@
+#define MY_CONST_VALUE 42
+#define MY_DOUBLE_VALUE 3.14

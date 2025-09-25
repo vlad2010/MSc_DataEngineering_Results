@@ -1,0 +1,1 @@
+can you modify the class so that if no file is provided to the constructor by default the log is sent to standard output?

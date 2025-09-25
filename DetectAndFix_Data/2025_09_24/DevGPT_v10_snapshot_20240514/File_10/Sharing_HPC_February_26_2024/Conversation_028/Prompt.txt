@@ -1,0 +1,1 @@
+I need to pass the chunk of process with 2, 4 ,6, 8 and 10 so i need to pass throught parameter to the code 

@@ -1,0 +1,7 @@
+this is the correct type of the chunk record iterator 
+
+typedef struct CHUNK_RecordIterator {
+    CHUNK chunk;
+    int currentBlockId;
+    int cursor;
+} CHUNK_RecordIterator;

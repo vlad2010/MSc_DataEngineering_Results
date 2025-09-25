@@ -1,0 +1,1 @@
+here is some low level CH552 code for reading data from an I2C EEPROM, can you convert this into a function called "Wire_readRegister(uint8_t i2caddr, uint8_t regaddr, uint8_t *data, uint8_t bytes)" that reads arbitrary bytes from a register. note i2caddr should be the 7-bit address so it may need to be shifted and have the write/read bit adjusted

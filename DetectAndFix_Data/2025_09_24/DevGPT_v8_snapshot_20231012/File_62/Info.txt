@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_234250_file_sharingsjson\Source_NoId_NoDate\Sharing_Stack异常处理方法_September_11_2023\Conversation_005\Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 19,
+        "file": "Code/20231012_234250_file_sharingsjson/Source_NoId_NoDate/Sharing_Stack异常处理方法_September_11_2023/Conversation_005/Code_001.cpp",
+        "severity": "warning",
+        "text": "Class 'Stack' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). ",
+        "type": "noCopyConstructor",
+        "sharing": "Sharing_Stack异常处理方法_September_11_2023",
+        "source_code": "this->arr = new T[stackSize]; ^",
+        "scanner": "cppcheck"
+    }
+]

@@ -1,0 +1,41 @@
+Hello, I would like some insight to what does this piece of code does, and would take any suggestions to make this better!
+
+/*
+ *  zigzag(): Returns the vector with the longest path.
+ *  parameters: binTreeNode * r - node to be passed in
+ *              bool childType - determines which side the node is on
+ *              std::vector<std::string> path - the current zigzag path
+ *  return value: Returns a string vector.
+ *  Algorithm: Calls each side recursively, and compares the two longest paths. If the node is on the left side, it checks the child's right
+ *             side and see if it's nullptr. If it's not nullptr, then the current node is added to path and recursively calls itself on both
+ *             sides of the child. However, depending on what side, the vector that is passed in is either path or an empty vector. This entire
+ *             process happens on the left side as well.
+ */
+std::vector<std::string> binTree::zigzag(binTreeNode * r, bool childType, std::vector<std::string> path)
+{
+    std::vector<std::string> vector1;               // empty vector
+    std::vector<std::string> leftPath;              // left path
+    std::vector<std::string> rightPath;             // right path
+
+    if(r == nullptr)
+        return vector1;
+    if(childType == true)
+    {
+        path.push_back(r->location);
+        vector1.push_back(r->location);
+        leftPath = zigzag(r->left,true,vector1);
+        rightPath = zigzag(r->right,false,path);
+    }
+    else
+    {
+        path.push_back(r->location);
+        vector1.push_back(r->location);
+        leftPath = zigzag(r->left,true,path);
+        rightPath = zigzag(r->right,false,vector1);
+    }
+    if(path.size() > rightPath.size() && path.size() > leftPath.size())
+        return path;
+    if(leftPath.size() > rightPath.size())
+        return leftPath;
+    return rightPath;
+}

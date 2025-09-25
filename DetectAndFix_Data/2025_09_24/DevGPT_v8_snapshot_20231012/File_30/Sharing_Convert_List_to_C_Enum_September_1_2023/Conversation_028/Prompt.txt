@@ -1,0 +1,1 @@
+ok great, next function we're going to write is bool getCCStatus() , which is the same but checks the 6th bit of PD0 - called "CC_DIR"

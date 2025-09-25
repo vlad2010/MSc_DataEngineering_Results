@@ -1,0 +1,1 @@
+I don't think the ability class needs a tick interval variable. That's what the cooldown variable is for. This code has the same issue as before. How about introducing a variable that's true if the ability is active, which is set to true when it's cast and set to false when its duration expires?

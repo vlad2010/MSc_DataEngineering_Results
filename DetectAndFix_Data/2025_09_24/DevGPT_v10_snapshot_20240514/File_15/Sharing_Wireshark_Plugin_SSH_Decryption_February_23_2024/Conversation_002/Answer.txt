@@ -1,0 +1,19 @@
+Let's start with the `ssh_decryptor.c` file. This file is responsible for the main functionality of our Wireshark plugin, including registering the plugin with Wireshark, defining how SSH packets are parsed, and applying the decryption process using the provided SSH key.
+
+### `ssh_decryptor.c`
+
+[CODE_BLOCK_0]
+
+This code snippet outlines the basic structure for registering a new protocol dissector in Wireshark and setting up the decryption of SSH packets. It includes placeholders for cryptographic operations (`decrypt_ssh_payload` function) which would be defined in `ssh_utils.c` and the key handling mechanisms in `ssh_key_handler.c`.
+
+### Explanation
+
+- **Protocol Registration**: The `proto_register_ssh_decryptor` function registers the SSH Decryptor plugin with Wireshark. It defines the display name and the fields that will be added to the Wireshark GUI.
+
+- **Packet Dissection**: The `dissect_ssh_decryptor` function is the callback for dissecting packets. It attempts to decrypt SSH packets using a predefined key and adds the decrypted payload to the protocol tree in Wireshark.
+
+- **Handoff Registration**: The `proto_reg_handoff_ssh_decryptor` function ensures that our dissector is called for packets on the SSH port (22 by default).
+
+This is the starting point for our SSH decryption plugin. The next steps involve implementing the decryption logic in `ssh_utils.c` and handling the SSH key in `ssh_key_handler.c`.
+
+Type "Continue" if you would like to proceed with the `ssh_utils.c` file.

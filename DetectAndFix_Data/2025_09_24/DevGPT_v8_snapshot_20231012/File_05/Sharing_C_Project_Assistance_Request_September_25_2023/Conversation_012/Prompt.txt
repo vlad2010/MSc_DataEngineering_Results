@@ -1,0 +1,6 @@
+setup.csv SuperLigaen
+1
+2
+3
+0
+2

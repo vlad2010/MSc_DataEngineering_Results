@@ -1,0 +1,1 @@
+Next, instead of having a damagePerHit variable that goes off every tick, I'd like to introduce an ability that does a certain amount of damage, but can only be cast once per second.

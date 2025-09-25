@@ -1,0 +1,13 @@
+Source data info: 
+Title: No title
+Date: No creation date
+Url: https://github.com/dev-dwarf/lcf/blob/efeffda91701160b7f64cc1680bd08a79d0ffd60/os/lcf_os.h
+Type: code file
+ID: No id
+Author: dev-dwarf
+Number of points: No points
+Number of comments: No comment numbers
+Number of sharings: 1
+
+Story text:
+

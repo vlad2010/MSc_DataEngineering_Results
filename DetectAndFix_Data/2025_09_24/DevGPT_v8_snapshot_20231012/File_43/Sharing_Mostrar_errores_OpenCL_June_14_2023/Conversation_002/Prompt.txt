@@ -1,0 +1,4 @@
+Pero es que ya existen. Por ejemplo, -52 es CL_INVALID_KERNEL_ARGS y su explicación es if the kernel argument values have not been specified.
+
+
+Quiero saber si existe alguna funcion del tipo get_error_message(errorcode)

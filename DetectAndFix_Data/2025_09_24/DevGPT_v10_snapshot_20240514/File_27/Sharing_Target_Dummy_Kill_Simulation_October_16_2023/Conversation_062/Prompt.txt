@@ -1,0 +1,1 @@
+This seems like it would break the functionality of abilities that actually do damage over time. What if I just created an ability like DamageOverTimeAbility(3.0, 0, 0, priority)?

@@ -1,0 +1,1 @@
+   ptrdiff_t pointerDifference = ptr2 - ptr1;

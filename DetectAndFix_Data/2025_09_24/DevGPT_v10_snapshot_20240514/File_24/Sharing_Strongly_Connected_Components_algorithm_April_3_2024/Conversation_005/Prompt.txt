@@ -1,0 +1,1 @@
+Can you replace the successors set by a boolean flag that indicates if w was visited, update currectLink in the next iteration after updating indices[v].second with indices[w].first if w was visited in order to reduce complexity while maintaining correctness of this version of Tarjan's algorithm ?

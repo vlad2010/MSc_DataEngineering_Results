@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_233628_pr_sharingsjson\Source_fix_open_url_not_working_on_windows_20230911T002353Z\Sharing_Open_URL_in_Windows_September_11_2023\Conversation_002\Code_001.cpp
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 16,
+        "file": "./Code/20231012_233628_pr_sharingsjson/Source_fix_open_url_not_working_on_windows_20230911T002353Z/Sharing_Open_URL_in_Windows_September_11_2023/Conversation_002/Code_001.cpp",
+        "severity": "error",
+        "text": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+        "type": "FF1044",
+        "sharing": "Sharing_Open_URL_in_Windows_September_11_2023",
+        "source_code": "    const int exitcode = std::system(command.c_str());",
+        "scanner": "flawfinder"
+    }
+]

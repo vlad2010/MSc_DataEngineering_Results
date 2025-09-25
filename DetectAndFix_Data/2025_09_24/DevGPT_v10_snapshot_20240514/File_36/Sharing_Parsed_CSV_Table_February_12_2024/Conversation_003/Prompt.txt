@@ -1,0 +1,1 @@
+ok so now I would like to have a math polynomial formula that giving cadence and resistance will give me the wattage

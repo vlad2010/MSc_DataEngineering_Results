@@ -1,0 +1,5 @@
+I apologize for the oversight. It seems that there was a mistake in my previous response. Here's the corrected code with the necessary functions in the `Ability` class:
+
+[CODE_BLOCK_0]
+
+I've added the missing functions `canCast`,

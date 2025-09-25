@@ -1,0 +1,15 @@
+Certainly! Below is a more detailed and expanded `README.md` for the `sequential_matrix_multiplication` project. This version includes additional sections like Introduction, Features, System Requirements, Installation Instructions, Detailed Usage Guide, and Contributing guidelines to provide a comprehensive overview of the project.
+
+[CODE_BLOCK_0]bash
+    git clone [repository-url]
+    [CODE_BLOCK_1]bash
+    gcc matrix_multiplication_sequential.c -o matrix_multiplication_sequential
+    [CODE_BLOCK_2]bash
+    chmod +x run_tests.sh
+    [CODE_BLOCK_3]bash
+./matrix_multiplication_sequential [N]
+[CODE_BLOCK_4]bash
+./run_tests.sh
+[CODE_BLOCK_5]
+
+This README provides a thorough introduction to the project, guiding users through installation, usage, and contribution processes, making it suitable for an open-source project hosted on GitHub. Adjust the `[repository-url]` placeholder with the actual URL of your GitHub repository, and specify the correct license type in the License section according to your project's licensing.

@@ -1,0 +1,55 @@
+I get an error "segmentation fault with this code" can you find it?
+
+void allocateMatrices(int **A, int **B, int **C, int N){
+    
+    A = (int **)malloc(N * sizeof(int *));
+    B = (int **)malloc(N * sizeof(int *));
+    C = (int **)malloc(N * sizeof(int *));
+
+    for (int i = 0; i < N; i++) {
+        A[i] = (int *)malloc(N * sizeof(int));
+        B[i] = (int *)malloc(N * sizeof(int));
+        C[i] = (int *)malloc(N * sizeof(int)); 
+    }
+
+}
+
+void fillMatrices(int **A, int **B, int **C, int N){
+    
+    srand(time(NULL));
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            
+            A[i][j] = rand() % 100; 
+            B[i][j] = rand() % 100;
+            C[i][j] = 0;
+            
+        }
+    }
+
+}
+
+
+int main(int argc, char *argv[]) {
+
+    if (argc < 2) {
+        printf("N value not provided");
+        return -1;
+    }
+
+    int N = atoi(argv[1]); // Converts the command line argument to an integer
+
+    
+    int **A;
+    int **B;
+    int **C;
+
+    // Memory allocation
+    allocateMatrices(A, B, C, N);
+
+
+    // Filling matrices
+    fillMatrices(A, B, C, N);
+
+}

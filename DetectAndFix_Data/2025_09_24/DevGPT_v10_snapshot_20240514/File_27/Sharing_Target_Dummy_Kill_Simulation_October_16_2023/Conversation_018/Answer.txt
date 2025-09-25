@@ -1,0 +1,5 @@
+I apologize for the oversight. To ensure that the abilities are recast once their duration runs out and to make the loop end when the dummy's health reaches 0, you can modify the code as follows:
+
+[CODE_BLOCK_0]
+
+This code will make the loop end when the dummy's health reaches 0 and recast abilities once their duration runs out.

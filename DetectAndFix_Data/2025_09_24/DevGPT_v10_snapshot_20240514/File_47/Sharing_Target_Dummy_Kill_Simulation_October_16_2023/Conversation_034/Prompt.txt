@@ -1,0 +1,2 @@
+Please replace the comparisons in canDealDamage and updateActivity with
+if (std::abs(elapsedTime - lastCastTime) >= durationSeconds - epsilon).

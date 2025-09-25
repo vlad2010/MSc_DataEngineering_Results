@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_213050_commit_sharingsjson/Source_NoId_NoDate/Sharing_Refactorar_y_optimizar_código_February_7_2024/Conversation_002/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 78,
+        "file": "Code/20240513_213050_commit_sharingsjson/Source_NoId_NoDate/Sharing_Refactorar_y_optimizar_código_February_7_2024/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "Found an exit path from function with non-void return type that has missing return statement ",
+        "type": "missingReturn",
+        "sharing": "Sharing_Refactorar_y_optimizar_código_February_7_2024",
+        "source_code": "} ^",
+        "scanner": "cppcheck"
+    }
+]

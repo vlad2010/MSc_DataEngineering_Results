@@ -1,0 +1,1 @@
+Can Tarjan's strongly connected components algorithm be adapted to be divided among multiple threads ?

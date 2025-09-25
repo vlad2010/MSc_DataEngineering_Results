@@ -1,0 +1,5 @@
+I'm glad to hear that the test program is now working correctly and more efficiently without the unnecessary `sleep()` statement. It was an oversight on my part, and I appreciate your keen attention in rectifying it.
+
+Thank you for involving me in this process! It was a great experience to collaborate on developing a test for POSIX signal handling. I'm looking forward to reading about it in your publication. If you have any more questions or need further assistance in the future, feel free to reach out.
+
+Best of luck with your article and the ongoing work on the Cosmopolitan Libc codebase!

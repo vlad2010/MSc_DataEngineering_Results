@@ -1,0 +1,5 @@
+do the same here, its for the HUSB 5V current contract
+00 = Default current
+01 = 1.5A
+10 = 2.4A
+11 = 3A

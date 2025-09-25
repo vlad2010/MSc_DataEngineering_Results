@@ -1,0 +1,13 @@
+Given your system specifications (16GB RAM and a Core i5 processor), it's important to choose values of \( N \) that will provide meaningful statistical results without exceeding your system's memory capacity or requiring excessive computation time. Considering the \( O(N^3) \) complexity of the standard matrix multiplication algorithm, the memory and CPU usage can escalate quickly with larger matrices.
+
+For a system with 16GB of RAM, you need to be cautious, especially since each integer in the matrices consumes 4 bytes (assuming 32-bit integers), and you have three matrices (\( A \), \( B \), and \( C \)). The total memory used by these matrices can be calculated as \( 3 \times N^2 \times 4 \) bytes.
+
+To get at least 10 data points without increasing \( N \) too drastically, you could start with a smaller base value and use a smaller increment factor. For example, you might start with \( N = 100 \) and increase \( N \) by 100 or 200 each step. This approach would give you a more gradual increase and should keep the computation and memory usage within reasonable bounds for your system.
+
+Here's how you can adjust the shell script:
+
+[CODE_BLOCK_0]
+
+This script starts with \( N = 100 \) and increases \( N \) by 100 in each iteration, giving you 10 data points up to \( N = 1000 \). This range should be manageable for your PC, but you should still monitor your system's resource usage, especially for the larger values of \( N \), to ensure it's not becoming overloaded.
+
+Make sure to test the script with the initial values to see how your system handles the load, and adjust the `INCREMENT` or `DATA_POINTS` as necessary based on the initial results and the system's performance.

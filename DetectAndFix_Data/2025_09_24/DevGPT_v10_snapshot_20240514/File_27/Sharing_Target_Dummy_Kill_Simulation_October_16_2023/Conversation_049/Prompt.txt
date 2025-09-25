@@ -1,0 +1,4 @@
+The two comparisons:
+sharedCooldown <= 0.0
+should be
+sharedCooldown <= epsilon

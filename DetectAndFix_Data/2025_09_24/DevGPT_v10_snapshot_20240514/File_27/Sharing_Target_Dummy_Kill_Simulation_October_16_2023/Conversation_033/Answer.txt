@@ -1,0 +1,9 @@
+I apologize for any confusion. You're correct; the original comparison:
+
+[CODE_BLOCK_0]
+
+is indeed the correct one. It accurately checks if the duration has passed since the ability was last cast. Thank you for clarifying, and here's the code with the correct comparison:
+
+[CODE_BLOCK_1]
+
+Thank you for clarifying the comparison. This code now accurately checks if the cooldown has passed using epsilon-based comparisons.

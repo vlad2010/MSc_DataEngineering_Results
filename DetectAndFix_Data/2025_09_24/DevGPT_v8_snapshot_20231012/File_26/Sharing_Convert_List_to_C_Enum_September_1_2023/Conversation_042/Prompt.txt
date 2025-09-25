@@ -1,0 +1,1 @@
+yes, next, bits [3:0] are called PD_SRC_CURRENT and return HUSB238_CurrentSetting

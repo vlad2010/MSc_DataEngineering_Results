@@ -1,0 +1,5 @@
+Certainly! Here's a commented version of the code with documentation explaining each section:
+
+[CODE_BLOCK_0]
+
+I've added comments to each part of the code to explain its purpose and the logic behind it. However, note that understanding the exact functionality might still require careful analysis, as the code is deliberately obfuscated.

@@ -1,0 +1,1 @@
+Now I'd like a shared cooldown of 1 second between ability casts, so that ability1 is cast at the start and ability2 is cast one second later.

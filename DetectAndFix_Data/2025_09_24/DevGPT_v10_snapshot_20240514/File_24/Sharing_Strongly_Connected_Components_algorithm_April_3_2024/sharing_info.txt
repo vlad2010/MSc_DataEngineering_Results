@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Strongly Connected Components algorithm
+Date:April 3, 2024
+Url:https://chat.openai.com/share/d6f605ca-e49a-4851-b747-8bccb77a2c40
+Model name:GPT-4Number of prompts:17
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:17
+HTML content size:366971

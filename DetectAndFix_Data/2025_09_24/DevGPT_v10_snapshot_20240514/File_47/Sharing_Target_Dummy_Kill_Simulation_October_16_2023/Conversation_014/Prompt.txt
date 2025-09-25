@@ -1,0 +1,1 @@
+The loop ends prematurely - it should only end when the dummy is dead. Also, ability 2 is first used at tick 51 and ability 1 is first used at tick 52, when both should be used immediately.

@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20240514_v10/Code\20240513_160734_pr_sharingsjson/Source_Added_Stefano_complexCodecpp_20240226T175033Z/Sharing_Understand_C_Code_February_27_2024/Conversation_002/Code_001.cpp
+Scanners: ['cppcheck']
+
+Detect info from scanners: 
+[
+    {
+        "line": 32,
+        "file": "Code/20240513_160734_pr_sharingsjson/Source_Added_Stefano_complexCodecpp_20240226T175033Z/Sharing_Understand_C_Code_February_27_2024/Conversation_002/Code_001.cpp",
+        "severity": "warning",
+        "text": "Variable 'neighbor' can be declared as reference to const ",
+        "type": "constVariableReference",
+        "sharing": "Sharing_Understand_C_Code_February_27_2024",
+        "source_code": "constVariableReference",
+        "scanner": "cppcheck"
+    }
+]

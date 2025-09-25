@@ -1,0 +1,2 @@
+I got this error C:\Users\kutuk\hey\Football-standings\FootballStandings\Program.cs(37,34): error CS1061: 'LeagueSetup' does not contain a definition for 'Rounds' and no accessible extension method 'Rounds' accepting a first argument of type 
+ 'LeagueSetup' could be found (are you missing a using directive or an assembly reference?) [C:\Users\kutuk\hey\Football-standings\FootballStandings\FootballStandings.csproj]

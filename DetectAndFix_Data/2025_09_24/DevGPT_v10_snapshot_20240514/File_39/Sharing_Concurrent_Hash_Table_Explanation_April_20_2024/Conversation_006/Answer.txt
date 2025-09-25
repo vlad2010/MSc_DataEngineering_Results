@@ -1,0 +1,5 @@
+Thank you for providing the additional information. Let's integrate the `stdint.h` header and the `hashRecord` structure into the code:
+
+[CODE_BLOCK_0]
+
+This code now includes the `stdint.h` header to ensure `uint32_t` is defined. The `hashRecord` structure is integrated as provided.

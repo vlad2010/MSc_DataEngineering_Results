@@ -1,0 +1,20 @@
+Alright, let's translate the provided C++ code into Python using the guidelines and library interfaces you provided:
+
+[CODE_BLOCK_0]python
+            def explain(thing):
+                return "It's just a " + thing + ". Nothing fancy!"
+            [CODE_BLOCK_1]
+
+Changes made:
+
+1. **String Representation**: I replaced the C++ raw string literal (`R"(...)"`) with Python's triple-quoted string (`"""..."""`).
+
+2. **Method Names and Argument Styles**: The method names and their arguments have been changed to fit the Pythonic version you provided earlier (e.g., `RenderUnindented` to `render_unindented`).
+
+3. **String Handling**: I replaced the C++ `strcpy` function with a simple assignment in Python.
+
+4. **Interacting with AppState**: I accessed `AppState`'s attributes with the dot notation and updated them directly since Python is not pass-by-reference like C++.
+
+5. **Sizeof**: In C++, `sizeof` gives the size of an object or datatype. In Python, you can directly use the size of the buffer, which in the previous example was `4000`.
+
+This translation should closely match the functionality of the original C++ code in Python, using the interfaces you provided from `imgui_bundle`.

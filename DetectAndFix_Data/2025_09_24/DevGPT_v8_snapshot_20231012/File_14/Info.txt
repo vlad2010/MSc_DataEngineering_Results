@@ -1,0 +1,27 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_235128_issue_sharingsjson\Source_720_20230720T015323Z\Sharing_UDP_Byte_Order_Issue_July_20_2023\Conversation_006\Code_001.c
+Scanners: ['flawfinder', 'semgrep']
+
+Detect info from scanners: 
+[
+    {
+        "line": 14,
+        "file": "./Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+        "severity": "note",
+        "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+        "type": "FF1013",
+        "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+        "source_code": "    char buffer[BUFFER_SIZE]; // 데이터를 저장할 버퍼",
+        "scanner": "flawfinder"
+    },
+    {
+        "line": 63,
+        "file": "Code/20231012_235128_issue_sharingsjson/Source_720_20230720T015323Z/Sharing_UDP_Byte_Order_Issue_July_20_2023/Conversation_006/Code_001.c",
+        "severity": "warning",
+        "text": "Externally controlled data is used to index a fixed-size array, `buffer`. This could lead to an out-of-bounds read or write, triggering memory corruption.",
+        "type": "cpp.lang.security.memory.unvalidated-array-index.unvalidated-array-index",
+        "sharing": "Sharing_UDP_Byte_Order_Issue_July_20_2023",
+        "source_code": "            buffer[strcspn(buffer, \"\\n\")] = '\\0'; // 줄바꿈 문자 제거",
+        "scanner": "semgrep"
+    }
+]

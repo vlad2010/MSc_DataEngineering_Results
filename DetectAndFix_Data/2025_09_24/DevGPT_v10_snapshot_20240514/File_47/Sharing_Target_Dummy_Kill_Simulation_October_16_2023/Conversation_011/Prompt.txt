@@ -1,0 +1,1 @@
+There's a slight bug in this version of the code where the ability is only used every 11 ticks instead of every 10.

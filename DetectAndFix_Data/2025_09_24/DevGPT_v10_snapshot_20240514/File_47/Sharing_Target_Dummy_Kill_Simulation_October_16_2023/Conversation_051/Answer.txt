@@ -1,0 +1,5 @@
+I apologize for the oversight. Here's the corrected code with the comparisons in the `canDealDamage` and `updateActivity` functions and the main loop as specified:
+
+[CODE_BLOCK_0]
+
+This code now uses epsilon for comparisons in the `canDealDamage` and `updateActivity` functions and the main loop as specified.

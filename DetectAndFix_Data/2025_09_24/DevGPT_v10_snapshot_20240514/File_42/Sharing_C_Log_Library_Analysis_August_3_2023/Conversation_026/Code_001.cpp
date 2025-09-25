@@ -1,0 +1,1 @@
+m_state.store(State::READY, std::memory_order_release);

@@ -1,0 +1,1 @@
+Every time A appears in B bu tnot in C reperesnt like A->BC like that

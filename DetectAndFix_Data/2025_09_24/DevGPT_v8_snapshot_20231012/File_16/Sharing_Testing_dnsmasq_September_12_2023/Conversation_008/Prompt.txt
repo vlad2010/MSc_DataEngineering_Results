@@ -1,0 +1,1 @@
+Seems I need to set the dhcp-leasefile as I got a /var/lib/misc/dnsmasq.leases: Permission denied

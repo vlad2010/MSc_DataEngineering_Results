@@ -1,0 +1,1 @@
+constexpr int MyConstValue = 42;

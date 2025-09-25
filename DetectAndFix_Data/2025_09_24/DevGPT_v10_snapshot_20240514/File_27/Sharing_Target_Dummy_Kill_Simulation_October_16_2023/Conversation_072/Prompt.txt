@@ -1,0 +1,1 @@
+Please move the canDealDamage check to after the canCast check.

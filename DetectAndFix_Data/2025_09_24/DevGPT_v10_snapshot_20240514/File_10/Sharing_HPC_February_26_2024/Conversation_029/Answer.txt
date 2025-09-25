@@ -1,0 +1,30 @@
+To compile and run the provided C program that performs parallel matrix multiplication using processes and shared memory, you typically need:
+
+1. **GCC (GNU Compiler Collection):** A compiler that supports the C programming language. GCC is standard on most Unix-like operating systems, such as Linux and macOS.
+   
+2. **Standard C Libraries:** These libraries are usually included with GCC or your system's C compiler and provide essential functionality for C programs, including standard I/O operations, memory allocation, and process management.
+
+3. **POSIX Shared Memory Libraries:** These are part of the POSIX (Portable Operating System Interface) standard and are typically included in the standard C library on Unix-like systems. The functions `shmget()`, `shmat()`, `shmdt()`, and `shmctl()` are used for shared memory operations and are included in the `<sys/shm.h>` header.
+
+### Installation Instructions
+
+- **Linux (Ubuntu/Debian-based):**
+  If GCC is not already installed on your Linux system, you can install it using the package manager. Open a terminal and run:
+  [CODE_BLOCK_0]
+  This command installs GCC and other essential development tools.
+
+- **macOS:**
+  The easiest way to install GCC on macOS is by installing the Xcode Command Line Tools. Open a terminal and run:
+  [CODE_BLOCK_1]
+  You can also install GCC separately using package managers like Homebrew:
+  [CODE_BLOCK_2]
+
+- **Windows:**
+  Windows doesn't natively support GCC or POSIX shared memory. However, you can use environments like Cygwin or Windows Subsystem for Linux (WSL) to compile and run Unix-like programs on Windows.
+  - **Cygwin:** Download and install Cygwin from [https://www.cygwin.com/](https://www.cygwin.com/). During installation, select the GCC package and any other development tools you might need.
+  - **WSL:** Follow Microsoft's guide to install WSL on Windows 10 or Windows 11 from [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install).
+
+After setting up the required environment, you can compile the C program using GCC with a command like:
+[CODE_BLOCK_3]
+
+The `-lrt` option is sometimes necessary to link the real-time library explicitly, which includes the POSIX shared memory functions. This is more common on Linux systems and may not be needed on all platforms.

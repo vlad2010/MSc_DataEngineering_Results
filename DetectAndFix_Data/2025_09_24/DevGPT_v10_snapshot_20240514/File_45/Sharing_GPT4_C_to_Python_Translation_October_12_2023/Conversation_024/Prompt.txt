@@ -1,0 +1,124 @@
+And finally, let's translate:
+
+```cpp
+///////////////////////////////////////////////////////////////////////////////
+// End of demo code
+///////////////////////////////////////////////////////////////////////////////
+
+
+//
+// Note: the code below only defines the displayed help strings
+//
+
+std::string GetDoc(const std::string& whichDoc)
+{
+    static std::map<std::string, std::string> docs =
+        {
+            {
+                "AssetsIntro",
+                R"(
+                # Demos assets
+                In order to improve text rendering, HelloImGui will load a default font (DroidSans) as well as "Font Awesome" to be able to display some icons.
+                )"
+            },
+            {
+                "AssetsDoc",
+                R"(
+                **About assets**
+
+                HelloImGui and ImmApp applications rely on the presence of an `assets` folder.
+                The typical layout of an assets folder looks like this:
+                ```
+                assets/
+                    +-- fonts/
+                    |         +-- DroidSans.ttf             # default fonts used by HelloImGui in order to
+                    |         +-- fontawesome-webfont.ttf   # improve text rendering.
+                    +-- images/
+                              +-- world.jpg                 # you can add any asset here!
+                ```
+
+                You can change the assets folder via:
+                ```cpp
+                HelloImGui::SetAssetsFolder("my_assets"); // (By default, HelloImGui will search inside "assets")
+                ```
+
+
+                **Where to find the default assets**
+
+                Look at the [imgui_bundle/bindings/imgui_bundle/assets](https://github.com/pthom/imgui_bundle/tree/main/bindings/imgui_bundle/assets) folder which provides them.
+                You can either copy it besides your CMakeLists.txt (it will be deployed into the execution folder automatically), or copy it into your execution folder.
+
+
+                **How was this image displayed**
+
+                This image was found inside the assets folder at `assets/images/world.jpg` and displayed via HelloImGui with the following code:
+                ```cpp
+                ImVec2 imageSize = HelloImGui::EmToVec2(5.f, 5.f);
+                HelloImGui::ImageFromAsset("images/world.jpg", imageSize);
+                ```
+
+                *Note: prefer to specify sizes using the ["em" unit](https://en.wikipedia.org/wiki/Em_(typography)). Here, `imageSize` is equivalent to the size of 5 lines of text.*
+
+                )"
+            },
+            {
+                "MarkdownDoc",
+                R"(
+                This markdown string was rendered by calling:
+                ```cpp
+                ImGuiMd::Render(markdown_string);           // render a markdown string
+                // or
+                ImGuiMd::RenderUnindented(markdown_string);  // remove top-most indentation before rendering
+                ```
+
+                This markdown renderer is based on [imgui_md](https://github.com/mekhontsev/imgui_md), by Dmitry Mekhontsev.
+                It supports the most common markdown features: emphasis, link, code blocks, etc.
+
+                In order to work, it needs a few files in the assets folder:
+                ```
+                assets/
+                +-- fonts/
+                |         +-- DroidSans.ttf
+                |         +-- Roboto/
+                |         |         +-- LICENSE.txt
+                |         |         +-- Roboto-Bold.ttf
+                |         |         +-- Roboto-BoldItalic.ttf
+                |         |         +-- Roboto-Regular.ttf
+                |         |         \-- Roboto-RegularItalic.ttf
+                |         +-- SourceCodePro-Regular.ttf
+                |         +-- fontawesome-webfont.ttf
+                +-- images/
+                    +-- markdown_broken_image.png
+                ```
+
+                Note: in order to use ImPlot, you need to "activate" this add-on, like this:
+                ```cpp
+                ImmApp::AddOnsParams addons { .withMarkdown = true };
+                ImmApp::Run(runnerParams, addons);
+                ```
+                )"
+            },
+            {
+                "PlotIntro",
+                R"(
+                # Demo Plot
+                By using ImPlot, you can display lots of different plots. See [online demo](https://traineq.org/implot_demo/src/implot_demo.html) which demonstrates lots of plot types (LinePlot, ScatterPlot, Histogram, Error Bars, Heatmaps, etc.)
+                )"
+            },
+            {
+                "PlotDoc",
+                R"(
+                Note: in order to use ImPlot, you need to "activate" this add-on, like this:
+                ```cpp
+                ImmApp::AddOnsParams addons { .withImplot = true };
+                ImmApp::Run(runnerParams, addons);
+                ```
+                )"
+            },
+        };
+
+    return docs.at(whichDoc);
+}
+
+
+```

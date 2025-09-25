@@ -1,0 +1,14 @@
+Optimizing the algorithm by minimizing the number of checks and avoiding unnecessary reinitialization of references can indeed speed up the process, especially for large datasets. To streamline the loop, we can adjust it to immediately proceed to the next iteration after updating `currentLink`, without rechecking `processSuccessor` or reinitializing references.
+
+This approach reduces the control flow complexity and makes each loop iteration more straightforward. By doing this, we aim to ensure that, once a successor node is processed, the algorithm quickly moves to evaluate the next successor or concludes the processing of the current node without redundant checks.
+
+### Optimized Loop Structure
+
+[CODE_BLOCK_0]
+
+### Key Changes:
+- Removed the `processSuccessor` flag, as its primary role was to control the flow between successor checks. Now, the `while` loop directly manages this flow.
+- Introduced an inner `while (IsDefined(currentLink))` loop to continuously process successors. If a new node `w` needs DFS processing (it hasn't been visited), a new frame is pushed onto the stack, and the loop breaks to process it from the start. Otherwise, it updates `currentLink` to the next successor.
+- After processing all successors of `v` (when `currentLink` is undefined), the algorithm checks if `v` completes a strongly connected component before popping it from the stack.
+
+This optimization focuses on reducing the overhead from frequent condition checks and aims to make each iteration as efficient as possible. By directly managing successor processing within a `while` loop and avoiding intermediate checks, the algorithm can potentially offer faster performance on large graphs.

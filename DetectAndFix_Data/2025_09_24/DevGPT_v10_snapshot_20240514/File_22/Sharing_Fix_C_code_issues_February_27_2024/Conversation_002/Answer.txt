@@ -1,0 +1,13 @@
+Your code indeed has some duplication and nesting issues. Let's address them:
+
+1. **Duplication in input validation**: The input validation logic appears in both the `checkCellChoice` and `validateCell` functions. We can consolidate this logic into a single function to avoid duplication.
+
+2. **Nested loops for computer's cell selection**: The nested loops in the computer's cell selection process can be simplified.
+
+3. **DebugMode printing**: The debug mode printing statements can be streamlined.
+
+Here's the refactored code addressing these issues:
+
+[CODE_BLOCK_0]
+
+In this refactored version, the duplication is reduced, and the nesting is simplified for better readability and maintenance.

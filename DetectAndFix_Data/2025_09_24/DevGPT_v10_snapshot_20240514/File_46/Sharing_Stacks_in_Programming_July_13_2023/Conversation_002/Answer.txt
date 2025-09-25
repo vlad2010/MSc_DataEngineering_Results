@@ -1,0 +1,7 @@
+Certainly! Let's consider a basic example of using a stack to check the balance of symbols, such as parentheses, in a program. Here's a Python code snippet that demonstrates this:
+
+[CODE_BLOCK_0]
+
+In this example, the `is_balanced` function takes an expression as input and checks whether the parentheses in the expression are balanced. It iterates through each symbol in the expression. If an opening symbol is encountered, it is pushed onto the stack. If a closing symbol is encountered, it checks whether there is a corresponding opening symbol on the stack. If the stack is empty or the opening and closing symbols don't match, the expression is considered unbalanced.
+
+You can try running this code with different expressions to see the output. Balanced expressions will return `True`, while unbalanced expressions will return `False`.

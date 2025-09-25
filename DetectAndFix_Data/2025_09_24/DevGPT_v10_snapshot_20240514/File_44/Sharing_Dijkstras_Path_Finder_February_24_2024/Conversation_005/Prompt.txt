@@ -1,0 +1,1 @@
+you are supposed to store times not distances. Calculate time of a  path by using use the ssmap_path_travel_time. keep updating the best path throughout the loop. Do not use calloc.

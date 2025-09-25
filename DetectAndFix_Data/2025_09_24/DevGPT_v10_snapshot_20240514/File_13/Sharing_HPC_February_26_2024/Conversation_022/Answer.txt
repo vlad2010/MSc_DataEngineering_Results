@@ -1,0 +1,17 @@
+Here's the translated shell script into English with the specified updates:
+
+[CODE_BLOCK_0]
+
+And here's the corresponding `README.md` documentation:
+
+[CODE_BLOCK_1]bash
+gcc matrix_multiplication_sequential.c -o matrix_multiplication_sequential
+[CODE_BLOCK_2]bash
+./matrix_multiplication_sequential N
+[CODE_BLOCK_3]bash
+chmod +x run_tests.sh matrix_multiplication_sequential
+[CODE_BLOCK_4]bash
+./run_tests.sh
+[CODE_BLOCK_5]
+
+This `README.md` provides a comprehensive guide for compiling, running, and analyzing the performance of the sequential matrix multiplication program, specifically designed to explore the effects of doubling the matrix size in each iteration.

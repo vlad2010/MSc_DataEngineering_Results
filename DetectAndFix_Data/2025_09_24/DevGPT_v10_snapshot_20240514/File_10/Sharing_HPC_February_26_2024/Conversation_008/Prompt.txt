@@ -1,0 +1,1 @@
+Necesito hacer una tabla de resultados de rendimientos de varias ejecuciones, por lo que necesito que la salida de este algoritmo me de como resultado un formato csv para ir organizando la tabla. Me ayudas

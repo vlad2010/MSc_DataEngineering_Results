@@ -1,0 +1,8 @@
+The `sa_resethand_test.c` file has been updated with additional checks after the `pause()` call. The updated program now includes:
+
+1. A check to confirm that the signal handler callback function was invoked.
+2. A call to `sigaction()` after the signal is received to verify that the disposition of `SIGINT` was automatically reverted to `SIG_DFL` (the default action) by the kernel.
+
+This ensures a more thorough test of the `SA_RESETHAND` flag's functionality. You can download the updated file using the following link:
+
+[Download Updated sa_resethand_test.c](sandbox:/mnt/data/sa_resethand_test.c)

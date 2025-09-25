@@ -1,0 +1,5 @@
+Certainly, you can modify the code to print the dummy's health each time it takes damage. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+This modification will print the dummy's health each time it takes damage from any ability.

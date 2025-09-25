@@ -1,0 +1,5 @@
+I apologize for the oversight. You're correct; I removed the `canCast` function. Let me add it back and include the call to it when checking if an ability can be cast. Here's the updated code:
+
+[CODE_BLOCK_0]
+
+Now, the `canCast` function is included, and it's used to check if an ability can be cast before casting it.

@@ -1,0 +1,1 @@
+Great, now I am interested to rework this loop so it is optimized for ARM64 and its SIMD instructions.

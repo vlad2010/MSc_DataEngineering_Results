@@ -1,0 +1,17 @@
+Model name: ---
+File name: c:\WORKFOLDER_LLM_SECURITY\src/snapshot_20231012_v8\Code\20231012_235128_issue_sharingsjson\Source_OSC52_panic_20230612T080949Z\Sharing_Исправление_утечек_памяти_September_17_2023\Conversation_002\Code_001.c
+Scanners: ['flawfinder']
+
+Detect info from scanners: 
+[
+    {
+        "line": 22,
+        "file": "./Code/20231012_235128_issue_sharingsjson/Source_OSC52_panic_20230612T080949Z/Sharing_Исправление_утечек_памяти_September_17_2023/Conversation_002/Code_001.c",
+        "severity": "note",
+        "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+        "type": "FF1023",
+        "sharing": "Sharing_Исправление_утечек_памяти_September_17_2023",
+        "source_code": "        int cnt = MultiByteToWideChar(CP_UTF8, 0, (LPCCH)d_out, d_count, NULL, 0);",
+        "scanner": "flawfinder"
+    }
+]

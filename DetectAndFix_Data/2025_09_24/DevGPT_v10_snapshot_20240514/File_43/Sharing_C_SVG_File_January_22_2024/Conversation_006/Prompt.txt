@@ -1,0 +1,1 @@
+conver it to functions in a header file and implement it in a cp file

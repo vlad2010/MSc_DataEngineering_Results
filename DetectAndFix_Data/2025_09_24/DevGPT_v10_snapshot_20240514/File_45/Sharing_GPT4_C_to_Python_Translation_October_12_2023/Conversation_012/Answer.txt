@@ -1,0 +1,11 @@
+Alright, let's start with translating the `AppState` structure and its initialization.
+
+In C++:
+[CODE_BLOCK_0]
+
+In Python, we can represent the `AppState` as a class:
+[CODE_BLOCK_1]
+
+In the Python version, we use `numpy` to represent the vector of floats (`plot_data`). The character array in C++ (`MarkdownInput`) translates to a simple string in Python (`markdown_input`). The boolean flags remain the same.
+
+Would you like to proceed with translating the next part of the code?

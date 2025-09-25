@@ -1,0 +1,5 @@
+Certainly, I'll check the quotes in the provided code:
+
+[CODE_BLOCK_0]
+
+The provided code contains the correct usage of quotes. The double quotes are used to define strings within the C++ code, and within the strings, single quotes are used where needed. This structure adheres to the syntax requirements in C++ for working with strings and characters.

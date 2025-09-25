@@ -1,0 +1,33 @@
+To build a function that allocates matrices and another function to fill matrices, you can follow this structured approach:
+
+1. **Matrix Allocation Function**: This function will allocate memory for a matrix of size `NxN` and return a pointer to the allocated memory. It should take the size of the matrix as a parameter.
+
+2. **Matrix Filling Function**: This function will fill an already allocated matrix with values. For example, you might fill one matrix with random values and another with zeros. This function should take a pointer to the matrix and its size as parameters.
+
+Here's an example implementation:
+
+### Matrix Allocation Function
+
+[CODE_BLOCK_0]
+
+### Matrix Filling Functions
+
+You can have different filling functions depending on your needs, such as filling with random values or zeros.
+
+#### Fill with Random Values
+
+[CODE_BLOCK_1]
+
+#### Fill with Zeros
+
+[CODE_BLOCK_2]
+
+### Example Usage in `main`
+
+[CODE_BLOCK_3]
+
+In this setup:
+
+- `allocateMatrix` allocates memory for an `NxN` matrix and returns a pointer to the allocated memory.
+- `fillMatrixWithRandomValues` and `fillMatrixWithZeros` are used to fill the matrices with random values and zeros, respectively.
+- In `main`, matrices are allocated and filled as needed. Make sure to free the allocated memory at the end to prevent memory leaks.

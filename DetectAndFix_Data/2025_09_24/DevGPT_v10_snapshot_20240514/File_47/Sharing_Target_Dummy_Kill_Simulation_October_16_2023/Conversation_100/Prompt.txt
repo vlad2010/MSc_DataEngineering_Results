@@ -1,0 +1,1 @@
+The updateActivity function should be called at the start of the for loop. Whole code please.

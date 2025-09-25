@@ -1,0 +1,43 @@
+Certainly! Let's go through the code step by step:
+
+1. **Header Includes:**
+   [CODE_BLOCK_0]
+   These are the necessary header includes for input/output, string manipulation, file handling, and using unordered maps.
+
+2. **Main Function and Variable Declarations:**
+   [CODE_BLOCK_1]
+   Here, we declare variables to store information about the number of cases, party amount, vote amount, filenames, parties, candidates, votes, winner, and flags for ties.
+
+3. **File Handling:**
+   [CODE_BLOCK_2]
+   The program prompts the user to enter a filename, then reads the number of cases from the file.
+
+4. **Main Loop for Cases:**
+   [CODE_BLOCK_3]
+   This loop iterates through each test case.
+
+5. **Reset Variables for Each Case:**
+   [CODE_BLOCK_4]
+   For each case, we reset the maps for votes and parties and set the tie flag to false.
+
+6. **Read Party Information:**
+   [CODE_BLOCK_5]
+   Read the party information for the current case. Each candidate is associated with a party in the `parties` map.
+
+7. **Read Vote Information:**
+   [CODE_BLOCK_6]
+   Read the vote information for the current case. Each vote increments the count for the corresponding candidate in the `votes` map.
+
+8. **Find Winner or Check for Tie:**
+   [CODE_BLOCK_7]
+   Iterate over the candidates and their vote counts. Update the winner and maxVotes if a candidate has more votes than the current maximum. Set the tie flag if there is a tie.
+
+9. **Display Results:**
+   [CODE_BLOCK_8]
+   Display the results for the current case, either indicating a tie or the winning party.
+
+10. **Return from Main:**
+    [CODE_BLOCK_9]
+    The program exits with a status of 0.
+
+The code reads input from a file, processes voting data for multiple cases, and determines the winner or if there's a tie. It uses unordered maps to store party information and vote counts.

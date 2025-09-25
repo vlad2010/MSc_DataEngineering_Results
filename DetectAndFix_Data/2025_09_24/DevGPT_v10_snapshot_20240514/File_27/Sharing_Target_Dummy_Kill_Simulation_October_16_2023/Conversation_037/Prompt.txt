@@ -1,0 +1,1 @@
+Ok, this is working properly now. Next I'd like to make it so that only one ability can be cast at a time, and there's a cooldown of one second before the next ability can be cast.

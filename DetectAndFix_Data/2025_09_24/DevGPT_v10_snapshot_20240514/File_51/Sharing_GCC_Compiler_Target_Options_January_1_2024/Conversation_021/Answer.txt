@@ -1,0 +1,7 @@
+Ah, I see your point. The `if (!handler_invoked)` check after the `sigsuspend()` loop in the `sa_resethand_test` program appears to be redundant. This is because:
+
+1. **Purpose of the Loop:** The loop `while (!handler_invoked) { sigsuspend(&oldmask); }` is designed to keep the parent process suspended until the signal handler is invoked. The `handler_invoked` flag is set to `true` within the signal handler, which means that once the signal handler has been executed, the condition `!handler_invoked` becomes false, and the loop exits.
+
+2. **Redundant Check:** After the loop, checking again with `if (!handler_invoked)` is unnecessary because if the program has proceeded past the loop, it is already ensured that `handler_invoked` is `true`. The loop wouldn't have terminated otherwise.
+
+In short, the `if` statement after the loop is indeed redundant and can be removed without affecting the functionality of the program. The loop itself suffices to ensure that the signal handler has been invoked before proceeding.

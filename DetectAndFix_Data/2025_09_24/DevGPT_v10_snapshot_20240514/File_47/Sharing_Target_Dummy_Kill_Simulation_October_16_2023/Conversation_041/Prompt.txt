@@ -1,0 +1,3 @@
+This is almost right, but the check:
+ if (activationCooldown <= 0.0 && !ability1.isActive && !ability2.isActive)
+should just be if (activationCooldown <= 0.0). That way multiple abilities can be active at the same time.

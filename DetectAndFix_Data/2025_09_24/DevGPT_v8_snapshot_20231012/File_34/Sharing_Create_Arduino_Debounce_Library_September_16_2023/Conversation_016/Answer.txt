@@ -1,0 +1,1 @@
+ChatGPTUnderstood. I'll add parentheses around the == comparisons for clarity:[CODE_BLOCK_0]This can make the code more readable and prevent potential precedence issues in more complex expressions.

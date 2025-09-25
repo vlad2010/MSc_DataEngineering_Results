@@ -1,0 +1,1 @@
+ChatGPTCertainly, I've made the necessary changes to the code to generate 32 rounds of matches. Here's the updated code:[CODE_BLOCK_0]This code should generate 32 rounds of matches for your football league. You can adjust the matchDate and stadium as needed.

@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C# Project Assistance Request
+Date:September 25, 2023
+Url:https://chat.openai.com/share/aa6b5463-0d06-45d5-8ecf-57464d0bd0f2
+Model name:Default (GPT-3.5)Number of prompts:117
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:116
+HTML content size:2706186

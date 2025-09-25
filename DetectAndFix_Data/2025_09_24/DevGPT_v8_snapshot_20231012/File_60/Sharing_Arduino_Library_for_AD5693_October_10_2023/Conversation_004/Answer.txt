@@ -1,0 +1,1 @@
+ChatGPTUsed Ai PDFI apologize, but it seems that I wasn't able to locate the "Table 12. Command Table" from the PDF datasheet. Would you like to proceed with creating the enum for the 4 commands based on your own understanding of the datasheet, or would you like to try another approach?

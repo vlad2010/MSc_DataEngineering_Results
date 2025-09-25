@@ -1,0 +1,23 @@
+To optimize the matrix multiplication code using `fork()` and pipes, we'll divide the matrix multiplication task among multiple processes based on the number of processors you want to use. Each child process will compute a portion of the result matrix `C`, and the parent process will collect the results via pipes.
+
+Here's an approach to achieve this:
+
+1. **Divide the Work**: Determine how many rows of the result matrix each child process should compute based on the number of processors you want to use.
+2. **Use Pipes for Communication**: Set up a pipe for each child process to send its computed chunk of the matrix `C` back to the parent process.
+3. **Parent Process**: Collects results from each child process through the pipes and assembles the final matrix.
+
+### Modifications to the Code
+
+For brevity, I'll focus on the parts of the code that need to be changed or added to achieve this parallel computation:
+
+#### Main Function Modifications
+
+[CODE_BLOCK_0]
+
+#### Child Work Function
+
+[CODE_BLOCK_1]
+
+#### Adjusted `getCommands` Function
+
+You'll need to adjust the `getCommands` function to also parse and set the `numProcessors` variable based on an additional command-line

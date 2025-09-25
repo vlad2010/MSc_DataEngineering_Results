@@ -1,0 +1,16 @@
+If the common ratio is set to 2, this means each subsequent value in the geometric progression will be double the previous one. Starting from 500 and using a ratio of 2, the progression for 10 scales would look like this:
+
+1. 500 (initial value)
+2. 1000 (500 * 2)
+3. 2000 (1000 * 2)
+4. 4000 (2000 * 2)
+5. 8000 (4000 * 2)
+6. 16000 (8000 * 2)
+7. 32000 (16000 * 2)
+8. 64000 (32000 * 2)
+9. 128000 (64000 * 2) - Note: This exceeds your target of 100000.
+10. 256000 (128000 * 2) - Further exceeds the target.
+
+Using a ratio of 2 results in a faster growth rate, causing the values to exceed 100000 by the 9th scale. If you want to use a ratio of 2 and keep the number of scales at 10, you could start with a smaller initial value than 500 or accept that the sequence will extend well beyond 100000.
+
+For a sequence that precisely starts at 500 and ends close to 100000 with 10 terms, the ratio needs to be carefully calculated, as done previously. However, if you're flexible with the upper limit or the starting value, a ratio of 2 can offer a simpler and more aggressive scaling, useful for stress-testing the performance of your matrix multiplication algorithm at larger scales.

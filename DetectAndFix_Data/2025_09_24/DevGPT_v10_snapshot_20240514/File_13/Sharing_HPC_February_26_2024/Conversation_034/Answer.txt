@@ -1,0 +1,29 @@
+The functions `shmget`, `shmat`, `shmdt`, and `shmctl` are part of the System V shared memory API in Unix-like operating systems, used for inter-process communication (IPC). They allow different processes to access a common area of memory. Here's a brief overview of each:
+
+1. **`shmget`:** This function is used to allocate a shared memory segment. It returns an identifier (shm_id) that can be used by other processes to access the shared memory. The function requires a key (for identifying the shared memory segment), the size of the memory to allocate, and permission flags.
+
+   [CODE_BLOCK_0]
+
+2. **`shmat`:** Stands for "shared memory attach." It attaches the shared memory segment identified by the shm_id (obtained from `shmget`) to the address space of the calling process. It returns a pointer to the start of the shared memory segment.
+
+   [CODE_BLOCK_1]
+
+3. **`shmdt`:** Stands for "shared memory detach." It detaches the shared memory segment from the address space of the calling process.
+
+   [CODE_BLOCK_2]
+
+4. **`shmctl`:** Used to perform various control operations on the shared memory segment, like marking it for deletion. For instance, `IPC_RMID` is used to remove the shared memory segment once all processes are done using it.
+
+   [CODE_BLOCK_3]
+
+### Simpler Alternative Using Fork Without Explicit Shared Memory
+
+When a process forks using the `fork()` system call, the child process inherits copies of the parent's memory segments at the time of the fork. Due to the copy-on-write mechanism on most Unix-like systems, the actual physical memory isn't copied until one of the processes attempts to modify it. This means that, initially, both the parent and child processes can access the same physical memory read-only.
+
+For your matrix multiplication case, if the child processes only read from matrices A and B and write to separate parts of matrix C (e.g., each child writes to a distinct row of C), you might not need explicit shared memory management. Each child can work on its part of the matrix, and since they don't overwrite each other's data, there should be no conflicts.
+
+Here's a simplified outline without explicit shared memory control:
+
+[CODE_BLOCK_4]
+
+In this simplified approach, care must be taken to ensure that child processes only write to distinct parts of the output matrix to avoid data corruption due to concurrent writes. This method leverages the natural behavior of `fork()` and copy-on-write, simplifying memory management at the cost of potentially higher memory usage if child processes modify a lot of inherited data.

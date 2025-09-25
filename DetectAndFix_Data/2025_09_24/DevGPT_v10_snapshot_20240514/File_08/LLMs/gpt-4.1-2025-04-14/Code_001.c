@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <string.h>
+
+// Assume the definitions from the previous code are included here.
+
+typedef struct Record {
+    char name[15];
+    char surname[15];
+    char city[15];
+    int id;
+    char delimiter[2];
+} Record;
+
+int CHUNK_GetIthRecordInChunk(CHUNK *chunk, int i, Record *record);
+int CHUNK_UpdateIthRecord(CHUNK *chunk, int i, Record record);
+void CHUNK_Print(CHUNK chunk);
+
+// Corrected Record Iterator for CHUNK
+typedef struct {
+    CHUNK chunk;
+    int currentBlockId;
+    int cursor;
+} CHUNK_RecordIterator;
+
+CHUNK_RecordIterator CHUNK_CreateRecordIterator(CHUNK *chunk);
+int CHUNK_GetNextRecord(CHUNK_RecordIterator *iterator, Record *record);
+
+int main() {
+    // Example usage:
+    int file_desc;
+    char *filename = "example_file.txt";
+    HP_CreateFile(filename);
+    HP_OpenFile(filename, &file_desc);
+
+    CHUNK_Iterator chunkIterator = CHUNK_CreateIterator(file_desc, 10);
+    CHUNK chunk;
+
+    while (CHUNK_GetNext(&chunkIterator, &chunk) == 0) {
+        CHUNK_Print(chunk);
+
+        // Retrieve and update records in the CHUNK
+        Record record;
+        CHUNK_RecordIterator recordIterator = CHUNK_CreateRecordIterator(&chunk);
+        while (CHUNK_GetNextRecord(&recordIterator, &record) == 0) {
+            // Process each record
+            // Example: Print the record
+            printf("Name: %s, Surname: %s, City: %s, ID: %d\n", record.name, record.surname, record.city, record.id);
+        }
+    }
+
+    HP_CloseFile(file_desc);
+
+    return 0;
+}
+
+int CHUNK_GetIthRecordInChunk(CHUNK *chunk, int i, Record *record) {
+    // Check if the index is within bounds
+    if (i < 0 || i >= chunk->recordsInChunk) {
+        return -1; // Out of bounds
+    }
+
+    // Populate the record based on the index in your data structure
+    // Example: Assuming Record has fields name, surname, city, id
+    // You may need to adjust this based on your actual data structure
+    strcpy(record->name, "John");
+    strcpy(record->surname, "Doe");
+    strcpy(record->city, "New York");
+    record->id = 123;
+
+    return 0; // Success
+}
+
+int CHUNK_UpdateIthRecord(CHUNK *chunk, int i, Record record) {
+    // Check if the index is within bounds
+    if (i < 0 || i >= chunk->recordsInChunk) {
+        return -1; // Out of bounds
+    }
+
+    // Update the ith record based on your logic
+    // Example: Assuming Record has fields name, surname, city, id
+    // You may need to adjust this based on your actual data structure
+    strcpy(chunk->records[i].name, record.name);
+    strcpy(chunk->records[i].surname, record.surname);
+    strcpy(chunk->records[i].city, record.city);
+    chunk->records[i].id = record.id;
+
+    return 0; // Success
+}
+
+void CHUNK_Print(CHUNK chunk) {
+    printf("File Descriptor: %d\n", chunk.file_desc);
+    printf("From Block ID: %d\n", chunk.from_BlockId);
+    printf("To Block ID: %d\n", chunk.to_BlockId);
+    printf("Records in Chunk: %d\n", chunk.recordsInChunk);
+    printf("Blocks in Chunk: %d\n", chunk.blocksInChunk);
+    printf("\n");
+}
+
+CHUNK_RecordIterator CHUNK_CreateRecordIterator(CHUNK *chunk) {
+    CHUNK_RecordIterator iterator;
+    iterator.chunk = *chunk;
+    iterator.currentBlockId = chunk->from_BlockId;
+    iterator.cursor = 0; // Start from the first record in the first block
+    return iterator;
+}
+
+int CHUNK_GetNextRecord(CHUNK_RecordIterator *iterator, Record *record) {
+    // Check if there are more records to iterate
+    if (iterator->cursor >= iterator->chunk.recordsInChunk) {
+        return -1; // No more records
+    }
+
+    // Retrieve the next record based on your data structure
+    // Example: Assuming Record has fields name, surname, city, id
+    // You may need to adjust this based on your actual data structure
+    strcpy(record->name, iterator->chunk.records[iterator->cursor].name);
+    strcpy(record->surname, iterator->chunk.records[iterator->cursor].surname);
+    strcpy(record->city, iterator->chunk.records[iterator->cursor].city);
+    record->id = iterator->chunk.records[iterator->cursor].id;
+
+    // Move to the next record
+    iterator->cursor++;
+
+    return 0; // Success
+}

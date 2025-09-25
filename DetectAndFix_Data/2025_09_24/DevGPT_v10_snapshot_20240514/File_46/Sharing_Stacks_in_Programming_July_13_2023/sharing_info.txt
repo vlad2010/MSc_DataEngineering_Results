@@ -1,0 +1,9 @@
+Sharing info: 
+Title:Stacks in Programming
+Date:July 13, 2023
+Url:https://chat.openai.com/share/f61794d5-931a-4c77-9182-11f480843832
+Model name:GPT-3.5Number of prompts:3
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:3
+HTML content size:115393

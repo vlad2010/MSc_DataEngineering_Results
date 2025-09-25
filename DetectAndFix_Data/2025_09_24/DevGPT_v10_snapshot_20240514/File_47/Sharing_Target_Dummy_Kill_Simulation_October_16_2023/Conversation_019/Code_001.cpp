@@ -1,0 +1,90 @@
+#include <iostream>
+#include <vector>
+
+// Define a target dummy with health
+class TargetDummy {
+public:
+    int health;
+
+    TargetDummy(int initialHealth) : health(initialHealth) {}
+    bool isAlive() { return health > 0; }
+    void takeDamage(int damage) { health -= damage; }
+};
+
+class DamageOverTimeAbility {
+public:
+    double damagePerTick;
+    double cooldownSeconds;
+    double durationSeconds;
+    double lastUsedTime;
+    int tickInterval; // New property to specify damage intervals
+
+    DamageOverTimeAbility(double damage, double cooldown, double duration, int interval)
+        : damagePerTick(damage), cooldownSeconds(cooldown), durationSeconds(duration),
+          lastUsedTime(-cooldown), tickInterval(interval) {}
+
+    bool canUse(double elapsedTime) {
+        return (elapsedTime - lastUsedTime) >= cooldownSeconds;
+    }
+
+    void use(double elapsedTime) {
+        lastUsedTime = elapsedTime;
+    }
+
+    bool hasExpired(double elapsedTime) {
+        return (elapsedTime - lastUsedTime) >= durationSeconds;
+    }
+};
+
+int main() {
+    // Create a target dummy with an initial health value
+    TargetDummy dummy(100); // You can set the initial health as per your requirements
+
+    DamageOverTimeAbility ability1(15.0, 10.0, 30.0, 5); // Damage ability: 15 damage every 10 seconds, for 30 seconds, every 5 ticks
+    DamageOverTimeAbility ability2(10.0, 5.0, 20.0, 5); // Another ability: 10 damage every 5 seconds, for 20 seconds, every 5 ticks
+
+    int ticksPerSecond = 10; // Adjust this for the tick rate (e.g., 10 ticks per second)
+
+    int ticks = 0;
+    double elapsedTimeSeconds = 0.0;
+
+    while (dummy.isAlive()) {
+        // Check if ability 1 can be used or has expired
+        if (ability1.canUse(elapsedTimeSeconds) || ability1.hasExpired(elapsedTimeSeconds)) {
+            // Simulate using the ability
+            dummy.takeDamage(static_cast<int>(ability1.damagePerTick));
+            ability1.use(elapsedTimeSeconds);
+
+            // Display ability usage
+            std::cout << "Ability 1 used at Tick " << ticks << " (Time: " << elapsedTimeSeconds << "s)" << std::endl;
+        }
+
+        // Check if ability 2 can be used or has expired
+        if (ability2.canUse(elapsedTimeSeconds) || ability2.hasExpired(elapsedTimeSeconds)) {
+            // Simulate using the ability
+            dummy.takeDamage(static_cast<int>(ability2.damagePerTick));
+            ability2.use(elapsedTimeSeconds);
+
+            // Display ability usage
+            std::cout << "Ability 2 used at Tick " << ticks << " (Time: " << elapsedTimeSeconds << "s)" << std::endl;
+        }
+
+        ticks++;
+
+        // Simulate game logic for the rest of the tick
+        // ...
+
+        // Display the dummy's current health
+        std::cout << "Tick " << ticks << ": Dummy Health: " << dummy.health << std::endl;
+
+        // Manually control the tick rate
+        double tickDuration = 1.0 / ticksPerSecond;
+        elapsedTimeSeconds += tickDuration;
+    }
+
+    // Calculate and display the time taken to kill the dummy in seconds
+    double totalElapsedTimeSeconds = static_cast<double>(ticks) / ticksPerSecond;
+    std::cout << "Target dummy killed in " << totalElapsedTimeSeconds << " seconds." << std::endl;
+
+    return 0;
+}

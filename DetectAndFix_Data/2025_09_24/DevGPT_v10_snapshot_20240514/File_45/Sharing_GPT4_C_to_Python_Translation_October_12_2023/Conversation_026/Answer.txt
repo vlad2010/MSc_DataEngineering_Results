@@ -1,0 +1,7 @@
+The issue you're facing is related to using mutable default values (like lists) directly in the dataclass field definition. In Python, this can cause unintended behavior because the same list instance will be shared across all instances of the dataclass.
+
+To fix this, we should use the `field` function from the `dataclasses` module, along with a `default_factory` to create a new list for each instance of the dataclass. Here's how you can correct it:
+
+[CODE_BLOCK_0]
+
+In this corrected code, we use `field(default_factory=lambda: [0.15, 0.30, 0.2, 0.05])` to create a new list for `plot_data` for each instance of the `AppState` class, ensuring that they don't share the same list instance.

@@ -1,0 +1,5 @@
+Of course! Let's update the `init_hash_table()` function to initialize the `pthread_t` lock instead of the `pthread_mutex_t`:
+
+[CODE_BLOCK_0]
+
+Now, the `pthread_rwlock_init()` function initializes the `pthread_t` lock for the hash table. This change ensures that the correct type of lock is used for thread synchronization.

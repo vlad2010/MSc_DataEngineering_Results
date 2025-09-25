@@ -1,0 +1,5 @@
+ok actually what we should do is split
+bool Wire_readRegister(uint8_t i2caddr, uint8_t regaddr, uint8_t *data, uint8_t bytes) 
+into a function 'bool Wire.writeBytes(uint8_t i2caddr, uint8_t *data, uint8_t bytes) ' 
+and 'bool Wire.readBytes(uint8_t i2caddr, uint8_t *data, uint8_t bytes) ' 
+so write those and redo the readregister call too

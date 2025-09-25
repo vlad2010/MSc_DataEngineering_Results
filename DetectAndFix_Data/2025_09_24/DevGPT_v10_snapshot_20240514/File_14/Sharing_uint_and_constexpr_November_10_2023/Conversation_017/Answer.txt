@@ -1,0 +1,11 @@
+The size of `int` in C++ is implementation-dependent, meaning it can vary across different systems and compilers. However, there are common conventions:
+
+- On most modern systems, the size of `int` is 4 bytes (32 bits).
+- On some older systems, particularly embedded systems, `int` might be 2 bytes (16 bits).
+- On certain 64-bit systems, the size of `int` may still be 4 bytes to maintain compatibility with code written for 32-bit systems.
+
+To determine the size of `int` on your specific system, you can use the `sizeof` operator in C++:
+
+[CODE_BLOCK_0]
+
+This program will output the size of `int` in bytes on your particular system. Keep in mind that the C++ standard does not specify the exact size of basic types like `int`, and it can vary based on the compiler and architecture.

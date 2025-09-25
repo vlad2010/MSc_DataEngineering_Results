@@ -1,0 +1,9 @@
+Sharing info: 
+Title:C++ SVG File
+Date:January 22, 2024
+Url:https://chat.openai.com/share/cf6a88b9-b6e0-41d8-b10b-25aeb57af07a
+Model name:GPT-3.5Number of prompts:15
+Tokens of prompts:0
+Tokens of answers:0
+Number of conversations:15
+HTML content size:204065

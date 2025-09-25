@@ -1,0 +1,1 @@
+This test is automated. Your test program can't rely on the user to press ctrl-c. It can't rely on some other program to send SIGINT. What you need to do is call fork() or pthread_create() from within your test program, to generate that signal.

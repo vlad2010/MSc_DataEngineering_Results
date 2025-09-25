@@ -1,0 +1,1 @@
+ChatGPTThe memcpy() function in C++ is part of the C standard library, so you need to include the <cstring> header to use it.Here's the updated code with the correct include statement for memcpy():[CODE_BLOCK_0]Now the code should compile correctly and work as expected with the correct include statement for memcpy().
