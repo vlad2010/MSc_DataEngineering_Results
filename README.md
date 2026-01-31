@@ -4,6 +4,9 @@
 
 Publicly available data for the *"Secure Coding with AI – From Detection to Repair"* paper
 
+The software tools created and used in this study are available in the repository:
+https://github.com/vlad2010/MS_DataEngineering_Public
+
 ## Content description
 
 ### OpenAI_API_Issues64_Experiment subfolder
